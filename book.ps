@@ -1,0 +1,351 @@
+%!PS
+
+(using.ps) run
+(base.ps) using
+(debug.ps) using
+(fonts.ps) using
+(strings.ps) using
+(table.ps) using
+(text-align.ps) using
+
+% int 
+% arg is the number of times /showpage has been called: 0, 1,...
+% See /BeginPage of setpagedevice below.
+/start-new-page {
+  /idx defi
+  (Starting new page...) here
+  % the work-box needs to be re-set for each new page
+  MARGIN-X  
+  MARGIN-X ASPECT-RATIO mul 
+  translate % to the bottom left of the work-box
+  
+  idx 3 ge {
+    % show page numbers
+    /GAP ht 6 pct def
+    (regular) 80 use-font
+    small-caps-font
+    /page-num idx 2 sub def
+    /page-num-str page-num 4 string cvs def
+    idx 2 mod 0 eq {
+      % left-hand page
+      0 ht moveto 
+      GAP GAP rmoveto 
+      page-num-str show
+    } {
+      % right-hand page
+      wd ht moveto 
+      GAP neg  GAP rmoveto 
+      page-num-str show-right-align
+    } ifelse
+    wd 50 pct  ht GAP add  moveto 
+    TITLE str-upper-case show-ctr-x
+    (regular) 100 use-font
+  } if
+  
+  0 ht moveto % the top-left of the work-box, as a default currentposition
+  % 0 0 wd ht rectstroke % to see the work-box
+} bind def
+
+% cx cy str 
+% Show text centered horizontally at the currentpoint, using /ashow.
+/ashow-ctr-x {
+  dup text-dim pop % text dx
+  -2 div % text -dx/2
+  0 rmoveto % text
+  ashow
+} bind def
+
+% width (name-of-file) px-width px-height
+% Show a color .jpg image file, with its bottom left at the current origin.
+% This proc uses the recommended style of using a unit square as an intermediate geometry.
+%
+% Ghostscript needs the -dNOSAFER option for this to operate correctly.
+%   [w 0 0 h 0 0]  - scan L to R and B to T
+%   [w 0 0 -h 0 h] - scan L to R and T to B (JPEG's apparently use this style)
+/show-jpg {
+  [/width /file-name /px-w /px-h] { 
+    gsave
+      % rescale the unit square to the given width,
+      % while preserving the aspect ratio of the image
+      width 
+      width px-h px-w div mul  
+      scale 
+      /DeviceRGB setcolorspace
+      <<
+       /ImageType 1 % opaque
+       /Width px-w
+       /Height px-h
+       /BitsPerComponent 8  % not BPP!; BPP = 8 bits/component * 3 components = BPP 24, for typical color JPEGs
+       /Decode [0 1 0 1 0 1]  % standard, fixed
+       /ImageMatrix [px-w 0 0 px-h neg 0 px-h] % transform array; maps FROM the unit square TO the underlying image geometry
+       % opens the file and reads in the image data; this filter is specific to JPEG files:
+       /DataSource file-name (r) file /DCTDecode filter  
+      >>
+      image 
+    grestore
+  } def-tmp 
+} bind def
+
+% dict
+% The dict has author, title, and body (an array).
+% Show a quotation, but first test to see if a new page is needed.
+% The policy is that quotations are never split by a page-break.
+/show-quotation-on-1-page {
+  dup 
+  quotation-fits-on-page? not {
+    NEW-PAGE
+  } if
+  show-quotation
+  NEW-LINE % between rendered quotes
+  NEW-LINE 
+} bind def
+
+% dict
+% The dict has author, title, and body (an array).
+/quotation-fits-on-page? {
+  % use the null device, with a gsave-grestore.
+  % no marks are made on the page using this technique
+  gsave 
+    % save-program-state (in case show-quotation ever changes program-state data)
+    nulldevice % this uses the default CTM
+    currentpoint exch pop /y0 defi
+    show-quotation
+    currentpoint exch pop /y1 defi
+    y1 y0 sub % dy (corresponding to the author/title line); negative!
+    % restore-program-state
+  grestore
+  currentpoint exch pop % dy y 
+  add 0 ge 
+} bind def
+
+% dict
+% The dict has author, title, and body (an array).
+/show-quotation {
+  3 dict begin
+    {def} forall
+    body type /arraytype eq{
+      show-body-prose
+    } {
+      show-body-poetry
+    } ifelse
+    show-author-title
+  end
+} bind def
+
+% Cycle through an array containing strings and control-codes. 
+% The control codes can only set the font.
+% Set the currentpoint to the start of the next line, to prepare for the author-title line.
+/show-body-prose {
+  % ragged-right, using the 1/2 word size trick to reduce jaggedness.
+  % use stringwidth, not probe-ahead, to test each word, one at a time.
+  % call new-line, but leave new-page to the caller.
+  body {
+    dup 
+    type /nametype eq {
+      cvx exec
+    } {
+      str-words {
+        /word defi
+        word str-width /word-wd defi
+        /new-x currentpoint pop word-wd add def
+        /line-overflow new-x wd sub def
+        line-overflow  word-wd 2 div  gt { NEW-LINE } if
+        word SPACE str-concat show
+      } forall
+    } ifelse
+  } forall 
+  NEW-LINE
+} bind def
+
+% Show lines of text having hard-coded line breaks, as in poetry.
+% The /body is a single string, with \n-style newlines (such that the whole poem is 1 line of source data).
+% No control codes are used in this style, and only the regular font is used.
+% Set the currentpoint to the start of the next line, to prepare for the author-title line.
+/show-body-poetry {
+  % lines of fixed length, and only regular font
+  (regular) 100 use-font
+  body str-lines {
+    show % one line at a time
+    NEW-LINE % might cause a new page
+  } forall % lines
+} bind def
+
+% str
+% Return true iff the trimmed string has a length > 0
+/is-present? {
+  str-trim length 0 gt
+} bind def
+
+% str
+% Return the dx of the string (assumes dy is 0).
+/str-width { stringwidth pop } bind def
+
+% Show the author and/or title.
+% Must fit on a single line.
+% The author and title can be an empty string, but not both at the same time.
+% The caller puts the currentpoint at the start of the line, after the quote body has finished.
+% Assumes the author/title data is trimmed of empty spaces.
+/show-author-title {
+  % measure the width first, in order to find the starting point for /show
+  % be careful with the comma in between: three cases: a+comma+space+t, a, t
+  /size 80 def
+  (regular) size use-font
+  /width-all 
+    DASH str-width 
+    small-caps-font
+    author str-upper-case str-width add
+    (italic) size use-font
+    title str-width add 
+  def
+  author is-present? title is-present? and {
+    (regular) size use-font
+    /width-all  width-all COMMA-SPACE str-width  add  def
+  } if
+  wd width-all sub  0  rmoveto
+  
+  (regular) size use-font
+  DASH show
+  author is-present? {
+    small-caps-font
+    author str-upper-case show
+  } if
+  author is-present? title is-present? and {
+    (regular) size use-font
+    COMMA-SPACE show
+  } if
+  title is-present? {
+    (italic) size use-font
+    title show 
+  } if
+  % let's not put a new line here yet; 
+  % we need to interrogate the y-position at this point, for page breaks
+} bind def
+
+% Regular font.
+/R { (regular) 100 use-font } bind def
+
+% Italic font.
+/I { (italic) 100 use-font } bind def
+
+/NEW-LINE {
+  0 
+  currentpoint exch pop leading sub 
+  moveto
+} bind def
+
+/NEW-PAGE{
+  showpage 
+  % set-new-page will also be invoked
+} bind def
+
+% str (filename)
+/process-quotes-file-one-line-at-a-time {
+  % open the file read-only; its encoding should be 8859-1.
+  (r) file /quotes-file defi 
+  /buffer MAX-QUOTE-LENGTH string def
+  {
+    quotes-file buffer readline {
+      cvx % the string is scanned and interpreted according to PostScript rules
+      exec % to transform the executable string into a dict, and put it on the stack
+      show-quotation-on-1-page 
+    } {
+      % all quotes end the same way: with a newline, and never with an end-of-file
+      % THE FILE TERMINATES WITH AN UNUSED LINE, that has no newline at its end.
+      %pop 
+      ==
+      exit
+    } ifelse
+  } loop
+  % the loop will automatically close the file once end-of-file has been reached.
+  % this is just being extra-careful
+  quotes-file status {
+    (CLOSING THE OPEN FILE.) == 
+    quotes-file closefile
+  } {
+    (OK: THE FILE WAS CLOSED.) ==
+  } ifelse
+} bind def
+
+%%BeginSetup               
+  /page-width  6.25 72 mul def
+  /page-height 9.25 72 mul def
+  /ASPECT-RATIO page-height page-width div def % > 1.0 in this project
+  /MARGIN-X page-width 10 pct def
+  % wd and ht are for the work-box - the area where most of the content is placed
+  /wd page-width MARGIN-X 2 mul sub def   
+  /ht wd ASPECT-RATIO mul def   
+  <<
+    /PageSize [page-width  page-height]
+    /BeginPage {start-new-page}  
+  >> setpagedevice  
+  << /NeverEmbed [ ] >> setdistillerparams  % always embed fonts
+  true setstrokeadjust  % minimizes off-by-one-pixel line issues
+
+  %C:\Users\Owner\AppData\Local\Microsoft\Windows\Fonts
+  /MyRegular /GaramondPremrPro latinize
+  /MyItalic /Times-Italic latinize
+  << 
+    (regular) /MyRegular
+    (italic) /MyItalic
+  >>
+  12 % default font size 
+  init-my-fonts
+  
+  /TITLE (And I Quote...) def
+  /AUTHOR (John O'Hanley) def
+  /DATE (March 2026) def
+  /SPACE ( ) def
+  /DASH (~ ) def
+  /COMMA-SPACE (, ) def
+  /QUOTES-FILE (quotes-data-8859-1/quotes_flat_file_ps.txt) def
+  %/QUOTES-FILE (quotes-data/quotes_flat_file_ps.txt) def
+  %/QUOTES-FILE (quotes-data/quotes-ps-ready.txt) def
+  /MAX-QUOTE-LENGTH 5000 def 
+%%EndSetup 
+
+  % small title 
+  (regular) 100 use-font  
+  wd 45 pct ht 80 pct moveto 
+  3 0 TITLE str-upper-case ashow-ctr-x
+  
+  /leading 2 em def % needs a current font
+  
+
+showpage
+
+  %blank 
+  
+showpage
+
+  % large 
+  (regular) 200 use-font  
+  wd 45 pct ht 80 pct moveto 
+  0.3 em 0 TITLE str-upper-case ashow-ctr-x
+  0 0 wd ht rectstroke
+  
+  gsave 
+    wd 37 pct ht 30 pct translate % to the bottom-left of the image
+
+    100            % the intended width of the image in the current CTM (not the pixel-width!)    
+    (louis_conard_bee_bw_300dpi.jpg)  % the file name (in the current directory, in this case)
+    909            % the image-width in pixels
+    1106           % the image-height in pixels
+    show-jpg
+  grestore 
+
+  (regular) 100 use-font  
+  wd 50 pct ht 15 pct moveto 
+  AUTHOR show-ctr-x
+  wd 50 pct ht 10 pct moveto 
+  DATE show-ctr-x
+
+
+showpage
+
+QUOTES-FILE
+process-quotes-file-one-line-at-a-time 
+ 
+showpage
+
+% WARNING: YOU MAY HAVE ADD EMPTY PAGES HERE MANUALLY. 
+% SOME PRINTING SERVICES REQUIRE THE NUMBER OF PAGES TO BE AN EVEN MULTIPLE OF FOUR.
