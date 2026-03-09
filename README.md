@@ -21,3 +21,9 @@ It also create a PostScript-friendly data structure (a dictionary) for each quot
 - Ghostscript: run a Ghostscript command to generate a pdf. Example:
 
 `C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o book.pdf book.ps`
+
+# PostScript 
+The PostScript programming language is used to read the data files and create a pleasing PDF, suitable for printing.
+The top-level PostScript file is `book.ps`.
+I used to use the iText Java library for that task. 
+I now much prefer PostScript for such tasks. 
