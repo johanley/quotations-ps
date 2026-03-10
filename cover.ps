@@ -2,6 +2,7 @@
 
 (using.ps) run
 (base.ps) using
+(debug.ps) using
 (fonts.ps) using
 (strings.ps) using
 (text-align.ps) using
@@ -15,6 +16,44 @@
     3 1 roll
   } repeat
   setcolor
+} bind def
+
+/set-background-color {
+  235 221 183 rgb-color  
+} bind def
+
+/set-foreground-color {
+  2 2 54 rgb-color  
+} bind def
+
+% [[xy]]
+% The caller will need to set the origin and scale to suitable values, using trial and error.
+/draw-star-line {
+  newpath
+  /is-first? true def
+  {
+    aload pop % x y
+    is-first? { moveto } {lineto } ifelse
+    /is-first? false def
+  } forall % points [x y]
+  stroke
+} bind def
+
+% x y stellar-mag
+% two circles at the given location
+% first in the background color, then in the foreground with a smaller radius
+% this will give a pleasing effect when drawing star-points after the star-lines
+/draw-star-point {
+  newpath
+  [/x /y /stellar-mag] {
+    /radius stellar-mag -1 mul 10 add def
+    set-background-color
+    x y radius 0 360 arc % to 'erase' star-lines a wee bit around the star
+    fill
+    set-foreground-color
+    x y radius 0.8 mul 0 360 arc
+    fill
+  } def-tmp
 } bind def
 
 % WARNING: MUST MATCH SETTINGS IN book.ps
@@ -39,20 +78,17 @@ true setstrokeadjust  % minimizes off-by-one-pixel line issues
 12 % default font size 
 init-my-fonts
 
-% background color
 /DeviceRGB setcolorspace
-235 221 183 rgb-color 
+
+set-background-color
 0 0 cover-width cover-height rectstroke
 0 0 cover-width cover-height rectfill
 0 0 0 rgb-color 
 
-% font color
-2 2 54 rgb-color 
-
+set-foreground-color
 (regular) 850 use-font  
 
-
-% BACK COVER
+% back cover
 gsave
   bleed bleed translate 
   page-width 50 pct 
@@ -60,7 +96,7 @@ gsave
   (Z) show-ctr-x
 grestore
 
-% FRONT COVER
+% front cover
 gsave 
   bleed  page-width add spine add 
   bleed  
@@ -71,9 +107,8 @@ gsave
   (A) show-ctr-x
 grestore 
 
-
+% spine-y Norman
 (regular) 200 use-font  
-% SPINE-y Norman
 gsave 
   bleed page-width add spine 2 div add  
   bleed  
@@ -83,6 +118,24 @@ gsave
   page-height 70 pct moveto 
   (Q) show-ctr-x
 grestore
+
+
+% front cover: a drawing
+gsave 
+  % put the origin near the center of the drawing
+  bleed  page-width add  spine add  page-width 2 div add
+  cover-height 50 pct  
+  translate 
+
+  % manually tweak the scale  
+  0.5 dup scale  
+
+  % draw a well-known constellation, as simple lines and dots  
+  % no labels are used here, just the basic shape
+  (constellaton-data-8859-1/orion.txt) run
+  
+grestore
+
   
 showpage
 
