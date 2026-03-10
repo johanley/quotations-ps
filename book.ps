@@ -19,7 +19,7 @@
   MARGIN-X ASPECT-RATIO mul 
   translate % to the bottom left of the work-box
   
-  idx 3 ge {
+  idx 3 ge  idx 197 le and {
     % show page numbers
     /GAP ht 6 pct def
     (regular) 80 use-font
@@ -266,9 +266,10 @@
   } ifelse
 } bind def
 
-%%BeginSetup               
-  /page-width  6.25 72 mul def
-  /page-height 9.25 72 mul def
+%%BeginSetup    
+   % 'US Trade' is 6" x 9"           
+  /page-width  6 72 mul def % The exact size seems to vary a bit in actual books
+  /page-height 9 72 mul def
   /ASPECT-RATIO page-height page-width div def % > 1.0 in this project
   /MARGIN-X page-width 10 pct def
   % wd and ht are for the work-box - the area where most of the content is placed
@@ -344,7 +345,33 @@ showpage
 
 QUOTES-FILE
 process-quotes-file-one-line-at-a-time 
- 
+
+
+showpage
+
+
+gsave 
+  wd 16 pct ht 60 pct translate % to the bottom-left of the image
+  0.5 setcolor
+  -5 -5 260   260  540 922 div mul rectfill
+
+  250            % the intended width of the image in the current CTM (not the pixel-width!)    
+  (pic/ArchForTheKing-slightly-brighter.jpg)  % the file name (in the current directory, in this case)
+  922            % the image-width in pixels
+  524           % the image-height in pixels
+  show-jpg
+grestore 
+
+
+(regular) 100 use-font
+wd 50 pct ht 10 pct moveto
+(Font: Garamond Premier Pro) show-ctr-x
+
+(italic) 100 use-font
+wd 50 pct ht 6 pct moveto
+(github.com/johanley/quotations-ps) show-ctr-x
+
+
 showpage
 
 % WARNING: YOU MAY HAVE ADD EMPTY PAGES HERE MANUALLY. 

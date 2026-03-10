@@ -1,0 +1,88 @@
+%!PS
+
+(using.ps) run
+(base.ps) using
+(fonts.ps) using
+(strings.ps) using
+(text-align.ps) using
+
+/inch {72 mul} bind def
+
+% pass three nums 0..255, R G B 
+/rgb-color {
+  3 {
+    255 div 
+    3 1 roll
+  } repeat
+  setcolor
+} bind def
+
+% WARNING: MUST MATCH SETTINGS IN book.ps
+/page-width  6 inch  def % that is, the INTERIOR pages
+/page-height 9 inch def
+
+/bleed 0.125 inch  def % industry standard is 1/8" bleed on all sides
+/spine 0.5 inch  def
+/cover-width page-width bleed add  2 mul  spine add def
+/cover-height page-height bleed 2 mul add def
+<<
+  /PageSize [cover-width cover-height]
+>> setpagedevice  
+<< /NeverEmbed [ ] >> setdistillerparams  % always embed fonts
+true setstrokeadjust  % minimizes off-by-one-pixel line issues
+
+%C:\Users\Owner\AppData\Local\Microsoft\Windows\Fonts
+/MyRegular /GaramondPremrPro latinize
+<< 
+  (regular) /MyRegular
+>>
+12 % default font size 
+init-my-fonts
+
+% background color
+/DeviceRGB setcolorspace
+235 221 183 rgb-color 
+0 0 cover-width cover-height rectstroke
+0 0 cover-width cover-height rectfill
+0 0 0 rgb-color 
+
+% font color
+2 2 54 rgb-color 
+
+(regular) 850 use-font  
+
+
+% BACK COVER
+gsave
+  bleed bleed translate 
+  page-width 50 pct 
+  page-height 70 pct moveto 
+  (Z) show-ctr-x
+grestore
+
+% FRONT COVER
+gsave 
+  bleed  page-width add spine add 
+  bleed  
+  translate 
+
+  page-width 50 pct 
+  page-height 70 pct moveto 
+  (A) show-ctr-x
+grestore 
+
+
+(regular) 200 use-font  
+% SPINE-y Norman
+gsave 
+  bleed page-width add spine 2 div add  
+  bleed  
+  translate 
+  
+  0
+  page-height 70 pct moveto 
+  (Q) show-ctr-x
+grestore
+  
+showpage
+
