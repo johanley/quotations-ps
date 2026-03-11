@@ -46,7 +46,8 @@
 /draw-star-point {
   newpath
   [/x /y /stellar-mag] {
-    /radius stellar-mag -1 mul 10 add def
+    %/radius stellar-mag -1 mul 7 add def
+    /radius stellar-mag 2.5 gt {0.30} {0.45} ifelse  def
     set-background-color
     x y radius 0 360 arc % to 'erase' star-lines a wee bit around the star
     fill
@@ -88,24 +89,24 @@ set-background-color
 set-foreground-color
 (regular) 850 use-font  
 
-% back cover
-gsave
-  bleed bleed translate 
-  page-width 50 pct 
-  page-height 70 pct moveto 
-  (Z) show-ctr-x
-grestore
+% % back cover
+% gsave
+  % bleed bleed translate 
+  % page-width 50 pct 
+  % page-height 70 pct moveto 
+  % (Z) show-ctr-x
+% grestore
 
-% front cover
-gsave 
-  bleed  page-width add spine add 
-  bleed  
-  translate 
+% % front cover
+% gsave 
+  % bleed  page-width add spine add 
+  % bleed  
+  % translate 
 
-  page-width 50 pct 
-  page-height 70 pct moveto 
-  (A) show-ctr-x
-grestore 
+  % page-width 50 pct 
+  % page-height 70 pct moveto 
+  % (A) show-ctr-x
+% grestore 
 
 % spine-y Norman
 (regular) 200 use-font  
@@ -124,17 +125,35 @@ grestore
 gsave 
   % put the origin near the center of the drawing
   bleed  page-width add  spine add  page-width 2 div add
-  cover-height 50 pct  
+  cover-height 55 pct  
   translate 
 
   % manually tweak the scale  
-  0.5 dup scale  
+  7 dup scale  
+  0.2 setlinewidth
 
   % draw a well-known constellation, as simple lines and dots  
   % no labels are used here, just the basic shape
-  (constellaton-data-8859-1/orion.txt) run
-  
+  (constellaton-data-8859-1/orion.ps) run
 grestore
+
+
+% back cover: a drawing
+gsave 
+  % put the origin near the center of the drawing
+  bleed  page-width 2 div add
+  cover-height 55 pct  
+  translate 
+
+  % manually tweak the scale  
+  7 dup scale  
+  0.2 setlinewidth
+
+  % draw a well-known constellation, as simple lines and dots  
+  % no labels are used here, just the basic shape
+  (constellaton-data-8859-1/orion.ps) run
+grestore
+
 
   
 showpage
