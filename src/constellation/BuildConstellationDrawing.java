@@ -62,9 +62,6 @@ public final class BuildConstellationDrawing {
   private List<List<Integer>> polylines = new ArrayList<>();
   private Map<Integer, Star> lineStars = new LinkedHashMap<>();
   
-  //private List<UnattachedStarTarget> unattachedStarTargets;
-  //private List<Star> unattachedStars;
-  
   private static final String sp = " ";
   
   private void outputStarLines() throws IOException {
