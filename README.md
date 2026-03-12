@@ -39,5 +39,5 @@ The cover is generated like so:
 The PostScript programming language is used to read the data files and create a pleasing PDF, suitable for printing.
 The top-level PostScript file is `book.ps`. It uses the other PostScript files in this project.
 
-Years ago, I used *iText* Java library for creating PDF files programmatically.
+Years ago, I used the *iText* Java library for creating PDF files programmatically.
 I now much prefer using the PostScript language for such tasks. 
