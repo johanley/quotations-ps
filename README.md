@@ -1,4 +1,4 @@
-Generate a pleasing PDF from a text file containing quotations, collected over a lifetime of reading.
+**Generate a pleasing PDF from a text file containing quotations, collected over a lifetime of reading.**
 
 While reading a good book, I usually write down favourite passages.
 I have several thousand quotations collected in binders.
