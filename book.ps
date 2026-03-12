@@ -188,7 +188,7 @@
 /show-author-title {
   % measure the width first, in order to find the starting point for /show
   % be careful with the comma in between: three cases: a+comma+space+t, a, t
-  /size 80 def
+  /size 90 def
   (regular) size use-font
   /width-all 
     DASH str-width 
@@ -271,9 +271,9 @@
   /page-width  6 72 mul def % The exact size seems to vary a bit in actual books
   /page-height 9 72 mul def
   /ASPECT-RATIO page-height page-width div def % > 1.0 in this project
-  /MARGIN-X page-width 10 pct def
+  /MARGIN-X page-width 10 pct def % for 6" this gives 0.6" margin on each side
   % wd and ht are for the work-box - the area where most of the content is placed
-  /wd page-width MARGIN-X 2 mul sub def   
+  /wd page-width MARGIN-X 2 mul sub 0.97 mul def   % 97% because the ragged-right text gets too far right
   /ht wd ASPECT-RATIO mul def   
   <<
     /PageSize [page-width  page-height]
@@ -283,14 +283,19 @@
   true setstrokeadjust  % minimizes off-by-one-pixel line issues
 
   %C:\Users\Owner\AppData\Local\Microsoft\Windows\Fonts
-  /MyRegular /GaramondPremrPro latinize
-  /MyItalic /Times-Italic latinize
+  %/MyRegular /GaramondPremrPro latinize
+  %/MyItalic /Times-Italic latinize
+  /MyRegular /ACaslonPro-Regular latinize
+  /MyItalic /ACaslonPro-Italic latinize
+  
   << 
     (regular) /MyRegular
     (italic) /MyItalic
   >>
-  12 % default font size 
+  11 % default font size 
   init-my-fonts
+  % My model: "Jerusalem" by Simon Montefiore (Knopf, 2011)
+  /leading 1.2 11 mul def % this is a common leading, 120% of the type size
   
   /TITLE (And I Quote...) def
   /AUTHOR (John O'Hanley) def
@@ -309,7 +314,6 @@
   wd 45 pct ht 80 pct moveto 
   3 0 TITLE str-upper-case ashow-ctr-x
   
-  /leading 2 em def % needs a current font
   
 
 showpage
@@ -365,7 +369,7 @@ grestore
 
 (regular) 100 use-font
 wd 50 pct ht 10 pct moveto
-(Font: Garamond Premier Pro) show-ctr-x
+(Adobe Caslon Pro 11 \(leading 120%\)) show-ctr-x
 
 (italic) 100 use-font
 wd 50 pct ht 6 pct moveto

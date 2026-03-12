@@ -888,7 +888,7 @@ Maupassant, Guy de {
     toute l'ardeur et toute la puissance que nous prend l'amour, l'amour divin, ils les emploient à chercher de l'or,
     à songer à l'or, à amasser de l'or! L'homme, l'homme intelligent, vit pour toutes les grandes tendresses 
     désintéressées, les arts, l'amour, la science, les voyages, les livres; et s'il cherche l'argent, c'est parce 
-    que cela facilite les joies réelles de l'esprit et même le bonheur du cœur! Mais eux, ils n'ont rien dans l'esprit 
+    que cela facilite les joies réelles de l'esprit et même le bonheur du coeur! Mais eux, ils n'ont rien dans l'esprit 
     et dans le coeur que ce goût ignoble du trafic! Ils ressemblent aux hommes de valeur, ces écumeurs de la vie, comme 
     le marchand de tableaux ressemble au peintre, comme l'éditeur ressemble à l'écrivain, comme le directeur de théâtre 
     ressemble au poète.    
@@ -1123,7 +1123,7 @@ Ce pays nous ennuie, ô Mort! Appareillons!)
    
    J'invoque la muse familière, la citadine, la vivante, pour qu'elle m'aide à chanter les bons chiens, 
    les pauvres chiens, les chiens crottés, ceux-là que chacun écarte, comme pestiférés et pouilleux, 
-   excepté le pauvre dont ils sont les associés, et le poète qui les regarde d'un œil fraternel.
+   excepté le pauvre dont ils sont les associés, et le poète qui les regarde d'un oeil fraternel.
    
    Connaissez-vous la paresseuse Belgique, et avez-vous admiré comme moi tous ces chiens vigoureux 
    attelés à la charrette du boucher, de la laitière ou du boulanger, et qui témoignent, par leurs 
@@ -1358,9 +1358,9 @@ Crane, Stephen {
 Flaubert, Gustave {
   Madame Bovary {
     À la ville, avec le bruit des rues, le bourdonnement des théâtres et les clartés du bal, 
-    elles avaient des existences où le cœur se dilate, où les sens s'épanouissent. Mais elle, 
+    elles avaient des existences où le coeur se dilate, où les sens s'épanouissent. Mais elle, 
     sa vie était froide comme un grenier dont la lucarne est au nord, et l'ennui, araignée silencieuse, 
-    filait sa toile dans l'ombre à tous les coins de son cœur. 
+    filait sa toile dans l'ombre à tous les coins de son coeur. 
     
     Quel bonheur dans ce temps-là! quelle liberté! quel espoir! quelle abondance d'illusions!
      
@@ -1375,7 +1375,7 @@ Flaubert, Gustave {
     ...il accompagnait une femme d'une cinquantaine d'années, laide, magnifiquement vêtue, 
     et d'un rang social problématique.    
     
-    Les cœurs des femmes sont comme ces petits meubles à secret, pleins de tiroirs emboîtés les uns dans les 
+    Les coeurs des femmes sont comme ces petits meubles à secret, pleins de tiroirs emboîtés les uns dans les 
     autres; on se donne du mal, on se casse les ongles, et on trouve au fond quelque fleur desséchée, des 
     brins de poussière ou le vide!
     
@@ -1433,7 +1433,7 @@ Flaubert, Gustave {
     La rage de vouloir conclure est une des manies les plus funestes et les plus stériles qui appartiennent 
     à l'humanité. Chaque religion et chaque philosophie a prétendu avoir Dieu à elle, toiser l'infini et 
     connaître la recette du bonheur. Quel orgueil et quel néant! Je vois, au contraire, que les plus grands
-    génies et les plus grandes œuvres n'ont jamais conclu. Homère, Shakespeare, Goethe, tous les fils aînés 
+    génies et les plus grandes oeuvres n'ont jamais conclu. Homère, Shakespeare, Goethe, tous les fils aînés 
     de Dieu (comme dit Michelet) se sont bien gardés de faire autre chose que représenter. 
 
     Il n'y a pour moi dans le monde que les beaux vers, les phrases bien tournées, harmonieuses, chantantes, 
@@ -1789,7 +1789,7 @@ Proust, Marcel {
     Là où je cherchais les grandes lois, on m'appelait fouilleur de détails. 
     
     Depuis le jour de l'escalier, rien du monde, aucun bonheur, qu'il vînt de l'amitié des gens, 
-    des progrès de mon œuvre, de l'espérance de la gloire, ne parvenait plus à moi que comme un 
+    des progrès de mon oeuvre, de l'espérance de la gloire, ne parvenait plus à moi que comme un 
     si pâle soleil qu'il n'avait plus la vertu de me réchauffer, de me faire vivre, de me donner 
     un désir quelconque, et encore était-il trop brillant, si blême qu'il fût, pour mes yeux qui 
     préféraient se fermer, et je me retournais du côté du mur. 
