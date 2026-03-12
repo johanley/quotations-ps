@@ -4,7 +4,19 @@
 # The format is meant to be as easy to type in as possible, with little or no needless repetition.
 # There should be no tabs, and the encoding should be UTF-8.
 # 
-# Watch out for weird apostrophes! ' Do a mass-replace.
+# WATCH OUT for weird apostrophes! ' Do a mass-replace.
+# 
+# WATCH OUT for em(...) and preceding and trailing characters that are NOT whitespace.
+# Because my parsing is mediocre, such characters need to be inside the parens.
+# 
+# WATCH OUT FOR different kinds of quotation marks, all valid in 8859-1:
+#   - octal 047 hex 27 decimal 0039 close single quote (easy on my keyboard)
+#   - octal 140 hex 60 decimal 0096 open single quote (Back-quote, or Alt+0096)
+#   - octal 042 hex 22 decimal 0034 double quote (easy on my keyboard)
+#
+# WATCH OUT for the subtle distinction between two characters, both valid in 8859-1:
+#   - minus  octal /055 hex 2D decimal 0045 (easy on my keyboard, in multiple ways)
+#   ­ hyphen octal /255 hex AD decimal 0173 (Alt+0173); this one is smaller, and more pleasing
 # 
 # The hierarchy/structure is 
 #  author > title > quote
@@ -18,7 +30,7 @@
 #
 # Occasional special symbols:
 #  pre(...) - preserve white space (poetry)
-#  em(...) - emphasis/italics
+#  em(...) - emphasis/italics   
 
 Carl Jung {
  Psychology and Alchemy {
@@ -26,7 +38,7 @@ Carl Jung {
  }
  
  Collected Works, v.10 {
-   With many men of twenty-five the period of psychological puberty is not yet over.
+   With many men of twenty­five the period of psychological puberty is not yet over.
  }
 }
 
@@ -116,13 +128,13 @@ Socrates {
 
 Nietzsche, Friedrich {
   Thus Spoke Zarathustra {
-    "Behold, I am disease." - thus speaks the evil deed; that is its honesty.
+    "Behold, I am disease." ­ thus speaks the evil deed; that is its honesty.
   }
   
  Beyond Good and Evil {
- pre(- I do not like it.
-- Why? 
-- I am not up to it.
+ pre(­ I do not like it.
+­ Why? 
+­ I am not up to it.
 Has anyone ever answered like that?)
  }
 }
@@ -159,8 +171,8 @@ ZzzUnknown {
 }
 
 Brontë, Emily  {
-    Julian M. and A.G. Rochelle{
-    pre(Oh, dreadful is the check - intense the agony
+    Julian M. and A.G. Rochelle {
+    pre(Oh, dreadful is the check ­ intense the agony
 When the ear begins to hear and the eye begins to see; 
 When the pulse begins to throb, the brain to think again,
 The soul to feel the flesh and the flesh to feel the chain!)
@@ -173,7 +185,7 @@ Laing, R. D. {
  The Politics of Experience {
    We all live in the hope that authentic meeting between human beings can still occur.
    
-   Human beings seem to have an almost unlimited capacity for self-deception, for deceiving themselves into taking their own lies for the truth. 
+   Human beings seem to have an almost unlimited capacity for self­deception, for deceiving themselves into taking their own lies for the truth. 
    
    We have to realize that we are as deeply afraid to live and to love as to die. 
  }
@@ -225,12 +237,16 @@ Rimbaud, Arthur {
 }
 
 Dylan, Bob {
+  Shelter From The Storm {
  pre(Well I'm living in a foreign country,
 But I'm bound to cross the line.
 Beauty walks a razor's edge,
 Some day I'll make it mine.) 
+}
  
- The ghost of 'lectricity howls in the bones of her face.
+ Visions of Johanna { 
+   The ghost of 'lectricity howls in the bones of her face.
+ }
 }
 
 Shakespeare, William {
@@ -294,7 +310,7 @@ Upon the sweetest flower of the field)
     
     Hath no man's dagger here a point for me?
     
-    O God, that I were a man! I would eat his heart in the market-place.
+    O God, that I were a man! I would eat his heart in the market­place.
     
     I must discontinue your company.
   }
@@ -302,7 +318,7 @@ Upon the sweetest flower of the field)
 
 Gide, André  {
  Les nourritures terrestres {
-   At last we end by saying that He - the Unfindable - is everywhere, anywhere, and kneel down at haphazard.
+   At last we end by saying that He ­ the Unfindable ­ is everywhere, anywhere, and kneel down at haphazard.
    
    There were days when simply repeating to myself that two and two still made four was enough to fill me with positive beatitude... and other days when it was completely indifferent to me.
    
@@ -345,7 +361,7 @@ Postman, Neil {
     
      Think of Richard Nixon, or Jimmy Carter, or Billy Graham, or even Albert Einstein, and what will come to your mind is an image, 
      a picture of face, most likely a face on a television screen (in Einstein's case, a photograph of a face). 
-     Of words, nothing will come to mind. This is the difference between thinking in a word-centered culture and thinking in an image-centered culture.
+     Of words, nothing will come to mind. This is the difference between thinking in a word­centered culture and thinking in an image­centered culture.
      
      The problem is not that television presents us with entertaining subject matter, but that all subject matter is presented as 
      entertaining, which is another issue entirely.
@@ -362,7 +378,7 @@ Postman, Neil {
      
     In the Huxleyan prophecy, Big Brother does not watch us, by his choice; we watch him, by ours. There is no need for wardens,
     or gates or Ministries of Truth. When a population becomes distracted by trivia, when cultural life is redefined as a perpetual round of entertainments, 
-    when serious public conversation becomes a form of baby-talk... then culture-death is a clear possibility.
+    when serious public conversation becomes a form of baby­talk ... then culture­death is a clear possibility.
     
     Public consciousness has not yet assimilated the point that technology is ideology...
   }
@@ -372,21 +388,21 @@ Huxley, Aldous {
   Brave New World {
     She thinks of herself that way. She doesn't mind being meat.
     
-    The loving cup of strawberry ice-cream soma was passed from hand to hand and, with the formula "I drink to my annihilation," twelve times quaffed.
+    The loving cup of strawberry ice­cream soma was passed from hand to hand and, with the formula "I drink to my annihilation," twelve times quaffed.
     
     He was a mine of irrelevant information.
     
     He had discovered Time and Death and God.
     
-    But industrial civilization is only possible when there's no self-denial. 
-    Self-indulgence up to the very limits imposed by hygiene and economics. Otherwise the wheels stop turning.
+    But industrial civilization is only possible when there's no self­denial. 
+    Self­indulgence up to the very limits imposed by hygiene and economics. Otherwise the wheels stop turning.
     
     And if ever, by some unlucky chance, anything unpleasant should somehow happen, why, there's always soma to give you a holiday from the facts.
   }
 }
 
 O'Brien, Flann {
-  At Swim-Two-Birds {
+  At Swim­Two­Birds {
     "It is true that I will not", said Finn MacCool.
     
     I poked him in a manner offensive to propriety and greeted his turned face with a facetious ejaculation: "How is the boy!", I said.
@@ -409,7 +425,7 @@ Thoreau, H. D. {
   No man is rich enough to keep a poet in his pay.
   
   Walden {
-    For many years I was self-appointed inspector of snow storms and rain storms, and did my duty faithfully.
+    For many years I was self­appointed inspector of snow storms and rain storms, and did my duty faithfully.
     
     But lo! men have become the tools of their tools.
     
@@ -419,7 +435,7 @@ Thoreau, H. D. {
     A lady once offered me a mat, but as I had no room to spare within the house, nor time to spare within or without to shake it, I declined it, 
     preferring to wipe my feet on the sod before my door. It is best to avoid the beginnings of evil.
 
-    Time is but the stream I go a-fishin in.
+    Time is but the stream I go a­fishin in.
     
     I find it wholesome to be alone the greater part of the time. To be in company, even with the best, is soon wearisome and dissipating. 
     I love to be alone. I never found the companion so companionable as solitude.
@@ -505,7 +521,7 @@ Epictetus {
   
   ...we prefer to practise and rehearse anything rather than how to be untrammelled and free.
   
-  For the origin of sorrow is this - to wish for something that does not come to pass.
+  For the origin of sorrow is this ­ to wish for something that does not come to pass.
   
   And I am not saying that it is not permissible to groan, only do not groan in  the centre of your being.
   
@@ -520,17 +536,17 @@ Epictetus {
 }
 
 Hugo, Victor {
- Quatre-vingt-treize {
-   pre(- Préparez-vous.
-- A quoi?
-- A mourir.
-- Pourquoi? demanda le vieillard.)
+ Quatre­vingt­treize {
+   pre(­ Préparez­vous.
+­ A quoi?
+­ A mourir.
+­ Pourquoi? demanda le vieillard.)
  }
 }
 
 Musset, Alfred de {
   Fantasio {
-    Saint-Jean est mort? Le bouffon du roi est mort? Qui a pris sa place? le ministre de la justice?
+    Saint­Jean est mort? Le bouffon du roi est mort? Qui a pris sa place? le ministre de la justice?
     
     Je ne sais s'il y a une providence, mais c'est amusant d'y croire.
     
@@ -620,7 +636,7 @@ Joyce, James {
     
     Mr. Bloom was rather inclined to poohpooh the suggestion as egregious balderdash.
     
-    Fine lump of a woman, all the same, the soi-disant town clerk, Henry Campbell remarked, and plenty of her.
+    Fine lump of a woman, all the same, the soi­disant town clerk, Henry Campbell remarked, and plenty of her.
     
     He kissed the plump mellow yellow smellow lemons of her rump, on each plump melonous hemisphere, in their 
     mellow yellow furrow, with obscure prolonged provocative mellonsmellonous osculation.
@@ -679,18 +695,18 @@ Hardy, Thomas {
   }
   
   Far From the Madding Crowd {
-    ...and used all the hair-oil he possessed upon his usually dry, sandy, and inextricably curly hair, till he had deepened it to a splendidly 
-    novel color, between that of guano and Roman cement, making it stick to his head like mace round a nutmeg, or wet sea-weed round a 
+    ...and used all the hair­oil he possessed upon his usually dry, sandy, and inextricably curly hair, till he had deepened it to a splendidly 
+    novel color, between that of guano and Roman cement, making it stick to his head like mace round a nutmeg, or wet sea­weed round a 
     boulder after the ebb.    
     
     The dog took no notice, for he had arrived at an age at which all superfluous barking was cynically avoided as 
-    a waste of breath - in fact, he never barked even at the sheep except to order, when it was done with an absolutely neutral countenance, 
-    as a sort of Commination-service which, though offensive, had to be gone through once now and then to frighten the flock for their own good.
+    a waste of breath ­ in fact, he never barked even at the sheep except to order, when it was done with an absolutely neutral countenance, 
+    as a sort of Commination­service which, though offensive, had to be gone through once now and then to frighten the flock for their own good.
     
     Seeing his advance take the form of an attitude threatening a possible enclosure, if not compression, of her person, she edged off around the 
     bush.
     
-    ...a young married man, who having no individuality worth mentioning was known as "Susan Tall's husband".
+    ...a young married man, who having no individuality worth mentioning was known as "Susan Tall's husband."
     
     Kiss my foot, sir; my face is for mouths of consequence.
     
@@ -699,33 +715,33 @@ Hardy, Thomas {
   }
   
   Life's Little Ironies {
-    He himself was full of vague latter-day glooms and popular melancholies.
+    He himself was full of vague latter­day glooms and popular melancholies.
     
     There were tones in it which bred the immediate conviction that indolence and averseness to systematic application were all that lay between 
     "Mop" and the career of a second Paganini.
     
-    Occasionally Mop could produce the aforesaid moving effect upon the souls of grown-up persons, 
+    Occasionally Mop could produce the aforesaid moving effect upon the souls of grown­up persons, 
     especially young women of fragile and responsive organization.
     
     ...his was a nature not greatly dependent upon the ministrations of the other sex for its comforts.
     
-    Too steady-going to be "a buck" (as fast and unmarried men were then called), he was an approximately fashionable man of 
+    Too steady­going to be "a buck" (as fast and unmarried men were then called), he was an approximately fashionable man of 
     mild type.
   }
    
   Jude the Obscure {
-    Necessary meditations on the actual, including the mean bread-and-cheese question, dissipated the phantasmal for a while, and 
+    Necessary meditations on the actual, including the mean bread­and­cheese question, dissipated the phantasmal for a while, and 
     compelled Jude to smother higher thinkings under immediate needs.
     
     The barmaid concocted the mixture with the bearing of a person compelled to live amongst animals of an inferior species...
     
-    Here he stood, looking forth at the school, whence he could hear the usual sing-song tones of the 
+    Here he stood, looking forth at the school, whence he could hear the usual sing­song tones of the 
     little voices that had not learnt Creation's groan.
   }
   
   Under the Greenwood Tree {
     "Well!", said Mrs. Penny, flopping into a chair, "my heart hasn't been in such a thumping state of uproar since I used to sit up 
-    on old Midsummer-eves to see who my husband was going to be."
+    on old Midsummer­eves to see who my husband was going to be."
     
     "I fancy I've seen him look across at Miss Day in a warmer way than Christianity asked for..."
     
@@ -735,14 +751,14 @@ Hardy, Thomas {
     Thereupon he plunged in his hands, and they paddled together. It being the first time in his life that he touched female 
     fingers under water, Dick duly registered the sensation as rather a nice one.
     
-    ...they were never to be seen drawing the back of the hand across the mouth after drinking - a local English custom of 
+    ...they were never to be seen drawing the back of the hand across the mouth after drinking ­ a local English custom of 
     extraordinary antiquity, but stated by Fancy to be decidedly dying out among the better classes of society.
   }
   
   A Pair of Blue Eyes {
     A delightful place to be buried in, postulating that delight can accompany a man to his tomb under any circumstances.
     
-    ...the eternal hills and tower behind them were grayish-brown; the sky, dropping behind all, grey of the 
+    ...the eternal hills and tower behind them were grayish­brown; the sky, dropping behind all, grey of the 
     purest melancholy.
     
     I always did doubt a man's being a gentleman if his palate has no acquired tastes. 
@@ -763,9 +779,9 @@ Hardy, Thomas {
     preferred a conjectural pursuit.
     
     Fitzpiers examined so closely that his breath touched her tenderly, at which their eyes rose to 
-    an encounter - hers showing themselves as deep and mysterious as interstellar space.
+    an encounter ­ hers showing themselves as deep and mysterious as interstellar space.
   }
-  The Trumpet-Major {
+  The Trumpet­Major {
     He threw fictitiousness into his very gait, even now, when there was nobody to see him, and struck out at stems 
     of wild parsley with his regimental switch as he had used to do when soldiering was new to him, and life in general a 
     charming experience.
@@ -825,7 +841,7 @@ Blair, Hugh {
    The use and importance of Precision, may be deduced from the nature of the human mind. It never can view, clearly and distinctly, 
    above one object at a time.   
    
-   Thought and language act and re-act upon each other mutually. Logic and rhetoric have here, as in many other cases, a strict connexion; 
+   Thought and language act and re­act upon each other mutually. Logic and rhetoric have here, as in many other cases, a strict connexion; 
    and he that is learning to arrange his sentences with accuracy and order, is learning, at the same time, to think with accuracy and order... 
 
    To pronounce with a proper degree of slowness, and with a full and clear articulation, is the first thing to be studied by all who begin 
@@ -867,7 +883,7 @@ Maupassant, Guy de {
    l'échelle de l'humanité descendue jusqu'à nous, presque rien, un champ, presque rien! La terre les reprend, l'oubli les efface. Adieu!
   }
   L'inutile beauté {
-    Qu'y a-t-il, en effet, de plus ignoble, de plus répugnant que cet acte ordurier et ridicule de la reproduction des 
+    Qu'y a­t­il, en effet, de plus ignoble, de plus répugnant que cet acte ordurier et ridicule de la reproduction des 
     êtres, contre lequel toutes les âmes delicates sont et seront éternellement révoltées?
   }
   Mont Oriol {
@@ -880,9 +896,9 @@ Maupassant, Guy de {
     Il faut toujours chercher, trouver, inventer, tout comprendre, tout prévoir, tout combiner, tout oser. Le grand combat, 
     aujourd'hui, c'est avec l'argent qu'on le livre. 
     
-    C'est bon, dit-il, d'être jeune, quelquefois.
+    C'est bon, dit­il, d'être jeune, quelquefois.
     
-    Laissez donc, dit-il, je la connais, leur intelligence, à tous ces brasseurs d'affaires. Ils n'ont qu'une chose en 
+    Laissez donc, dit­il, je la connais, leur intelligence, à tous ces brasseurs d'affaires. Ils n'ont qu'une chose en 
     tête : l'argent! Toutes les pensées que nous donnons aux belles choses, tous les actes que nous perdons pour nos 
     caprices, toutes les heures que nous jetons à nos distractions, toute la force que nous gaspillons pour nos plaisirs, 
     toute l'ardeur et toute la puissance que nous prend l'amour, l'amour divin, ils les emploient à chercher de l'or,
@@ -908,7 +924,7 @@ Maupassant, Guy de {
     d'une pierre ou marqués d'une croix, tandis que les vivants occupent tant de place et font tant de bruit, ces imbéciles.
   }
   Ma femme {
-    J'avais trente-cinq ans, et je ne pensais pas plus à me marier qu'à me pendre. 
+    J'avais trente­cinq ans, et je ne pensais pas plus à me marier qu'à me pendre. 
   }
   Une vie {
     Quelques pigeons se promenaient au bord du ruisseau, cherchant leur vie.
@@ -931,7 +947,7 @@ Maupassant, Guy de {
     perdu le don de faire de la beauté avec des pierres, le mystérieux secret de la séduction par les lignes, 
     le sens de la grâce dans les monuments. Nous paraissons ne plus comprendre, ne plus savoir que la seule 
     proportion d'un mur peut donner à l'esprit la même sensation de joie artistique, la même émotion secrète 
-    et profonde qu'un chef-d'oeuvre de Rembrandt, de Velasquez ou de Véronèse.
+    et profonde qu'un chef­d'oeuvre de Rembrandt, de Velasquez ou de Véronèse.
   }
   Sur l'eau {
     Mais d'autres hommes, parcourant d'un éclair de pensée le cercle étroit des satisfactions possibles, 
@@ -1011,11 +1027,11 @@ Tolstoy, Leo {
     liked his cigar after dinner, for the slight haze it produced in his head.
     
     The conversation never flagged for a minute, so that the old princess, who, in case a topic was 
-    lacking, always kept two heavy cannon in reserve - classical versus modern education, and 
-    general military conscription - did not have to move them up...
+    lacking, always kept two heavy cannon in reserve ­ classical versus modern education, and 
+    general military conscription ­ did not have to move them up...
     
     ...but Vronsky went on looking at him as at a lamppost, and the young man grimaced, feeling that he 
-    was losing his self-possession under the pressure of this non-recognition of himself as a human being.
+    was losing his self­possession under the pressure of this non­recognition of himself as a human being.
     
     It showed him the eternal error people make in imagining that happiness is the realization of desires.
     
@@ -1026,8 +1042,8 @@ Tolstoy, Leo {
 
 Lafferrière, Dany {
   Pays sans chapeau {
-    Juste au pied du morne Nelhio, le cimetière de Port-au-Prince, comme un lot de diamants mal taillés. 
-    C'est le lieu du rendez-vous générale.
+    Juste au pied du morne Nelhio, le cimetière de Port­au­Prince, comme un lot de diamants mal taillés. 
+    C'est le lieu du rendez­vous générale.
   }
 }
 
@@ -1039,14 +1055,14 @@ Eliot, George {
     the sweet flower of courtesy is not a growth of such homes as the Red House.
   }
   The Sad Fortunes of the Reverend Amos Barton {
-    ...for in bucolic society five-and-twenty years ago, the human animal of the male sex was understood to be 
+    ...for in bucolic society five­and­twenty years ago, the human animal of the male sex was understood to be 
     perpetually athirst, and "something to drink" was as necessary a condition of thought as Time and Space.
     
     Every man who is not a monster, a mathematician, or a mad philosopher, is the slave of some woman or other.
     
     The snow lay thick upon the graves...
   }
-  Mr. Gilfil's Love-Story {
+  Mr. Gilfil's Love­Story {
     You already suspect that the Vicar did not shine in the more spiritual functions of his office; and indeed, the utmost 
     I can say for him in this respect is, that he performed those functions with undeviating attention to brevity and despatch.
   }
@@ -1054,7 +1070,7 @@ Eliot, George {
     Harold Transome was neither the dissolute cosmopolitan so vigorously sketched by the em(Tory Herald,) 
     nor the intellectual giant and moral lobster suggested by the liberal imagination of the em(Watchman.)
     
-    Harold preferred a slow-witted large-eyed woman, silent and affectionate, with a load of black hair 
+    Harold preferred a slow­witted large­eyed woman, silent and affectionate, with a load of black hair 
     weighing much more heavily than her brains.
     
     No system, religious or political, I believe, has laid it down as a principle that all men are alike virtuous, or even that all
@@ -1070,18 +1086,18 @@ Eliot, George {
     
     Mr. Casaubon... concluded that the poets had much exaggerated the force of masculine passion.
     
-    The remark was taken up by Mr. Chichely, a middle-aged bachelor and coursing celebrity, who had a 
+    The remark was taken up by Mr. Chichely, a middle­aged bachelor and coursing celebrity, who had a 
     complexion something like an Easter egg, a few hairs carefully arranged, and a carriage 
     implying the consciousness of a distinguished appearance.
     
     Plain women he regarded as he did the other severe facts of life, to be faced with philosophy and investigated by science.
     
     Only a few children in Middlemarch looked blonde by the side of Rosamond, and the slim figure 
-    displayed by her riding-habit had delicate undulations.
+    displayed by her riding­habit had delicate undulations.
     
-    The best piety is to enjoy - when you can. You are doing the most then to save the earth's character as an agreeable planet.
+    The best piety is to enjoy ­ when you can. You are doing the most then to save the earth's character as an agreeable planet.
     
-    "Now aunt," he went on, rubbing his hands and looking at Miss Noble, who was making tender little beaver-like noises...
+    "Now aunt," he went on, rubbing his hands and looking at Miss Noble, who was making tender little beaver­like noises...
     
     The iron had not entered his soul, but he had begun to imagine what the sharp edge would be.
     
@@ -1112,25 +1128,25 @@ Ce pays nous ennuie, ô Mort! Appareillons!)
    pierreux d'une capitale, scintillement des étoiles, explosion des lanternes, vous êtes le 
    feu d'artifice de la déesse Liberté!
    
-   Les illusions, - me disait mon ami, - sont aussi innombrables peut-être que les rapports 
-   des hommes entre eux, ou des hommes avec les choses. Et quand l'illusion disparaît, c'est-à-dire 
+   Les illusions, ­ me disait mon ami, ­ sont aussi innombrables peut­être que les rapports 
+   des hommes entre eux, ou des hommes avec les choses. Et quand l'illusion disparaît, c'est­à­dire 
    quand nous voyons l'être ou le fait tel qu'il existe en dehors de nous, nous éprouvons un bizarre 
    sentiment, compliqué moitié de regret pour le fantôme disparu, moitié de surprise agréable devant 
    la nouveauté, devant le fait réel.
    
-   Il est l'heure de s'enivrer! Pour n'être pas les esclaves martyrisés du Temps, enivrez-vous; 
-   enivrez-vous sans cesse! De vin, de poésie ou de vertu, à votre guise.
+   Il est l'heure de s'enivrer! Pour n'être pas les esclaves martyrisés du Temps, enivrez­vous; 
+   enivrez­vous sans cesse! De vin, de poésie ou de vertu, à votre guise.
    
    J'invoque la muse familière, la citadine, la vivante, pour qu'elle m'aide à chanter les bons chiens, 
-   les pauvres chiens, les chiens crottés, ceux-là que chacun écarte, comme pestiférés et pouilleux, 
+   les pauvres chiens, les chiens crottés, ceux­là que chacun écarte, comme pestiférés et pouilleux, 
    excepté le pauvre dont ils sont les associés, et le poète qui les regarde d'un oeil fraternel.
    
-   Connaissez-vous la paresseuse Belgique, et avez-vous admiré comme moi tous ces chiens vigoureux 
+   Connaissez­vous la paresseuse Belgique, et avez­vous admiré comme moi tous ces chiens vigoureux 
    attelés à la charrette du boucher, de la laitière ou du boulanger, et qui témoignent, par leurs 
    aboiements triomphants, du plaisir orgueilleux qu'ils éprouvent à rivaliser avec les chevaux?   
  }
  Le voyage {
- pre(Mais les vrais voyageurs sont ceux-là seuls qui partent
+ pre(Mais les vrais voyageurs sont ceux­là seuls qui partent
 Pour partir, coeurs légers, semblables aux ballons,
 De leur fatalité jamais ils ne s'écartent,
 Et, sans savoir pourquoi, disent toujours : Allons!)
@@ -1170,7 +1186,7 @@ Vigny, Alfred de {
     ...Il ne lui faut que deux choses: la vie et la rêverie; le em(pain) et le em(temps.)
   }
   Servitudes et grandeurs militaires {
-   L'admiration est corrumpue et corruptrice. On doit bien faire pour soi-même, et non pour le bruit.
+   L'admiration est corrumpue et corruptrice. On doit bien faire pour soi­même, et non pour le bruit.
   }
 }
 
@@ -1181,7 +1197,7 @@ Quintilian {
     rarely of such a kind that their validity cannot be shaken and overthrown in some particular or other.
     
     If therefore we have received no fairer gift from heaven than speech, what shall we regard as so worthy of 
-    laborious cultivation, or in what should we sooner desire to excel our fellow-men, than that in which humanity 
+    laborious cultivation, or in what should we sooner desire to excel our fellow­men, than that in which humanity 
     excels all other living things?
     
     Style has three kinds of excellence: correctness, lucidity, and elegance.
@@ -1198,7 +1214,7 @@ Quintilian {
 
 Kipling, Rudyard {
   Kim {
-    "Since when have the hill-asses owned all Hindustan?" The retort was a swift and brilliant sketch 
+    "Since when have the hill­asses owned all Hindustan?" The retort was a swift and brilliant sketch 
     of Kim's pedigree for three generations.
     
     There was nothing in his composition to which drill and routine appealed.
@@ -1228,7 +1244,7 @@ Rumi {
   
   Whoever is served that cup keeps quiet.
   
-  That broken-down lowliness is the reality, not the language! Forget phraseology. 
+  That broken­down lowliness is the reality, not the language! Forget phraseology. 
   I want burning, em(burning!)
   
   People who insult me are only polishing the mirror.
@@ -1248,15 +1264,15 @@ Amis, Martin {
     The target is driving along. Without a care in the world, as they say. Although of course no one old enough to drive is 
     without a care in the world. No one old enough to drive a trike is without a care in the world.
     
-    It would seem that the universe is thirty billion light-years across and every inch of it would kill us if 
+    It would seem that the universe is thirty billion light­years across and every inch of it would kill us if 
     we went there. This is the position of the universe with regard to human life.
     
     In appearance Frances Ort suggested a rainbow coalition of the chromosomes. She could probably go anywhere in the five 
-    boroughs - Harlem, Little Astoria, Chinatown - and provoke no comment other than the usual incitements to immediate and 
+    boroughs ­ Harlem, Little Astoria, Chinatown ­ and provoke no comment other than the usual incitements to immediate and 
     rigorous sexual congress.
   }
   Time's Arrow {
-    From my point of view, work is an eight-hour panic attack.
+    From my point of view, work is an eight­hour panic attack.
     
     The humans had grown their winter coats, and the high buildings trembled in the tight grip of their stress equations.
     
@@ -1331,12 +1347,12 @@ Dostoyevsky, Fyodor {
    And all because I was so confoundedly bored, gentlemen, all because I was so 
    horribly bored. Crushed by doing nothing.
    
-   Question - who is he? Answer - a loafer. I must say it would have been a real pleasure to have heard that said about 
+   Question ­ who is he? Answer ­ a loafer. I must say it would have been a real pleasure to have heard that said about 
    myself, for it would have meant that a positive definition had been found for me and that there was something one 
-   could say about me. "A loafer!" - why, it's a title, a purpose in life. It's a career, gentlemen, a career!
+   could say about me. "A loafer!" ­ why, it's a title, a purpose in life. It's a career, gentlemen, a career!
    
    Let us suppose, gentlemen, that man is not stupid... But if he is not stupid, he is monstrously ungrateful. 
-   Phenomenally ungrateful. I'm even inclined to believe that the best definition of man is - a creature who walks on 
+   Phenomenally ungrateful. I'm even inclined to believe that the best definition of man is ­ a creature who walks on 
    two legs and is ungrateful.
    
    Is it not possible that man loves something besides prosperity? Perhaps he is just as fond of suffering?
@@ -1349,7 +1365,7 @@ Dostoyevsky, Fyodor {
 Crane, Stephen {
   The Red Badge of Courage {
     "I'm commencin' t' feel pretty bad," said the tattered man, suddenly breaking one of his little silences. 
-    "I'm commencin' t' feel pretty damn bad".
+    "I'm commencin' t' feel pretty damn bad."
     
     It appeared that the swift wings of their desires would have shattered against the iron gates of the impossible.
   }
@@ -1362,7 +1378,7 @@ Flaubert, Gustave {
     sa vie était froide comme un grenier dont la lucarne est au nord, et l'ennui, araignée silencieuse, 
     filait sa toile dans l'ombre à tous les coins de son coeur. 
     
-    Quel bonheur dans ce temps-là! quelle liberté! quel espoir! quelle abondance d'illusions!
+    Quel bonheur dans ce temps­là! quelle liberté! quel espoir! quelle abondance d'illusions!
      
     Emma ressemblait à toutes les maîtresses; et le charme de la nouveauté, peu à peu tombant comme un vêtement, 
     laissait voir à nu l'éternelle monotonie de la passion, qui a toujours les mêmes formes et le même langage.     
@@ -1379,15 +1395,15 @@ Flaubert, Gustave {
     autres; on se donne du mal, on se casse les ongles, et on trouve au fond quelque fleur desséchée, des 
     brins de poussière ou le vide!
     
-    Après avoir passé successivement par la demi-tasse, le grog, le bischof, le vin chaud et même l'eau rougie, 
-    il était revenu à la bière; et, de demi-heure en demi-heure, laissait tomber ce mot : «Bock!», ayant 
+    Après avoir passé successivement par la demi­tasse, le grog, le bischof, le vin chaud et même l'eau rougie, 
+    il était revenu à la bière; et, de demi­heure en demi­heure, laissait tomber ce mot : «Bock!», ayant 
     réduit son langage à l'indispensable.
   
     Des années passèrent; et il supportait le désoeuvrement de son intelligence et l'inertie de son coeur.
   }
   Lettre à Guy de Maupassant {
     Je ne sais pas si vous avez du talent. Ce que vous m'avez apporté prouve une certaine intelligence, mais 
-    n'oubliez point ceci, jeune homme, que le talent - suivant le mot de Buffon - n'est qu'une longue patience. Travaillez.
+    n'oubliez point ceci, jeune homme, que le talent ­ suivant le mot de Buffon ­ n'est qu'une longue patience. Travaillez.
   }
   
   Si robuste que l'on soit...on se sent comme broyé par la sottise universelle.
@@ -1414,12 +1430,12 @@ Flaubert, Gustave {
   artist em(ought not to exist.)
   
   Pensées {
-    L'artiste doit être dans son oeuvre comme Dieu dans la création, invisible et tout-puissant, qu'on le sente 
+    L'artiste doit être dans son oeuvre comme Dieu dans la création, invisible et tout­puissant, qu'on le sente 
     partout, mais qu'on ne le voie pas.
     
     Le succès est une conséquence et ne doit pas être un but.
     
-    S'écarter des journaux! la haine de ces boutiques-là est le commencement de l'amour du Beau.
+    S'écarter des journaux! la haine de ces boutiques­là est le commencement de l'amour du Beau.
     
     Tout est là: l'amour de l'Art.
     
@@ -1440,7 +1456,7 @@ Flaubert, Gustave {
     les beaux couchers de soleil, les clairs de lune, les tableaux colorés, les marbres antiques et les têtes 
     accentuées. Au delà, rien.    
     
-    La masse, le nombre est toujours idiot. Je n'ai pas beaucoup de convictions, mais j'ai celle-là fortement.
+    La masse, le nombre est toujours idiot. Je n'ai pas beaucoup de convictions, mais j'ai celle­là fortement.
     
     Le mépris de la gloriole et du gain est la première marche pour atteindre le Beau...
   }
@@ -1478,12 +1494,12 @@ Coupland, Douglas {
 
 Stendhal {
   Le rouge et le noir {
-    Le maire de Verrières devait une réputation d'esprit et surtout de bon ton à une demi-douzaine de plaisanteries 
+    Le maire de Verrières devait une réputation d'esprit et surtout de bon ton à une demi­douzaine de plaisanteries 
     dont il avait hérité d'un oncle.
     
     Son éducation fut faite par la douleur.
     
-    Cette demoiselle, grande Franc-Comtoise, fort bien faite, et mise comme il le faut pour faire valoir un café...
+    Cette demoiselle, grande Franc­Comtoise, fort bien faite, et mise comme il le faut pour faire valoir un café...
     
     Le bonheur, pour ces seminaristes comme pour les héros des romans de Voltaire, consiste surtout à bien dîner.
   }
@@ -1506,8 +1522,8 @@ Sterne, Laurence {
     As soon as I sat down, he took his spectacles off, and putting them into a shagreen case, return'd them and the book
     into his pocket altogether. I half rose up, and made him a bow. Translate this into any civilized language in the world, 
     the sense is this: "Here's a poor stranger come in to the box; he seems as if he knew no body; and is never likely, was 
-    he to be seven years in Paris, if every man he comes near keeps his spectacles upon his nose - 'tis shutting the door 
-    of conversation absolutely, in his face - and using him worse than a German."
+    he to be seven years in Paris, if every man he comes near keeps his spectacles upon his nose ­ 'tis shutting the door 
+    of conversation absolutely, in his face ­ and using him worse than a German."
   }
 }
 
@@ -1518,7 +1534,7 @@ Findlay, Timothy {
 
 Dumas, Alexandre {
   Les trois mousquetaires {
-    Allons nous faire tuer où l'on nous dit d'aller. La vie vaut-elle la peine de faire autant de questions?
+    Allons nous faire tuer où l'on nous dit d'aller. La vie vaut­elle la peine de faire autant de questions?
   }
 }
 
@@ -1538,7 +1554,7 @@ Proust, Marcel {
     Je vis si résolument en dehors des contingences physiques que mes sens ne prennent pas la peine de me les notifier.
     
     Un petit coup au carreau, comme si quelque chose l'avait heurté, suivi d'une ample chute légère comme de 
-    grains de sable qu'on eût laissé tomber d'une fenêtre au-dessus, puis la chute s'étendant, se réglant, 
+    grains de sable qu'on eût laissé tomber d'une fenêtre au­dessus, puis la chute s'étendant, se réglant, 
     adoptant un rythme, devenant fluide, sonore, musicale, innombrable, universelle: c'était la pluie.
     
     Il se taisait, il regardait mourir leur amour.
@@ -1548,7 +1564,7 @@ Proust, Marcel {
     poison qu'on absorberait.
     
     Car l'un ne voulait pas d'un sucre d'orge rouge parce qu'il préférait le violet et l'autre, les larmes aux 
-    yeux, refusait une prune que voulait lui acheter sa bonne, parce que, finit-il par dire d'une voix 
+    yeux, refusait une prune que voulait lui acheter sa bonne, parce que, finit­il par dire d'une voix 
     passionnée: «J'aime mieux, l'autre prune, parce qu'elle a un ver!» 
     
     Dire que j'ai gâché des années de ma vie, que j'ai voulu mourir, que j'ai eu mon plus grand amour, 
@@ -1564,8 +1580,8 @@ Proust, Marcel {
     I live so resolutely apart from physical contingencies that my senses no longer trouble to inform me of them.
     
     An hour or so later he received a note from Odette, and at once recognized that large handwriting in which an affectation of 
-    British stiffness imposed an apparent discipline upon ill-formed characters, suggestive, perhaps, to 
-    less biased eyes than his, of an untidiness of mind, a fragmentary education, or a want of sincerity and will-power.
+    British stiffness imposed an apparent discipline upon ill­formed characters, suggestive, perhaps, to 
+    less biased eyes than his, of an untidiness of mind, a fragmentary education, or a want of sincerity and will­power.
     
     He could not explore the idea further, for a sudden access of that mental lethargy which was, with him, 
     congenital, intermittent and providential, happened at that moment to extinguish every particle of light 
@@ -1576,7 +1592,7 @@ Proust, Marcel {
     knew that, a moment later, they would go to enrich the collection of instruments in his torture chamber.
     
     Let's hope she'll refuse. Good God! Think of listening to Wagner for a whole fortnight with a woman who takes 
-    about as much interest in music as a tone-deaf newt - that would be fun!
+    about as much interest in music as a tone­deaf newt ­ that would be fun!
     
     Verdurin! What a name! Oh, it must be said that they're perfect specimens of their disgusting kind! 
     Thank God, it was high time that I stopped condescending to promiscuous intercourse with such infamy, such dung.
@@ -1594,13 +1610,13 @@ Proust, Marcel {
     
     Il me fallut l'accompagner dans un petit pavillon treillissé de vert, assez semblable aux bureaux 
     d'octroi désaffectés du vieux Paris, et dans lequel étaient depuis peu installés ce qu'on appelle en 
-    Angleterre un lavabo, et en France, par une anglomanie mal informée, des water-closets.
+    Angleterre un lavabo, et en France, par une anglomanie mal informée, des water­closets.
      
     Quoi, vous croyez qu'elle a un derrière bleu ciel comme les singes?
      
-    Et je me lassai d'attendre, bien que quelques habituées fort humbles, soi-disant ouvrières, mais toujours 
+    Et je me lassai d'attendre, bien que quelques habituées fort humbles, soi­disant ouvrières, mais toujours 
     sans travail, fussent venues me faire de la tisane et tenir avec moi une longue conversation à 
-    laquelle - malgré le sérieux des sujets traités - la nudité partielle ou complète de mes interlocutrices 
+    laquelle ­ malgré le sérieux des sujets traités ­ la nudité partielle ou complète de mes interlocutrices 
     donnait une savoureuse simplicité.
     
     La constante vision de ce bonheur imaginaire m'aidait à supporter la destruction du bonheur réel.
@@ -1626,13 +1642,13 @@ Proust, Marcel {
     ouverte, où par sa splendeur même et son luxe déplacé, il ajoutait encore à l'impression du désordre. 
   
     Mais avant tout j'avais ouvert mes rideaux dans l'impatience de savoir qu'elle était la Mer qui jouait 
-    ce matin-là au bord du rivage, comme une Néréïde. Car chacune de ces Mers ne restait jamais plus qu'un jour. 
+    ce matin­là au bord du rivage, comme une Néréïde. Car chacune de ces Mers ne restait jamais plus qu'un jour. 
     Le lendemain il y en avait une autre qui parfois lui ressemblait. Mais je ne vis jamais deux fois la même.
     
-    Comment s'appelle-t-il, cet ostrogoth-là, me demandait Albertine...
+    Comment s'appelle­t­il, cet ostrogoth­là, me demandait Albertine...
     
     Elle était de ces femmes à qui c'est un si grand plaisir de serrer la main qu'on est reconnaissant à la
-    civilisation d'avoir fait du shake-hand un acte permis entre jeunes gens et jeunes filles qui s'abordent. 
+    civilisation d'avoir fait du shake­hand un acte permis entre jeunes gens et jeunes filles qui s'abordent. 
   }
   Le côté de Guermantes {
     Nous sentons dans un monde, nous pensons, nous nommons dans un autre, nous pouvons entre les deux
@@ -1673,14 +1689,14 @@ Proust, Marcel {
     Mental equals and all that.
     
     And, indeed, I ought to have guessed this from her way of smiling, for I had already observed this sort of behavior when I saw the 
-    Princess of Luxembourg buying rye-bread rolls on the beach in Balbec to give to my grandmother, as though to a deer at the zoo.
+    Princess of Luxembourg buying rye­bread rolls on the beach in Balbec to give to my grandmother, as though to a deer at the zoo.
     
     The Courvoisiers had a less exalted notion of intelligence, and unless one belonged to their world, being intelligent came close to meaning
     "having probably murdered one's parents".
   }
   Sodome et Gomorrhe {
      Blottie toute seule derrière elle, une pauvre petite étoile allait servir d'unique compagne à la lune 
-     solitaire, tandis que celle-ci, tout en protégeant son amie, mais plus hardie et allant de l'avant, 
+     solitaire, tandis que celle­ci, tout en protégeant son amie, mais plus hardie et allant de l'avant, 
      brandirait comme une arme irrésistible, comme un symbole oriental, son ample et merveilleux croissant d'or.
      
     Il est mort! Mais non, on exagère, on exagère!
@@ -1691,23 +1707,23 @@ Proust, Marcel {
     
     Il voyait le peu qu'on pouvait attendre des affections humaines, il s'y était résigné.
     
-    Cependant l'aviateur sembla hésiter sur sa voie; je sentais ouvertes devant lui - devant moi, si 
-    l'habitude ne m'avait pas fait prisonnier - toutes les routes de l'espace, de la vie...
+    Cependant l'aviateur sembla hésiter sur sa voie; je sentais ouvertes devant lui ­ devant moi, si 
+    l'habitude ne m'avait pas fait prisonnier ­ toutes les routes de l'espace, de la vie...
     
-    Sans doute parlait-il ainsi par mécontentement de ne pas être invité, et aussi à cause de la satisfaction 
-    qu'ont les hommes «occupés» - fût-ce par le travail le plus sot - de «ne pas avoir le temps» de faire 
+    Sans doute parlait­il ainsi par mécontentement de ne pas être invité, et aussi à cause de la satisfaction 
+    qu'ont les hommes «occupés» ­ fût­ce par le travail le plus sot ­ de «ne pas avoir le temps» de faire 
     ce que vous faites.
   }
   La prisonnière {
     ...comme on fait du téléphone, instrument surnaturel devant les miracles duquel on s'émerveillait jadis, et 
     dont on se sert maintenant sans même y penser, pour faire venir son tailleur ou commander une glace.
     
-    Qu'y a-t-il de plus poétique que Xerxès, fils de Darius, faisant fouetter de verges la mer qui avait englouti ses vaisseaux?
+    Qu'y a­t­il de plus poétique que Xerxès, fils de Darius, faisant fouetter de verges la mer qui avait englouti ses vaisseaux?
     
     Quand elle dormait, je n'avais plus à parler, je savais que je n'étais plus regardé par elle, je n'avais plus 
-    besoin de vivre à la surface de moi-même.
+    besoin de vivre à la surface de moi­même.
     
-    Tantôt, par des jours irrémédiablement mauvais, disait-on, rien que la résidence dans la maison, 
+    Tantôt, par des jours irrémédiablement mauvais, disait­on, rien que la résidence dans la maison, 
     située au milieu d'une pluie égale et continue, avait la glissante douceur, le silence calmant, 
     l'intérêt d'une navigation; une autre fois, par un jour clair, en restant immobile dans mon lit, 
     c'était laisser tourner les ombres autour de moi comme d'un tronc d'arbre.
@@ -1775,13 +1791,13 @@ Proust, Marcel {
     Mais comme chaque fois que je me trouvais arraché à mes habitudes, sorti à une autre heure, dans un lieu nouveau, 
     j'éprouvais un vif plaisir.
     
-    J'avais trop experimenté l'impossibilité d'atteindre dans la réalité ce qui était au fond de moi-même.
+    J'avais trop experimenté l'impossibilité d'atteindre dans la réalité ce qui était au fond de moi­même.
     
-    ...le sens artistique, c'est-à-dire la soumission à la réalité intériere...
+    ...le sens artistique, c'est­à­dire la soumission à la réalité intériere...
     
     Le devoir et la tache d'un écrivain sont ceux d'un traducteur.
     
-    Ça me faisait toujours penser au vers de Victor Hugo: «Emporte le bonheur et laisse-moi l'ennui.» 
+    Ça me faisait toujours penser au vers de Victor Hugo: «Emporte le bonheur et laisse­moi l'ennui.» 
     
     Car je comprenais que mourir n'était pas quelque chose de nouveau, 
     mais qu'au contraire depuis mon enfance j'étais déjà mort bien des fois.
@@ -1791,7 +1807,7 @@ Proust, Marcel {
     Depuis le jour de l'escalier, rien du monde, aucun bonheur, qu'il vînt de l'amitié des gens, 
     des progrès de mon oeuvre, de l'espérance de la gloire, ne parvenait plus à moi que comme un 
     si pâle soleil qu'il n'avait plus la vertu de me réchauffer, de me faire vivre, de me donner 
-    un désir quelconque, et encore était-il trop brillant, si blême qu'il fût, pour mes yeux qui 
+    un désir quelconque, et encore était­il trop brillant, si blême qu'il fût, pour mes yeux qui 
     préféraient se fermer, et je me retournais du côté du mur. 
   }
 }
@@ -1814,15 +1830,15 @@ Alexander, Christopher {
   }
   The Nature of Order, Book 2 {
     Living structure in buildings can only be em(generated.) It cannot be created by brute force from designs... the 
-    building - its conception, plan design, detailed layout, structural design, and material detail are all 
+    building ­ its conception, plan design, detailed layout, structural design, and material detail are all 
     unfolded, step by step in time.
     
     Insofar as unfolded buildings are lovable, what we love about them is not their age but the rightness which we 
-    experience in them. This rightness got into them em(as a result of a step-by-step unfolding process.) We can 
+    experience in them. This rightness got into them em(as a result of a step­by­step unfolding process.) We can 
     see and feel the rightness. And we see it and feel it because it has a different geometric character from the character 
     which is created by "design".
     
-    The step-by-step approach works. The all-or-nothing does not work. This is the secret of biological evolution... It 
+    The step­by­step approach works. The all­or­nothing does not work. This is the secret of biological evolution... It 
     would be impossible for nature to "design" a system as complex as an organism all at once.
     
     As any designer will tell you, it is the first steps in a design process which count for most.
@@ -1830,10 +1846,10 @@ Alexander, Christopher {
     
     It is essential to form this vision of the emerging building em(in your mind's eye,) not in sketches on paper.
     Words and interior visions, when seen with your eyes closed, are more labile, more fluid, transformable, and 
-    three-dimensional, than sketches or physical designs.
+    three­dimensional, than sketches or physical designs.
     
-    ...to prune a design, and look at it over and over again, searching for any little parts that are not centers - and 
-    then work at it, compressing, cutting, simplifying, re-arranging, until every single part, and every part of 
+    ...to prune a design, and look at it over and over again, searching for any little parts that are not centers ­ and 
+    then work at it, compressing, cutting, simplifying, re­arranging, until every single part, and every part of 
     every part, and every part between the parts are all centers. This is tremendously hard work.
     
     The single most important thing that happens during the process of making anything, is the ever watchful task of getting
@@ -1853,10 +1869,10 @@ Alexander, Christopher {
     keep the em(feeling) constant, you em(have) to change the form.
     
     It is em(feeling,) above all, which has the greatest chance of dealing with the whole in a balanced way, because it is 
-    precisely the nature of feeling that it does embrace the whole - while intellectual ideas more often concentrate on parts and 
+    precisely the nature of feeling that it does embrace the whole ­ while intellectual ideas more often concentrate on parts and 
     end up getting them out of proportion.
     
-    Most present-day architects like em(talking) about construction, but are afraid of construction tools, and have little
+    Most present­day architects like em(talking) about construction, but are afraid of construction tools, and have little
     feeling for them. In many cases, getting their hands dirty scares them.
     
     The gradual rubbing together of phenomena to get the right result, the slow process of getting things right, is 
@@ -1865,8 +1881,8 @@ Alexander, Christopher {
   The Nature of Order, Book 1 {
     In the 20th century we have passed through a unique period, one in which architecture as a discipline has been in a 
     state that is almost unimaginably bad. Sometimes I think of it as a mass psychosis of unprecedented dimension, 
-    in which the people of earth - in large numbers and in almost all contemporary societies - have created a 
-    form of architecture which is against life, insane, image-ridden, hollow.
+    in which the people of earth ­ in large numbers and in almost all contemporary societies ­ have created a 
+    form of architecture which is against life, insane, image­ridden, hollow.
     
     For twenty years, I spent two or three hours a day looking at pairs of things... comparing them, and 
     asking myself: em(Which has more life?)
@@ -1874,7 +1890,7 @@ Alexander, Christopher {
     What I am proposing is that these observations of an observer's inner state are not merely a reflection of a person's
     attitude or psychology, but can actually be used to measure something real about the external world em(itself.)
     
-    Can it really be true that something as elusive as freedom - and perhaps even the deeper capacity to be human - depends in some 
+    Can it really be true that something as elusive as freedom ­ and perhaps even the deeper capacity to be human ­ depends in some 
     way on the environment?
   }
   The Nature of Order, Book 3 {
@@ -1891,7 +1907,7 @@ Alexander, Christopher {
     am seeing, are making it so beautiful?
     
     What will generate tranquility? The essence of it is pretty simple, but requires much concentration.
-    Stand in the place. Ask yourself what you should put there - a certain stone on the mantel, a color on a piece of wall, 
+    Stand in the place. Ask yourself what you should put there ­ a certain stone on the mantel, a color on a piece of wall, 
     the shape of an opening. For any of these, you ask, does it generate greater tranquility in me? 
     If it does, keep it. If it does not, reject it. Keep on doing that, for everything around you.
     And then, get rid of everything else.
@@ -1899,10 +1915,10 @@ Alexander, Christopher {
   The Nature of Order, Book 4 {
     ...the underlying design vocabulary of the 20th century, almost throughout the century, asserted that 
     designers should create structures that are "interesting", "pleasing", "fantastic", "exhilarating", "with elan", and
-    so on - anything but em(beautiful.) em(That) word has unalterable meaning, cannot be contaminated, and during 
+    so on ­ anything but em(beautiful.) em(That) word has unalterable meaning, cannot be contaminated, and during 
     the temporary insanity of the 20th century, struck a nerve which people could not tolerate.
     
-    What is the reason for this "food-like" character of the making process?
+    What is the reason for this "food­like" character of the making process?
     Why should it matter so much, whether a person makes something beautiful or not?
     Why should it have such a profound effect on the maker?
     
@@ -1916,40 +1932,40 @@ Alexander, Christopher {
   }
 }
 
-Villiers de L'Isle-Adam, A. de {
+Villiers de L'Isle­Adam, A. de {
   Deux augures {
     Le public ne lit pas un journal pour penser ou réfléchir, que diable! On lit comme on mange.
     
     Je ne veux, derrière moi, que le néant.
   }
   L'affichage céleste {
-    Ne serait-ce pas de quoi étonner la Grande Ourse elle-même si, soudainement, surgissait entre ses pattes sublimes, cette 
-    annonce inquietante: "Faut-il des corsets, oui ou non?"
+    Ne serait­ce pas de quoi étonner la Grande Ourse elle­même si, soudainement, surgissait entre ses pattes sublimes, cette 
+    annonce inquietante: "Faut­il des corsets, oui ou non?"
   }
   La convive des dernières fêtes {
     Lorsque Stendhal voulait écrire une histoire d'amour un peu sentimentale, il avait coutume, on le sait, 
-    de relire d'abord une demi-douzaine de pages du Code pénal pour, - disait-il, - se donner le ton.
+    de relire d'abord une demi­douzaine de pages du Code pénal pour, ­ disait­il, ­ se donner le ton.
   }
   Le désir d'être un homme {
     ...le vieil abîme des cieux...
   }
   L'intersigne {
-    Pour conclure, me dit Maucombe en se levant, nous sommes ici pour témoigner, - par nos oeuvres, nos pensées, 
-    nos paroles et notre lutte contre la Nature, - pour témoigner si em(nous pesons le poids.)
+    Pour conclure, me dit Maucombe en se levant, nous sommes ici pour témoigner, ­ par nos oeuvres, nos pensées, 
+    nos paroles et notre lutte contre la Nature, ­ pour témoigner si em(nous pesons le poids.)
     Et il termina par une citation de Joseph de Maistre: «Entre l'Homme et Dieu, il n'y a que l'Orgueil.»
   }
 }
 
 Richler, Mordecai {
   Barney's Version {
-    John Hughes-McNoughton, born into Westmount affluence, misplaced his moral compass years ago.
+    John Hughes­McNoughton, born into Westmount affluence, misplaced his moral compass years ago.
   }
 }
 
 Gibbon, Edward {
   Decline and Fall of the Roman Empire {
     His manners were less pure, but his character was equally amiable with that of his father. 
-    Twenty-two acknowledged concubines, and a library of sixty-two thousand volumes, attested the 
+    Twenty­two acknowledged concubines, and a library of sixty­two thousand volumes, attested the 
     variety of his inclinations; and from the productions which he left behind him, it appears that 
     the former as well as the latter were designed for use rather than for ostentation.
     
@@ -2006,7 +2022,7 @@ Shaw, George Bernard {
     of it, and to receive not a word of encouragement for their finest strokes.
   }
   The Doctor's Dilemma {
-    No man who is occupied in doing a very difficult thing, and doing it very well, ever loses his self-respect.
+    No man who is occupied in doing a very difficult thing, and doing it very well, ever loses his self­respect.
   }
   The Man of Destiny {
    The truth is the one thing nobody will believe.
@@ -2032,7 +2048,7 @@ Shaw, George Bernard {
 
 Baricco, Alessandro {
   Océan Mer {
-    Elle n'a pas de murs, Tombouctou, parce que là-bas ils pensent, depuis toujours, que sa beauté suffirait, à elle seule,
+    Elle n'a pas de murs, Tombouctou, parce que là­bas ils pensent, depuis toujours, que sa beauté suffirait, à elle seule,
     pour arrêter n'importe quel ennemi.
     
     pre(Plage. Et mer.
@@ -2180,7 +2196,7 @@ Kuhn, Thomas S. {
     The Copernican Revolution, as we know it, is scarcely to be found in the em(De Revolutionibus) and that is the second essential 
     incongruity of the text. 
     
-    During the century and a half following Galileo's death in 1642, a belief in the earth-centered universe was gradually 
+    During the century and a half following Galileo's death in 1642, a belief in the earth­centered universe was gradually 
     transformed from an essential sign of sanity to an index, first, of inflexible conservatism, then of excessive parochialism, and 
     finally of complete fanaticism.
   }
@@ -2255,9 +2271,9 @@ Whitman, Walt {
     I and this mystery here we stand.
     
     pre(I bequeath myself to the dirt to grow from the grass I love, 
-If you want me again look for me under your boot-soles.)
+If you want me again look for me under your boot­soles.)
   
-  If you would understand me go to the heights or water-shore.
+  If you would understand me go to the heights or water­shore.
   The nearest gnat is an explanation...
 
     And I or you pocketless of a dime may purchase the pick of the earth,
@@ -2271,15 +2287,15 @@ If you want me again look for me under your boot-soles.)
 
 Sigourney, Lydia {
   The Stars {
-    pre(Ho! bold Orion, with thy lion-shield;
+    pre(Ho! bold Orion, with thy lion­shield;
 What tidings from the chase? what monsters slain?)
   }
 }
 
 Lovelock, James {
-  Gaia - A New Look at Life on Earth {
+  Gaia ­ A New Look at Life on Earth {
     It is an intriguing thought that without the assistance of those anaerobic microflora living in the stinking muds 
-    of the sea-beds, lakes, and ponds, there might be no reading or writing of books.
+    of the sea­beds, lakes, and ponds, there might be no reading or writing of books.
     Without the methane they produce, oxygen would rise inexorably in concentration to a level at which 
     any fire would be a holocaust and land life, apart from the microflora in damp places, would be impossible.
   }
@@ -2329,7 +2345,7 @@ Dawkins, Richard {
     an atheist when considering Zeus, Apollo, Amon Ra, Mithras, Baal, Thor, Wotan, the Golden Calf and the 
     Flying Spaghetti Monster. I just go one god further.
     
-    St. Augustine said it quite openly: 'There is another form of temptation, even more fraught with danger. 
+    St. Augustine said it quite openly: `There is another form of temptation, even more fraught with danger. 
     This is the disease of curiosity.'
   }
 }
@@ -2344,20 +2360,20 @@ Gray, Muriel {
 Brodie, Richard {
   Virus of the Mind {
     To the universe, there's no em(you,) or human beings, or giraffes, or solar systems, or galaxies. 
-    All those are human-invented distinctions. They are all memes.
+    All those are human­invented distinctions. They are all memes.
     
     Our minds excel at copying information and at following instructions.
     Remember the four characteristics of a virus: penetration, copying, possibly issuing instructions, and spreading.
     As horrifying as the thought may be initially, our minds are ideally susceptible to infection by mind viruses.
     
     Memes involving danger, food, and sex spread faster than other memes because we are wired to pay more 
-    attention to them - we have em(buttons) around those subjects.
+    attention to them ­ we have em(buttons) around those subjects.
     
     The ideas that spread the easiest, and therefore pervade society, are the ones that easily penetrate that old 
-    Stone-Age brain of ours. The whole of science has been a concerted effort to em(foil) that natural selection of Stone-Age 
+    Stone­Age brain of ours. The whole of science has been a concerted effort to em(foil) that natural selection of Stone­Age 
     ideas by our brains and instead select ideas that are useful, that work, that are accurate models of reality.
     
-    A recent Diet Pepsi campaign featured celebrities and showgirls smiling, cavorting, and grunting "uh-huh!" for 
+    A recent Diet Pepsi campaign featured celebrities and showgirls smiling, cavorting, and grunting "uh­huh!" for 
     half a minute. Not exactly a logical delineation of the product's features and benefits.
     
     Here is why imitation is so widespread; it is a good strategy. The others being imitated are the end line 
@@ -2372,14 +2388,14 @@ Frankfurt, Harry {
     
     In the old days, craftsmen did not cut corners. They worked carefully, and they took care with every 
     aspect of their work. Every part of the product was considered, and each was designed and made to be 
-    exactly as it should be. These craftsmen did not relax their thoughtful self-discipline even with 
+    exactly as it should be. These craftsmen did not relax their thoughtful self­discipline even with 
     respect to features of their work that would ordinarily not be visible. Although no one would notice 
     if those features were not quite right, the craftsmen would be bothered by their consciences. 
     So nothing was swept under the rug. Or, one might perhaps also say, there was no bullshit.
 
     Her statement is not germane to the enterprise of describing reality.
 
-    It is just his lack of connection with a concern with truth - this indifference to how things really are - that I regard 
+    It is just his lack of connection with a concern with truth ­ this indifference to how things really are ­ that I regard 
     as the essence of bullshit.
     
     For the essence of bullshit is not that it is em(false) but that it is em(phony.)
@@ -2432,14 +2448,14 @@ Smolin, Lee {
     [String theorists] seem to feel that appeal to consensus within their community is equivalent to rational argument.
     
     Good ideas are not taken seriously enough when they come from people of low status in the academic world; conversely,
-    the ideas of high-status people are often taken too seriously.
+    the ideas of high­status people are often taken too seriously.
   }
 }
 
 Grothendieck, Alexander {
   Récoltes et semailles {
    It is in this gesture of "going beyond", to be something in oneself rather than the pawn of a consensus,
-   the refusal to stay within a rigid circle that others have drawn around one - it is in this solitary act 
+   the refusal to stay within a rigid circle that others have drawn around one ­ it is in this solitary act 
    that one finds true creativity. All other things follow as a matter of course. 
   }
 }
@@ -2462,7 +2478,7 @@ Dalrymple, Theodore {
     
     One of them [photos of British life during the war] was ever present in my mind when I entered a bomb shelter 
     with my friends: that of two young children, both blind, their sightless eyes turned upward to the sound 
-    of the explosions above them, a heart-rending look of incomprehension on their faces.
+    of the explosions above them, a heart­rending look of incomprehension on their faces.
   }
   Life at the Bottom {
     It is a curious characteristic of our age that cultural influences now seem to flow from the lower social classes upward,
@@ -2493,17 +2509,17 @@ Bryson, Bill {
     Space is extremely well named and rather dismayingly uneventful.
     
     There seemed to be a mystifying universal conspiracy among textbook authors to make certain the material they dealt with never 
-    strayed too near the realm of the mildly interesting, and was always at least a long-distance phone call from the frankly 
+    strayed too near the realm of the mildly interesting, and was always at least a long­distance phone call from the frankly 
     interesting.
   }
 }
 
 Reeves, Hubert {
   Patience dans l'azur {
-    Étendez-vous sur le sol, la nuit, loin des lumières. 
-    Fermez les yeux. Après quelques minutes, ouvrez-les sur la voûte étoilée... Vous aurez le vertige. 
+    Étendez­vous sur le sol, la nuit, loin des lumières. 
+    Fermez les yeux. Après quelques minutes, ouvrez­les sur la voûte étoilée... Vous aurez le vertige. 
     Collé a la surface de votre vaisseau spatial, vous vous sentirez em(dans) l'espace. 
-    Goutez-en longuement l'ivresse.
+    Goutez­en longuement l'ivresse.
   }  
 }
 
@@ -2515,7 +2531,7 @@ Jacobs, Jane {
     Cities are, by definition, full of strangers.
     
     Ask a houser how his planned neighborhood improves on the old city and he will cite, as a 
-    self-evident virtue, More Open Space... More Open Space for what? For muggings?
+    self­evident virtue, More Open Space... More Open Space for what? For muggings?
     
     In cities, liveliness and variety attract more liveliness, deadness and monotony repel life.
   }
@@ -2527,14 +2543,14 @@ Tillich, Paul {
 
 Csikszentmihaly, Mihaly {
   Flow {
-    I developed a theory of optimal experience based on the concept of em(flow) - the state in which people are so 
+    I developed a theory of optimal experience based on the concept of em(flow) ­ the state in which people are so 
     involved in an activity that people will do it even at great cost, for the sheer sake of doing it.
     
     Enjoyment appears at the boundary between boredom and anxiety, when the challenges are just balanced with the person's 
     capacity to act.
     
-    The more a job inherently resembles a game - with variety, appropriate and flexible challenges, clear goals, and immediate 
-    feedback - the more enjoyable it will be regardless of the worker's level of development.
+    The more a job inherently resembles a game ­ with variety, appropriate and flexible challenges, clear goals, and immediate 
+    feedback ­ the more enjoyable it will be regardless of the worker's level of development.
   }
 }
 
@@ -2546,7 +2562,7 @@ Wilde, Oscar {
   Many a young man starts in life with a natural gift for exaggeration which, if nurtured in congenial and sympathetic 
   surroundings, or by the imitation of the best models, might grow into something really great and wonderful.
   But, as a rule, he comes to nothing. He either falls into careless habits of accuracy..., or takes to frequenting the 
-  society of the aged and well-informed.
+  society of the aged and well­informed.
 }
 
 Gardner, Ava {
@@ -2598,10 +2614,10 @@ Sennett, Richard {
     take great pleasure in that world of strangers, the cosmopolitan city.
     
     Behaving with strangers in an emotionally satisfying way and yet remaining aloof from them was seen 
-    by the mid-18th century as the means by which the human animal was transformed into a 
+    by the mid­18th century as the means by which the human animal was transformed into a 
     social being.
     
-    During the 19th century the family came to appear less and less the center of a particular, non-public region, 
+    During the 19th century the family came to appear less and less the center of a particular, non­public region, 
     more an idealized refuge, a world all its own, with a higher moral value than the public realm.
   }
 }
@@ -2655,15 +2671,15 @@ Mlodinow, Leonard {
 
 Melville, Herman {
   Moby Dick {
-    Top-heavy was the ship as a dinnerless student with all Aristotle in his head.
+    Top­heavy was the ship as a dinnerless student with all Aristotle in his head.
     
-    This right-whale I take to have been a Stoic; the sperm whale, a Platonian, who might have taken up Spinoza in his later years.
+    This right­whale I take to have been a Stoic; the sperm whale, a Platonian, who might have taken up Spinoza in his later years.
     
     Circumambulate the city of a dreary Sabbath afternoon.
     
     Yes, as everyone knows, meditation and water are wedded forever.
     
-    ...I never fancied broiling fowls; - though once broiled, judiciously buttered, and judgmatically salted and 
+    ...I never fancied broiling fowls; ­ though once broiled, judiciously buttered, and judgmatically salted and 
     peppered, there is no one who will speak more respectfully, not to say reverentially, of a broiled fowl than I will.
     
     I'll try a pagan friend, thought I, since Christian kindness has proved but hollow courtesy.
@@ -2706,9 +2722,9 @@ Perelman, S. J. {
     The light of the bar was too dim to determine whether their lingerie had come from Bendel's or Bonwit's, 
     but everything proclaimed them to be women not visibly harassed by the specter of want.
     
-    Scene: ... a small cheerless room equipped with the standard instruments of torture - a desk, two chairs, a filing cabinet.
+    Scene: ... a small cheerless room equipped with the standard instruments of torture ­ a desk, two chairs, a filing cabinet.
     
-    He is in his mid-sixties, ramrod-straight, affects a white cavalry moustache and a buttonhole, and is well-dressed 
+    He is in his mid­sixties, ramrod­straight, affects a white cavalry moustache and a buttonhole, and is well­dressed 
     to the point of dandyism.
     
     Dr. Budlong bore a chilling resemblance to the mummified remains of Ramses II...
@@ -2729,7 +2745,7 @@ Renzetti, Elizabeth {
 }
 
 Taleb, Nassim  {
-  For Yevgenia Krasnova, a person could love one book, at most a few - beyond this was a form of promiscuity.
+  For Yevgenia Krasnova, a person could love one book, at most a few ­ beyond this was a form of promiscuity.
   
   Our problem is not just that we do not know the future, we do not know much of the past either.
   
@@ -2777,16 +2793,16 @@ Bauerlein, Mark {
     The more mentors have engaged youth in youth terms, though, the more youth have disengaged from the 
     mentors themselves and from the culture they are supposed to represent.
     
-    The 18-year-old may have a Visa card, cell phone, My Space page, part-time job, Play Station 2, 
-    and an admissions letter to State U., but ask this wired and on-the-go high school senior a 
-    few intellectual questions and the facade of in-the-knowness crumbles.
+    The 18­year­old may have a Visa card, cell phone, My Space page, part­time job, Play Station 2, 
+    and an admissions letter to State U., but ask this wired and on­the­go high school senior a 
+    few intellectual questions and the facade of in­the­knowness crumbles.
     
     For all their technological adroitness, they don't read or write or divide very well.
     
     Fully 45 percent of the students just don't think leisure reading is important ("a little" or "not at all"). 
     Unconvinced of what adult readers feel deep in their hearts and know from long experience, nearly 
     half of the student body disregards books by choice and disposition, and they don't expect to suffer for it.
-    In their minds, a-literacy and anti-intellectualism pose no career obstacles, and they have no 
+    In their minds, a­literacy and anti­intellectualism pose no career obstacles, and they have no 
     shame attached.
     
     How serenely this undergrad announces the transfer from "the whole book thing" to the Internet, as if the 
@@ -2797,23 +2813,23 @@ Bauerlein, Mark {
     erudition doesn't ensue.
     
     If the guardians of tradition claim that the young, though ignorant, have a special perspective on the past,
-    or if teachers prize the impulses of tenth-graders more than the thoughts of the wise and the works 
+    or if teachers prize the impulses of tenth­graders more than the thoughts of the wise and the works 
     of the masters, learning loses its point. The thread of intellectual inheritance snaps.
     
     Over the years, the indulgence of youth circulated among educators and settled into sanctioned pedagogy with a 
     predictable result: not an unleashing of independent, creative, skeptical mental energies of rising students,
     but what we have seen in previous chapters, routine irreverence and knowledge deficits.
    
-    In 1959, political philosopher Leo Strauss defined liberal education as "the counter-poison to mass culture".
-    A history professor who agrees with this view today becomes a fuddy-duddy in his own department.
+    In 1959, political philosopher Leo Strauss defined liberal education as "the counter­poison to mass culture".
+    A history professor who agrees with this view today becomes a fuddy­duddy in his own department.
     
     Spend some hours in school zones and you see that the indulgent attitude toward youth, along with the downplaying 
     of tradition, has reached the point of dogma among teachers, reporters, researchers, and creators in arts 
-    and humanitarian fields, and pro-knowledge, pro-tradition conceptions strike them as bluntly unpleasant, if 
+    and humanitarian fields, and pro­knowledge, pro­tradition conceptions strike them as bluntly unpleasant, if 
     not reactionary and out of touch.
     
     Confidence and enjoyment don't guarantee better students. 
-    Furthermore, they prevent the students from forming one of the essential ingredients of long-term success: an 
+    Furthermore, they prevent the students from forming one of the essential ingredients of long­term success: an 
     accurate, realistic appraisal of their present capacities.
     
     A predictable descent commenced. The sixties generation's leaders didn't anticipate how their claim 
@@ -2824,9 +2840,9 @@ Bauerlein, Mark {
 }
 
 Dubois, W. E. B. {
-   I sit with Shakespeare and he winces not. Across the color-line I move arm in arm with Balzac and Dumas, 
+   I sit with Shakespeare and he winces not. Across the color­line I move arm in arm with Balzac and Dumas, 
    where smiling men and welcoming women glide in gilded halls. From out the caves of the evening that 
-   swing between the strong-limbed earth and the tracery of the stars, I summon Aristotle and Aurelius... 
+   swing between the strong­limbed earth and the tracery of the stars, I summon Aristotle and Aurelius... 
    and they come all graciously with no scorn nor condescension. 
 }
 
@@ -2910,7 +2926,7 @@ Bowden et. al. {
     A rough count showed that about 150 machines are under construction in America and England. 
     One sometimes wonders where the programmers will come from.
     
-    Coding time is usually only a fraction of the total time involved in getting the programme to work - such is the 
+    Coding time is usually only a fraction of the total time involved in getting the programme to work ­ such is the 
     frailty of mankind.
   }
 } 
@@ -2923,9 +2939,9 @@ Conrad, Joseph {
     measures the moral misery and the intellectual destitution of mankind.
     
     The heroic Garibaldino sat on the same bench bowing his hoary head, his old soul dwelling alone with its 
-    memories, tender and violent, terrible and dreary - solitary on the earth full of men.
+    memories, tender and violent, terrible and dreary ­ solitary on the earth full of men.
   }
-  The Shadow-Line {
+  The Shadow­Line {
     He, as I knew, was not in a state to interest himself in any sublunary matters.
     
     He would have amused me if I had wanted to be amused.
@@ -2960,7 +2976,7 @@ You cannot conquer time....
 In headaches and in worry 
 Vaguely life leaks away, 
 And Time will have his fancy
-To-morrow or today...
+To­morrow or today...
     )
   }
 } 
@@ -3000,11 +3016,11 @@ out of the flowers.)
 
 Maistre, Xavier de {
   A Journey Around My Room {
-    What a capital article of furniture an arm-chair is, and what a treasure to a thoughtful man! During the long winter 
+    What a capital article of furniture an arm­chair is, and what a treasure to a thoughtful man! During the long winter 
     evenings it is often delightful, and always prudent, to lounge luxuriously in it, far from the turmoil of the 
     madding crowd. A good fire, books, and pens; what safeguards these are against ennui! And how pleasant again, to 
-    forget books and pens in the delights of stirring the fire, while giving one's-self up to some sweet thought, 
-    or making a few rhymes for the amusement of friends! The hours glide by and fall into silence - into eternity, without 
+    forget books and pens in the delights of stirring the fire, while giving one's­self up to some sweet thought, 
+    or making a few rhymes for the amusement of friends! The hours glide by and fall into silence ­ into eternity, without 
     making their sad passage felt.
     
     The moment was short and full of ecstasy; cold reason soon resumed her sway, and in the twinkling of an eye, a whole 
@@ -3015,7 +3031,7 @@ Maistre, Xavier de {
     similar tastes, feelings, and knowledge; a friend who is not tormented by ambition or egotism; who prefers the shade of 
     a tree to the pomp of a court! Happy is he who possesses a friend!
     
-    We were happy in our errors, but now - ah! all is sadly changed. We have been compelled, like others, to read the 
+    We were happy in our errors, but now ­ ah! all is sadly changed. We have been compelled, like others, to read the 
     human heart; and truth, falling like a bomb into the midst of us, has forever destroyed the enchanted palace of illusion.
     
     From the expedition of the Argonauts to the Assembly of the Notables, from the nethermost Hell to the last fixed star 
@@ -3035,10 +3051,10 @@ Maistre, Xavier de {
     de l'univers, un rayon consolateur part de chaque monde et vient frapper ses regards, pour lui annoncer qu'il existe 
     un rapport entre l'immensité et lui, et qu'il est associé à l'éternité.
     
-    Combien peu de personnes, me disais-je, jouissent maintenant avec moi du spectacle sublime que le ciel étale 
-    inutilement pour les hommes assoupis!... Passe encore pour ceux qui dorment; mais qu'en coûterait-il à ceux qui
+    Combien peu de personnes, me disais­je, jouissent maintenant avec moi du spectacle sublime que le ciel étale 
+    inutilement pour les hommes assoupis!... Passe encore pour ceux qui dorment; mais qu'en coûterait­il à ceux qui
     se promènent, a ceux qui sortent en foule du théâtre de regarder un instant et d'admirer les brillantes 
-    constellations qui rayonnent de toutes parts sur leur tête? – Non, les spectateurs attentifs de Scapin ou 
+    constellations qui rayonnent de toutes parts sur leur tête? ­ Non, les spectateurs attentifs de Scapin ou 
     de Jocrisse ne daigneront pas lever les yeux: Ils vont rentrer brutalement chez eux, ou ailleurs, sans songer 
     que le ciel existe. Quelle bizarrerie!… parce qu'on peut le voir souvent et gratis, ils n'en veulent pas. 
     Si le firmament était toujours voilé pour nous, si le spectacle qu'il nous offre dépendait d'un entrepreneur, 
@@ -3078,7 +3094,7 @@ Goncharov, I. A. {
     
     Masha came to ask him if he would like to go and see the river freezing: everyone was going.
     
-    Their sensitive minds were never tired of this beauty: the earth, the sky, the sea - all roused 
+    Their sensitive minds were never tired of this beauty: the earth, the sky, the sea ­ all roused 
     their feelings, and they sat side by side in silence, looking with one heart at the glory of creation.
   }
 }
@@ -3088,7 +3104,7 @@ Wodehouse, P. G. {
     If you fail, I shall know that your Aunt Agatha was right when she called you a spineless invertebrate and 
     advised me strongly not to marry you.
     
-    He was a ferret-faced kid, whom I had disliked since birth.
+    He was a ferret­faced kid, whom I had disliked since birth.
     
     I am open to correction, sir...
     
@@ -3096,15 +3112,15 @@ Wodehouse, P. G. {
     
     ...the climatic conditions are congenial.
     
-    Lay out our gent's medium-smart raiment, suitable for Bohemian revels.
+    Lay out our gent's medium­smart raiment, suitable for Bohemian revels.
     
     Mrs. Pringle's aspect was that of one who had had bad news round about the year 1900 and never really got over it.
     
-    I was walking back along the shore,... when I saw the fat child meditatively smacking a jelly-fish with a spade.
+    I was walking back along the shore,... when I saw the fat child meditatively smacking a jelly­fish with a spade.
     
     "Yes, sir," said Jeeves, in a low, cold voice, as if he had been bitten in the leg by a personal friend.
     
-    Nobody has a greater respect than I have for your judgement in socks, in ties, and - I will go farther - in spats; but
+    Nobody has a greater respect than I have for your judgement in socks, in ties, and ­ I will go farther ­ in spats; but
     when it comes to evening shirts your nerve seems to fail you. You have no vision. You are prejudicial and reactionary. 
     Hidebound is the word that suggests itself.
     
@@ -3115,7 +3131,7 @@ Wodehouse, P. G. {
   The Code of the Woosters {
     You've met her. She came to lunch at the flat a week or two ago. Smallish girl of about the tonnage of Jessie Matthews.
     
-    For Madeline Basset was undeniably of attractive exterior - slim, em(svelte,) if that's the word, and bountifully
+    For Madeline Basset was undeniably of attractive exterior ­ slim, em(svelte,) if that's the word, and bountifully
     equipped with golden hair and all the fixings.
     
     Yes. They were arguing about something, and Augustus told him to go and boil his head.
@@ -3224,7 +3240,7 @@ Foote, Samuel {
     
     What a bewitching eye she has! and then, such a shape! Odso, I believe this baggage will turn my brain.
     
-    What surprise! - what joy! - what confusion! - Support me, Subtle! I am unable to bear 
+    What surprise! ­ what joy! ­ what confusion! ­ Support me, Subtle! I am unable to bear 
     this conflict of tumultuous passions!
   }
 }
@@ -3233,7 +3249,7 @@ Paglia, Camille {
   Masculinity is aggressive, unstable, combustible. It is also the most creative cultural force in history. 
 }
 
-Hoff-Somers, Christina {
+Hoff­Somers, Christina {
   The War Against Boys {
     Does Gilligan really understand boys? She finds boys lacking in empathy, but does she empathize with them?
     ... The new pedagogies designed to "educate boys more like girls" (in Gloria Steinem's phrase) are not harmless.
@@ -3255,9 +3271,9 @@ Sheridan, R. B. {
 
 Zweig, Stefan {
   Moonbeam Alley {
-    Her dress was disorderly, her voice husky from too much smoking and beer-drinking. Here 
-    indubitably was a fellow-mortal who was weary unto death, and who only continued living out of 
-    long-established habit.
+    Her dress was disorderly, her voice husky from too much smoking and beer­drinking. Here 
+    indubitably was a fellow­mortal who was weary unto death, and who only continued living out of 
+    long­established habit.
   }
   Transfiguration {
     There was something saucy in this ostentation. Was she a confirmed flirt? Was she stirred by a surplus of 
@@ -3279,7 +3295,7 @@ Smith, Adam {
 }
 
 Miller, Stephen {
-  Conversation - A History of a Declining Art {
+  Conversation ­ A History of a Declining Art {
     The point is: one should try to enjoy the conversible world, despite its inanities, because removing oneself 
     from it is dangerous to one's mental health.
   }
@@ -3298,7 +3314,7 @@ Steele and Addison {
     
     ...and old age, instead of introducing melancholy Prospects of Decay...
     
-    ...whom I earnestly implore to accommodate me with a method how to settle my head and cool my brain-pan... 
+    ...whom I earnestly implore to accommodate me with a method how to settle my head and cool my brain­pan... 
   }
 }
 
@@ -3409,19 +3425,19 @@ Roland, Mme {
     l'étroite enceinte d'une prison, au milieu des fers imposés par la tyrannie la plus révoltante, j'oublie l'injustice 
     des hommes, leurs sottises et mes maux, avec des livres et des fleurs.
     
-    Enfin, je ne me suis mariée qu'à vingt-cinq ans, et avec une ame telle qu'on peut la présumer, des sens très-inflammables, 
+    Enfin, je ne me suis mariée qu'à vingt­cinq ans, et avec une ame telle qu'on peut la présumer, des sens très­inflammables, 
     beaucoup d'instruction sur divers objets; j'avais si bien évité l'instruction sur certain autre, que les 
     événemens du mariage me parurent aussi surprenans que désagréables.
     
     A quatorze ans, comme aujourd'hui, j'avais environs cinq pieds; ma taille avait acquis toute sa croissance; la jambe 
-    bien faite, le pied bien posé, les hanches très-relevées; la poitrine large et superbement meublée... 
+    bien faite, le pied bien posé, les hanches très­relevées; la poitrine large et superbement meublée... 
     
     ...madame de Roudé, par exemple, qui, malgré son âge, aimait encore à faire belle gorge, et portait toujours la sienne 
     à découvert, excepté lorsqu'elle montait en voiture, ou qu'elle en déscendait; car elle la cachait alors d'un grand 
-    mouchoir qu'elle tenait à sa poche dans cette intention, parce que, disait-elle, cela n'est pas fait pour montrer 
+    mouchoir qu'elle tenait à sa poche dans cette intention, parce que, disait­elle, cela n'est pas fait pour montrer 
     à des laquais.
  
-    «Mon père, je m'accuse... - Eh bien!» Que dire après? Le coeur me battait, le feu me montait au visage; certaine sueur se 
+    «Mon père, je m'accuse... ­ Eh bien!» Que dire après? Le coeur me battait, le feu me montait au visage; certaine sueur se 
     répandait partout: «Je m'accuse... d'avoir eu des mouvemens contraires à la chasteté chrétienne.» Ah! La bonne phrase!
 	
 	I feel my resolution to pursue these memories deserting me.
@@ -3457,10 +3473,10 @@ Morellet, L'Abbé {
    Elle n'en revint pas de toute la soirée.
    
    C'était des harangues de sections, et puis l'hymne des Marseillais, et puis des chansons à plusieurs couplets sur des airs 
-   d'opéra-comique...que le président Lubin, orné de son écharpe, chantait hors de mesure avec une voix et des gréments et des manières du beau Léandre, qui 
+   d'opéra­comique...que le président Lubin, orné de son écharpe, chantait hors de mesure avec une voix et des gréments et des manières du beau Léandre, qui 
    ravissait les spectateurs...Je crois bien que le président chanta ainsi en em(solo) à peu près trois quarts d'heure en différentes fois, 
    l'assemblé répétant communément le dernier vers du couplet. Aussi une femme du peuple, qui attendait comme moi dans cette antichambre, 
-   disait: "Mais c'est drôle de passer comme ça tout le temps de leur assemblé à chanter; est-ce qu'ils sont là pour ça?"
+   disait: "Mais c'est drôle de passer comme ça tout le temps de leur assemblé à chanter; est­ce qu'ils sont là pour ça?"
    
    Enfin, cette nation et cette ville ont vu et souffert une assemblé nationale ou se disant telle qui, chargés de défendre les propriétés, les
    libértes, les vies des Français, ordonnait ces horreurs, tandis que les moins coupables d'entre eux n'opposaient aucune résistance à ces lois de sang.
@@ -3476,10 +3492,10 @@ Nichols, Tom {
    To correct another is to insult.
    
    College students may not be dumber than they were thirty years ago, but their sense of entitlement and their unfounded 
-   self-confidence have grown considerably.
+   self­confidence have grown considerably.
    
    "Well," the student said, "your guess is as good as mine." [Robert] Jastrow stopped the young man short. 
-   "No, no, no" he said emphatically. "em(My) guesses are much, em(much) better than yours."
+   "No, no, no" he said emphatically. em("My) guesses are much, em(much) better than yours."
    
    When feelings matter more than rationality or facts, education is a doomed enterprise.
    Emotion is an unassailable defense against expertise, a moat of anger and resentment in which reason and knowledge quickly drown.
@@ -3501,16 +3517,16 @@ Weber {
 Poe, Edgar Allan {
   It was a night of unusual gloom.
   
-  ...out of joy is sorrow born. Either the memory of past bliss is the anguish of to-day, or the agonies which 
+  ...out of joy is sorrow born. Either the memory of past bliss is the anguish of to­day, or the agonies which 
   em(are) have their origin in the ecstasies which em(might have been.)
   
   ...the play is the tragedy, "Man", and its hero the Conqueror Worm.
   
   For example, there are few men of extraordinary profundity who are found wanting in an inclination for the bottle.
   
-  Among other ideas, that of universal equality gained ground; and in the face of analogy and of God - in despite 
-  of the loud warning voice of the laws of gradation so visibly pervading all things in Earth and Heaven - wild 
-  attempts at an omni-prevalent Democracy were made.
+  Among other ideas, that of universal equality gained ground; and in the face of analogy and of God ­ in despite 
+  of the loud warning voice of the laws of gradation so visibly pervading all things in Earth and Heaven ­ wild 
+  attempts at an omni­prevalent Democracy were made.
   
   The thousand injuries of Fortunato I had borne as I best could, but when he ventured upon insult I vowed revenge.
   
@@ -3537,20 +3553,20 @@ Campan, Mme {
    à M. de Bourset, son valet de chambre. Il lui demanda un jour des ciseaux; ce gentilhomme lui représenta que 
    cela lui était défendu. L'enfant insista avec douceur, et l'on fut obligé de lui céder. Muni des ciseaux 
    qu'il désirait, il s'en servit pour se couper une boucle de cheveux qu'il enveloppa avec soin dans une feuille de papier: 
-   "Tenez, Monsieur, dit-il à son valet de chambre, voilà le seul présent que je puisse vous faire, n'ayant rien
+   "Tenez, Monsieur, dit­il à son valet de chambre, voilà le seul présent que je puisse vous faire, n'ayant rien
    à ma disposition; mais quand je serai mort, vous présenterez ce gage à mon papa et à maman; en se 
    souvenant de moi, j'espère qu'ils se souviendront de vous." [Le dauphin avait 7 ans.]
    
    C'était particulièrement contre la reine que l'insurrection était dirigée: je frémis encore en me souvenant que 
    les poissardes, ou plutôt les furies qui portaient des tabliers blancs, criaient qu'ils étaient destinés à
-   recevoir les entrailles de Marie-Antoinette; qu'elles s'en feraient des cocardes, et mêlaient les expressions 
+   recevoir les entrailles de Marie­Antoinette; qu'elles s'en feraient des cocardes, et mêlaient les expressions 
    les plus obscènes à ces horribles menaces; tant l'ignorance et la cruauté, qui se trouvent dans le masse de 
    presque tous les peuples, peuvent dans les temps de troubles leur inspirer des sentiments atroces!
    
    Le chevalier de Dampierre avait été tué près de la voiture du roi, en sortant de Varennes.
    Un pauvre curé de village, à quelques lieues de l'endroit où ce crime venait d'être commis, eut l'imprudence 
    de s'approcher pour parler au roi; les cannibales qui environnaient la voiture se jettent sur lui.
-   "Tigres, leur cria Barnave, avez-vous cessé d'être Français? Nation de braves, êtes-vous devenue un peuple 
+   "Tigres, leur cria Barnave, avez­vous cessé d'être Français? Nation de braves, êtes­vous devenue un peuple 
    d'assassins?..." Ces seules paroles sauvèrent d'une mort certaine le curé déjà terrassé. Barnave, en les
    prononçant, s'était jeté presque hors la portière, et madame Élisabeth, touchée de ce noble élan, le 
    retenait par la basque de son habit.
@@ -3558,7 +3574,7 @@ Campan, Mme {
    La grande piété de madame Élisabeth donnaient à ses actions et à ses discours une noblesse qui peignait celle de son ame.
    Le jour où l'on immola cette digne descendante de saint Louis, le bourreau, en lui attachant les mains derrière le dos,
    releva une des pointes du devant de son fichu. Madame Élisabeth, avec un calme et une voix qui semblait ne pas 
-   venir de la terre, lui dit ces mots: "Au nom de la pudeur, couvrez-moi le sein." J'ai appris ce trait 
+   venir de la terre, lui dit ces mots: "Au nom de la pudeur, couvrez­moi le sein." J'ai appris ce trait 
    héroïque de madame de Sérilly, condamnée le même jour que la princesse, mais qui obtint un sursis au moment de 
    l'exécution, madame de Montmorin, sa parente, ayant déclaré que sa cousine était grosse.   
  }
@@ -3594,7 +3610,7 @@ Harari, Yuval {
   Writing thus facilitated the appearance of powerful fictional entities...
   
   This obstacle was finally removed about 5,000 years ago, when the Sumerians invented both writing and money. 
-  These Siamese twins - born to the same parents at the same time and in the same place - broke the data-processing 
+  These Siamese twins ­ born to the same parents at the same time and in the same place ­ broke the data­processing 
   limitations of the human brain.
   
   ...witnesses in courts put their hand on a bible when swearing to tell the truth, the whole truth, and nothing but the truth.
@@ -3616,13 +3632,13 @@ Harari, Yuval {
    
    According to the French legislators, if a certified lawyer followed all the proper liturgy and rituals, wrote all the required 
    spells and oaths on a wonderfully decorated piece of paper, and affixed his ornate signature to the bottom of the document, 
-   then hocus pocus - a new company was incorporated.
+   then hocus pocus ­ a new company was incorporated.
    
    We did not domesticate wheat. It domesticated us. The word em(domesticate) comes from the Latin em(domus,) which means 
    em(house.) Who's the one living in a house? Not the wheat. It's the em(Sapiens.)
    
-   Money was created many times in many places. Its development required no technological breakthroughs - it was a purely 
-   mental revolution. It involved the creation of a new inter-subjective reality that exists solely in people's imagination.
+   Money was created many times in many places. Its development required no technological breakthroughs ­ it was a purely 
+   mental revolution. It involved the creation of a new inter­subjective reality that exists solely in people's imagination.
    
    There is no trace of [the belief in heaven and hell] in the Old Testament, which also never claims that the souls of 
    people continue to live after the death of the body.
@@ -3638,7 +3654,7 @@ Harari, Yuval {
 
 Matyszak, Philip {
  24 Hours in Ancient Athens{
-   The hetaira's ideal beau is young, good-looking, lavishly and unfailingly generous, intelligent and good-tempered.
+   The hetaira's ideal beau is young, good­looking, lavishly and unfailingly generous, intelligent and good­tempered.
    Sadly the species has been hunted to extinction, so hetairas compete viciously for any man with just two of the above qualities.
  }
 }
@@ -3667,7 +3683,7 @@ Maughan, W. Somerset {
     He made enemies rather than friends.
     
     But there is in my nature a strain of asceticism, and I have subjected my flesh each week to a more 
-    severe mortification. I have never failed to read the Literary Supplement of The Times.
+    severe mortification. I have never failed to read the em(Literary Supplement) of em(The Times.)
     
     There is no object more deserving of pity than the married bachelor.
   }
@@ -3709,41 +3725,41 @@ Montgomery, L. M.  {
    
    December. Early snows and Orion. The pale fires of the Milky Way.
    
-   In the horrible but expressive slang phrase, she keeps all her goods in the shop-window.
+   In the horrible but expressive slang phrase, she keeps all her goods in the shop­window.
  }
 }
 
 Quincey, Thomas de {
-  Confessions of an English Opium-Eater {
+  Confessions of an English Opium­Eater {
     ...I do not readily believe that any man, having once tasted the divine luxuries of opium, will afterwards 
     descend to the gross and mortal enjoyments of alcohol...
     
     He still had his dying to do: he was in arrear as to em(that:) else all was finished.
     
-    ...in fact, there was nobody at all, except one woman, apparently middle-aged, meaning by em(that) 
-    from thirty-five to forty-five...
+    ...in fact, there was nobody at all, except one woman, apparently middle­aged, meaning by em(that) 
+    from thirty­five to forty­five...
     
     But at present the whole artillery of her displeasure seemed to be unmasked...
     
     For tea, though ridiculed by those who are naturally coarse in their nervous sensibilities, or are become so from 
-    wine-drinking, and are not susceptible of influence from so refined a stimulant, will always be the favourite 
+    wine­drinking, and are not susceptible of influence from so refined a stimulant, will always be the favourite 
     beverage of the intellectual...
     
     Here opens upon me an Iliad of woes...
     
-    ...I discovered that it em(was) a decanter. Into this you may put a quart of ruby-coloured laudanum; that, and a book 
+    ...I discovered that it em(was) a decanter. Into this you may put a quart of ruby­coloured laudanum; that, and a book 
     of German metaphysics placed by its side, will sufficiently attest to my being in the neighbourhood.
   }
 }
 
-# Adding new authors below on 2022-10-14:
+# Adding new authors below on 2022­10­14:
 
-Godfrey-Smith, Peter {
+Godfrey­Smith, Peter {
   Theory and Reality {
     Although mathematics is clearly of huge importance in the development of physics, one of the greatest achievements in all of 
-    science - Darwin's achievement in em(On the Origin of Species) - makes no real use of mathematics.
+    science ­ Darwin's achievement in em(On the Origin of Species) ­ makes no real use of mathematics.
     
-    For Popper, an inspiring example of genuine science was the work of Einstein. Examples of pseudo-science were Freudian 
+    For Popper, an inspiring example of genuine science was the work of Einstein. Examples of pseudo­science were Freudian 
     psychology and Marxist views about society and history.
     
     And crucially, for Popper it is never possible to confirm or establish a theory by showing its agreement with observations.
@@ -3803,8 +3819,8 @@ Thorndike, L. {
     
     [Quoting Caspar Batholinus:] No other quality more deserves the name of occult than gravity.
     
-    Boyle himself told further of a man who had wasted away to a mere skeleton but recovered by hard-boiling an egg in his own urine,
-    punching the egg-shell full of holes, and burying it in an anthill. 
+    Boyle himself told further of a man who had wasted away to a mere skeleton but recovered by hard­boiling an egg in his own urine,
+    punching the egg­shell full of holes, and burying it in an anthill. 
     
     This extremely learned and virtuous man [Jean Filesac] in 1609 had published a treatise on Idolatrous Magic, in which he asserted 
     that the transportation of witches to nocturnal sabbats had been so thoroughly proved by the most erudite of men of the age, 
@@ -3838,8 +3854,8 @@ Westfall, Richard {
 
 Toulmin and Goodfield {
   The Architecture of Matter {
-    The change-over from a developmental to a static conception of matter was as profound as the change from a geocentric to a 
-    heliocentric astronomy, and its effects were as far-reaching.
+    The change­over from a developmental to a static conception of matter was as profound as the change from a geocentric to a 
+    heliocentric astronomy, and its effects were as far­reaching.
   }
   The Fabric of the Heavens {
     Yet ideas cannot be burned at the stake as heretics can.
@@ -3857,7 +3873,7 @@ Toulmin and Goodfield {
 C. Singer et. al. {
   A History of Technology {
     The restriction of the various Semitic alphabets to consonants is difficult to explain, but it must be remembered that the structure
-    of all the Semitic languages rests on the basis of consonantal bi-lateral or tri-lateral roots. These give the essential conception of 
+    of all the Semitic languages rests on the basis of consonantal bi­lateral or tri­lateral roots. These give the essential conception of 
     the word, the vowels only providing the relations, case, tense, mood, and so forth [swim, swam, swum].
     
     The Egyptians of the Old Kingdom had discovered the principle of expressing a single sound, whether consonant or vowel, by a single sign.
@@ -3868,22 +3884,22 @@ C. Singer et. al. {
     
     It is a common fallacy to suppose that monkeys cannot oppose the thumb to the other digits.
     
-    An analysis of the better-defined tools from Choukoutien has shown that the majority were chipped by right-handed persons.
+    An analysis of the better­defined tools from Choukoutien has shown that the majority were chipped by right­handed persons.
     Monkeys and apes are usually indifferent to which hand they use, and the acquisition of greater skill in the one hand is a human 
     trait linked with the dominance of one side of the brain, and doubtless connected with the habitual use of tools.
-    Ninety-five percent of modern adult human beings are right-handed, but left-handedness was commoner in earlier times, as it is still 
+    Ninety­five percent of modern adult human beings are right­handed, but left­handedness was commoner in earlier times, as it is still 
     among untrained infants.
     
     When Europeans first explored Australia there were some 500 tribes with a total population of about 300,000...There were as many 
     languages as tribes.
     
-    Yet from the meagre data available it appears that all early vehicles shared one other peculiarity besides solid wheels - namely 
+    Yet from the meagre data available it appears that all early vehicles shared one other peculiarity besides solid wheels ­ namely 
     paired draught.
     
     One result of [the development of Neolithic farming] is that it now became worthwhile to keep prisoners as slaves instead of 
     eating or torturing them...
     
-    At the same time, metal-workers were among the first full-time specialists in industrial production, though specialists in magic 
+    At the same time, metal­workers were among the first full­time specialists in industrial production, though specialists in magic 
     or religion may have become so earlier.
     
     In the Mediterranean, deforestation had become serious by classical times...
@@ -3896,7 +3912,7 @@ C. Singer et. al. {
 }
 
 Herodotus {
-  ...since she was well-endowed with the blessings of Aphrodite, she acquired a large fortune.
+  ...since she was well­endowed with the blessings of Aphrodite, she acquired a large fortune.
   
   ...for long ago the Hellenes distinguished themselves from barbarians by their superior cleverness and freedom from naive stupidity.
   
@@ -3909,7 +3925,7 @@ Herodotus {
   occur to him, and not just once, but often.
 }
 
-Evans-Pritchard, E. E. {
+Evans­Pritchard, E. E. {
   Theories of Primitive Religion {
     For instance, many peoples are convinced that deaths are caused by witchcraft. To speak of witchcraft being for these peoples a 
     supernatural agency hardly reflects their own view of the matter, since from their point of view nothing could be more natural.
@@ -3955,8 +3971,8 @@ Malinowski, B. {
   Argonauts of the Western Pacific {
     The goal is, briefly, to grasp the native's point of view, his relation to life, to realise em(his) vision of em(his) world.
     
-    Disease is not conceived as an extraneous force, coming from outside and settling on the man, it is directly a man-made, 
-    sorcerer-made something.
+    Disease is not conceived as an extraneous force, coming from outside and settling on the man, it is directly a man­made, 
+    sorcerer­made something.
     
     But each of the rites and spells is to the native mind, quite as indispensable for the success of the enterprise, as is the practical
     activity.
@@ -3965,7 +3981,7 @@ Malinowski, B. {
   }
 }
 
-Madame de Hausset {
+Hausset, Madame de {
   Mémoires {
     Everything in existence, said he, taking a handful of louis from his pocket, is contained in these little pieces of metal, which will
     convey you commodiously from one end of the world to the other. All men obey those who possess this powder, and eagerly tender 
@@ -4001,7 +4017,7 @@ Saint Augustin {
   que l'homme ne devrait pas désirer connaître. 
 }
 
-Mme la Marquise de la Rochejaquelein {
+Rochejaquelein, Mme la Marquise de la {
  Mémoires {
    MM. de Feu et de Richeteau, qui, à la suite de quelques pourparlers, avaient la veille consenti à rester en otage, furent 
    aussi massacrés. Des gardes nationales de la plaine retournèrent dans leurs foyers, emportant comme trophées, au bout de 
@@ -4015,7 +4031,7 @@ Mme la Marquise de la Rochejaquelein {
    
    Madame de Jourdain fut menée sur la Loire pour être noyée avec ses trois filles: un soldat voulut sauver la plus jeune, qui était 
    fort belle; elle se jeta à l'eau pour partager le sort de sa mère: la malheureuse enfant tomba sur des cadavres, et n'enfonça 
-   point; elle criait: «Poussez-moi! je n'ai pas assez d'eau!» et elle périt. 
+   point; elle criait: «Poussez­moi! je n'ai pas assez d'eau!» et elle périt. 
  }
 }
 
@@ -4026,7 +4042,7 @@ Firth, Raymond {
   }
 }
 
-Rowan-Robinson, M. {
+Rowan­Robinson, M. {
   Cosmology {
     The statement that the universe has to have had this history in order for galaxies, stars, and ourselves to exist is verging on the 
     tautological and hardly merits the title em(anthropic principle) which some authors give it.
@@ -4035,8 +4051,8 @@ Rowan-Robinson, M. {
 
 Diamond, Jared {
   The World Until Yesterday {
-     A recurring theme is that the other Westerners and I are struck by the emotional security, self-confidence, curiosity, and autonomy
-     of members of small-scale societies, not only as adults but already as children.
+     A recurring theme is that the other Westerners and I are struck by the emotional security, self­confidence, curiosity, and autonomy
+     of members of small­scale societies, not only as adults but already as children.
      
      In 1931 no New Guinean born in Goroka had ever visited Wapenamanda a mere 107 miles to the west; the idea of traveling from 
      Goroka to Wapenamanda, without being killed by an unknown stranger within the first 10 miles from Goroka, would have been unthinkable.
@@ -4089,7 +4105,7 @@ Singer, C. {
     In the Middle Ages languages were learned by speaking and not from grammars.
     
     It appeared about 1240 and was still being reprinted in the seventeenth century. It is one of the puzzles of history that this 
-    great improvement [Hindu-Arabic numerals], represented by the "Arabic" as against the Latin system, took three centuries to gain
+    great improvement [Hindu­Arabic numerals], represented by the "Arabic" as against the Latin system, took three centuries to gain
     general acceptance.
     
     The humanists discovered the literary works of antiquity. In them they became absorbed to the exclusion of all else. Their 
@@ -4113,7 +4129,7 @@ Capek, M. {
     serious misapprehensions of its physical and especially its philosophical meaning....
     
     This plainly shows that the term "curvature" is essentially metaphorical, for it is based on an analogy with curvature of 
-    two-dimensional surfaces.
+    two­dimensional surfaces.
     
     ...the law of gravitation is a generalized law of inertia.
     
@@ -4134,32 +4150,32 @@ Capek, M. {
 
 
 
-# START OF EDIT ON 2024-02-07
+# START OF EDIT ON 2024­02­07
 
 Murray, Douglas {
   The War on the West {
     People began to talk of "equality", but they did not seem to care about equal rights.
-	They talked of "anti-racism", but they sounded deeply racist.
+	They talked of "anti­racism", but they sounded deeply racist.
 	They spoke of "justice", but they seemed to mean revenge.
 	
-	This logical trap is the same one favored by witch-dunkers in the Middle Ages: if the woman drowns, she is innocent; if she floats, she's a witch and can be burned.
+	This logical trap is the same one favored by witch­dunkers in the Middle Ages: if the woman drowns, she is innocent; if she floats, she's a witch and can be burned.
 	In DiAngelo's logic, the person who denies they are a racist is racist, and so is the person who says they are racist.
 	
 	The bell in question was held under suspicion for having once been on a slave plantation, and so it was "shuttered off" from public view pending further investigations into the inanimate object.
-	At such moments, you can begin to wonder whether we are getting into the realm of Narnia-like magic.
+	At such moments, you can begin to wonder whether we are getting into the realm of Narnia­like magic.
   }
   The Madness of Crowds {
     ...the current way of regarding women is the same as men, but different where it's useful or flattering.
 	
-	[The concept of patriarchy] has become so ingrained that when it is mentioned it now floats by as though the idea that Western societies are centred around - and run solely for the comfort 
-	of - men is not even something that most people would bother to dispute.
+	[The concept of patriarchy] has become so ingrained that when it is mentioned it now floats by as though the idea that Western societies are centred around ­ and run solely for the comfort 
+	of ­ men is not even something that most people would bother to dispute.
 	
 	...defining an entire group of people, their attitudes, pitfalls, and moral associations, based solely on their racial characteristics is itself a fairly good demonstration of racism.
   }
   The Strange Death of Europe {
     ...if there is a bit more beheading and sexual assault than there used to be in Europe, then at least we also benefit from a much wider range of cuisines.
 	
-	Thus the states that had been so open and liberal that they had allowed and encouraged large-scale migration were portrayed as countries which were uniquely racist.
+	Thus the states that had been so open and liberal that they had allowed and encouraged large­scale migration were portrayed as countries which were uniquely racist.
 	
 	Within less than 24 hours Rushdie was in hiding, with protection provided by the British state. Soon thousands of British Muslims were on the streets supporting the imposition of Islamic 
 	blasphemy laws in Britain.
@@ -4183,10 +4199,10 @@ Murray, Douglas {
 
 Rees, Laurence {
   Hitler and Stalin {
-    "Ninety-nine percent of the German people have turned off thinking for themselves," wrote civil servant Friedrich Kellner, a critic of the regime, in his diary in July 1940.
+    "Ninety­nine percent of the German people have turned off thinking for themselves," wrote civil servant Friedrich Kellner, a critic of the regime, in his diary in July 1940.
 	
 	"I think that real life is hunger, and the rest is a mirage," wrote the Leningrad scholar Dmitry Likhachev. "In the time of famine people revealed themselves, stripped
-	themselves, freed themselves of all trumpery. Some turned out to be marvelous, incomparable heroes, others - scoundrels, villains, murderers, cannibals. 
+	themselves, freed themselves of all trumpery. Some turned out to be marvelous, incomparable heroes, others ­ scoundrels, villains, murderers, cannibals. 
 	There were no half measures."
 	
 	"The hurricane of war has torn off these rags: now everyone has become what he was in fact, and not what he wanted to seem. 
@@ -4221,7 +4237,7 @@ Kershner and Wilcox {
 }
 
 Moore, Charles {
- Culture is an alliance of the dead, the living, and the not-yet born.
+ Culture is an alliance of the dead, the living, and the not­yet born.
 }
 
 Durant, Will {
@@ -4244,19 +4260,19 @@ Durant, Will and Ariel {
 	
 	An Englishman in Paris in 1791 reported that "clubs abound in every street." There were literary societies, sporting associations, Freemason lodges, workmen's gatherings.
 	
-	Napolean: "The women are everywhere - at plays, on public walks, in libraries. You see very pretty women in the scholar's study room. Only here [in Paris], of all the
+	Napolean: "The women are everywhere ­ at plays, on public walks, in libraries. You see very pretty women in the scholar's study room. Only here [in Paris], of all the
 	places on Earth, do women deserve such influence, and indeed the men are mad about them, think of nothing else, and live only through and for them. A woman, in order to know what is 
 	due her, and what power she has, must live in Paris for six months."
 	
-	The "Fourth Estate" - the journalists and the press - may have been more influential than the schools in forming the mind and mood of France in those effervescent years.
+	The "Fourth Estate" ­ the journalists and the press ­ may have been more influential than the schools in forming the mind and mood of France in those effervescent years.
 	
 	[In England] until 1929 the legal age of marriage was fourteen for the male, twelve for the female.
 	
 	The em(Vindication) [Wollstonecraft] proceeded to list some feminine faults of that time: the admiration of weakness and timidity, which feeds and pleases the male's assumption 
-	of superiority; the addiction to cards, gossip, astrology, sentimentality, and literary trash; the absorption in dress and self-admiration.
+	of superiority; the addiction to cards, gossip, astrology, sentimentality, and literary trash; the absorption in dress and self­admiration.
 	
 	Coleridge, about 1798, complained convincingly: "I am pestered every ball night to dance, which very em(modestly) I refuse. They dance a most infamous dance called 
-	the Waltzen. There are perhaps twenty couples - the Man and his Partner embrace each other, arms and waists, knees almost touching, and then whirl round and round,... to lascivious music." 
+	the Waltzen. There are perhaps twenty couples ­ the Man and his Partner embrace each other, arms and waists, knees almost touching, and then whirl round and round,... to lascivious music." 
   }
 }
 
@@ -4275,29 +4291,29 @@ Plumptre, Anne {
 
 Shirer, W. L. {
   The Rise and Fall of the Third Reich {
-    "An old woman with snow-white hair was holding a one-year-old child in her arms and singing to it and tickling it.
+    "An old woman with snow­white hair was holding a one­year­old child in her arms and singing to it and tickling it.
 	The child was cooing with delight. The parents were looking on with tears in their eyes.
 	The father was holding the hand of a boy about 10 years old and speaking to him softly; the boy was fighting his tears.
-	The father pointed to the sky, stroked his head and seemed to explain something to him." [1942-10-5, Dubno execution pits, Ukraine]
+	The father pointed to the sky, stroked his head and seemed to explain something to him." [1942­10­5, Dubno execution pits, Ukraine]
 	
-	"Goering leaves Rome. We had dinner at teh Excelsior Hotel, and during the dinner Goering talked of little else but the jewels he owned.
+	"Goering leaves Rome. We had dinner at the Excelsior Hotel, and during the dinner Goering talked of little else but the jewels he owned.
 	In fact, he had some beautiful rings on his fingers... On the way to the station he wore a great sable coat, something between what 
-	automobile drivers wore in 1906 and what a high-grade prostitute wears to the opera."
+	automobile drivers wore in 1906 and what a high­grade prostitute wears to the opera."
   }
 }
 
-Madame de Stael {
+Stael, Madame de {
   Bonaparte wanted me to praise him in my writings, not, certainly, that an additional eulogy would have been noticed in the fumes of incense surrounding him,
   but it annoyed him that I was the only writer the French knew who had published under his rule without making any mention of his majestic existence.
   
-  I had the experience of entering poor homes [in Germany] blackened by tobacco-smoke and of suddenly hearing not only the mistress but also the master
+  I had the experience of entering poor homes [in Germany] blackened by tobacco­smoke and of suddenly hearing not only the mistress but also the master
   of the house improvising on the harpsichord, as the Italians improvise in verse.
   
   When a writer's main purpose is to produce an effect upon others, he never reveals his real self, but when he writes to satisfy an internal urge with which his soul is possessed, 
   he involuntarily reveals through his writings even the slightest em(nuances) of his way of living and thinking.
 }
 
-La Comtesse de Boigne {
+Boigne, La Comtesse de {
   Mémoires {
     Monsieur de Lusson, jeune homme d'une charmante figure, immensément riche, bon officier, vivait habituellement dans la meilleure compagnie, eut 
 	l'imprudence d'aller à un de ces bals; on l'en chassa avec une telle dureté que, désespéré du ridicule dont il restait couvert dans un temps où le 
@@ -4328,9 +4344,9 @@ La Comtesse de Boigne {
 	
 	Leur visage s'épanouit quand un frère aîné vient les prier à danser; si elles causent avect un cadet, en revanche, les mères s'agitent sur leurs banquettes et paraissent au supplice.
 	
-	Le fait était que monsieur de Talleyrand, amoureux comme un homme de dix-huit ans de sa nièce...
+	Le fait était que monsieur de Talleyrand, amoureux comme un homme de dix­huit ans de sa nièce...
 	
-	Le duc de Richelieu avait été marié, à dix-sept ans, à mademoiselle de RocheChouart qui en avait douze.
+	Le duc de Richelieu avait été marié, à dix­sept ans, à mademoiselle de RocheChouart qui en avait douze.
 	Selon l'usage du temps, on l'avait envoyé voyager. Pendant les trois années de son absence, il recevait de fréquentes lettres de sa jeune épouse, remplies de grâce et d'esprit.
 	
 	...elle avait passé la semaine de son absences à Rumilly dans une orgie perpétuelle avec ses autres valets.
@@ -4447,7 +4463,7 @@ Lewis, Bernard {
 	is meant by the term the Great Satan, applied to the United States by Ayatollah Khomeini. Satan as depicted in the Qu'ran is neither an imperialist nor an 
 	exploiter. He is a seducer, "the insidious tempter who whispers in the hearts of men."
 	
-	For Islamists, democracy, expressing the will of the people, is the road to power, but it is a one-way road...
+	For Islamists, democracy, expressing the will of the people, is the road to power, but it is a one­way road...
 	
 	The Arab world translates about 330 books annually [2002], one fifth of the number that Greece translates. Spain translates almost 100,000 in one year.
 	
@@ -4464,7 +4480,7 @@ Lewis, Bernard {
 
 Sachar, Howard {
  A History of Israel {
-   At eight o'clock on the morning of May 14, the British lowered the Union Jack on Jerusalem. By mid-afternoon full-scale fighting had erupted throughout the country.
+   At eight o'clock on the morning of May 14, the British lowered the Union Jack on Jerusalem. By mid­afternoon full­scale fighting had erupted throughout the country.
    
    In April and May [1948], entire Arab communities were fleeing in terror even before Jewish forces overran their homes. A Swiss observer, 
    Jacques de Reynier, described the panic among the inhabitants of Jaffa when the Jews attacked: "Immediately everyone was consumed with terror, and soon the 
@@ -4481,7 +4497,7 @@ Sachar, Howard {
    property and bank accounts of emigrating Jews henceforth were forfeited to the government.
    
    Psychologically, most important of all, the Arabs simply could not bring themselves to admit defeat at the hands of the "Zionist gangs." The Moslem tradition of 
-   jihad - of unceasing warfare against infidel interlopers - played a role here. Pride and self-esteem were equally critical factors, however. Once signed, the peace treaties
+   jihad ­ of unceasing warfare against infidel interlopers ­ played a role here. Pride and self­esteem were equally critical factors, however. Once signed, the peace treaties
    would have been admission that the game was over. Azzam Pasha put the matter forthrightly: "We have a secret weapon which we can use better than guns and machine guns, and 
    this is time. As long as we do not make peace with the Zionists, the war is not over; and as long as the war is not over, there is neither victor nor vanquished."
    
@@ -4508,22 +4524,22 @@ Friedman, Matti {
 }
 
 Poliakov, Léon {
- The History of Anti-Semitism {
-  Few dates are as important in Western history as that of November 27, 1095, when, at the council of Clermont-Ferrand, Pope Urban II undertook to preach the First Crusade...
+ The History of Anti­Semitism {
+  Few dates are as important in Western history as that of November 27, 1095, when, at the council of Clermont­Ferrand, Pope Urban II undertook to preach the First Crusade...
   
   On their clothing they sewed the sign of the Cross. Whatever they did, eternal felicity had been promised them; they were God's avengers, appointed to punish all infidels, whoever they might be.
   
   Emicho and all his men, having taken counsel, proceeded at sunrise to attack the Jews with lances and axes... Having broken the locks and knocked in the doors, they 
   seized and killed seven hundred who vainly sought to defend themselves against forces far superior to their own; the women were also massacred, and the young children, whatever 
   their sex, were put to the sword. The Jews, seeing the Christians rise as enemies against them and their children, with no respect for the weakness of age, took arms in turn
-  against their coreligionists, against their wives, their children, their mothers, and their sisters, and massacred their own. A horrible thing to tell of - the mothers seized 
+  against their coreligionists, against their wives, their children, their mothers, and their sisters, and massacred their own. A horrible thing to tell of ­ the mothers seized 
   the sword and cut the throats of the children at their breast, choosing to destroy themselves at their own hands rather than succomb to the blows of the uncircumcised! [Mainz, 1096]
   
   ...accusations of ritual murder or of profanation of the Host gradually replaced the Crusades as a pretext for mass exterminations.
   
   The massacres of the First Crusade were to leave an indelible imprint on Jewish memory, a kind of collective trauma.
   
-  One contemporary Christian chronicler declares that nearly one hundred thousand Jews were massacred at this time [1250-1300]; such a figure cannot be greatly exaggerated, 
+  One contemporary Christian chronicler declares that nearly one hundred thousand Jews were massacred at this time [1250­1300]; such a figure cannot be greatly exaggerated, 
   for we have lists of several thousand victims.
   
   In the course of the summer of 1321 a rumor arose in Aquitaine alleging that a dreadful conspiracy had been plotted by the lepers and the Jews...to put all Christians to death by 
@@ -4540,8 +4556,8 @@ Poliakov, Léon {
   
   The first known trial for witchcraft occurred in 1335 in Toulouse.
   
-  Inquisitorial procedure insisted on the victim's confession. Torture, euphemistically called "the question", - continued sometimes for weeks and months, sometimes for several days
-  in a row, sometimes with long interruptions - infallibly obtained these confessions, as precise and detailed as the inquisitor insisted they be...
+  Inquisitorial procedure insisted on the victim's confession. Torture, euphemistically called "the question", ­ continued sometimes for weeks and months, sometimes for several days
+  in a row, sometimes with long interruptions ­ infallibly obtained these confessions, as precise and detailed as the inquisitor insisted they be...
   
   As one of them, Paramo [an inquisitor] observed proudly in 1404, the Holy Office had already burned over thirty thousand witches...
   
@@ -4574,16 +4590,16 @@ Poliakov, Léon {
   
   "An inhabitant of Asia, who should chance to arrive at Madrid the day of such an execution," wrote Voltaire, "would not be able to determine whether it was a rejoicing, a religious 
   ceremony, a sacrifice, or a butchery; and it is indeed all these together...Montezuma has been reproached with sacrificing the captives taken in war to his gods; but what would you 
-  have said if he had been at an auto-da-fé?"
+  have said if he had been at an auto­da­fé?"
   
   "...he immediately advised me to go out every morning from now on, since there were individuals in charge of watching foreigners and verifying if they went to Mass."
  }
- The History of Anti-Semitism (IV) {
+ The History of Anti­Semitism (IV) {
    "He was from the city rather than from the country, indifferent if not hostile to the Church rather than devoutly Christian, from the educated rather than the ignorant classes.
-   The most virulent forms of anti-Semitism were propagated by teachers, students, office workers, minor bureaucrats, and secretaries of various organizations, 'reform-of-life' movements, 
-   vegetarians, antivivisectionists, back-to-nature cults."
+   The most virulent forms of anti­Semitism were propagated by teachers, students, office workers, minor bureaucrats, and secretaries of various organizations, 'reform­of­life' movements, 
+   vegetarians, antivivisectionists, back­to­nature cults."
    
-   Georg von Schonerer...drew his support [for anti-Semitism] mainly from students.
+   Georg von Schonerer...drew his support [for anti­Semitism] mainly from students.
    
    "Only 100,000 Jews live in the midst of 36 million Frenchmen, and they always rank first in high school. Fourteen of them in the Ecole Normale had won first place.
    It was necessary to reduce the number of those eligible to take public examinations."
@@ -4600,7 +4616,7 @@ Poliakov, Léon {
    "Death to the Jews" has been our war cry for fourteen years. Let them die. [Goebbels]
    
    "Today I am going to play the prophet again. If international Jewry should succeed, in Europe or elsewhere, in precipitating nations into a world war, the result will be not the 
-   bolshevization of Europe and a victory for Judaism, but the extermination in Europe of the Jewish race." [Hitler's annual speech, 1939-01-30]
+   bolshevization of Europe and a victory for Judaism, but the extermination in Europe of the Jewish race." [Hitler's annual speech, 1939­01­30]
    
    Another amusement consisted of breaking into a Jewish apartment or house and forcing young and old to undress and dance, arm in arm, to the sound of a phonograph.
    Following this with rape was optional, as one risked being tried for the "crime of race defilement". Staider spirits, combining business and pleasure, seized pedestrian 
@@ -4608,7 +4624,7 @@ Poliakov, Léon {
    
    The "Jewish question" continued to be the principal theme of Nazi propaganda. No Nazi leader could open his mouth in public without expatiating on this inexhaustible subject.
    
-   [At Auschwitz, ] the clothing or baggage they had been able to bring filled the thirty-five warehouses of the "Canada" - the nickname the prisoners gave this area of the camp had 
+   [At Auschwitz, ] the clothing or baggage they had been able to bring filled the thirty­five warehouses of the "Canada" ­ the nickname the prisoners gave this area of the camp had 
    been picked up by the SS themselves.
    
    [Euphemisms for the murder camps] One is inclined to see it as a real exercise in magic, an attempt to influence things (to make the obscene inocuous and even noble) by manipulating words.
@@ -4630,7 +4646,7 @@ Kamen, Henry {
   
    Torture was used as a last resort and applied only in a minority of cases.
   
-   Two classes of people alone qualified for the stake - unrepentent heretics and relapsed heretics.
+   Two classes of people alone qualified for the stake ­ unrepentent heretics and relapsed heretics.
   
    By the end of the sixteenth century there were no professors of mathematics in Alcala or Salamanca.
  }
@@ -4641,7 +4657,7 @@ Lea, Henry Charles {
    In such a religion the priest exercises the functions which in purer faiths are relegated to the sorcerer.
    
    With the triumph of Christianity the circle of forbidden practices was enormously enlarged. A new sacred magic was introduced which superseded and condemned as sorcery and 
-   demon-worship a vast array of observances and beliefs, which had become an integral part and almost ineradicable part of daily life.
+   demon­worship a vast array of observances and beliefs, which had become an integral part and almost ineradicable part of daily life.
    
    The awful words "Thou shall not suffer a witch (Mekasshepha) to live" have rung through the centuries, and have served as a justification for probably more judicial slaughter than any 
    other sentence in the history of human jurisprudence.
@@ -4658,22 +4674,22 @@ Lea, Henry Charles {
  }
 }
 
-Trevor-Roper, H. R. {
-  The European Witch-Craze {
+Trevor­Roper, H. R. {
+  The European Witch­Craze {
     In the sixteenth century the witch gradually replaces the Jew, and in the seventeenth century the reversal is almost complete. If the universal scapegoat of the Black Death
 	in Germany had been the Jew, the universal scapegoat of the Wars of Religion will be the witch.
 	
-	When [the Malleus Maleficarum, "Hammer of Witches"] was published, it carried on its title-page the bold epigraph, "To disbelieve in witchcraft is the greatest of heresies." 
+	When [the em(Malleus Maleficarum,) "Hammer of Witches"] was published, it carried on its title­page the bold epigraph, "To disbelieve in witchcraft is the greatest of heresies." 
 	It was the exact opposite of the ruling of the Church in the Dark Ages. Since the 9th century, the wheel had come full circle.
 	
 	Romances of chivalry could be laughed out of existence, but no Don Quixote dared to kill, by ridicule, the bizarre novellettes which the grave lawyers and divines of all 
 	Europe published about Satan's kingdom.
 	
-	The law of God was stated most explicitly in Exodus 22-18: 'thou shalt not suffer a witch to live.'
+	The law of God was stated most explicitly in Exodus 22­18: `thou shalt not suffer a witch to live.'
 	
 	By law, children who were said to have attended their mother to the sabbat were merely flogged in front of the fire in which their parent was burning.
 	
-	Montaigne...remarked that 'it is rating our conjectures highly to roast people alive for them.'
+	Montaigne...remarked that `it is rating our conjectures highly to roast people alive for them.'
 	
 	The last legal execution [of a witch] was in Protestant Glarus, in Switzerland, in 1782.
   }
@@ -4683,26 +4699,26 @@ Walker, C. B. F. {
   Cuneiform {
     Writing was invented in order to record business activities in the early Near East.
 	
-	The end of the wooden or reed stylus, which struck the clay first, made a wider mark than the shaft, and so came into being the typical wedge-shaped impressions after which this 
-	writing system became know - cuneiform, from the Latin word em(cuneus) meaning wedge.
+	The end of the wooden or reed stylus, which struck the clay first, made a wider mark than the shaft, and so came into being the typical wedge­shaped impressions after which this 
+	writing system became know ­ cuneiform, from the Latin word em(cuneus) meaning wedge.
 	
 	Thus it is beginning to look as if we should think in terms of the invention of writing as being a gradual process, accomplished over a wide area, rather than the product 
 	of a single Sumerian genius.
 	
-	Eighty-five percent of the tablets from the early levels at Uruk are economic and are concerned with the income and outgoings of the city's temples in terms of food, 
+	Eighty­five percent of the tablets from the early levels at Uruk are economic and are concerned with the income and outgoings of the city's temples in terms of food, 
 	livestock, and textiles...Fifteen percent of the texts are lexical lists, including the names of various commodities, animals, and officials.
 	
-	In some respects the Sumerian script never quite escapes from the fact that it was originally designed for the purpose of practical book-keeping rather than to express abstract ideas.
+	In some respects the Sumerian script never quite escapes from the fact that it was originally designed for the purpose of practical book­keeping rather than to express abstract ideas.
 	
 	As in other Semitic languages, Akkadian words basically have a root of three consonants, e.g. em(prs,) which is then modified internally by the doubling of consonants or insertion 
 	of vowels, and externally by the addition of prefixes or postfixes, e.g. em(iprus, purus, iparrasuni.)
 	
 	The number of distinct cuneiform signs in use from the late third millenium onwards is about six hundred...
 	
-	Enheduanna, the daughter of Sargon I, and high priestess of the moon-god Nanna at Ur, is one of the few female scribes known from Mesopotamia, and the earliest named author 
+	Enheduanna, the daughter of Sargon I, and high priestess of the moon­god Nanna at Ur, is one of the few female scribes known from Mesopotamia, and the earliest named author 
 	in history.
 	
-	The scribes often describe themselves simply as dubsar, but sometimes give themselves other titles such as...'junior scribe',...or 'exorcist'.
+	The scribes often describe themselves simply as em(dubsar,) but sometimes give themselves other titles such as...`junior scribe',...or `exorcist'.
 	
 	...if one digs in a town of the Old Babylonian period it seems that one can find a few tablets in almost every house.
   }
@@ -4722,12 +4738,12 @@ Ayaan Hirsi Ali {
    
    Most of all, I think it was the novels that saved me from submission.
    
-   The clan simply would not stand for it. If I married Ken [a non-Muslim Kenyan], he might even be killed.
+   The clan simply would not stand for it. If I married Ken [a non­Muslim Kenyan], he might even be killed.
    
    The Muslim Brotherhood believed that there was a pure, original Islam to which we all should return...The movement was founded in the 1920s in Egypt as an Islamic revivalist 
-   movement, then caught on and spread - slowly at first, but much faster in the 1970s, as waves of funding flooded in from the suddenly massively rich Saudis.
+   movement, then caught on and spread ­ slowly at first, but much faster in the 1970s, as waves of funding flooded in from the suddenly massively rich Saudis.
    
-   An older woman...started to instruct her in the Islamic way of breast-feeding. First you say em(Bismallah) before you put the nipple into the mouth. As the baby is feeding, beg 
+   An older woman...started to instruct her in the Islamic way of breast­feeding. First you say em(Bismallah) before you put the nipple into the mouth. As the baby is feeding, beg 
    Allah to protect your child from illness, earthly temptations, and the evil ways of the Jews.
    
    The most fanatical Brotherhood members, who were usually in their teens and twenties...
@@ -4736,17 +4752,17 @@ Ayaan Hirsi Ali {
    
    Drinking wine and wearing trousers were nothing compared to reading the history of ideas.
    
-   Little children were excised on kitchen tables - I knew this from Somalis for whom I translated.
+   Little children were excised on kitchen tables ­ I knew this from Somalis for whom I translated.
    
    We were not just servants of Allah, we were slaves.
  }
  Prey {
-   Having seen firsthand how quickly history can fast-forward, I am keenly aware that it can just as rapidly rewind.
+   Having seen firsthand how quickly history can fast­forward, I am keenly aware that it can just as rapidly rewind.
    
    Rapists can avoid persecution in Algeria, Bahrain, Iraq, Kuwait, Libya, Palestine, and Syria if they marry their victims.
    
    Writing under a pseudonym about her ordeal, one of the survivors of the grooming gangs in Rotherham said she had been the victim of "religiously sanctioned sexual violence." 
-   "They made it clear that because I was a non-Muslim, and not a virgin, and because I didn't dress 'modestly', that they believed I deserved to be 'punished'."
+   "They made it clear that because I was a non­Muslim, and not a virgin, and because I didn't dress `modestly', that they believed I deserved to be `punished'."
    That punishment included more than a hundred rapes by perpetrators, some of whom quoted the Quran while beating her.
    
    Estimates are that 200 million women worldwide have undergone female genital mutilation; most victims, though not all, are Muslim.
@@ -4773,7 +4789,7 @@ Wollstonecraft, Mary  {
 	
 	Men order their clothes to be made, and have done with the subject; women make their own clothes, and are continually talking about them...
 	
-	In short, speaking of the majority of mothers, they leave their children entirely to the care of servants; or, because they are their children, treat them as if they were little demi-gods...
+	In short, speaking of the majority of mothers, they leave their children entirely to the care of servants; or, because they are their children, treat them as if they were little demi­gods...
   }
 }
 
@@ -4782,16 +4798,16 @@ O'Neill, Brendan {
     There were two eruptions of barbarism in October 2023. The first was Hamas's pogrom of 7 October, in which more than a thousand people were slaughtered and many others were 
 	maimed, raped, and kidnapped. The second was the sympathy for the pogrom across much of the Western world.
 	
-	We can no longer ignore the fact that even the worst act of violence against the Jews since the Holocaust was not enough to awaken the West to the threat posed by radical Islam - not 
+	We can no longer ignore the fact that even the worst act of violence against the Jews since the Holocaust was not enough to awaken the West to the threat posed by radical Islam ­ not 
 	only to the Jewish State, but also to the West itself.
 	
-	No, all that matters is the scapegoating of Israel for the supposed crimes of modernity. The transformation of Israel into the sin-eater of Western culture.
+	No, all that matters is the scapegoating of Israel for the supposed crimes of modernity. The transformation of Israel into the sin­eater of Western culture.
 	
 	Decolonisation is decivilisation. It is a purge. It is the purging of our institutions of the ideas and ideals that shaped our societies. It is a secular jihad.
  }
 }
 
-# START OF EDIT ON 2026-03-05
+# START OF EDIT ON 2026­03­05
 
 King, Ross {
   The Bookseller of Florence {
@@ -4804,7 +4820,7 @@ Westrich, Robert {
   A Lethal Obsession {
     When it comes to Muslim Jew hatred, the demonization is almost em(universal.)
     
-    The countless anti-Semitic persecutors who plundered Jewish property and burned and massacred Jews over the centuries 
+    The countless anti­Semitic persecutors who plundered Jewish property and burned and massacred Jews over the centuries 
     always prepared the ground by first accusing their victims of the crimes they themselves intended to commit.
     
     This belief in the fantasies of the em(Protocols) is not confined to Qutb and his fundamentalist believers. To this day 
@@ -4817,11 +4833,11 @@ Klemperer, Victor {
     ...the intention is evidently to wear us down, as many individuals as possible are to be driven to suicide.
     
     Once, as she was searching, she had wanted to light a cigarette and had had no matches; something was glowing on 
-    the ground, she wanted to use it - it was a burning corpse.
+    the ground, she wanted to use it ­ it was a burning corpse.
     
     The brief items on Dresden are shameless. Nothing but the irreplaceable works of art, not a word about the 200,000 dead.
     
-    On the Feldherrnhalle, carefully painted in giant letters: "Buchenwald, Velden, Dachau - I am ashamed to be a German."
+    On the Feldherrnhalle, carefully painted in giant letters: "Buchenwald, Velden, Dachau ­ I am ashamed to be a German."
   }
 } 
 
@@ -4878,7 +4894,7 @@ Bell, E. T. {
     
     How could the whole race have missed this till Descartes saw it? [Analytic geometry.]
     
-    All of the astounding inventiveness and infinite variety of geometry during that amazingly prolific half century [1872-1922] is 
+    All of the astounding inventiveness and infinite variety of geometry during that amazingly prolific half century [1872­1922] is 
     seen as one orderly, simple whole from the commanding summit which Klein recognized as the proper point of view to sweep in the 
     whole of the past of geometry and to foresee much of its future. Here is the famous sentence: "Given a manifold and a group 
     of transformations of the same, to develop the theory of invariants relating to that group."
@@ -4894,21 +4910,23 @@ Bennett, Christopher {
   }
 }
 
-Grattan-Guiness, Ivor {
-  Mathematics is rich, even dense, with interconnections, but it exhibits no unity.
-  
-  In addition, the teaching of theories from axioms, or some close imitation of them such as the basic laws of algebra, 
-  is usually an educational disaster; for whatever the gains in rigour, they are achieved at the expense of a heavy loss of 
-  heuristic understanding and intuitive reasoning - the very things that lie at the heart of real educational theory.
-  
-  ...set theory and topology were extraordinarily late arrivals on the mathematical scene.
-  
-  Neither Newton nor Leibniz married, nor did they seem to be "interested". 
+Grattan­Guiness, Ivor {
+  The Norton History of the Mathematical Sciences {
+    Mathematics is rich, even dense, with interconnections, but it exhibits no unity.
+    
+    In addition, the teaching of theories from axioms, or some close imitation of them such as the basic laws of algebra, 
+    is usually an educational disaster; for whatever the gains in rigour, they are achieved at the expense of a heavy loss of 
+    heuristic understanding and intuitive reasoning ­ the very things that lie at the heart of real educational theory.
+    
+    ...set theory and topology were extraordinarily late arrivals on the mathematical scene.
+    
+    Neither Newton nor Leibniz married, nor did they seem to be "interested". 
+  }
 }
 
 Wise, James Waterman {
-  Swastika - The Nazi Terror {
-    A considerable part of the intelligentsia is inclined toward anti-Semitism and, what is much more important, the major 
+  Swastika: The Nazi Terror {
+    A considerable part of the intelligentsia is inclined toward anti­Semitism and, what is much more important, the major 
     part of the student body approves it. 
     
     Contemporary youth has a new conception of the nature of the State which...tends in the direction of the collectivistic ideal.
@@ -4916,18 +4934,20 @@ Wise, James Waterman {
 } 
 
 MacPhail, Andrew {
-  At the age of twelve I was reading Caesar, at thirteen the Greek testament. I had already mastered four books of Euclid,
-  much algebra, and the mechanical parts of French.
-  
-  It was easier to avoid a spell than to remove it once it had been cast, although she was quite familiar with the best 
-  practice of exorcism. A piece of silver was put into a white bowl, and the bowl allowed to fill from a running spring. 
-  The vessel was turned slowly, and "suitable words" were spoken, until the contents were poured over the afflicted animal. 
-  A threepenny bit of silver was used; it was the smallest silver coin, and the exorciser always retained it as a fee 
-  for their service.
+  The Master's Wife {
+    At the age of twelve I was reading Caesar, at thirteen the Greek testament. I had already mastered four books of Euclid,
+    much algebra, and the mechanical parts of French.
+    
+    It was easier to avoid a spell than to remove it once it had been cast, although she was quite familiar with the best 
+    practice of exorcism. A piece of silver was put into a white bowl, and the bowl allowed to fill from a running spring. 
+    The vessel was turned slowly, and "suitable words" were spoken, until the contents were poured over the afflicted animal. 
+    A threepenny bit of silver was used; it was the smallest silver coin, and the exorciser always retained it as a fee 
+    for their service.
+  }
 }
 
 Damari (freed Israeli hostage), Emily {
   I have also learned to value everything I do in life. I open the fridge: I say thank you. I drink cold water: I say thank you.
-  I am thankful for everything - big things and little things. Gratitude is very important. I am grateful that I have the 
+  I am thankful for everything ­ big things and little things. Gratitude is very important. I am grateful that I have the 
   privilege of being thankful. I was thankful before, but now it's on a different level.
 }
