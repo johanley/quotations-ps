@@ -32,7 +32,7 @@
 #  pre(...) - preserve white space (poetry)
 #  em(...) - emphasis/italics   
 
-Carl Jung {
+Jung, Carl {
  Psychology and Alchemy {
    Experience, not books, is what leads to understanding.
  }
@@ -143,7 +143,7 @@ Horace {
  Come, wanton winds, and blow my fears and sorrows to the Cretan sea! 
 }
 
-Meister Eckhart {
+Eckhart, Meister {
  One person who has mastered life is better than a thousand persons who have mastered only the contents of books.
  
  The just are they that take everything alike from God no matter what it is, big and little, good and bad, all the same, no more no less, but one thing like another.
@@ -2252,7 +2252,7 @@ Gould, Glenn {
   The purpose of art is the lifelong creation of a state of wonder.
 }
 
-Comte de Buffon {
+Buffon, Comte de {
   Genius is only a greater aptitude for patience.
 }
 
@@ -3158,7 +3158,7 @@ Morley, Christopher {
   }
 }
 
-Du Maurier, George {
+Maurier, George Du {
   Trilby {
      ... le bon temps où l'on était si malheureux.
   }
@@ -4011,7 +4011,7 @@ Monod, Jacques {
   L'homme sait enfin qu'il est seul dans l'immensité indifférente de l'univers d'où il a émergé par hasard.
 }
 
-Saint Augustin {
+Augustin, Saint {
   Voici une autre forme de tentation, encore plus dangereuse. Il s'agit de la maladie de la curiosité. C'est elle qui nous incite 
   à tenter de découvrir les secrets de la nature, tous ces secrets inaccessibles à notre compréhension qui ne nous concernent pas et
   que l'homme ne devrait pas désirer connaître. 
@@ -4084,10 +4084,10 @@ Hilbert, David {
   we are a university, not a bathing establishment.
 }
 
-Philoponas the Byzantine [6th cent.] {
+Philoponas the Byzantine {
   For if you let two weights fall from the same height, one of them being many times heavier than the other, you will see that the 
   times required for the motion are not in proportion dependent on the ratio of their weights, but that the actual difference 
-  in time is very small.
+  in time is very small. [6th cent.]
 }
 
 Flammarion and Gore {
@@ -4730,7 +4730,7 @@ Meinke, F. {
   }
 }
 
-Ayaan Hirsi Ali {
+Ali, Ayaan Hirsi {
  Infidel {
    In Saudia Arabia, everything bad was the fault of the Jews...The children next door were taught to pray for the health of their parents and the destruction of the Jews.
    
@@ -4946,8 +4946,8 @@ MacPhail, Andrew {
   }
 }
 
-Damari (freed Israeli hostage), Emily {
+Damari, Emily {
   I have also learned to value everything I do in life. I open the fridge: I say thank you. I drink cold water: I say thank you.
   I am thankful for everything ­ big things and little things. Gratitude is very important. I am grateful that I have the 
-  privilege of being thankful. I was thankful before, but now it's on a different level.
+  privilege of being thankful. I was thankful before, but now it's on a different level. [Freed Israeli hostage.]
 }

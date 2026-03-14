@@ -97,6 +97,10 @@ public final class ParseAndGenerateFile {
         titles.remove(null);
       }
     }
+    //coerce the author 'ZzzUnknown' to 'Various'
+    String ZZZ = "ZzzUnknown";
+    res.put("Various", res.get(ZZZ));
+    res.remove(ZZZ);
     return res;
   }
   

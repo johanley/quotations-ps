@@ -6,19 +6,20 @@
 <</author (Alexander, Christopher) /title (The Nature of Order, Book 3)>>
 <</author (Alexander, Christopher) /title (The Nature of Order, Book 4)>>
 <</author (Alexander, Christopher) /title (The Timeless Way of Building)>>
+<</author (Ali, Ayaan Hirsi) /title (Infidel)>>
+<</author (Ali, Ayaan Hirsi) /title (Prey)>>
 <</author (Amis, Kingsley) /title (Lucky Jim)>>
 <</author (Amis, Martin) /title (The Information)>>
 <</author (Amis, Martin) /title (Time's Arrow)>>
 <</author (Aristotele) /title ()>>
 <</author (Auden, W. H.) /title (As I Walked Out One Evening)>>
+<</author (Augustin, Saint) /title ()>>
 <</author (Aurelio, Marco) /title ()>>
 <</author (Austen, Jane) /title (Mansfield Park)>>
 <</author (Austen, Jane) /title (Northanger Abbey)>>
 <</author (Austen, Jane) /title (Persuasion)>>
 <</author (Austen, Jane) /title (Pride and Prejudice)>>
 <</author (Austen, Jane) /title (Sense and Sensibility)>>
-<</author (Ayaan Hirsi Ali) /title (Infidel)>>
-<</author (Ayaan Hirsi Ali) /title (Prey)>>
 <</author (Bacon, Francis) /title (Novum Organum)>>
 <</author (Balzac, Honoré de) /title (Cousin Bette)>>
 <</author (Baricco, Alessandro) /title (Océan Mer)>>
@@ -46,17 +47,15 @@
 <</author (Brontë, Charlotte) /title (Villette)>>
 <</author (Brontë, Emily) /title (Julian M. and A.G. Rochelle)>>
 <</author (Bryson, Bill) /title (A Short History of Nearly Everything)>>
+<</author (Buffon, Comte de) /title ()>>
 <</author (C. Singer et. al.) /title (A History of Technology)>>
 <</author (Campan, Mme) /title (Mémoires)>>
 <</author (Camus, Albert) /title (Jonas, or the Artist at Work)>>
 <</author (Capek, M.) /title (The New Aspects of Time)>>
 <</author (Capek, M.) /title (The Philosophical Impact of Contemporary Physics)>>
-<</author (Carl Jung) /title (Collected Works, v.10)>>
-<</author (Carl Jung) /title (Psychology and Alchemy)>>
 <</author (Carr, Nicolas) /title (The Shallows)>>
 <</author (Carrier, Roch) /title (Fin)>>
 <</author (Chariton) /title (Callirhoe)>>
-<</author (Comte de Buffon) /title ()>>
 <</author (Conrad, Joseph) /title (Nostromo)>>
 <</author (Conrad, Joseph) /title (The Shadow­Line)>>
 <</author (Copernicus) /title (De Revolutionibus)>>
@@ -66,7 +65,7 @@
 <</author (Cummings, E. E.) /title ()>>
 <</author (Dalrymple, Theodore) /title (Life at the Bottom)>>
 <</author (Dalrymple, Theodore) /title (Our Culture, What's Left Of It)>>
-<</author (Damari \(freed Israeli hostage\), Emily) /title ()>>
+<</author (Damari, Emily) /title ()>>
 <</author (Dante) /title ()>>
 <</author (Darwin, Charles) /title (The Life and Letters of Charles Darwin)>>
 <</author (Darwin, Charles) /title (The Voyage of the Beagle)>>
@@ -79,7 +78,6 @@
 <</author (Dostoyevsky, Fyodor) /title (Notes From the Underground)>>
 <</author (Dostoyevsky, Fyodor) /title (White Knights)>>
 <</author (Drake, Stillman) /title (Galileo: Pioneer Scientist)>>
-<</author (Du Maurier, George) /title (Trilby)>>
 <</author (Dubois, W. E. B.) /title ()>>
 <</author (Dumas, Alexandre) /title (Les trois mousquetaires)>>
 <</author (Durant, Will) /title (The Life of Greece)>>
@@ -87,6 +85,7 @@
 <</author (Duteurtre, Benoît) /title (Le voyage en France)>>
 <</author (Dylan, Bob) /title (Shelter From The Storm)>>
 <</author (Dylan, Bob) /title (Visions of Johanna)>>
+<</author (Eckhart, Meister) /title ()>>
 <</author (Eliot, George) /title (Felix Holt, the Radical)>>
 <</author (Eliot, George) /title (Middlemarch)>>
 <</author (Eliot, George) /title (Mr. Gilfil's Love­Story)>>
@@ -176,6 +175,8 @@
 <</author (Joyce, James) /title (The Boarding House)>>
 <</author (Joyce, James) /title (Two Gallants)>>
 <</author (Joyce, James) /title (Ulysses)>>
+<</author (Jung, Carl) /title (Collected Works, v.10)>>
+<</author (Jung, Carl) /title (Psychology and Alchemy)>>
 <</author (Kamen, Henry) /title (The Spanish Inquisition)>>
 <</author (Kershner and Wilcox) /title (The Anatomy of Mathematics)>>
 <</author (King, Ross) /title (The Bookseller of Florence)>>
@@ -223,10 +224,10 @@
 <</author (Maupassant, Guy de) /title (Sur l'eau)>>
 <</author (Maupassant, Guy de) /title (Une vie)>>
 <</author (Maupassant, Guy de) /title (Â Vendre)>>
+<</author (Maurier, George Du) /title (Trilby)>>
 <</author (Maurois, André) /title (Climats)>>
 <</author (McEwan, Ian) /title (The Child in Time)>>
 <</author (Meinke, F.) /title (The German Catastrophe)>>
-<</author (Meister Eckhart) /title ()>>
 <</author (Melville, Herman) /title (Moby Dick)>>
 <</author (Mencken, H. L.) /title (The American Scene)>>
 <</author (Miller, Stephen) /title (Conversation ­ A History of a Declining Art)>>
@@ -265,7 +266,7 @@
 <</author (Papert, Seymour) /title (Mindstorms)>>
 <</author (Perelman, S. J.) /title (The Road to Miltdown)>>
 <</author (Petronius) /title (Satyricon)>>
-<</author (Philoponas the Byzantine [6th cent.]) /title ()>>
+<</author (Philoponas the Byzantine) /title ()>>
 <</author (Pierce, Charles) /title ()>>
 <</author (Pindaro) /title ()>>
 <</author (Pirsig, R. M.) /title (Zen and the Art of Motorcycle Maintenance)>>
@@ -302,7 +303,6 @@
 <</author (Rumi) /title ()>>
 <</author (Sachar, Howard) /title (A History of Israel)>>
 <</author (Sagan, Carl) /title (Cosmos)>>
-<</author (Saint Augustin) /title ()>>
 <</author (Seneca, Lucio Anneo) /title ()>>
 <</author (Sennett, Richard) /title (The Fall of Public Man)>>
 <</author (Shakespeare, William) /title (Hamlet)>>
@@ -380,11 +380,11 @@
 <</author (Yourcenar, Marguerite) /title (How Wang Fo Was Saved)>>
 <</author (Zweig, Stefan) /title (Moonbeam Alley)>>
 <</author (Zweig, Stefan) /title (Transfiguration)>>
-<</author (ZzzUnknown) /title (Bhagavad Gita)>>
-<</author (ZzzUnknown) /title (Dhammapada)>>
-<</author (ZzzUnknown) /title (Gilgamesh)>>
-<</author (ZzzUnknown) /title (King James Bible)>>
-<</author (ZzzUnknown) /title (Mahabharata)>>
-<</author (ZzzUnknown) /title (Mémoires sur les prisons)>>
-<</author (ZzzUnknown) /title (Upanishads)>>
+<</author (Various) /title (Bhagavad Gita)>>
+<</author (Various) /title (Dhammapada)>>
+<</author (Various) /title (Gilgamesh)>>
+<</author (Various) /title (King James Bible)>>
+<</author (Various) /title (Mahabharata)>>
+<</author (Various) /title (Mémoires sur les prisons)>>
+<</author (Various) /title (Upanishads)>>
 # This line is ignored. The file terminates exactly here ->.

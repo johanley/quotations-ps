@@ -19,7 +19,7 @@
   MARGIN-X ASPECT-RATIO mul 
   translate % to the bottom left of the work-box
   
-  idx 3 ge  idx 197 le and {
+  idx 3 ge  idx 182 le  and {
     % show page numbers
     /GAP ht 6 pct def
     (regular) 90 use-font
@@ -38,7 +38,7 @@
       page-num-str show-right-align
     } ifelse
     wd 50 pct  ht GAP add  moveto 
-    TITLE str-upper-case show-ctr-x
+    idx 173 lt {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
     (regular) 100 use-font
   } if
   
@@ -366,6 +366,7 @@
   /QUOTES-FILE (quotes-data-8859-1/quotes_flat_file_ps.txt) def
   /INDEX-FILE (quotes-data-8859-1/index_file_ps.txt) def
   /MAX-QUOTE-LENGTH 5000 def 
+  /INDEX-TITLE (Authors and Titles) def
 %%EndSetup 
 
   % small title 
