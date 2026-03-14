@@ -18,7 +18,8 @@
   MARGIN-X  
   MARGIN-X ASPECT-RATIO mul 
   translate % to the bottom left of the work-box
-  
+
+  % WARNING: there are hard-coded transition points here  
   idx 3 ge  idx 182 le  and {
     % show page numbers
     /GAP ht 6 pct def
@@ -274,27 +275,29 @@
 % The title can be absent, but that only happens when the 
 % author has no other entries in the index.
 /show-index-line {
-  { def } forall
-  /size 90 def
-  (regular) size use-font
-  small-caps-font
-  author str-upper-case show
-  title () ne {
-    1 ex 0 rmoveto 
-    (italic) size use-font
-    /DOT (.) def
-    {
-      % emit dots, but stop when you near the title's x-position 
-      currentpoint pop   wd title str-width sub 1 ex sub   ge { exit } if
-      2 ex 0 DOT ashow % stretch out the spacing with /ashow
-    } loop
-    wd 
-    currentpoint exch pop  % y
-    moveto % the right side
-    title show-right-align
-  } if
-  NEW-LINE
-  currentpoint exch pop 0 le { NEW-PAGE } if
+  2 dict begin
+    { def } forall
+    /size 90 def
+    (regular) size use-font
+    small-caps-font
+    author str-upper-case show
+    title () ne {
+      1 ex 0 rmoveto 
+      (italic) size use-font
+      /DOT (.) def
+      {
+        % emit dots, but stop when you near the title's x-position 
+        currentpoint pop   wd title str-width sub 1 ex sub   ge { exit } if
+        2 ex 0 DOT ashow % stretch out the spacing with /ashow
+      } loop
+      wd 
+      currentpoint exch pop  % y
+      moveto % the right side
+      title show-right-align
+    } if
+    NEW-LINE
+    currentpoint exch pop 0 le { NEW-PAGE } if
+  end
 } bind def
 
 % str (filename)
@@ -323,6 +326,36 @@
   } {
     (OK: THE INDEX FILE WAS CLOSED.) ==
   } ifelse
+} bind def
+
+% [[xy]]
+% The caller will need to set the origin and scale to suitable values, using trial and error.
+/draw-star-line {
+  newpath
+  /is-first? true def
+  {
+    aload pop % x y
+    is-first? { moveto } {lineto } ifelse
+    /is-first? false def
+  } forall % points [x y]
+  stroke
+} bind def
+
+% x y stellar-mag
+% two circles at the given location
+% first in the background color, then in the foreground with a smaller radius
+% this will give a pleasing effect when drawing star-points after the star-lines
+/draw-star-point {
+  newpath
+  [/x /y /stellar-mag] {
+    /radius stellar-mag 2.5 gt {0.30} {0.45} ifelse  def
+    1 setcolor
+    x y radius 0 360 arc % to 'erase' star-lines a wee bit around the star
+    fill
+    0 setcolor
+    x y radius 0.7 mul 0 360 arc
+    fill
+  } def-tmp
 } bind def
 
 
@@ -374,11 +407,10 @@
   wd 45 pct ht 80 pct moveto 
   3 0 TITLE str-upper-case ashow-ctr-x
   
-  
 
 showpage
 
-  %blank 
+  % blank page
   
 showpage
 
@@ -388,15 +420,31 @@ showpage
   0.3 em 0 TITLE str-upper-case ashow-ctr-x
   0 0 wd ht rectstroke
   
-  gsave 
-    wd 37 pct ht 30 pct translate % to the bottom-left of the image
+  % gsave 
+    % wd 37 pct ht 30 pct translate % to the bottom-left of the image
 
-    100            % the intended width of the image in the current CTM (not the pixel-width!)    
-    (louis_conard_bee_bw_300dpi.jpg)  % the file name (in the current directory, in this case)
-    909            % the image-width in pixels
-    1106           % the image-height in pixels
-    show-jpg
-  grestore 
+    % 100            % the intended width of the image in the current CTM (not the pixel-width!)    
+    % (louis_conard_bee_bw_300dpi.jpg)  % the file name (in the current directory, in this case)
+    % 909            % the image-width in pixels
+    % 1106           % the image-height in pixels
+    % show-jpg
+  % grestore 
+  
+  % a drawing of a constellation
+  gsave 
+    % put the origin near the center of the drawing
+    wd 50 pct
+    ht 45 pct  
+    translate 
+
+    % manually tweak the scale  
+    4.5 dup scale  
+    0.2 setlinewidth
+
+    % draw a well-known constellation, as simple lines and dots  
+    % no labels are used here, just the basic shape
+    (constellaton-data-8859-1/orion.ps) run
+  grestore
 
   (regular) 100 use-font  
   wd 50 pct ht 15 pct moveto 
@@ -432,11 +480,11 @@ showpage
 
 
   (regular) 100 use-font
-  wd 50 pct ht 10 pct moveto
-  (Adobe Caslon Pro 11 \(leading 1.2\)) show-ctr-x
+  wd 50 pct ht 50 pct moveto
+  (Adobe Caslon Pro 11 \(leading 13.2\)) show-ctr-x
 
   (italic) 100 use-font
-  wd 50 pct ht 6 pct moveto
+  wd 50 pct ht 46 pct moveto
   (github.com/johanley/quotations-ps) show-ctr-x
 
 
