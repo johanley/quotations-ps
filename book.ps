@@ -233,7 +233,7 @@
   moveto
 } bind def
 
-/NEW-PAGE{
+/NEW-PAGE {
   showpage 
   % set-new-page will also be invoked
 } bind def
@@ -265,6 +265,66 @@
     (OK: THE FILE WAS CLOSED.) ==
   } ifelse
 } bind def
+
+% dict
+% The dict contains /author and (usually) /title.
+% Example output:
+%   DYLAN, BOB.......Shelter From The Storm
+% The author is left-justified, the title is right-justified.
+% The title can be absent, but that only happens when the 
+% author has no other entries in the index.
+/show-index-line {
+  { def } forall
+  /size 90 def
+  (regular) size use-font
+  small-caps-font
+  author str-upper-case show
+  title () ne {
+    1 ex 0 rmoveto 
+    (italic) size use-font
+    /DOT (.) def
+    {
+      % emit dots, but stop when you near the title's x-position 
+      currentpoint pop   wd title str-width sub 1 ex sub   ge { exit } if
+      2 ex 0 DOT ashow % stretch out the spacing with /ashow
+    } loop
+    wd 
+    currentpoint exch pop  % y
+    moveto % the right side
+    title show-right-align
+  } if
+  NEW-LINE
+  currentpoint exch pop 0 le { NEW-PAGE } if
+} bind def
+
+% str (filename)
+/process-index-file-one-line-at-a-time {
+  % open the file read-only; its encoding should be 8859-1.
+  (r) file /index-file defi 
+  /buffer MAX-QUOTE-LENGTH string def
+  {
+    index-file buffer readline {
+      cvx % the string is scanned and interpreted according to PostScript rules
+      exec % to transform the executable string into a dict, and put it on the stack
+      show-index-line 
+    } {
+      % all entries end the same way: with a newline, and never with an end-of-file
+      % THE FILE TERMINATES WITH AN UNUSED LINE, that has no newline at its end.
+      %pop 
+      ==
+      exit
+    } ifelse
+  } loop
+  % the loop will automatically close the file once end-of-file has been reached.
+  % this is just being extra-careful
+  index-file status {
+    (CLOSING THE OPEN INDEX FILE.) == 
+    index-file closefile
+  } {
+    (OK: THE INDEX FILE WAS CLOSED.) ==
+  } ifelse
+} bind def
+
 
 %%BeginSetup    
    % 'US Trade' is 6" x 9"           
@@ -304,8 +364,7 @@
   /DASH (~ ) def
   /COMMA-SPACE (, ) def
   /QUOTES-FILE (quotes-data-8859-1/quotes_flat_file_ps.txt) def
-  %/QUOTES-FILE (quotes-data/quotes_flat_file_ps.txt) def
-  %/QUOTES-FILE (quotes-data/quotes-ps-ready.txt) def
+  /INDEX-FILE (quotes-data-8859-1/index_file_ps.txt) def
   /MAX-QUOTE-LENGTH 5000 def 
 %%EndSetup 
 
@@ -347,33 +406,37 @@ showpage
 
 showpage
 
-QUOTES-FILE
-process-quotes-file-one-line-at-a-time 
+  QUOTES-FILE
+  process-quotes-file-one-line-at-a-time 
 
+showpage
+
+  INDEX-FILE
+  process-index-file-one-line-at-a-time 
 
 showpage
 
 
-gsave 
-  wd 16 pct ht 60 pct translate % to the bottom-left of the image
-  0.5 setcolor
-  -5 -5 260   260  540 922 div mul rectfill
+  gsave 
+    wd 16 pct ht 60 pct translate % to the bottom-left of the image
+    0.5 setcolor
+    -5 -5 260   260  540 922 div mul rectfill
 
-  250            % the intended width of the image in the current CTM (not the pixel-width!)    
-  (pic/ArchForTheKing-slightly-brighter.jpg)  % the file name (in the current directory, in this case)
-  922            % the image-width in pixels
-  524           % the image-height in pixels
-  show-jpg
-grestore 
+    250            % the intended width of the image in the current CTM (not the pixel-width!)    
+    (pic/ArchForTheKing-slightly-brighter.jpg)  % the file name (in the current directory, in this case)
+    922            % the image-width in pixels
+    524           % the image-height in pixels
+    show-jpg
+  grestore 
 
 
-(regular) 100 use-font
-wd 50 pct ht 10 pct moveto
-(Adobe Caslon Pro 11 \(leading 1.2\)) show-ctr-x
+  (regular) 100 use-font
+  wd 50 pct ht 10 pct moveto
+  (Adobe Caslon Pro 11 \(leading 1.2\)) show-ctr-x
 
-(italic) 100 use-font
-wd 50 pct ht 6 pct moveto
-(github.com/johanley/quotations-ps) show-ctr-x
+  (italic) 100 use-font
+  wd 50 pct ht 6 pct moveto
+  (github.com/johanley/quotations-ps) show-ctr-x
 
 
 showpage

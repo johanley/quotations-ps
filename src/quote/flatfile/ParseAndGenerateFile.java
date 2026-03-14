@@ -9,16 +9,20 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 
+import quote.parser.IndexPostScript;
 import quote.parser.ParseQuotations;
 import quote.parser.Quote;
 import quote.parser.QuotePostScript;
 
 /**
-  Parse all quotations and generate a text file with 
-  all quotes, one per line. 
+  Parse all quotations and generate a text file with all quotes, one per line. 
   
   The order of the quotes: 
     the author's last name, then the title (if present), then the quote (as it appears in the source text file).
@@ -33,6 +37,7 @@ public final class ParseAndGenerateFile {
    */
   public static final String INPUT_FILE = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-8859-1\\quotes.txt";
   public static final String OUTPUT_FILE_PS = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-8859-1\\quotes_flat_file_ps.txt";
+  public static final String OUTPUT_INDEX_FILE_PS = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-8859-1\\index_file_ps.txt";
   final static Charset ENCODING = StandardCharsets.ISO_8859_1;  
   
   public static void main(String... args) throws IOException {
@@ -46,6 +51,9 @@ public final class ParseAndGenerateFile {
     
     log("Outputting to " + OUTPUT_FILE_PS);
     outputToPostScriptFile(quotes, OUTPUT_FILE_PS);
+    
+    log("Outputting to " + OUTPUT_INDEX_FILE_PS);
+    outputToPostScriptFile(indexFrom(quotes), OUTPUT_INDEX_FILE_PS);
     log("Done.");
   }
   
@@ -73,6 +81,46 @@ public final class ParseAndGenerateFile {
       writer.write("# This line is ignored. The file terminates exactly here ->.");
     }
   }
+  
+  private static Map<String /*author*/, Set<String/*title*/>> indexFrom(List<Quote> quotes){
+    Map<String, Set<String>> res = new LinkedHashMap<>();
+    for(Quote quote : quotes) {
+      if (!res.containsKey(quote.getRawAuthor())) {
+        res.put(quote.getRawAuthor(), new LinkedHashSet<>());
+      }
+      res.get(quote.getRawAuthor()).add(quote.getRawTitle()); //can be null!
+    }
+    //if an author has > 1 title, then remove any null title from the set
+    for(String author : res.keySet()) {
+      Set<String> titles = res.get(author);
+      if (titles.size() > 1 && titles.contains(null)) {
+        titles.remove(null);
+      }
+    }
+    return res;
+  }
+  
+  /** N lines, 1 per title. */
+  private static void outputToPostScriptFile(Map<String, Set<String>> indexLines, String fileName) throws IOException {
+    Path path = Paths.get(fileName);
+    try (BufferedWriter writer = Files.newBufferedWriter(path, ENCODING)){
+      for(String author : indexLines.keySet()) {
+        for(String title : indexLines.get(author)) {
+          IndexPostScript indexPS = new IndexPostScript(author, title);
+          writer.write(indexPS.toString());
+          writer.newLine();
+        }
+      }
+      //the idea is to have all lines terminate with a newline; never with end-of-file.
+      writer.write("# This line is ignored. The file terminates exactly here ->.");
+    }
+  }
+  
+  /** Replace '(' and ')' with '\(' and '\)'. */
+  private String escapeParens(String text) {
+    return text.replace("(", "\\(").replace(")", "\\)");
+  }
+  
   
   private static void log(String msg) {
     System.out.println(msg);
