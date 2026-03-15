@@ -14,34 +14,46 @@
 /start-new-page {
   /idx defi
   (Starting new page...) here
-  % the work-box needs to be re-set for each new page
-  MARGIN-X  
-  MARGIN-X ASPECT-RATIO mul 
-  translate % to the bottom left of the work-box
+  
+  %0 0 page-width page-height rectstroke % trim + bleed
+  %bleed bleed trim-width trim-height rectstroke % trim
 
-  % WARNING: there are hard-coded transition points here  
+  % WARNING: there are hard-coded transition points here, 
+  % for the page numbers
   idx 3 ge  idx 182 le  and {
     % show page numbers
-    /GAP ht 6 pct def
+    % set the work-box
+    %bleed  MARGIN-X  add
+    MARGIN-X
+    bleed  MARGIN-X ASPECT-RATIO mul   add
+    translate % to the bottom left of the work-box
+    %0 0 wd ht rectstroke % work-box
+    
     (regular) 90 use-font
+    /GAP ht 4.5 pct def
     small-caps-font
     /page-num idx 2 sub def
     /page-num-str page-num 4 string cvs def
     idx 2 mod 0 eq {
       % left-hand page
       0 ht moveto 
-      GAP GAP rmoveto 
+      0 GAP rmoveto 
       page-num-str show
     } {
       % right-hand page
       wd ht moveto 
-      GAP neg  GAP rmoveto 
+      0 GAP rmoveto 
       page-num-str show-right-align
     } ifelse
     wd 50 pct  ht GAP add  moveto 
     idx 173 lt {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
     (regular) 100 use-font
-  } if
+  } {
+    % no page numbers, and the centering is a bit different
+    % set the work-box using only the trimmed page, with no margins
+    bleed  bleed  translate % to the bottom left of the work-box
+  }
+  ifelse
   
   0 ht moveto % the top-left of the work-box, as a default currentposition
   % 0 0 wd ht rectstroke % to see the work-box
@@ -360,13 +372,21 @@
 
 
 %%BeginSetup    
-   % 'US Trade' is 6" x 9"           
-  /page-width  6 72 mul def % The exact size seems to vary a bit in actual books
-  /page-height 9 72 mul def
-  /ASPECT-RATIO page-height page-width div def % > 1.0 in this project
-  /MARGIN-X page-width 10 pct def % for 6" this gives 0.6" margin on each side
-  % wd and ht are for the work-box - the area where most of the content is placed
-  /wd page-width MARGIN-X 2 mul sub 0.97 mul def   % 97% because the ragged-right text gets too far right
+   % 'US Trade' is 6" x 9". This is called the 'trim' size.
+   %   'trim': the dimensions after trimming off the 'bleed'.
+   %   'bleed': margin around all sides that gets cut off (trimmed); 1/8" is typical.
+   %   'safety': margin around all sides in which text should not appear. 1/8" is typical.
+  /trim-width 6 72 mul def 
+  /trim-height 9 72 mul def 
+  /bleed 72 8 div def % 1/8"
+  /page-width  trim-width bleed 2 mul add  def 
+  /page-height  trim-height bleed 2 mul add  def 
+  /ASPECT-RATIO trim-height trim-width div def % > 1.0 in this project
+  /MARGIN-X 72 8 div 5 mul def % 5/8"
+  % wd and ht are for the work-box for the main content (pages with page numbers)
+  % 97% because the ragged-right text gets too close to the right edge of the page.
+  %/wd trim-width MARGIN-X 2 mul sub 0.97 mul def   
+  /wd trim-width MARGIN-X 2 mul sub def   
   /ht wd ASPECT-RATIO mul def   
   <<
     /PageSize [page-width  page-height]
@@ -390,9 +410,9 @@
   % My model: "Jerusalem" by Simon Montefiore (Knopf, 2011)
   /leading 1.2 11 mul def % this is a common leading, 120% of the type size
   
-  /TITLE (And I Quote...) def
-  /AUTHOR (John O'Hanley) def
-  /DATE (March 2026) def
+  /TITLE (Quotations) def
+  /AUTHOR (Collected by John O'Hanley) def
+  /DATE (1986 - 2026) def
   /SPACE ( ) def
   /DASH (~ ) def
   /COMMA-SPACE (, ) def
@@ -404,9 +424,9 @@
 
   % small title 
   (regular) 100 use-font  
-  wd 45 pct ht 80 pct moveto 
+  trim-width 48 pct 
+  trim-height 80 pct moveto 
   3 0 TITLE str-upper-case ashow-ctr-x
-  
 
 showpage
 
@@ -415,10 +435,10 @@ showpage
 showpage
 
   % large 
-  (regular) 200 use-font  
-  wd 45 pct ht 80 pct moveto 
+  (regular) 230 use-font  
+  trim-width 46 pct trim-height 80 pct moveto 
   0.3 em 0 TITLE str-upper-case ashow-ctr-x
-  0 0 wd ht rectstroke
+  %0 0 wd ht 1.035 mul rectstroke
   
   % gsave 
     % wd 37 pct ht 30 pct translate % to the bottom-left of the image
@@ -433,8 +453,8 @@ showpage
   % a drawing of a constellation
   gsave 
     % put the origin near the center of the drawing
-    wd 50 pct
-    ht 45 pct  
+    trim-width 50 pct
+    trim-height 45 pct  
     translate 
 
     % manually tweak the scale  
@@ -446,10 +466,10 @@ showpage
     (constellaton-data-8859-1/orion.ps) run
   grestore
 
-  (regular) 100 use-font  
-  wd 50 pct ht 15 pct moveto 
+  (regular) 150 use-font  
+  trim-width 50 pct trim-height 15 pct moveto 
   AUTHOR show-ctr-x
-  wd 50 pct ht 10 pct moveto 
+  trim-width 50 pct trim-height 10 pct moveto 
   DATE show-ctr-x
 
 
@@ -462,34 +482,31 @@ showpage
 
   INDEX-FILE
   process-index-file-one-line-at-a-time 
-
-showpage
-
-
-  gsave 
-    wd 16 pct ht 60 pct translate % to the bottom-left of the image
-    0.5 setcolor
-    -5 -5 260   260  540 922 div mul rectfill
-
-    250            % the intended width of the image in the current CTM (not the pixel-width!)    
-    (pic/ArchForTheKing-slightly-brighter.jpg)  % the file name (in the current directory, in this case)
-    922            % the image-width in pixels
-    524           % the image-height in pixels
-    show-jpg
-  grestore 
-
-
+  
   (regular) 100 use-font
-  wd 50 pct ht 50 pct moveto
+  wd 50 pct ht 0 pct moveto
   (Adobe Caslon Pro 11 \(leading 13.2\)) show-ctr-x
 
   (italic) 100 use-font
-  wd 50 pct ht 46 pct moveto
+  wd 50 pct ht -3 pct moveto
   (github.com/johanley/quotations-ps) show-ctr-x
-
-
+  
 showpage
 
+  % gsave 
+    % wd 16 pct ht 60 pct translate % to the bottom-left of the image
+    % 0.5 setcolor
+    % -5 -5 260   260  540 922 div mul rectfill
+
+    % 250            % the intended width of the image in the current CTM (not the pixel-width!)    
+    % (pic/ArchForTheKing-slightly-brighter.jpg)  % the file name (in the current directory, in this case)
+    % 922            % the image-width in pixels
+    % 524           % the image-height in pixels
+    % show-jpg
+  % grestore 
+
+% showpage
+
 % WARNING: YOU MAY HAVE ADD EMPTY PAGES HERE MANUALLY. 
-% SOME PRINTING SERVICES REQUIRE THE NUMBER OF PAGES TO BE AN EVEN MULTIPLE OF FOUR.
+% SOME PRINTING SERVICES REQUIRE THE NUMBER OF PAGES TO BE AN EVEN MULTIPLE OF 2 or 4.
 % (I could add code to do this automatically.)
