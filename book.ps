@@ -20,7 +20,7 @@
 
   % WARNING: there are hard-coded transition points here, 
   % for the page numbers
-  idx 3 ge  idx 182 le  and {
+  idx 3 ge  {
     % show page numbers
     % set the work-box
     %bleed  MARGIN-X  add
@@ -46,7 +46,7 @@
       page-num-str show-right-align
     } ifelse
     wd 50 pct  ht GAP add  moveto 
-    idx 173 lt {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
+    idx 171 lt {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
     (regular) 100 use-font
   } {
     % no page numbers, and the centering is a bit different
@@ -370,20 +370,21 @@
   } def-tmp
 } bind def
 
+/inch {72 mul} bind def
 
 %%BeginSetup    
    % 'US Trade' is 6" x 9". This is called the 'trim' size.
    %   'trim': the dimensions after trimming off the 'bleed'.
    %   'bleed': margin around all sides that gets cut off (trimmed); 1/8" is typical.
    %   'safety': margin around all sides in which text should not appear. 1/8" is typical.
-  /trim-width 6 72 mul def 
-  /trim-height 9 72 mul def 
-  /bleed 72 8 div def % 1/8"
+  /trim-width 6 inch def 
+  /trim-height 9 inch def 
+  /bleed 1 inch 8 div def % 1/8"
   /page-width  trim-width bleed 2 mul add  def 
   /page-height  trim-height bleed 2 mul add  def 
   /ASPECT-RATIO trim-height trim-width div def % > 1.0 in this project
-  /MARGIN-X 72 8 div 5 mul def % 5/8"
-  % wd and ht are for the work-box for the main content (pages with page numbers)
+  /MARGIN-X 1 inch 5 mul 8 div def % 5/8"
+  % wd and ht are for the work-box for the main content (pages with page numbers).
   % 97% because the ragged-right text gets too close to the right edge of the page.
   %/wd trim-width MARGIN-X 2 mul sub 0.97 mul def   
   /wd trim-width MARGIN-X 2 mul sub def   
@@ -425,7 +426,7 @@
   % small title 
   (regular) 100 use-font  
   trim-width 48 pct 
-  trim-height 80 pct moveto 
+  trim-height 85 pct moveto 
   3 0 TITLE str-upper-case ashow-ctr-x
 
 showpage
@@ -436,7 +437,7 @@ showpage
 
   % large 
   (regular) 230 use-font  
-  trim-width 46 pct trim-height 80 pct moveto 
+  trim-width 46 pct trim-height 85 pct moveto 
   0.3 em 0 TITLE str-upper-case ashow-ctr-x
   %0 0 wd ht 1.035 mul rectstroke
   
@@ -454,7 +455,7 @@ showpage
   gsave 
     % put the origin near the center of the drawing
     trim-width 50 pct
-    trim-height 45 pct  
+    trim-height 50 pct  
     translate 
 
     % manually tweak the scale  
