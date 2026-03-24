@@ -20,7 +20,7 @@
 
   % WARNING: there are hard-coded transition points here, 
   % for the page numbers
-  idx 3 ge  {
+  idx 3 ge  idx 180 le and {
     % show page numbers
     % set the work-box
     %bleed  MARGIN-X  add
@@ -511,3 +511,8 @@ showpage
 % WARNING: YOU MAY HAVE ADD EMPTY PAGES HERE MANUALLY. 
 % SOME PRINTING SERVICES REQUIRE THE NUMBER OF PAGES TO BE AN EVEN MULTIPLE OF 2 or 4.
 % (I could add code to do this automatically.)
+% Lulu.com: pages div by 4; end with 2 blank pages.
+% 178 + 3 = 181; increase to 184, add 3 blank pages.
+showpage
+showpage
+showpage

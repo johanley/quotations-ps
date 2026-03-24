@@ -50,12 +50,18 @@
   } def-tmp
 } bind def
 
-% WARNING: MUST MATCH SETTINGS IN book.ps
-/trim-width  6 inch  def % that is, the INTERIOR pages
-/trim-height 9 inch def
+% for lulu.com with a linen cover, you need a dust jacket with 'flaps'
+%  20.438" wide, 9.75" high; 3.25" flaps; 2*6.625 main cover; 0.688 spine
+% 
+% for lulu.com with a case wrap:
+% 14.438" wide = 2*6.875 main cover + 0.688 spine; 10.75" high;
 
-/bleed 0.125 inch  def % industry standard is 1/8" bleed on all sides
-/spine 0.5 inch  def
+% for lulu.com, case wrap:
+/trim-width  6.875 inch  def 
+/trim-height 10.75 inch def
+
+/bleed 0.0 inch  def % industry standard is 1/8" bleed on all sides
+/spine 0.688 inch  def
 /cover-width trim-width bleed add  2 mul  spine add def
 /cover-height trim-height bleed 2 mul add def
 <<
@@ -65,7 +71,7 @@
 true setstrokeadjust  % minimizes off-by-one-pixel line issues
 
 %C:\Users\Owner\AppData\Local\Microsoft\Windows\Fonts
-/MyRegular /GaramondPremrPro latinize
+/MyRegular /ACaslonPro-Regular latinize
 << 
   (regular) /MyRegular
 >>
