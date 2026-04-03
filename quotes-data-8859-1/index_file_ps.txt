@@ -346,6 +346,7 @@
 <</author (Tillich, Paul) /title ()>>
 <</author (Tolstoy, Leo) /title (Anna Karenina)>>
 <</author (Tolstoy, Leo) /title (Hadji Murad)>>
+<</author (Tolstoy, Leo) /title (La guerre et la paix)>>
 <</author (Tolstoy, Leo) /title (The Kreutzer Sonata)>>
 <</author (Tolstoy, Leo) /title (War and Peace)>>
 <</author (Toulmin and Goodfield) /title (The Architecture of Matter)>>

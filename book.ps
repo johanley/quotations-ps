@@ -20,21 +20,21 @@
 
   % WARNING: there are hard-coded transition points here, 
   % for the page numbers
-  idx 3 ge  idx 180 le and {
+  idx 4 ge  idx 215 le and {
     % show page numbers
     % set the work-box
-    %bleed  MARGIN-X  add
-    MARGIN-X
+    bleed  MARGIN-X  add
     bleed  MARGIN-X ASPECT-RATIO mul   add
     translate % to the bottom left of the work-box
     %0 0 wd ht rectstroke % work-box
     
     (regular) 90 use-font
-    /GAP ht 4.5 pct def
+    /GAP ht 6 pct def
+    %/GAP ht 4.5 pct def
     small-caps-font
-    /page-num idx 2 sub def
+    /page-num idx 3 sub def
     /page-num-str page-num 4 string cvs def
-    idx 2 mod 0 eq {
+    page-num 2 mod 0 eq {
       % left-hand page
       0 ht moveto 
       0 GAP rmoveto 
@@ -46,7 +46,7 @@
       page-num-str show-right-align
     } ifelse
     wd 50 pct  ht GAP add  moveto 
-    idx 171 lt {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
+    page-num 201 lt {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
     (regular) 100 use-font
   } {
     % no page numbers, and the centering is a bit different
@@ -383,7 +383,8 @@
   /page-width  trim-width bleed 2 mul add  def 
   /page-height  trim-height bleed 2 mul add  def 
   /ASPECT-RATIO trim-height trim-width div def % > 1.0 in this project
-  /MARGIN-X 1 inch 5 mul 8 div def % 5/8"
+  /MARGIN-X 1 inch 7 mul 8 div def % 7/8"
+  %/MARGIN-X 1 inch 5 mul 8 div def % 5/8"
   % wd and ht are for the work-box for the main content (pages with page numbers).
   % 97% because the ragged-right text gets too close to the right edge of the page.
   %/wd trim-width MARGIN-X 2 mul sub 0.97 mul def   
@@ -430,8 +431,8 @@
   3 0 TITLE str-upper-case ashow-ctr-x
 
 showpage
-
-  % blank page
+ 
+  % blank
   
 showpage
 
@@ -467,12 +468,15 @@ showpage
     (constellaton-data-8859-1/orion.ps) run
   grestore
 
-  (regular) 150 use-font  
+  (regular) 125 use-font  
   trim-width 50 pct trim-height 15 pct moveto 
   AUTHOR show-ctr-x
   trim-width 50 pct trim-height 10 pct moveto 
   DATE show-ctr-x
 
+showpage
+
+  % blank page
 
 showpage
 
@@ -484,29 +488,17 @@ showpage
   INDEX-FILE
   process-index-file-one-line-at-a-time 
   
+showpage
+
   (regular) 100 use-font
-  wd 50 pct ht 0 pct moveto
+  trim-width 48 pct 
+  trim-height 15 pct moveto 
   (Adobe Caslon Pro 11 \(leading 13.2\)) show-ctr-x
 
   (italic) 100 use-font
-  wd 50 pct ht -3 pct moveto
+  trim-width 48 pct 
+  trim-height 10 pct moveto 
   (github.com/johanley/quotations-ps) show-ctr-x
-  
-showpage
-
-  % gsave 
-    % wd 16 pct ht 60 pct translate % to the bottom-left of the image
-    % 0.5 setcolor
-    % -5 -5 260   260  540 922 div mul rectfill
-
-    % 250            % the intended width of the image in the current CTM (not the pixel-width!)    
-    % (pic/ArchForTheKing-slightly-brighter.jpg)  % the file name (in the current directory, in this case)
-    % 922            % the image-width in pixels
-    % 524           % the image-height in pixels
-    % show-jpg
-  % grestore 
-
-% showpage
 
 % WARNING: YOU MAY HAVE ADD EMPTY PAGES HERE MANUALLY. 
 % SOME PRINTING SERVICES REQUIRE THE NUMBER OF PAGES TO BE AN EVEN MULTIPLE OF 2 or 4.
@@ -516,3 +508,6 @@ showpage
 showpage
 showpage
 showpage
+showpage
+
+
