@@ -14,25 +14,19 @@
 /start-new-page {
   /idx defi
   (Starting new page...) here
-  
-  %0 0 page-width page-height rectstroke % trim + bleed
-  %bleed bleed trim-width trim-height rectstroke % trim
-
-  % WARNING: there are hard-coded transition points here, 
-  % for the page numbers
-  idx 4 ge  idx 215 le and {
-    % show page numbers
-    % set the work-box
-    bleed  MARGIN-X  add
-    bleed  MARGIN-X ASPECT-RATIO mul   add
+  /page-num idx 3 sub def
+  % WARNING: there are two hard-coded transition points for the page numbers
+  page-num 1 ge  page-num 178 le and {
+    % show page numbers and title
+    % set the work-box; asymmetry in x, to avoid the spine 
+    bleed  MARGIN-X  add  SPINE-AVOIDANCE page-num 2 mod 0 eq {neg} if add 
+    bleed  MARGIN-Y  add
     translate % to the bottom left of the work-box
-    %0 0 wd ht rectstroke % work-box
     
     (regular) 90 use-font
-    /GAP ht 6 pct def
+    /GAP ht 5 pct def
     %/GAP ht 4.5 pct def
     small-caps-font
-    /page-num idx 3 sub def
     /page-num-str page-num 4 string cvs def
     page-num 2 mod 0 eq {
       % left-hand page
@@ -46,7 +40,7 @@
       page-num-str show-right-align
     } ifelse
     wd 50 pct  ht GAP add  moveto 
-    page-num 201 lt {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
+    page-num 168 le {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
     (regular) 100 use-font
   } {
     % no page numbers, and the centering is a bit different
@@ -56,7 +50,7 @@
   ifelse
   
   0 ht moveto % the top-left of the work-box, as a default currentposition
-  % 0 0 wd ht rectstroke % to see the work-box
+  %0 0 wd ht rectstroke % to see the work-box
 } bind def
 
 % cx cy str 
@@ -371,6 +365,7 @@
 } bind def
 
 /inch {72 mul} bind def
+/8th-inch {72 mul 8 div} bind def
 
 %%BeginSetup    
    % 'US Trade' is 6" x 9". This is called the 'trim' size.
@@ -379,17 +374,16 @@
    %   'safety': margin around all sides in which text should not appear. 1/8" is typical.
   /trim-width 6 inch def 
   /trim-height 9 inch def 
-  /bleed 1 inch 8 div def % 1/8"
+  /bleed 1 8th-inch def 
   /page-width  trim-width bleed 2 mul add  def 
   /page-height  trim-height bleed 2 mul add  def 
   /ASPECT-RATIO trim-height trim-width div def % > 1.0 in this project
-  /MARGIN-X 1 inch 7 mul 8 div def % 7/8"
-  %/MARGIN-X 1 inch 5 mul 8 div def % 5/8"
+  /MARGIN-X 7 8th-inch def 
+  /MARGIN-Y 6 8th-inch def 
   % wd and ht are for the work-box for the main content (pages with page numbers).
-  % 97% because the ragged-right text gets too close to the right edge of the page.
-  %/wd trim-width MARGIN-X 2 mul sub 0.97 mul def   
   /wd trim-width MARGIN-X 2 mul sub def   
-  /ht wd ASPECT-RATIO mul def   
+  /ht trim-height MARGIN-Y 2 mul sub def   
+  /SPINE-AVOIDANCE 1.5 8th-inch def
   <<
     /PageSize [page-width  page-height]
     /BeginPage {start-new-page}  
@@ -414,7 +408,7 @@
   
   /TITLE (Quotations) def
   /AUTHOR (Collected by John O'Hanley) def
-  /DATE (1986 - 2026) def
+  /DATE (1986 - 2025) def
   /SPACE ( ) def
   /DASH (~ ) def
   /COMMA-SPACE (, ) def
@@ -430,27 +424,27 @@
   trim-height 85 pct moveto 
   3 0 TITLE str-upper-case ashow-ctr-x
 
+  % font details, link to github 
+  (regular) 100 use-font
+  trim-width 50 pct 
+  trim-height 15 pct moveto 
+  (Adobe Caslon Pro 11 \(leading 13.2\)) show-ctr-x
+
+  (italic) 100 use-font
+  trim-width 50 pct 
+  trim-height 10 pct moveto 
+  (github.com/johanley/quotations-ps) show-ctr-x
+
 showpage
- 
-  % blank
+
+  % blank page 
   
 showpage
 
-  % large 
+  % large title and drawing
   (regular) 230 use-font  
   trim-width 46 pct trim-height 85 pct moveto 
   0.3 em 0 TITLE str-upper-case ashow-ctr-x
-  %0 0 wd ht 1.035 mul rectstroke
-  
-  % gsave 
-    % wd 37 pct ht 30 pct translate % to the bottom-left of the image
-
-    % 100            % the intended width of the image in the current CTM (not the pixel-width!)    
-    % (louis_conard_bee_bw_300dpi.jpg)  % the file name (in the current directory, in this case)
-    % 909            % the image-width in pixels
-    % 1106           % the image-height in pixels
-    % show-jpg
-  % grestore 
   
   % a drawing of a constellation
   gsave 
@@ -490,23 +484,12 @@ showpage
   
 showpage
 
-  (regular) 100 use-font
-  trim-width 48 pct 
-  trim-height 15 pct moveto 
-  (Adobe Caslon Pro 11 \(leading 13.2\)) show-ctr-x
-
-  (italic) 100 use-font
-  trim-width 48 pct 
-  trim-height 10 pct moveto 
-  (github.com/johanley/quotations-ps) show-ctr-x
 
 % WARNING: YOU MAY HAVE ADD EMPTY PAGES HERE MANUALLY. 
 % SOME PRINTING SERVICES REQUIRE THE NUMBER OF PAGES TO BE AN EVEN MULTIPLE OF 2 or 4.
 % (I could add code to do this automatically.)
 % Lulu.com: pages div by 4; end with 2 blank pages.
 % 178 + 3 = 181; increase to 184, add 3 blank pages.
-showpage
-showpage
 showpage
 showpage
 
