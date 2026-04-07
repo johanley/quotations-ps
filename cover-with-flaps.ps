@@ -56,16 +56,20 @@
 % for lulu.com with a case wrap:
 % 14.438" wide = 2*6.875 main cover + 0.688 spine; 10.75" high;
 
-% for lulu.com, case wrap:
-/trim-width  6.875 inch  def 
-/trim-height 10.75 inch def
+% for lulu.com, dust jacket with flaps:
+/total-width  20.438 inch  def 
+/total-height 9.75 inch def
 
-/bleed 0.0 inch  def % industry standard is 1/8" bleed on all sides
+/flap 3.25 inch  def 
 /spine 0.688 inch  def
-/cover-width trim-width bleed add  2 mul  spine add def
-/cover-height trim-height bleed 2 mul add def
+/edge-to-middle-cover
+  total-width 0.5 mul 
+  spine 0.5 mul       sub 
+  flap                add 
+  0.5 mul
+def
 <<
-  /PageSize [cover-width cover-height]
+  /PageSize [total-width total-height]
 >> setpagedevice  
 << /NeverEmbed [ ] >> setdistillerparams  % always embed fonts
 true setstrokeadjust  % minimizes off-by-one-pixel line issues
@@ -79,8 +83,8 @@ true setstrokeadjust  % minimizes off-by-one-pixel line issues
 init-my-fonts
 
 set-background-color
-0 0 cover-width cover-height rectstroke
-0 0 cover-width cover-height rectfill
+0 0 total-width total-height rectstroke
+0 0 total-width total-height rectfill
 
 set-foreground-color
 (regular) 850 use-font  
@@ -88,22 +92,21 @@ set-foreground-color
 % spine-y Norman
 (regular) 200 use-font  
 gsave 
-  bleed trim-width add spine 2 div add  
-  bleed  
+  total-width 2 div  
+  0 
   translate 
   
   0
-  trim-height 70 pct moveto 
+  total-height 70 pct moveto 
   (Q) show-ctr-x
 grestore
 
 
-% front cover: a drawing
+% back cover: a drawing
 gsave 
   % put the origin near the center of the drawing
-  bleed  trim-width add  spine 2 div add trim-width 2 div add
-  %bleed  trim-width add  spine add  trim-width 2 div add
-  cover-height 55 pct  
+  edge-to-middle-cover
+  total-height 55 pct  
   translate 
 
   % manually tweak the scale  
@@ -116,11 +119,11 @@ gsave
 grestore
 
 
-% back cover: a drawing
+% front cover: a drawing
 gsave 
   % put the origin near the center of the drawing
-  bleed  trim-width 2 div add
-  cover-height 55 pct  
+  total-width edge-to-middle-cover sub spine 0.5 mul sub
+  total-height 55 pct  
   translate 
 
   % manually tweak the scale  
