@@ -814,7 +814,7 @@ Blair, Hugh {
    
    The Greek, which is the most perfect of all the known tongues, is very regular and complete in all the moods and tenses. 
    The Latin, though formed on the same model, is not so perfect; particularly in the passive voice, which forms most of the tenses, 
-   by the help of the auxiliary "sum".
+   by the help of the auxiliary em(sum.)
    
    It [French] is, perhaps, the happiest language for conversation, in the known world; but on the higher subjects of composition, 
    the English may be justly esteemed greatly to excel it considerably.
@@ -3325,12 +3325,12 @@ Hazlitt, William {
 
 Steele and Addison {
   The Spectator {
-    At length the audience grew tired of understanding [only] half the opera; and therefore to ease themselves 
-    entirely of the fatigue of thinking.
+    At length the audience grew tired of understanding half the opera; and therefore, to ease themselves 
+    entirely of the fatigue of thinking, have so ordered it at present, that the whole opera is performed in an unknown tongue.
     
     ...and old age, instead of introducing melancholy Prospects of Decay...
     
-    ...whom I earnestly implore to accommodate me with a method how to settle my head and cool my brain­pan 
+    ...whom I earnestly implore to accommodate me with a method how to settle my head and cool my brain­pan.
   }
 }
 
@@ -4360,7 +4360,7 @@ Boigne, La Comtesse de {
 	
 	  Leur visage s'épanouit quand un frère aîné vient les prier à danser; si elles causent avect un cadet, en revanche, les mères s'agitent sur leurs banquettes et paraissent au supplice.
 	
-	  Le fait était que monsieur de Talleyrand, amoureux comme un homme de dix­huit ans de sa nièce.
+	  Le fait était que monsieur de Talleyrand, amoureux comme un homme de dix­huit ans de sa nièce, la comtesse Edmond de Périgord, se serait trouvé gêné par la présence de la princesse.
 	
 	  Le duc de Richelieu avait été marié, à dix­sept ans, à mademoiselle de Rochechouart qui en avait douze.
 	  Selon l'usage du temps, on l'avait envoyé voyager. Pendant les trois années de son absence, il recevait de fréquentes lettres de sa jeune épouse, remplies de grâce et d'esprit.
@@ -4463,7 +4463,7 @@ Darwin, Charles {
 
 Balzac, Honoré de {
   Cousin Bette {
-    ...we cannot tell haw many wildly foolish actions are due to the secret rivalries that drive men to mirror the type they have set up as ideal,
+    ...we cannot tell how many wildly foolish actions are due to the secret rivalries that drive men to mirror the type they have set up as ideal,
 	  to consume their energies in making themselves a moonshine reflection of someone else.
   }
 }
