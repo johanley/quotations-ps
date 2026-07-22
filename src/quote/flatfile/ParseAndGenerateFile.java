@@ -3,7 +3,6 @@ package quote.flatfile;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -32,13 +31,13 @@ import quote.parser.QuotePostScript;
 public final class ParseAndGenerateFile {
 
   /**
-   The structured input file. 8859-1 encoding.
+   The structured input file. windows-1252 encoding.
    See the comments in the file itself for a description of its syntax. 
    */
   public static final String INPUT_FILE = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-8859-1\\quotes.txt";
   public static final String OUTPUT_FILE_PS = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-8859-1\\quotes_flat_file_ps.txt";
   public static final String OUTPUT_INDEX_FILE_PS = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-8859-1\\index_file_ps.txt";
-  final static Charset ENCODING = StandardCharsets.ISO_8859_1;  
+  final static Charset ENCODING = Charset.forName("windows-1252");  
   
   public static void main(String... args) throws IOException {
     log("Reading in " + INPUT_FILE);

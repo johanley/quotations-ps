@@ -57,7 +57,7 @@
 <</author (Carrier, Roch) /title (Fin)>>
 <</author (Chariton) /title (Callirhoe)>>
 <</author (Conrad, Joseph) /title (Nostromo)>>
-<</author (Conrad, Joseph) /title (The Shadow­Line)>>
+<</author (Conrad, Joseph) /title (The Shadow-Line)>>
 <</author (Copernicus) /title (De Revolutionibus)>>
 <</author (Coupland, Douglas) /title (Miss Wyoming)>>
 <</author (Crane, Stephen) /title (The Red Badge of Courage)>>
@@ -88,12 +88,12 @@
 <</author (Eckhart, Meister) /title ()>>
 <</author (Eliot, George) /title (Felix Holt, the Radical)>>
 <</author (Eliot, George) /title (Middlemarch)>>
-<</author (Eliot, George) /title (Mr. Gilfil's Love­Story)>>
+<</author (Eliot, George) /title (Mr. Gilfil's Love-Story)>>
 <</author (Eliot, George) /title (Silas Marner)>>
 <</author (Eliot, George) /title (The Sad Fortunes of the Reverend Amos Barton)>>
 <</author (Epictetus) /title ()>>
 <</author (Euripide) /title ()>>
-<</author (Evans­Pritchard, E. E.) /title (Theories of Primitive Religion)>>
+<</author (Evans-Pritchard, E. E.) /title (Theories of Primitive Religion)>>
 <</author (Farquar, George) /title (Sir Harry Wildair)>>
 <</author (Fedro) /title ()>>
 <</author (Findlay, Timothy) /title ()>>
@@ -124,14 +124,14 @@
 <</author (Giradoux, Jean) /title (Ondine)>>
 <</author (Girard, Réné) /title (I See Satan Fall Like Lightning)>>
 <</author (Girard, Réné) /title (The Scapegoat)>>
-<</author (Godfrey­Smith, Peter) /title (Theory and Reality)>>
+<</author (Godfrey-Smith, Peter) /title (Theory and Reality)>>
 <</author (Goethe) /title (Faust)>>
 <</author (Gogh, Vincent van) /title ()>>
 <</author (Goncharov, I. A.) /title (Oblomov)>>
 <</author (Goncourt, Edmond et Jules de) /title (Germinie Lacerteux)>>
 <</author (Goncourt, Edmond et Jules de) /title (Renée Mauperin)>>
 <</author (Gould, Glenn) /title ()>>
-<</author (Grattan­Guiness, Ivor) /title (The Norton History of the Mathematical Sciences)>>
+<</author (Grattan-Guiness, Ivor) /title (The Norton History of the Mathematical Sciences)>>
 <</author (Gray, Muriel) /title ()>>
 <</author (Greenspan, Philip) /title ()>>
 <</author (Greer, Germaine) /title ()>>
@@ -144,7 +144,7 @@
 <</author (Hardy, Thomas) /title (Jude the Obscure)>>
 <</author (Hardy, Thomas) /title (Life's Little Ironies)>>
 <</author (Hardy, Thomas) /title (The Return of the Native)>>
-<</author (Hardy, Thomas) /title (The Trumpet­Major)>>
+<</author (Hardy, Thomas) /title (The Trumpet-Major)>>
 <</author (Hardy, Thomas) /title (The Woodlanders)>>
 <</author (Hardy, Thomas) /title (Under the Greenwood Tree)>>
 <</author (Hausset, Madame de) /title (Mémoires)>>
@@ -157,12 +157,12 @@
 <</author (Herstein, I. N.) /title (Abstract Algebra)>>
 <</author (Hilbert, David) /title ()>>
 <</author (Hitler, Adolf) /title (Mein Kampf)>>
-<</author (Hoff­Somers, Christina) /title (The War Against Boys)>>
+<</author (Hoff-Somers, Christina) /title (The War Against Boys)>>
 <</author (Honoré, Carl) /title (In Praise of Slow)>>
 <</author (Horace) /title ()>>
 <</author (Host, Michel) /title (Valet de nuit)>>
 <</author (Hugo, Victor) /title (Les travailleurs de la mer)>>
-<</author (Hugo, Victor) /title (Quatre­vingt­treize)>>
+<</author (Hugo, Victor) /title (Quatre-vingt-treize)>>
 <</author (Huston, Nancy) /title ()>>
 <</author (Huxley, Aldous) /title (Brave New World)>>
 <</author (Infeld, Leopold) /title (Quest)>>
@@ -193,7 +193,7 @@
 <</author (Lewis, Bernard) /title (What Went Wrong?)>>
 <</author (Longinus) /title (On the Sublime)>>
 <</author (Lovecraft, H. P.) /title (The Picture in the House)>>
-<</author (Lovelock, James) /title (Gaia ­ A New Look at Life on Earth)>>
+<</author (Lovelock, James) /title (Gaia - A New Look at Life on Earth)>>
 <</author (Lovelock, James) /title (The Revenge of Gaia)>>
 <</author (MacPhail, Andrew) /title (The Master's Wife)>>
 <</author (Maistre, Xavier de) /title (A Journey Around My Room)>>
@@ -230,7 +230,7 @@
 <</author (Meinke, F.) /title (The German Catastrophe)>>
 <</author (Melville, Herman) /title (Moby Dick)>>
 <</author (Mencken, H. L.) /title (The American Scene)>>
-<</author (Miller, Stephen) /title (Conversation ­ A History of a Declining Art)>>
+<</author (Miller, Stephen) /title (Conversation - A History of a Declining Art)>>
 <</author (Mlodinow, Leonard) /title (The Drunkard's Walk)>>
 <</author (Monod, Jacques) /title ()>>
 <</author (Montgomery, L. M.) /title (The Blue Castle)>>
@@ -257,7 +257,7 @@
 <</author (Nin, Anaïs) /title (Diary, v.5)>>
 <</author (North, John) /title (Cosmos)>>
 <</author (O'Brien, Edna) /title (James Joyce)>>
-<</author (O'Brien, Flann) /title (At Swim­Two­Birds)>>
+<</author (O'Brien, Flann) /title (At Swim-Two-Birds)>>
 <</author (O'Neill, Brendan) /title (After the Pogrom)>>
 <</author (Oresme) /title ()>>
 <</author (Paglia, Camille) /title ()>>
@@ -274,8 +274,8 @@
 <</author (Plutarco) /title ()>>
 <</author (Poe, Edgar Allan) /title ()>>
 <</author (Poliakov, Léon) /title (Harvest of Hate)>>
-<</author (Poliakov, Léon) /title (The History of Anti­Semitism)>>
-<</author (Poliakov, Léon) /title (The History of Anti­Semitism \(IV\))>>
+<</author (Poliakov, Léon) /title (The History of Anti-Semitism)>>
+<</author (Poliakov, Léon) /title (The History of Anti-Semitism \(IV\))>>
 <</author (Postman, Neil) /title (Amusing Ourselves To Death)>>
 <</author (Postman, Neil) /title (Technopoly)>>
 <</author (Proust, Marcel) /title (Albertine disparue)>>
@@ -287,7 +287,7 @@
 <</author (Proust, Marcel) /title (Swann's Way)>>
 <</author (Proust, Marcel) /title (The Guermantes Way)>>
 <</author (Proust, Marcel) /title (À l'ombre des jeunes filles en fleurs)>>
-<</author (Quincey, Thomas de) /title (Confessions of an English Opium­Eater)>>
+<</author (Quincey, Thomas de) /title (Confessions of an English Opium-Eater)>>
 <</author (Quintilian) /title (Institutio Oratorio)>>
 <</author (Rees, Laurence) /title (Hitler and Stalin)>>
 <</author (Reeves, Hubert) /title (Patience dans l'azur)>>
@@ -298,7 +298,7 @@
 <</author (Roland, Mme) /title (Mémoires)>>
 <</author (Roth, Philip) /title (Portnoy's Complaint)>>
 <</author (Rothman, Noah) /title (The Rise of the New Puritans)>>
-<</author (Rowan­Robinson, M.) /title (Cosmology)>>
+<</author (Rowan-Robinson, M.) /title (Cosmology)>>
 <</author (Rowe, N.) /title (Tamerlane)>>
 <</author (Rumi) /title ()>>
 <</author (Sachar, Howard) /title (A History of Israel)>>
@@ -351,18 +351,18 @@
 <</author (Tolstoy, Leo) /title (War and Peace)>>
 <</author (Toulmin and Goodfield) /title (The Architecture of Matter)>>
 <</author (Toulmin and Goodfield) /title (The Fabric of the Heavens)>>
-<</author (Trevor­Roper, H. R.) /title (The European Witch­Craze)>>
+<</author (Trevor-Roper, H. R.) /title (The European Witch-Craze)>>
 <</author (Trollope, Anthony) /title (The Small House at Allington)>>
 <</author (Trungpa, Chögyam) /title (Cutting Through Spiritual Materialism)>>
 <</author (Vidal, Gore) /title (Myra Breckenridge)>>
 <</author (Vigny, Alfred de) /title (Dernière nuit de travail)>>
 <</author (Vigny, Alfred de) /title (Le journal d'un poète)>>
 <</author (Vigny, Alfred de) /title (Servitudes et grandeurs militaires)>>
-<</author (Villiers de L'Isle­Adam, A. de) /title (Deux augures)>>
-<</author (Villiers de L'Isle­Adam, A. de) /title (L'affichage céleste)>>
-<</author (Villiers de L'Isle­Adam, A. de) /title (L'intersigne)>>
-<</author (Villiers de L'Isle­Adam, A. de) /title (La convive des dernières fêtes)>>
-<</author (Villiers de L'Isle­Adam, A. de) /title (Le désir d'être un homme)>>
+<</author (Villiers de L'Isle-Adam, A. de) /title (Deux augures)>>
+<</author (Villiers de L'Isle-Adam, A. de) /title (L'affichage céleste)>>
+<</author (Villiers de L'Isle-Adam, A. de) /title (L'intersigne)>>
+<</author (Villiers de L'Isle-Adam, A. de) /title (La convive des dernières fêtes)>>
+<</author (Villiers de L'Isle-Adam, A. de) /title (Le désir d'être un homme)>>
 <</author (Voltaire) /title ()>>
 <</author (Walker, C. B. F.) /title (Cuneiform)>>
 <</author (Wall, Geoffrey) /title (Flaubert: A Life)>>
