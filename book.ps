@@ -249,7 +249,6 @@
 
 % str (filename)
 /process-quotes-file-one-line-at-a-time {
-  % open the file read-only; its encoding should be 8859-1.
   (r) file /quotes-file defi 
   /buffer MAX-QUOTE-LENGTH string def
   {
@@ -310,7 +309,6 @@
 
 % str (filename)
 /process-index-file-one-line-at-a-time {
-  % open the file read-only; its encoding should be 8859-1.
   (r) file /index-file defi 
   /buffer MAX-QUOTE-LENGTH string def
   {
@@ -414,8 +412,8 @@
   /SPACE ( ) def
   /DASH (~ ) def
   /COMMA-SPACE (, ) def
-  /QUOTES-FILE (quotes-data-8859-1/quotes_flat_file_ps.txt) def
-  /INDEX-FILE (quotes-data-8859-1/index_file_ps.txt) def
+  /QUOTES-FILE (quotes-data-1252/quotes_flat_file_ps.txt) def
+  /INDEX-FILE (quotes-data-1252/index_file_ps.txt) def
   /MAX-QUOTE-LENGTH 5000 def 
   /INDEX-TITLE (Authors and Titles) def
 %%EndSetup 
@@ -461,7 +459,7 @@ showpage
 
     % draw a well-known constellation, as simple lines and dots  
     % no labels are used here, just the basic shape
-    (constellaton-data-8859-1/orion.ps) run
+    (constellaton-data-1252/orion.ps) run
   grestore
 
   (regular) 125 use-font  
