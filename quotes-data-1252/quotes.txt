@@ -3505,7 +3505,7 @@ Morellet, L’Abbé {
    disait: “Mais c’est drôle de passer comme ça tout le temps de leur assemblé à chanter; est-ce qu’ils sont là pour ça?”
    
    Enfin, cette nation et cette ville ont vu et souffert une assemblé nationale ou se disant telle qui, chargés de défendre les propriétés, les
-   libértes, les vies des Français, ordonnait ces horreurs, tandis que les moins coupables d’entre eux n’opposaient aucune résistance à ces lois de sang.
+   libertés, les vies des Français, ordonnait ces horreurs, tandis que les moins coupables d’entre eux n’opposaient aucune résistance à ces lois de sang.
    Ce phénomène n’est pas encore expliqué, si même il est explicable.
  }
 }
@@ -4463,7 +4463,7 @@ Darwin, Charles {
     Certainly, no fact in the long history of the world is so startling as the wide and repeated extermination of its inhabitants.
   }
   The Life and Letters of Charles Darwin {
-    My reflection, when I first made myself master of the central idea of the ’Origin’, was, “How extremely stupid not to have thought of that!” [T. H. Huxley]
+    My reflection, when I first made myself master of the central idea of the em(Origin), was, “How extremely stupid not to have thought of that!” [T. H. Huxley]
   
     Dr. Duncan’s lectures on Materia Medica at 8 o’clock on a winter’s morning are something fearful to remember.
     
@@ -4512,7 +4512,7 @@ Sachar, Howard {
    Jacques de Reynier, described the panic among the inhabitants of Jaffa when the Jews attacked: “Immediately everyone was consumed with terror, and soon the 
    evacuation started. In the hospitals, the drivers of cars and ambulances took their vehicles, assembled their families, and fled in complete disregard of their 
    responsibilities. Many of the ill, nurses, even physicians, departed the hospital wearing the clothes they had on, and fled to the countryside. For all of them
-   the one obsession was to escape at any cost.
+   the one obsession was to escape at any cost.”
    
    Between 1948 and 1957, as a consequence of government pressure, economic strangulation, and physical pogroms, some 467,000 Jews would be compelled to flee
    their ancestral homes in Moslem lands. The largest number of them would find asylum in Israel.
@@ -4522,10 +4522,10 @@ Sachar, Howard {
    and that eventually they would receive the proceeds. Yet on March 10, 1951, one day following the deadline for exit registration, the government suddenly announced that the 
    property and bank accounts of emigrating Jews henceforth were forfeited to the government.
    
-   Psychologically, most important of all, the Arabs simply could not bring themselves to admit defeat at the hands of the ”Zionist gangs.“ The Moslem tradition of 
+   Psychologically, most important of all, the Arabs simply could not bring themselves to admit defeat at the hands of the “Zionist gangs”. The Moslem tradition of 
    jihad - of unceasing warfare against infidel interlopers - played a role here. Pride and self-esteem were equally critical factors, however. Once signed, the peace treaties
-   would have been admission that the game was over. Azzam Pasha put the matter forthrightly: ”We have a secret weapon which we can use better than guns and machine guns, and 
-   this is time. As long as we do not make peace with the Zionists, the war is not over; and as long as the war is not over, there is neither victor nor vanquished.“
+   would have been admission that the game was over. Azzam Pasha put the matter forthrightly: “We have a secret weapon which we can use better than guns and machine guns, and 
+   this is time. As long as we do not make peace with the Zionists, the war is not over; and as long as the war is not over, there is neither victor nor vanquished.”
    
    Indeed, as they turned to new modes of warfare, it became clear that they were obsessed above all with the advantages to be derived in casting a shadow in the world, from 
    drawing attention to Palestine Arab identity.
@@ -4533,15 +4533,15 @@ Sachar, Howard {
    In Syria, the circumstances of the country’s 3,500 remaining Jews were an unalleviated nightmare. In 1973 and 1974 there were episodes of Jewish girls raped and murdered 
    at the hands of the Syrian police.
    
-   On January 27, 1969, nine Jews were among fourteen prisoners hanged as ”spies“ in Baghdad’s Liberation Square; crowds estimated at 200,000 marched past the dangling corpses, 
-   as the onlookers were treated to a running loudspeaker commentary on Jewish ”treason.“
+   On January 27, 1969, nine Jews were among fourteen prisoners hanged as “spies” in Baghdad’s Liberation Square; crowds estimated at 200,000 marched past the dangling corpses, 
+   as the onlookers were treated to a running loudspeaker commentary on Jewish “treason”.
  }
 }
 
 Friedman, Matti {
   Spies of No Country {
-    Now, Gambiel wrote in one dispatch, ”the newspapers describe the Jew in the most barbaric and cruel fashion, and also as weak and cowardly.“ Many people, he reported, believed that 
-    Jews ”were slaughtering children and abusing pregnant women and raping virgins.“ The word ”Jew“ was starting to assume demonic undertones.
+    Now, Gambiel wrote in one dispatch, “the newspapers describe the Jew in the most barbaric and cruel fashion, and also as weak and cowardly.” Many people, he reported, believed that 
+    Jews were “slaughtering children and abusing pregnant women and raping virgins.” The word “Jew” was starting to assume demonic undertones.
   
     The population grew by a percentage point every 10 days.
   
@@ -4577,12 +4577,12 @@ Poliakov, Léon {
   ...the new municipality found nothing more pressing to do than to imprison all the Jews, numbering some two thousand, and to burn them the next day in their own cemetery (February 14, 1349), 
   while their property was distributed among the city residents. These massacres and lootings took place in the great majority of German cities. [Epidemic in the 1300s]
   
-  Leading an austere life and singing hymns, the ”flagellants“ traveled throughout Germany and even into France, and their public exhibitions, acclaimed by the populace, generally 
+  Leading an austere life and singing hymns, the “flagellants” traveled throughout Germany and even into France, and their public exhibitions, acclaimed by the populace, generally 
   terminated in a massacre of the Jews.
   
   The first known trial for witchcraft occurred in 1335 in Toulouse.
   
-  Inquisitorial procedure insisted on the victim’s confession. Torture, euphemistically called ”the question“, - continued sometimes for weeks and months, sometimes for several days
+  Inquisitorial procedure insisted on the victim’s confession. Torture, euphemistically called “the question”, - continued sometimes for weeks and months, sometimes for several days
   in a row, sometimes with long interruptions - infallibly obtained these confessions, as precise and detailed as the inquisitor insisted they be.
   
   As one of them, Paramo [an inquisitor] observed proudly in 1404, the Holy Office had already burned over thirty thousand witches.
@@ -4590,19 +4590,19 @@ Poliakov, Léon {
   The Devil’s agent on earth is the witch (and not the wizard, who is only burned in exceptional circumstances). The contempt for woman, the fear and horror of temptation and the 
   blandishments of the sex, contrast with the adoration of the Virgin and the cult of chastity.
   
-  A foreign observer, the Frenchman Pierre de Froissart, best summarized the general opinion, noting: ”Hatred of the Jews is so common in Germany that the most peaceful men become
-  agitated when it is a question of the Jews and their usury.“
+  A foreign observer, the Frenchman Pierre de Froissart, best summarized the general opinion, noting: “Hatred of the Jews is so common in Germany that the most peaceful men become
+  agitated when it is a question of the Jews and their usury.”
   
-  The Christian apologist Al Kindy challenged the Moslems even more aggressively: ”Judge for yourselves, if your master was a prophet just as you claim. For is it the business 
-  of prophets to arm patrols and gangs to seize the goods of other men? Why did your master not leave this profession to thieves and highwaymen?“
+  The Christian apologist Al Kindy challenged the Moslems even more aggressively: “Judge for yourselves, if your master was a prophet just as you claim. For is it the business 
+  of prophets to arm patrols and gangs to seize the goods of other men? Why did your master not leave this profession to thieves and highwaymen?”
   
-  This piece of crude and rough cloth [the ”garments of shame“ or em(sambenitos)], decorated with various emblems (most often the cross of St. Andrew, but in the case of those condemned 
-  to death the devils of hell), was something the ”reconciled“ penitent had to wear on certain days or for his whole life, according to the sentence.
+  This piece of crude and rough cloth [the em(sambenitos), or “garments of shame”], decorated with various emblems (most often the cross of St. Andrew, but in the case of those condemned 
+  to death the devils of hell), was something the “reconciled” penitent had to wear on certain days or for his whole life, according to the sentence.
   
   For nearly half a century the Inquisition’s activities were limited almost entirely to the struggle againts Judaism.
   
-  ...when the persecution of humanists began in Spain, the son of the Inquisitor General Manrique wrote to his famous friend Luis Vives: ”For now it is clear that [in Spain]
-  one cannot possess any culture without being suspected of heresy, error, and Judaism. Thus silence has been imposed on the learned [and] they have been filled with great terror.
+  ...when the persecution of humanists began in Spain, the son of the Inquisitor General Manrique wrote to his famous friend Luis Vives: “For now it is clear that [in Spain]
+  one cannot possess any culture without being suspected of heresy, error, and Judaism. Thus silence has been imposed on the learned [and] they have been filled with great terror.”
   
   ...in 1558 that the situation worsened and Spain became a sort of totalitarian country.
   
