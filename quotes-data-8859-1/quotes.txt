@@ -2,7 +2,7 @@
 # 
 # This is a structured file, amenable to programmatic manipulation.
 # The format is meant to be as easy to type in as possible, with little or no needless repetition.
-# There should be no tabs, and the encoding should be UTF-8.
+# No tab characters.
 # 
 # WATCH OUT for weird apostrophes! ' Do a mass-replace.
 # 
@@ -16,7 +16,9 @@
 #
 # WATCH OUT for the subtle distinction between two characters, both valid in 8859-1:
 #   - minus  octal /055 hex 2D decimal 0045 (easy on my keyboard, in multiple ways)
-#   ­ hyphen octal /255 hex AD decimal 0173 (Alt+0173); this one is smaller, and more pleasing
+#   ­ soft hyphen SHY octal /255 hex AD decimal 0173 (Alt+0173)
+# Some fonts render both of these exactly the same.
+# The minus is safer: the SHY soft hyphen characters are sometimes visible, sometimes invisible, according to the tools used. 
 # 
 # The hierarchy/structure is 
 #  author > title > quote
@@ -3455,11 +3457,11 @@ Roland, Mme {
  
     «Mon père, je m'accuse... ­ Eh bien!» Que dire après? Le coeur me battait, le feu me montait au visage; certaine sueur se 
     répandait partout: «Je m'accuse... d'avoir eu des mouvemens contraires à la chasteté chrétienne.» Ah! La bonne phrase!
-	
-	  I feel my resolution to pursue these memories deserting me.
-	  The miseries of my country torment me; an involuntary gloom penetrates my soul, chilling my imagination. France has become a vast 
-	  Golgotha of carnage, an arena of horrors, where her children tear and destroy one another. Never can history paint these 
-	  dreadful times, or the monsters that fill them with their barbarities. What Rome or Babylon ever equaled Paris?
+  
+    I feel my resolution to pursue these memories deserting me.
+    The miseries of my country torment me; an involuntary gloom penetrates my soul, chilling my imagination. France has become a vast 
+    Golgotha of carnage, an arena of horrors, where her children tear and destroy one another. Never can history paint these 
+    dreadful times, or the monsters that fill them with their barbarities. What Rome or Babylon ever equaled Paris?
   }
 }
 
@@ -4157,7 +4159,7 @@ Capek, M. {
   }
   The New Aspects of Time {
     Yet, the very persistence of such misinterpretations [of SR] must have some deep, underlying cause which a historian of ideas can easily identify: the 
-	perennial tradition of both Western and Eastern thought which regards time as merely apparent and not genuinely real.
+  perennial tradition of both Western and Eastern thought which regards time as merely apparent and not genuinely real.
   }
 }
 
@@ -4171,44 +4173,44 @@ Capek, M. {
 Murray, Douglas {
   The War on the West {
     People began to talk of "equality", but they did not seem to care about equal rights.
-	  They talked of "anti­racism", but they sounded deeply racist.
-	  They spoke of "justice", but they seemed to mean revenge.
-	
-	  This logical trap is the same one favored by witch­dunkers in the Middle Ages: if the woman drowns, she is innocent; if she floats, she's a witch and can be burned.
-	  In DiAngelo's logic, the person who denies they are a racist is racist, and so is the person who says they are racist.
-	
-  	The bell in question was held under suspicion for having once been on a slave plantation, and so it was "shuttered off" from public view pending further investigations into the inanimate object.
-  	At such moments, you can begin to wonder whether we are getting into the realm of Narnia­like magic.
+    They talked of "anti­racism", but they sounded deeply racist.
+    They spoke of "justice", but they seemed to mean revenge.
+  
+    This logical trap is the same one favored by witch­dunkers in the Middle Ages: if the woman drowns, she is innocent; if she floats, she's a witch and can be burned.
+    In DiAngelo's logic, the person who denies they are a racist is racist, and so is the person who says they are racist.
+  
+    The bell in question was held under suspicion for having once been on a slave plantation, and so it was "shuttered off" from public view pending further investigations into the inanimate object.
+    At such moments, you can begin to wonder whether we are getting into the realm of Narnia­like magic.
   }
   The Madness of Crowds {
     ...the current way of regarding women is the same as men, but different where it's useful or flattering.
-	
-	  [The concept of patriarchy] has become so ingrained that when it is mentioned it now floats by as though the idea that Western societies are centred around ­ and run solely for the comfort 
-	  of ­ men is not even something that most people would bother to dispute.
-	
-	  ...defining an entire group of people, their attitudes, pitfalls, and moral associations, based solely on their racial characteristics is itself a fairly good demonstration of racism.
+  
+    [The concept of patriarchy] has become so ingrained that when it is mentioned it now floats by as though the idea that Western societies are centred around ­ and run solely for the comfort 
+    of ­ men is not even something that most people would bother to dispute.
+  
+    ...defining an entire group of people, their attitudes, pitfalls, and moral associations, based solely on their racial characteristics is itself a fairly good demonstration of racism.
   }
   The Strange Death of Europe {
     ...if there is a bit more beheading and sexual assault than there used to be in Europe, then at least we also benefit from a much wider range of cuisines.
-	
-	  Thus the states that had been so open and liberal that they had allowed and encouraged large­scale migration were portrayed as countries which were uniquely racist.
-	
-	  Within less than 24 hours Rushdie was in hiding, with protection provided by the British state. Soon thousands of British Muslims were on the streets supporting the imposition of Islamic 
-	  blasphemy laws in Britain.
-	
-	  Asked whether he [Cat Stevens] would go to a demonstration where an effigy of Rushdie was being burnt, he replied, "I would have hoped that it would be the real thing."
-	
-	  ...on Bastille Day 2014, worshippers at a synagogue in Paris were barricaded inside by immigrant protesters chanting, among other things, "Death to the Jews".
-	
-	  What mainstream politicians and much of the media had in fact done, right up to and througout the 2000s, was encourage a sense that the people in Europe who were shouting 
-	  "fire" were the actual arsonists.
-	
-	  Despite being illegal for three decades, and despite more than 130,000 women in Britain having suffered this barbaric treatment [of female genital mutilation], there 
-	  still have been no successful persecutions of the crime.
-	
-	  By 2015 Sweden had the highest level of rapes per capita of any country in the world after Lesotho.
-	
-	  This is why by 2015 more British Muslims were fighting for Isis than for the British Armed forces.
+  
+    Thus the states that had been so open and liberal that they had allowed and encouraged large­scale migration were portrayed as countries which were uniquely racist.
+  
+    Within less than 24 hours Rushdie was in hiding, with protection provided by the British state. Soon thousands of British Muslims were on the streets supporting the imposition of Islamic 
+    blasphemy laws in Britain.
+  
+    Asked whether he [Cat Stevens] would go to a demonstration where an effigy of Rushdie was being burnt, he replied, "I would have hoped that it would be the real thing."
+  
+    ...on Bastille Day 2014, worshippers at a synagogue in Paris were barricaded inside by immigrant protesters chanting, among other things, "Death to the Jews".
+  
+    What mainstream politicians and much of the media had in fact done, right up to and througout the 2000s, was encourage a sense that the people in Europe who were shouting 
+    "fire" were the actual arsonists.
+  
+    Despite being illegal for three decades, and despite more than 130,000 women in Britain having suffered this barbaric treatment [of female genital mutilation], there 
+    still have been no successful persecutions of the crime.
+  
+    By 2015 Sweden had the highest level of rapes per capita of any country in the world after Lesotho.
+  
+    This is why by 2015 more British Muslims were fighting for Isis than for the British Armed forces.
   }
 }
 
@@ -4216,39 +4218,39 @@ Murray, Douglas {
 Rees, Laurence {
   Hitler and Stalin {
     "Ninety­nine percent of the German people have turned off thinking for themselves," wrote civil servant Friedrich Kellner, a critic of the regime, in his diary in July 1940.
-	
-	"I think that real life is hunger, and the rest is a mirage," wrote the Leningrad scholar Dmitry Likhachev. "In the time of famine people revealed themselves, stripped
-	themselves, freed themselves of all trumpery. Some turned out to be marvelous, incomparable heroes, others ­ scoundrels, villains, murderers, cannibals. 
-	There were no half measures."
-	
-	"The hurricane of war has torn off these rags: now everyone has become what he was in fact, and not what he wanted to seem. 
+  
+  "I think that real life is hunger, and the rest is a mirage," wrote the Leningrad scholar Dmitry Likhachev. "In the time of famine people revealed themselves, stripped
+  themselves, freed themselves of all trumpery. Some turned out to be marvelous, incomparable heroes, others ­ scoundrels, villains, murderers, cannibals. 
+  There were no half measures."
+  
+  "The hurricane of war has torn off these rags: now everyone has become what he was in fact, and not what he wanted to seem. 
   Many have turned out to be pitiful cowards and scoundrels." [Diary of Elena Kochina, October 1941]
-	
-	"The overwhelming feeling besides the fear of death is the feeling of hunger. 
-	The feeling of hunger is such an overpowering feeling that it covers up any other feeling, any other human feelings; [you become] just like a dog who is looking for food." [Israel Abelesz]
-	
-	One estimate is that 50,000 women were raped in the capital, and more across the rest of the country. [Budapest, taken by the Soviets]
-	
-	He estimated that around 30 percent of his comrades committed the offense [of rape, in the march of the Soviet Army into Germany].
-	
-	No one can ever know exactly how many women were raped by the Soviet conquerors. It's possible, however, that nearly two million women and girls in Germany alone 
-	endured this horror during the war and its immediate aftermath.
+  
+  "The overwhelming feeling besides the fear of death is the feeling of hunger. 
+  The feeling of hunger is such an overpowering feeling that it covers up any other feeling, any other human feelings; [you become] just like a dog who is looking for food." [Israel Abelesz]
+  
+  One estimate is that 50,000 women were raped in the capital, and more across the rest of the country. [Budapest, taken by the Soviets]
+  
+  He estimated that around 30 percent of his comrades committed the offense [of rape, in the march of the Soviet Army into Germany].
+  
+  No one can ever know exactly how many women were raped by the Soviet conquerors. It's possible, however, that nearly two million women and girls in Germany alone 
+  endured this horror during the war and its immediate aftermath.
   }
 }
 
 Kershner and Wilcox {
   The Anatomy of Mathematics {
     The practical use of mathematics has an importance which it would be foolish to deny.
-	  Without mathematics such amenities of modern civilization such as elevators, automatic cigarette vending machines and atomic bombs could not have been developed.
-	
-	  The need to recognize the existence of an undefined basis [assumptions] cannot be overemphasized.
-	
-	  It is regrettable that mathematical words should have other meanings as well, since a nonmathematical meaning tends to influence understanding of the mathematical meaning. 
-	  Thus, em(set, function, relation,) and em(operation) have mathematical meanings that are entirely, or almost entirely, divorced from their everyday meanings.
-	  The reader should not expect em(real numbers) to be any more real, or any less imaginary, than em(imaginary) numbers. There is nothing even remotely irrational about 
-	  em(irrational numbers.) These are all equally straightforward mathematical entities which happen to be unfortunately named.
-	
-	  By a number, then, until further notice, we shall mean one of a particular collection of grunts (differing with the language) associated with the ritual of counting.
+    Without mathematics such amenities of modern civilization such as elevators, automatic cigarette vending machines and atomic bombs could not have been developed.
+  
+    The need to recognize the existence of an undefined basis [assumptions] cannot be overemphasized.
+  
+    It is regrettable that mathematical words should have other meanings as well, since a nonmathematical meaning tends to influence understanding of the mathematical meaning. 
+    Thus, em(set, function, relation,) and em(operation) have mathematical meanings that are entirely, or almost entirely, divorced from their everyday meanings.
+    The reader should not expect em(real numbers) to be any more real, or any less imaginary, than em(imaginary) numbers. There is nothing even remotely irrational about 
+    em(irrational numbers.) These are all equally straightforward mathematical entities which happen to be unfortunately named.
+  
+    By a number, then, until further notice, we shall mean one of a particular collection of grunts (differing with the language) associated with the ritual of counting.
   }
 }
 
@@ -4259,13 +4261,13 @@ Moore, Charles {
 Durant, Will {
   The Life of Greece {
     Clear thought and clear expression seem divine things to the Athenian; he has no patience with learned obfuscation.
-	
-	  The letter of the law forbids him to remain single, but the law is not always enforced in Periclean days; and after him the 
-	  number of bachelors mounts until it becomes one of the basic problems of Athens. There are so many ways of being amused in Greece!
-	  Those men who yield marry late, usually near thirty, and then insist upon brides not much older than fifteen.
-	
-	  In this way the Greece that defeated the King of Kings turns upon itself, Greek meets Greek in a thousand battles, and in the course of a century after Marathon 
-	  the most brilliant civilization in history consumes itself in a prolonged national suicide.
+  
+    The letter of the law forbids him to remain single, but the law is not always enforced in Periclean days; and after him the 
+    number of bachelors mounts until it becomes one of the basic problems of Athens. There are so many ways of being amused in Greece!
+    Those men who yield marry late, usually near thirty, and then insist upon brides not much older than fifteen.
+  
+    In this way the Greece that defeated the King of Kings turns upon itself, Greek meets Greek in a thousand battles, and in the course of a century after Marathon 
+    the most brilliant civilization in history consumes itself in a prolonged national suicide.
   }
 }
 
@@ -4273,22 +4275,22 @@ Durant, Will and Ariel {
   The Age of Napolean {
     "The old nobility," said Napoleon, "would have survived if it had known enough to become master of printing 
     materials. The advent of cannon killed the feudal system; ink will kill the modern system." 
-	
-	  An Englishman in Paris in 1791 reported that "clubs abound in every street." There were literary societies, sporting associations, Freemason lodges, workmen's gatherings.
-	
-  	Napolean: "The women are everywhere ­ at plays, on public walks, in libraries. You see very pretty women in the scholar's study room. Only here [in Paris], of all the
-  	places on Earth, do women deserve such influence, and indeed the men are mad about them, think of nothing else, and live only through and for them. A woman, in order to know what is 
-	  due her, and what power she has, must live in Paris for six months."
-	
-	  The "Fourth Estate" ­ the journalists and the press ­ may have been more influential than the schools in forming the mind and mood of France in those effervescent years.
-	
-	  [In England] until 1929 the legal age of marriage was fourteen for the male, twelve for the female.
-	
-	  The em(Vindication) [Wollstonecraft] proceeded to list some feminine faults of that time: the admiration of weakness and timidity, which feeds and pleases the male's assumption 
-	  of superiority; the addiction to cards, gossip, astrology, sentimentality, and literary trash; the absorption in dress and self­admiration.
-	
-	  Coleridge, about 1798, complained convincingly: "I am pestered every ball night to dance, which very em(modestly) I refuse. They dance a most infamous dance called 
-	  the Waltzen. There are perhaps twenty couples ­ the Man and his Partner embrace each other, arms and waists, knees almost touching, and then whirl round and round, to lascivious music." 
+  
+    An Englishman in Paris in 1791 reported that "clubs abound in every street." There were literary societies, sporting associations, Freemason lodges, workmen's gatherings.
+  
+    Napolean: "The women are everywhere ­ at plays, on public walks, in libraries. You see very pretty women in the scholar's study room. Only here [in Paris], of all the
+    places on Earth, do women deserve such influence, and indeed the men are mad about them, think of nothing else, and live only through and for them. A woman, in order to know what is 
+    due her, and what power she has, must live in Paris for six months."
+  
+    The "Fourth Estate" ­ the journalists and the press ­ may have been more influential than the schools in forming the mind and mood of France in those effervescent years.
+  
+    [In England] until 1929 the legal age of marriage was fourteen for the male, twelve for the female.
+  
+    The em(Vindication) [Wollstonecraft] proceeded to list some feminine faults of that time: the admiration of weakness and timidity, which feeds and pleases the male's assumption 
+    of superiority; the addiction to cards, gossip, astrology, sentimentality, and literary trash; the absorption in dress and self­admiration.
+  
+    Coleridge, about 1798, complained convincingly: "I am pestered every ball night to dance, which very em(modestly) I refuse. They dance a most infamous dance called 
+    the Waltzen. There are perhaps twenty couples ­ the Man and his Partner embrace each other, arms and waists, knees almost touching, and then whirl round and round, to lascivious music." 
   }
 }
 
@@ -4308,13 +4310,13 @@ Plumptre, Anne {
 Shirer, W. L. {
   The Rise and Fall of the Third Reich {
     "An old woman with snow­white hair was holding a one­year­old child in her arms and singing to it and tickling it.
-  	The child was cooing with delight. The parents were looking on with tears in their eyes.
-	  The father was holding the hand of a boy about 10 years old and speaking to him softly; the boy was fighting his tears.
-	  The father pointed to the sky, stroked his head and seemed to explain something to him." [1942­10­5, Dubno execution pits, Ukraine]
-	
-	  "Goering leaves Rome. We had dinner at the Excelsior Hotel, and during the dinner Goering talked of little else but the jewels he owned.
-	  In fact, he had some beautiful rings on his fingers. On the way to the station he wore a great sable coat, something between what 
-	  automobile drivers wore in 1906 and what a high­grade prostitute wears to the opera."
+    The child was cooing with delight. The parents were looking on with tears in their eyes.
+    The father was holding the hand of a boy about 10 years old and speaking to him softly; the boy was fighting his tears.
+    The father pointed to the sky, stroked his head and seemed to explain something to him." [1942­10­5, Dubno execution pits, Ukraine]
+  
+    "Goering leaves Rome. We had dinner at the Excelsior Hotel, and during the dinner Goering talked of little else but the jewels he owned.
+    In fact, he had some beautiful rings on his fingers. On the way to the station he wore a great sable coat, something between what 
+    automobile drivers wore in 1906 and what a high­grade prostitute wears to the opera."
   }
 }
 
@@ -4332,162 +4334,162 @@ Stael, Madame de {
 Boigne, La Comtesse de {
   Mémoires {
     Monsieur de Lusson, jeune homme d'une charmante figure, immensément riche, bon officier, vivait habituellement dans la meilleure compagnie, eut 
-	  l'imprudence d'aller à un de ces bals; on l'en chassa avec une telle dureté que, désespéré du ridicule dont il restait couvert dans un temps où le 
-	  ridicule était le pire des maux, il se tua en arrivant à Paris.
-	
-	  ...il était à sa nièce, madame de Rothe, fille de sa soeur, lady Forester. 
-	  Elle était veuve d'un général Rothe; elle avait été assez belle, était restée fort despote, et faisait les honneurs de la maison de son 
-	  oncle avec lequel elle vivait depuis de longes années dans une intimité fort complète qu'ils prenaient peu le soin de dissimuler.
-	
-	  Je me rappelle que les rires de monsieur de Calonne, lorsque l'année suivante, à Londres, il me trouva lisant un volume de Smith, em(Wealth of Nations,) 
-	  dont je faisais ma récréation, furent pour moi le premier avertissement que ce goût n'était pas général aux filles de quinze ans.
-	
-	  Elle [Madame Gand] avait les plus beaux cheveux du monde;
-	  Édouard les admira. Elle lui assura qu'il n'en connaissait pas encore tout le mérite. 
-	  Elle passa dans un cabinet de toilette et revint les cheveux détachés et tombant de façon à en être complètement voilée. Mais c'était Ève, avant
-	  qu'aucun tissu n'eût inventé, et avec moins d'innocence, em(naked and not ashamed.) Le souper s'acheva dans ce costume primitif.
-	
-	  ...on se bornait à se détester cordialement de part et d'autre.
-	
-	  ...l'esprit de parti, monstre dont on ne peut trop repousser les approches quand on vit dans un temps de révolution et qu'on veut conserver quelque chose d'humain.
-	
-	  Il regnait une épidémie de vengeance.
-	
-	  La comtesse de Lieven en frémit et ne peut cacher son dépit, car, en outre de ses autres avantages, la nouvelle ambassadrice était plus jeune, plus jolie, et avait 
-	  un impertinent embonpoint qui offusquait la désespérante maigreur de sa rivale.
-	
-	  Il est établie qu'à cet âge [de 18 ans] une demoiselle entre en vente et qu'on doit la diriger sur les meilleurs marchés.
-	
-	  Leur visage s'épanouit quand un frère aîné vient les prier à danser; si elles causent avect un cadet, en revanche, les mères s'agitent sur leurs banquettes et paraissent au supplice.
-	
-	  Le fait était que monsieur de Talleyrand, amoureux comme un homme de dix­huit ans de sa nièce, la comtesse Edmond de Périgord, se serait trouvé gêné par la présence de la princesse.
-	
-	  Le duc de Richelieu avait été marié, à dix­sept ans, à mademoiselle de Rochechouart qui en avait douze.
-	  Selon l'usage du temps, on l'avait envoyé voyager. Pendant les trois années de son absence, il recevait de fréquentes lettres de sa jeune épouse, remplies de grâce et d'esprit.
-	
-	  ...elle avait passé la semaine de son absence à Rumilly dans une orgie perpétuelle avec ses autres valets.
-	
-	  ...les massacres de Parga, d'Hydra, de Chio, toutes ces dames chrétiennes enlevées à leur famille et vendues sur les marchés de Smyrne n'arrachaient pas un cri à un seul 
-	  organe de la presse [brittanique].
+    l'imprudence d'aller à un de ces bals; on l'en chassa avec une telle dureté que, désespéré du ridicule dont il restait couvert dans un temps où le 
+    ridicule était le pire des maux, il se tua en arrivant à Paris.
+  
+    ...il était à sa nièce, madame de Rothe, fille de sa soeur, lady Forester. 
+    Elle était veuve d'un général Rothe; elle avait été assez belle, était restée fort despote, et faisait les honneurs de la maison de son 
+    oncle avec lequel elle vivait depuis de longes années dans une intimité fort complète qu'ils prenaient peu le soin de dissimuler.
+  
+    Je me rappelle que les rires de monsieur de Calonne, lorsque l'année suivante, à Londres, il me trouva lisant un volume de Smith, em(Wealth of Nations,) 
+    dont je faisais ma récréation, furent pour moi le premier avertissement que ce goût n'était pas général aux filles de quinze ans.
+  
+    Elle [Madame Gand] avait les plus beaux cheveux du monde;
+    Édouard les admira. Elle lui assura qu'il n'en connaissait pas encore tout le mérite. 
+    Elle passa dans un cabinet de toilette et revint les cheveux détachés et tombant de façon à en être complètement voilée. Mais c'était Ève, avant
+    qu'aucun tissu n'eût inventé, et avec moins d'innocence, em(naked and not ashamed.) Le souper s'acheva dans ce costume primitif.
+  
+    ...on se bornait à se détester cordialement de part et d'autre.
+  
+    ...l'esprit de parti, monstre dont on ne peut trop repousser les approches quand on vit dans un temps de révolution et qu'on veut conserver quelque chose d'humain.
+  
+    Il regnait une épidémie de vengeance.
+  
+    La comtesse de Lieven en frémit et ne peut cacher son dépit, car, en outre de ses autres avantages, la nouvelle ambassadrice était plus jeune, plus jolie, et avait 
+    un impertinent embonpoint qui offusquait la désespérante maigreur de sa rivale.
+  
+    Il est établie qu'à cet âge [de 18 ans] une demoiselle entre en vente et qu'on doit la diriger sur les meilleurs marchés.
+  
+    Leur visage s'épanouit quand un frère aîné vient les prier à danser; si elles causent avect un cadet, en revanche, les mères s'agitent sur leurs banquettes et paraissent au supplice.
+  
+    Le fait était que monsieur de Talleyrand, amoureux comme un homme de dix­huit ans de sa nièce, la comtesse Edmond de Périgord, se serait trouvé gêné par la présence de la princesse.
+  
+    Le duc de Richelieu avait été marié, à dix­sept ans, à mademoiselle de Rochechouart qui en avait douze.
+    Selon l'usage du temps, on l'avait envoyé voyager. Pendant les trois années de son absence, il recevait de fréquentes lettres de sa jeune épouse, remplies de grâce et d'esprit.
+  
+    ...elle avait passé la semaine de son absence à Rumilly dans une orgie perpétuelle avec ses autres valets.
+  
+    ...les massacres de Parga, d'Hydra, de Chio, toutes ces dames chrétiennes enlevées à leur famille et vendues sur les marchés de Smyrne n'arrachaient pas un cri à un seul 
+    organe de la presse [brittanique].
   }
 }
 
 Pais, Abraham {
   Niels Bohr {
     In the very first sentence ever written on quantum mechanics, the abstract of Heisenberg's July 1925 paper, it was stated that "quantum mechanics should be 
-	  founded exclusively upon relationships between quantities that are in principle observable."
-	
-	  At the end of [Heiseberg's] first lecture [at age 24] one student reportedly said that one wouldn't have believed he was so clever since he looked like 
-	  a bright carpenter's apprentice just returned from technical school.
-	
-	  Planck most probably first wrote down his law on the evening of Sunday 7 October 1900, as the result of new experimental information he received that day.
+    founded exclusively upon relationships between quantities that are in principle observable."
+  
+    At the end of [Heiseberg's] first lecture [at age 24] one student reportedly said that one wouldn't have believed he was so clever since he looked like 
+    a bright carpenter's apprentice just returned from technical school.
+  
+    Planck most probably first wrote down his law on the evening of Sunday 7 October 1900, as the result of new experimental information he received that day.
   }
 }
 
 Bohr, Niels {
   Atomic Physics and Human Knowledge {
     Thus, the description of quantum phenomena requires a distinction in principle between the objects under investigation and the measuring apparatus by 
-	means of which the experimental conditions are defined.
-	
-	The very fact that repetition of the same experiment, in general yields different recordings pertaining to the object, immediately implies that a 
-	comprehensive account of experience in this field must be expressed by statistical laws.
+  means of which the experimental conditions are defined.
+  
+  The very fact that repetition of the same experiment, in general yields different recordings pertaining to the object, immediately implies that a 
+  comprehensive account of experience in this field must be expressed by statistical laws.
   }
 }
 
 Heisenberg, Elisabeth {
   Inner Exile {
     "In the first moment, I was deeply shaken. I had the sensation of looking through the surface of atomic phenomena at a distant foundation 
-	of a strange inner beauty, and the thought that I was to probe this wealth of mathematical structures that nature had spread out before me down below almost made me dizzy.
-	I was far too agitated to sleep. And so, with dawn beginning to break, I left the house and headed for the southern tip of the island, to where a solitary tower of rocks
-	jutting out into the sea had kindled my desire to climb it. I reached for the top without too much difficulty, and waited for the sun to rise."
+  of a strange inner beauty, and the thought that I was to probe this wealth of mathematical structures that nature had spread out before me down below almost made me dizzy.
+  I was far too agitated to sleep. And so, with dawn beginning to break, I left the house and headed for the southern tip of the island, to where a solitary tower of rocks
+  jutting out into the sea had kindled my desire to climb it. I reached for the top without too much difficulty, and waited for the sun to rise."
   }
 }
 
 Heisenberg, Werner {
   Physics and Philosophy {
     ..what we observe in nature is not nature in itself but nature exposed to our method of questioning.
-	
-	The idea that electromagnetic waves could be a reality in themselves, independent of any bodies, did at that time not occur to the physicists.
-	
-	The electrodynamics of moving bodies can be derived at once from the principle of relativity.
+  
+  The idea that electromagnetic waves could be a reality in themselves, independent of any bodies, did at that time not occur to the physicists.
+  
+  The electrodynamics of moving bodies can be derived at once from the principle of relativity.
   }
 }
 
 Girard, Réné {
   The Scapegoat {
     Once mobilized, the crowd has absolute power, dragging institutions with it until they are forced to disintegrate.
-	
-  	...I intend to show that all myths must have their roots in real acts of real violence against real victims.
-	
-	  The causality of magic is one with mythology, so the importance of its denial cannot be exaggerated.
-	
-	  ...the Gospels reveal the scapegoat mechanism everywhere, even within us.
-	
-	  em(They do not know what they are doing.) In this passage [from the Passion] we are given the first definition of the unconscious in human history.
-	
-	  The constituted authorities give in to [the mob] and yield up the victims demanded by their caprice, just as Pilate gave up Jesus or Herod John the Baptist.
+  
+    ...I intend to show that all myths must have their roots in real acts of real violence against real victims.
+  
+    The causality of magic is one with mythology, so the importance of its denial cannot be exaggerated.
+  
+    ...the Gospels reveal the scapegoat mechanism everywhere, even within us.
+  
+    em(They do not know what they are doing.) In this passage [from the Passion] we are given the first definition of the unconscious in human history.
+  
+    The constituted authorities give in to [the mob] and yield up the victims demanded by their caprice, just as Pilate gave up Jesus or Herod John the Baptist.
   }
   I See Satan Fall Like Lightning {
     The principle source of violence between human beings is mimetic rivalry, the rivalry resulting from imitation of a [role] model.
-	
-	  In short, a paradox occurs: the antagonists resemble one another more and more. They have ears only for the deceptive celebration of differences, 
-	  which rages more than ever in our societies, not because real differences are increasing but because they are disappearing.
-	
-	  The synoptic gospels use em(satan/satanas) and em(diabolos) interchangeably and with equal frequency. Both words refer to one who accuses, slanders, denounces, and seduces.
-	
-	  The peoples of the world do not invent their gods. They deify their victims.
-	
-	  A great mass of evidence, theoretical, textual, and archeological, suggests that in the beginnings of humanity the sacrificial victims were human.
-	
-	  Human communities constantly resort to sacrifice to ease their distress.
-	
-	  Unanimity in human groups is rarely a vehicle of truth; more often it is nothing but a mimetic, tyrannical phenomena. It resembles elections in totalitarian countries.
+  
+    In short, a paradox occurs: the antagonists resemble one another more and more. They have ears only for the deceptive celebration of differences, 
+    which rages more than ever in our societies, not because real differences are increasing but because they are disappearing.
+  
+    The synoptic gospels use em(satan/satanas) and em(diabolos) interchangeably and with equal frequency. Both words refer to one who accuses, slanders, denounces, and seduces.
+  
+    The peoples of the world do not invent their gods. They deify their victims.
+  
+    A great mass of evidence, theoretical, textual, and archeological, suggests that in the beginnings of humanity the sacrificial victims were human.
+  
+    Human communities constantly resort to sacrifice to ease their distress.
+  
+    Unanimity in human groups is rarely a vehicle of truth; more often it is nothing but a mimetic, tyrannical phenomena. It resembles elections in totalitarian countries.
   }
 }
 
 Darwin, Charles {
   The Voyage of the Beagle {
     The eight years [Darwin] spent examining, dissecting, and classifying barnacles led his children to assume that barnacles were part of the ordinary routine 
-	  of any normal father of a family. One of them, hearing of a neighbour whose mornings were sometimes spent in idleness, asked, "But when does he do his barnacles?"
-	
-  	Certainly, no fact in the long history of the world is so startling as the wide and repeated extermination of its inhabitants.
+    of any normal father of a family. One of them, hearing of a neighbour whose mornings were sometimes spent in idleness, asked, "But when does he do his barnacles?"
+  
+    Certainly, no fact in the long history of the world is so startling as the wide and repeated extermination of its inhabitants.
   }
   The Life and Letters of Charles Darwin {
     My reflection, when I first made myself master of the central idea of the 'Origin', was, "How extremely stupid not to have thought of that!" [T. H. Huxley]
-	
-	  Dr. Duncan's lectures on Materia Medica at 8 o'clock on a winter's morning are something fearful to remember.
+  
+    Dr. Duncan's lectures on Materia Medica at 8 o'clock on a winter's morning are something fearful to remember.
     
-	  The sight of a naked savage in his native land is an event which can never be forgotten.
+    The sight of a naked savage in his native land is an event which can never be forgotten.
   }
 }
 
 Balzac, Honoré de {
   Cousin Bette {
     ...we cannot tell how many wildly foolish actions are due to the secret rivalries that drive men to mirror the type they have set up as ideal,
-	  to consume their energies in making themselves a moonshine reflection of someone else.
+    to consume their energies in making themselves a moonshine reflection of someone else.
   }
 }
 
 Lewis, Bernard {
   The Crisis of Islam {
     In Muslim tradition, the world is divided into two houses, the House of Islam, in which Muslim governments rule and Muslim law prevails, 
-	  and the House of War, the rest of the world, still ruled by infidels.
-	
-	  If a Muslim renounces Islam, even if a new convert converts to his previous faith, the penalty is death.
-	
-  	Yet the most powerful accusation of all is the degeneracy and debauchery of the American way of life, and the threat that it offers to Islam. This is what 
-	  is meant by the term the Great Satan, applied to the United States by Ayatollah Khomeini. Satan as depicted in the Qu'ran is neither an imperialist nor an 
-	  exploiter. He is a seducer, "the insidious tempter who whispers in the hearts of men."
-	
-	  For Islamists, democracy, expressing the will of the people, is the road to power, but it is a one­way road.
-	
-	  The Arab world translates about 330 books annually [2002], one fifth of the number that Greece translates. Spain translates almost 100,000 in one year.
-	
-	  The literal divinity and inerrancy of the Qu'ran is a basic dogma of Islam, and although some may doubt it, none challenge it.
-	
-	  On the Holocaust three positions are not infrequently found in the Arabic media: it never happened; it was greatly exaggerated; the Jews deserved it anyway.
-	
-	  ...the word madras ... has come to denote a center for indoctrination in bigotry and violence.
+    and the House of War, the rest of the world, still ruled by infidels.
+  
+    If a Muslim renounces Islam, even if a new convert converts to his previous faith, the penalty is death.
+  
+    Yet the most powerful accusation of all is the degeneracy and debauchery of the American way of life, and the threat that it offers to Islam. This is what 
+    is meant by the term the Great Satan, applied to the United States by Ayatollah Khomeini. Satan as depicted in the Qu'ran is neither an imperialist nor an 
+    exploiter. He is a seducer, "the insidious tempter who whispers in the hearts of men."
+  
+    For Islamists, democracy, expressing the will of the people, is the road to power, but it is a one­way road.
+  
+    The Arab world translates about 330 books annually [2002], one fifth of the number that Greece translates. Spain translates almost 100,000 in one year.
+  
+    The literal divinity and inerrancy of the Qu'ran is a basic dogma of Islam, and although some may doubt it, none challenge it.
+  
+    On the Holocaust three positions are not infrequently found in the Arabic media: it never happened; it was greatly exaggerated; the Jews deserved it anyway.
+  
+    ...the word madras ... has come to denote a center for indoctrination in bigotry and violence.
   }
   What Went Wrong? {
     ...the Renaissance, the Reformation, the technological revolution passed virtually unnoticed in the lands of Islam.
@@ -4531,11 +4533,11 @@ Sachar, Howard {
 Friedman, Matti {
   Spies of No Country {
     Now, Gambiel wrote in one dispatch, "the newspapers describe the Jew in the most barbaric and cruel fashion, and also as weak and cowardly." Many people, he reported, believed that 
-  	Jews "were slaughtering children and abusing pregnant women and raping virgins." The word "Jew" was starting to assume demonic undertones.
-	
-	  The population grew by a percentage point every 10 days.
-	
-	  Syrian papers reported a freeze on Jewish bank accounts and a government demand for a list of their assets.
+    Jews "were slaughtering children and abusing pregnant women and raping virgins." The word "Jew" was starting to assume demonic undertones.
+  
+    The population grew by a percentage point every 10 days.
+  
+    Syrian papers reported a freeze on Jewish bank accounts and a government demand for a list of their assets.
   }
 }
 
@@ -4693,50 +4695,50 @@ Lea, Henry Charles {
 Trevor­Roper, H. R. {
   The European Witch­Craze {
     In the sixteenth century the witch gradually replaces the Jew, and in the seventeenth century the reversal is almost complete. If the universal scapegoat of the Black Death
-	  in Germany had been the Jew, the universal scapegoat of the Wars of Religion will be the witch.
-	
-	  When [the em(Malleus Maleficarum,) "Hammer of Witches"] was published, it carried on its title­page the bold epigraph, "To disbelieve in witchcraft is the greatest of heresies." 
-	  It was the exact opposite of the ruling of the Church in the Dark Ages. Since the 9th century, the wheel had come full circle.
-	
-	  Romances of chivalry could be laughed out of existence, but no Don Quixote dared to kill, by ridicule, the bizarre novellettes which the grave lawyers and divines of all 
-	  Europe published about Satan's kingdom.
-	
-	  The law of God was stated most explicitly in Exodus 22­18: `thou shalt not suffer a witch to live.'
-	
-	  By law, children who were said to have attended their mother to the sabbat were merely flogged in front of the fire in which their parent was burning.
-	
-	  Montaigne remarked that `it is rating our conjectures highly to roast people alive for them.'
-	
-	  The last legal execution [of a witch] was in Protestant Glarus, in Switzerland, in 1782.
+    in Germany had been the Jew, the universal scapegoat of the Wars of Religion will be the witch.
+  
+    When [the em(Malleus Maleficarum,) "Hammer of Witches"] was published, it carried on its title­page the bold epigraph, "To disbelieve in witchcraft is the greatest of heresies." 
+    It was the exact opposite of the ruling of the Church in the Dark Ages. Since the 9th century, the wheel had come full circle.
+  
+    Romances of chivalry could be laughed out of existence, but no Don Quixote dared to kill, by ridicule, the bizarre novellettes which the grave lawyers and divines of all 
+    Europe published about Satan's kingdom.
+  
+    The law of God was stated most explicitly in Exodus 22­18: `thou shalt not suffer a witch to live.'
+  
+    By law, children who were said to have attended their mother to the sabbat were merely flogged in front of the fire in which their parent was burning.
+  
+    Montaigne remarked that `it is rating our conjectures highly to roast people alive for them.'
+  
+    The last legal execution [of a witch] was in Protestant Glarus, in Switzerland, in 1782.
   }
 }
 
 Walker, C. B. F. {
   Cuneiform {
     Writing was invented in order to record business activities in the early Near East.
-	
-	  The end of the wooden or reed stylus, which struck the clay first, made a wider mark than the shaft, and so came into being the typical wedge­shaped impressions after which this 
-	  writing system became known ­ cuneiform, from the Latin word em(cuneus) meaning wedge.
-	
-	  Thus it is beginning to look as if we should think in terms of the invention of writing as being a gradual process, accomplished over a wide area, rather than the product 
-	  of a single Sumerian genius.
-	
-	  Eighty­five percent of the tablets from the early levels at Uruk are economic and are concerned with the income and outgoings of the city's temples in terms of food, 
-	  livestock, and textiles. Fifteen percent of the texts are lexical lists, including the names of various commodities, animals, and officials.
-	
-	  In some respects the Sumerian script never quite escapes from the fact that it was originally designed for the purpose of practical book­keeping rather than to express abstract ideas.
-	
-	  As in other Semitic languages, Akkadian words basically have a root of three consonants, e.g. em(prs,) which is then modified internally by the doubling of consonants or insertion 
-	  of vowels, and externally by the addition of prefixes or postfixes, e.g. em(iprus, purus, iparrasuni.)
-	
-	  The number of distinct cuneiform signs in use from the late third millenium onwards is about six hundred.
-	
-	  Enheduanna, the daughter of Sargon I, and high priestess of the moon­god Nanna at Ur, is one of the few female scribes known from Mesopotamia, and the earliest named author 
-	  in history.
-	
-	  The scribes often describe themselves simply as em(dubsar,) but sometimes give themselves other titles such as `junior scribe', or `exorcist'.
-	
-	  ...if one digs in a town of the Old Babylonian period it seems that one can find a few tablets in almost every house.
+  
+    The end of the wooden or reed stylus, which struck the clay first, made a wider mark than the shaft, and so came into being the typical wedge­shaped impressions after which this 
+    writing system became known ­ cuneiform, from the Latin word em(cuneus) meaning wedge.
+  
+    Thus it is beginning to look as if we should think in terms of the invention of writing as being a gradual process, accomplished over a wide area, rather than the product 
+    of a single Sumerian genius.
+  
+    Eighty­five percent of the tablets from the early levels at Uruk are economic and are concerned with the income and outgoings of the city's temples in terms of food, 
+    livestock, and textiles. Fifteen percent of the texts are lexical lists, including the names of various commodities, animals, and officials.
+  
+    In some respects the Sumerian script never quite escapes from the fact that it was originally designed for the purpose of practical book­keeping rather than to express abstract ideas.
+  
+    As in other Semitic languages, Akkadian words basically have a root of three consonants, e.g. em(prs,) which is then modified internally by the doubling of consonants or insertion 
+    of vowels, and externally by the addition of prefixes or postfixes, e.g. em(iprus, purus, iparrasuni.)
+  
+    The number of distinct cuneiform signs in use from the late third millenium onwards is about six hundred.
+  
+    Enheduanna, the daughter of Sargon I, and high priestess of the moon­god Nanna at Ur, is one of the few female scribes known from Mesopotamia, and the earliest named author 
+    in history.
+  
+    The scribes often describe themselves simply as em(dubsar,) but sometimes give themselves other titles such as `junior scribe', or `exorcist'.
+  
+    ...if one digs in a town of the Old Babylonian period it seems that one can find a few tablets in almost every house.
   }
 }
 
@@ -4797,29 +4799,29 @@ Ali, Ayaan Hirsi {
 Wollstonecraft, Mary  {
   A Vindication of the Rights of Woman {
     ...and that, in the true style of Mahometanism, [women] are treated as a kind of subordinate being, and not as part of the human species.
-	
-	  Thanks to that Being who impressed them on my soul, and gave me sufficient strength of mind to dare to exert my own reason, till, becoming dependent only on Him for the support of my virtue,
-	  I view, with indignation, the mistaken notions that enslave my sex.
-	
-  	If she attends to her children, it is in general to dress them in a costly manner.
-	
-	  Men order their clothes to be made, and have done with the subject; women make their own clothes, and are continually talking about them.
-	
-	  In short, speaking of the majority of mothers, they leave their children entirely to the care of servants; or, because they are their children, treat them as if they were little demi­gods.
+  
+    Thanks to that Being who impressed them on my soul, and gave me sufficient strength of mind to dare to exert my own reason, till, becoming dependent only on Him for the support of my virtue,
+    I view, with indignation, the mistaken notions that enslave my sex.
+  
+    If she attends to her children, it is in general to dress them in a costly manner.
+  
+    Men order their clothes to be made, and have done with the subject; women make their own clothes, and are continually talking about them.
+  
+    In short, speaking of the majority of mothers, they leave their children entirely to the care of servants; or, because they are their children, treat them as if they were little demi­gods.
   }
 }
 
 O'Neill, Brendan {
   After the Pogrom {
     There were two eruptions of barbarism in October 2023. The first was Hamas's pogrom of 7 October, in which more than a thousand people were slaughtered and many others were 
-	  maimed, raped, and kidnapped. The second was the sympathy for the pogrom across much of the Western world.
-	
-	  We can no longer ignore the fact that even the worst act of violence against the Jews since the Holocaust was not enough to awaken the West to the threat posed by radical Islam ­ not 
-	  only to the Jewish State, but also to the West itself.
-	
-	  No, all that matters is the scapegoating of Israel for the supposed crimes of modernity. The transformation of Israel into the sin­eater of Western culture.
-	
-	  Decolonisation is decivilisation. It is a purge. It is the purging of our institutions of the ideas and ideals that shaped our societies. It is a secular jihad.
+    maimed, raped, and kidnapped. The second was the sympathy for the pogrom across much of the Western world.
+  
+    We can no longer ignore the fact that even the worst act of violence against the Jews since the Holocaust was not enough to awaken the West to the threat posed by radical Islam ­ not 
+    only to the Jewish State, but also to the West itself.
+  
+    No, all that matters is the scapegoating of Israel for the supposed crimes of modernity. The transformation of Israel into the sin­eater of Western culture.
+  
+    Decolonisation is decivilisation. It is a purge. It is the purging of our institutions of the ideas and ideals that shaped our societies. It is a secular jihad.
  }
 }
 
