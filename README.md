@@ -8,16 +8,10 @@ The quotes saved in this repository are some of my favourites.
 # Data file: quotes.txt 
 Structured data file, typed in manually.
 Nested structures, with no repeated data. 
-The source file uses 8859-1 encoding, because that encoding is especially friendly to PostScript.
+The source file uses `windows-1252` encoding (a single-byte encoding, which are friendly to PostScript).
 The source file uses *ad hoc* symbols to denote the need for special processing of the text:
 - *pre*(...) is meant to preserve white space (lines of poetry)
 - *em*(...) is meant for emphasis/italics (not allowed in poetry, because my parsing code is mediocre)
-
-Punctuation is a bit of a problem with this file:
- - the 8859-1 open-quote (octal 047) character is actually a back-quote on my PC's keyboard.
- - the 8859-1 encoding has a 'minus' character (octal 055) and a 'hyphen' (octal 255) character that are very similar.
-   The hyphen is shorter, and usually is preferred.
-   The hypen character has no dedicated key on my keyboard; Alt+0173 is needed.
    
 
 # Generated data file: quotes_flat_file_ps.txt
@@ -26,19 +20,20 @@ It also create a PostScript-friendly data structure for each quote (a dictionary
 
 
 # Steps to create the output: book.pdf
-- manual: update the quotes.txt file. Ensure the file is saved using the 8859-1 (ANSI) encoding. Be careful with punctuation, as noted above.
+- manual: update the quotes.txt file. Ensure the file is saved using the `windows-1252` encoding.
 - Java: run the `ParseAndGenerateFile` class. This generates `quotes_flat_file_ps.txt`.
 - Ghostscript: run a Ghostscript command to generate a pdf. Example:
 
-`C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o book.pdf book.ps`
+`C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o BOOK.PDF BOOK.PS`
 
 The cover is generated like so:
 
-`C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o cover.pdf cover.ps`
+`C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o BOOK-COVER.PDF BOOK-COVER.PS`
 
 # PostScript 
 The PostScript programming language is used to read the data files and create a pleasing PDF, suitable for printing.
-The top-level PostScript file is `book.ps`. It uses the other PostScript files in this project.
+(I'm using lulu.com for printing the book.)
+The top-level PostScript file is `BOOK.PS`. It uses the other PostScript files in this project.
 
 Years ago, I used the *iText* Java library for creating PDF files programmatically.
 I now much prefer using the PostScript language for such tasks. 
