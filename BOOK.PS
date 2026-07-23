@@ -12,6 +12,7 @@
 (fonts.ps) using
 (strings.ps) using
 (text-align.ps) using
+(jagged-right.ps) using
 
 % int 
 % arg is the number of times /showpage has been called: 0, 1,...
@@ -21,7 +22,7 @@
   (Starting new page...) here
   /page-num idx 3 sub def
   % WARNING: there are two hard-coded transition points for the page numbers
-  page-num 1 ge  page-num 178 le and {
+  page-num 1 ge  page-num 180 le and {
     % show page numbers and title
     % set the work-box; asymmetry in x, to avoid the spine 
     bleed  MARGIN-X  add  SPINE-AVOIDANCE page-num 2 mod 0 eq {neg} if add 
@@ -45,7 +46,7 @@
       page-num-str show-right-align
     } ifelse
     wd 50 pct  ht GAP add  moveto 
-    page-num 168 le {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
+    page-num 170 le {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
     (regular) 100 use-font
   } {
     % no page numbers, and the centering is a bit different
@@ -118,22 +119,25 @@
 % The control codes can only set the font.
 % Set the currentpoint to the start of the next line, to prepare for the author-title line.
 /show-body-prose {
-  % ragged-right, using the 1/2 word size trick to reduce jaggedness.
-  % use stringwidth, not probe-ahead, to test each word, one at a time.
+  % ragged-right; limit is wd, but with a tolerance of 2em
   % call new-line, but leave new-page to the caller.
   body {
     dup 
     type /nametype eq {
       cvx exec
     } {
+      % a final space is added by the current code, but not by the newer style snippet:
+      %wd 2 em jagged-right-2 
+      %pop % discard the stats
       str-words {
         /word defi
         word str-width /word-wd defi
         /new-x currentpoint pop word-wd add def
         /line-overflow new-x wd sub def
-        line-overflow  word-wd 2 div  gt { NEW-LINE } if
+        line-overflow  2 em  gt { NEW-LINE } if
         word SPACE str-concat show
       } forall
+      
     } ifelse
   } forall 
   NEW-LINE
