@@ -1,13 +1,16 @@
 %!PS
 
-%   C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o book.pdf book.ps
+% The body of the book.
+% The cover is a separate PostScript file.
+%
+% Generate a PDF:
+%   C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o BOOK.PDF BOOK.PS
 
 (using.ps) run
 (base.ps) using
 (debug.ps) using
 (fonts.ps) using
 (strings.ps) using
-(table.ps) using
 (text-align.ps) using
 
 % int 
