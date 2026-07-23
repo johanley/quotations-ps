@@ -1,0 +1,39 @@
+%!PS
+
+% A blank cover with a pale yellow color.
+
+% Ghostscript command:
+%   C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o BOOK-COVER.PDF BOOK-COVER.PS
+
+% I'm printing this book using lulu.com.
+% They require a cover. 
+% For linen cases, I just throw the paper cover away.
+% That's why this cover is blank, with no text at all.
+
+/inch {72 mul} bind def
+
+% pale yellow
+/set-background-color {
+  0 0.06 0.22 0.08 setcmykcolor
+} bind def
+
+% for lulu.com with a linen cover, you need a dust jacket with 'flaps'
+% 20.438" wide =  2*3.25" flaps + 2*6.625 main cover +  0.688 spine
+% 9.75" high
+/cover-width  20.25 inch  def 
+/cover-height 9.75 inch def
+
+% for lulu.com with a 'case wrap', in which the cover is part of the book itself:
+% 14.438" wide = 2*6.875 main cover + 0.688 spine
+% 10.75" high
+%/cover-width  14.438 inch  def 
+%/cover-height 10.75 inch def
+
+<< /PageSize [cover-width cover-height] >> setpagedevice  
+
+set-background-color
+0 0 cover-width cover-height rectstroke
+0 0 cover-width cover-height rectfill
+  
+showpage
+
