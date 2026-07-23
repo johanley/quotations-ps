@@ -8,7 +8,7 @@ The quotes saved in this repository are some of my favourites.
 # Data file: quotes.txt 
 Structured data file, typed in manually.
 Nested structures, with no repeated data. 
-The source file uses `windows-1252` encoding (a single-byte encoding, which are friendly to PostScript).
+The source file uses `windows-1252` encoding (a single-byte encoding, friendly to PostScript).
 The source file uses *ad hoc* symbols to denote the need for special processing of the text:
 - *pre*(...) is meant to preserve white space (lines of poetry)
 - *em*(...) is meant for emphasis/italics (not allowed in poetry, because my parsing code is mediocre)
@@ -20,7 +20,7 @@ It also create a PostScript-friendly data structure for each quote (a dictionary
 
 
 # Steps to create the output: book.pdf
-- manual: update the quotes.txt file. Ensure the file is saved using the `windows-1252` encoding.
+- manual: update the `quotes.txt` file. Ensure the file is saved using the `windows-1252` encoding.
 - Java: run the `ParseAndGenerateFile` class. This generates `quotes_flat_file_ps.txt`.
 - Ghostscript: run a Ghostscript command to generate a pdf. Example:
 
