@@ -1343,4 +1343,3 @@
 <</author () /title (Upanishads) /body [/R(The earth seems to rest in silent meditation; and the waters and the mountains and the sky and the heavens seem all to be in meditation.)]>>
 <</author () /title (Upanishads) /body [/R(All beings are born in delusion, the delusion of division which comes from desire and hate.)]>>
 <</author () /title (Upanishads) /body [/R(Let him not ponder on many words, for many words are weariness.)]>>
-# This line is ignored. The file terminates exactly here ->.

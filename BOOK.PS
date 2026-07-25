@@ -19,8 +19,8 @@
 /start-new-page {
 4 dict begin
   /idx defi
-  (Starting new page...) here
   /page-num idx 3 sub def
+  [(Starting new page: ) page-num]  any-concat here
   % WARNING: there are two hard-coded transition points for the page numbers
   page-num 1 ge  page-num 180 le and {
     % show page numbers and title
@@ -227,32 +227,36 @@ end
 } bind def
 
 
-% str (filename)
+% str 
+% pass the filename
 /process-quotes-file-one-line-at-a-time {
-  (r) file /quotes-file defi 
-  /buffer MAX-QUOTE-LENGTH string def
-  {
-    quotes-file buffer readline {
+  MAX-QUOTE-LENGTH {show-quotation-on-1-page} process-file-one-line-at-a-time
+} bind def
+
+
+% str buffer-size {proc}
+% Pass the file name, buffer size, and how to process the PostScript snippet on each line.
+/process-file-one-line-at-a-time {
+  [/file-name /buffer-size /do-stuff] {
+    file-name (r) file /the-file defi 
+    buffer-size string /buffer defi
+    { the-file buffer readline exch % bool str
       cvx % the string is scanned and interpreted according to PostScript rules
       exec % to transform the executable string into a dict, and put it on the stack
-      show-quotation-on-1-page 
+      do-stuff
+      not {exit} if % EOF encountered, exit the loop
+    } loop
+    % the loop will automatically close the file once end-of-file has been reached.
+    % this is just being extra-careful:
+    the-file status {
+      (CLOSING THE OPEN FILE.) == 
+      the-file closefile
     } {
-      % all quotes end the same way: with a newline, and never with an end-of-file
-      % THE FILE TERMINATES WITH AN UNUSED LINE, that has no newline at its end.
-      %pop 
-      ==
-      exit
+      (OK: THE FILE HAS BEEN CLOSED.) ==
     } ifelse
-  } loop
-  % the loop will automatically close the file once end-of-file has been reached.
-  % this is just being extra-careful
-  quotes-file status {
-    (CLOSING THE OPEN FILE.) == 
-    quotes-file closefile
-  } {
-    (OK: THE FILE WAS CLOSED.) ==
-  } ifelse
+  } def-tmp
 } bind def
+
 
 % dict
 % The dict contains /author and (usually) /title.
@@ -288,29 +292,7 @@ end
 
 % str (filename)
 /process-index-file-one-line-at-a-time {
-  (r) file /index-file defi 
-  /buffer MAX-QUOTE-LENGTH string def
-  {
-    index-file buffer readline {
-      cvx % the string is scanned and interpreted according to PostScript rules
-      exec % to transform the executable string into a dict, and put it on the stack
-      show-index-line 
-    } {
-      % all entries end the same way: with a newline, and never with an end-of-file
-      % THE FILE TERMINATES WITH AN UNUSED LINE, that has no newline at its end.
-      %pop 
-      ==
-      exit
-    } ifelse
-  } loop
-  % the loop will automatically close the file once end-of-file has been reached.
-  % this is just being extra-careful
-  index-file status {
-    (CLOSING THE OPEN INDEX FILE.) == 
-    index-file closefile
-  } {
-    (OK: THE INDEX FILE WAS CLOSED.) ==
-  } ifelse
+  MAX-QUOTE-LENGTH {show-index-line} process-file-one-line-at-a-time
 } bind def
 
 
@@ -466,7 +448,6 @@ showpage
   process-index-file-one-line-at-a-time 
   
 showpage
-
 
 % WARNING: YOU MAY HAVE ADD EMPTY PAGES HERE MANUALLY. 
 % SOME PRINTING SERVICES REQUIRE THE NUMBER OF PAGES TO BE AN EVEN MULTIPLE OF 2 or 4.

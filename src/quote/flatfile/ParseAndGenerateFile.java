@@ -70,14 +70,14 @@ public final class ParseAndGenerateFile {
   /** N lines, 1 per quote, using QuotePostScript.toString() as the content of the line. */
   private static void outputToPostScriptFile(List<Quote> quotes, String fileName) throws IOException {
     Path path = Paths.get(fileName);
+    int count = 0;
     try (BufferedWriter writer = Files.newBufferedWriter(path, ENCODING)){
       for(Quote quote : quotes){
+        ++count;
         QuotePostScript quotePS = new QuotePostScript(quote);
         writer.write(quotePS.toString());
-        writer.newLine();
+        if (count < quotes.size()) writer.newLine();
       }
-      //the idea is to have all quotes terminate with a newline; never with end-of-file.
-      writer.write("# This line is ignored. The file terminates exactly here ->.");
     }
   }
   
@@ -106,24 +106,22 @@ public final class ParseAndGenerateFile {
   /** N lines, 1 per title. */
   private static void outputToPostScriptFile(Map<String, Set<String>> indexLines, String fileName) throws IOException {
     Path path = Paths.get(fileName);
+    int count = 0;
+    int total = 0;
+    for (String author : indexLines.keySet()) {
+      total = total + indexLines.get(author).size();
+    }
     try (BufferedWriter writer = Files.newBufferedWriter(path, ENCODING)){
       for(String author : indexLines.keySet()) {
         for(String title : indexLines.get(author)) {
+          ++count;
           IndexPostScript indexPS = new IndexPostScript(author, title);
           writer.write(indexPS.toString());
-          writer.newLine();
+          if (count < total)  writer.newLine();
         }
       }
-      //the idea is to have all lines terminate with a newline; never with end-of-file.
-      writer.write("# This line is ignored. The file terminates exactly here ->.");
     }
   }
-  
-  /** Replace '(' and ')' with '\(' and '\)'. */
-  private String escapeParens(String text) {
-    return text.replace("(", "\\(").replace(")", "\\)");
-  }
-  
   
   private static void log(String msg) {
     System.out.println(msg);
