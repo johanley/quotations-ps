@@ -3,7 +3,7 @@
 % The body of the book.
 % The cover is a separate PostScript file.
 %
-% Generate a PDF:
+% Generate a PDF using Ghostscript:
 %   C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o BOOK.PDF BOOK.PS
 
 (using.ps) run
@@ -17,6 +17,7 @@
 % arg is the number of times /showpage has been called: 0, 1,...
 % See /BeginPage of setpagedevice below.
 /start-new-page {
+4 dict begin
   /idx defi
   (Starting new page...) here
   /page-num idx 3 sub def
@@ -30,7 +31,6 @@
     
     (regular) 90 use-font
     /GAP ht 5 pct def
-    %/GAP ht 4.5 pct def
     small-caps-font
     /page-num-str page-num 4 string cvs def
     page-num 2 mod 0 eq {
@@ -56,7 +56,9 @@
   
   0 ht moveto % the top-left of the work-box, as a default currentposition
   %0 0 wd ht rectstroke % to see the work-box
+end  
 } bind def
+
 
 % cx cy str 
 % Show text centered horizontally at the currentpoint, using /ashow.
@@ -82,30 +84,36 @@
   NEW-LINE 
 } bind def
 
-% dict
-% The dict has author, title, and body (an array).
-/quotation-fits-on-page? {
-  % use the null device, with a gsave-grestore.
-  % no marks are made on the page using this technique
-  gsave 
-    % save-program-state (in case show-quotation ever changes program-state data)
-    nulldevice % this uses the default CTM
-    currentpoint exch pop /y0 defi
-    show-quotation
-    currentpoint exch pop /y1 defi
-    y1 y0 sub % dy (corresponding to the author/title line); negative!
-    % restore-program-state
-  grestore
-  currentpoint exch pop % dy y 
-  add 0 ge 
-} bind def
 
 % dict
 % The dict has author, title, and body (an array).
+/quotation-fits-on-page? {
+  2 dict begin
+    % the trick here is to use the NULL DEVICE, with a gsave-grestore.
+    % no marks are made on the page using this technique
+    gsave 
+      % save-program-state (in case show-quotation ever changes program-state data)
+      nulldevice % this uses the default CTM
+      cp-y /y0 defi
+      show-quotation
+      cp-y /y1 defi
+      y1 y0 sub % dy (corresponding to the author/title line); negative!
+      % restore-program-state
+    grestore
+    cp-y % dy y 
+    add 0 ge 
+  end  
+} bind def
+
+
+% dict
+% The dict has author, title, and body.
+% The body is an array for prose, and a string (with \n's) for poetry.
+% (Defect: a poem is always rendered using a single font.)
 /show-quotation {
   3 dict begin
     {def} forall
-    body type /arraytype eq{
+    body type /arraytype eq {
       show-body-prose
     } {
       show-body-poetry
@@ -114,7 +122,9 @@
   end
 } bind def
 
-% Cycle through an array containing strings and control-codes. 
+
+% []
+% Cycle through an array containing strings and control-code names.
 % The control codes can only set the font.
 % Set the currentpoint to the start of the next line, to prepare for the author-title line.
 /show-body-prose {
@@ -123,24 +133,21 @@
   body {
     dup 
     type /nametype eq {
-      cvx exec
+      cvx exec % control code
     } {
-      % a final space is added by the current code, but not by the newer style snippet:
-      %wd 2 em jagged-right-2 
-      %pop % discard the stats
       str-words {
         /word defi
         word str-width /word-wd defi
-        /new-x currentpoint pop word-wd add def
+        /new-x cp-x word-wd add def
         /line-overflow new-x wd sub def
         line-overflow  2 em  gt { NEW-LINE } if
         word SPACE str-concat show
       } forall
-      
     } ifelse
   } forall 
   NEW-LINE
 } bind def
+
 
 % Show lines of text having hard-coded line breaks, as in poetry.
 % The /body is a single string, with \n-style newlines (such that the whole poem is 1 line of source data).
@@ -155,15 +162,13 @@
   } forall % lines
 } bind def
 
+
 % str
 % Return true iff the trimmed string has a length > 0
 /is-present? {
   str-trim length 0 gt
 } bind def
 
-% str
-% Return the dx of the string (assumes dy is 0).
-/str-width { stringwidth pop } bind def
 
 % Show the author and/or title.
 % Must fit on a single line.
@@ -186,42 +191,41 @@
     (regular) size use-font
     /width-all  width-all COMMA-SPACE str-width  add  def
   } if
-  wd width-all sub  0  rmoveto
+  wd width-all sub  0  rmoveto % where the text starts
   
   (regular) size use-font
   DASH show
   author is-present? {
-    small-caps-font
-    author str-upper-case show
+    small-caps-font  author str-upper-case show
   } if
   author is-present? title is-present? and {
-    (regular) size use-font
-    COMMA-SPACE show
+    (regular) size use-font  COMMA-SPACE show
   } if
   title is-present? {
-    (italic) size use-font
-    title show 
+    (italic) size use-font  title show 
   } if
   % let's not put a new line here yet; 
   % we need to interrogate the y-position at this point, for page breaks
 } bind def
 
-% Regular font.
+
+% Use the regular font.
 /R { (regular) 100 use-font } bind def
 
-% Italic font.
+
+% Use the italic font.
 /I { (italic) 100 use-font } bind def
 
+
 /NEW-LINE {
-  0 
-  currentpoint exch pop leading sub 
-  moveto
+  0  cp-y leading sub   moveto
 } bind def
 
+
 /NEW-PAGE {
-  showpage 
-  % set-new-page will also be invoked
+  showpage  % start-new-page will also be invoked (see above)
 } bind def
+
 
 % str (filename)
 /process-quotes-file-one-line-at-a-time {
@@ -270,18 +274,17 @@
       /DOT (.) def
       {
         % emit dots, but stop when you near the title's x-position 
-        currentpoint pop   wd title str-width sub 1 ex sub   ge { exit } if
+        cp-x   wd title str-width sub 1 ex sub   ge { exit } if
         2 ex 0 DOT ashow % stretch out the spacing with /ashow
       } loop
-      wd 
-      currentpoint exch pop  % y
-      moveto % the right side
+      wd  cp-y  moveto % the right side
       title show-right-align
     } if
     NEW-LINE
-    currentpoint exch pop 0 le { NEW-PAGE } if
+    cp-y 0 le { NEW-PAGE } if
   end
 } bind def
+
 
 % str (filename)
 /process-index-file-one-line-at-a-time {
@@ -310,18 +313,22 @@
   } ifelse
 } bind def
 
+
 % [[xy]]
 % The caller will need to set the origin and scale to suitable values, using trial and error.
 /draw-star-line {
-  newpath
-  /is-first? true def
-  {
-    aload pop % x y
-    is-first? { moveto } {lineto } ifelse
-    /is-first? false def
-  } forall % points [x y]
-  stroke
+  1 dict begin
+    newpath
+    /is-first? true def
+    {
+      aload pop % x y
+      is-first? { moveto } {lineto } ifelse
+      /is-first? false def
+    } forall % points [x y]
+    stroke
+  end  
 } bind def
+
 
 % x y stellar-mag
 % two circles at the given location
@@ -339,6 +346,7 @@
     fill
   } def-tmp
 } bind def
+
 
 /inch {72 mul} bind def
 /8th-inch {72 mul 8 div} bind def
@@ -463,9 +471,6 @@ showpage
 % WARNING: YOU MAY HAVE ADD EMPTY PAGES HERE MANUALLY. 
 % SOME PRINTING SERVICES REQUIRE THE NUMBER OF PAGES TO BE AN EVEN MULTIPLE OF 2 or 4.
 % (I could add code to do this automatically.)
-% Lulu.com: pages div by 4; end with 2 blank pages.
-% 178 + 3 = 181; increase to 184, add 3 blank pages.
+% Lulu.com requires: pages div by 4; end with 2 blank pages.
 showpage
 showpage
-
-

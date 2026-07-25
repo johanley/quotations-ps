@@ -1,5 +1,8 @@
 
 % SIMPLE PROC'S FOR STRINGS THAT ARE 'MISSING' FROM PostScript.
+%
+% WARNING: THIS VERSION WAS CREATED FOR THE CP-1252 ENCODING.
+% Ref used: https://en.wikipedia.org/wiki/Windows-1252
 
 (base.ps) using
 
@@ -34,19 +37,16 @@
 } bind def
 
 % Return an array of character codes (ints), corresponding to whitespace characters.
-% WARNING: includes 240, the non-breaking space in the CE and ISOLatin1 encoding. 
+% IMPORTANT: this proc is called by other procs in several places.
 /str-whitespace {
-  % Red Book 3rd ed. page 27 and page 783 
-  % I'm including 240 here because of the prevalence of ISOLatin1.  
-  [
-    0 % null
-    9 % tab
-    10 % line feed
-    12 % form feed
-    13 % carriage return
-    32 % space (the final frontier...)
-    240 % non-breaking space, in the CE and ISOLatin1 encoding 
-  ] % character codes 
+  0 1 32 { % control codes 0..31, plus space char 32
+    % just leave them on the stack
+  } for
+  127 % DEL
+  160 % NBSP
+  173 % SHY - soft hyphen
+  36 array % where to store the ints
+  astore % copies the 37 ints into the array, and leaves it on the stack
 } bind def
 
 % char-code (int) -> bool
@@ -84,7 +84,6 @@
 
 % char-code (int) -> bool
 % Return true iff the character code corresponds to a newline character code.
-% TODO CONSOLIDATE WITH THE WHITESPACE VERSION OF THIS PROC.
 /str-is-cc-newline? { 
   [/cc] {
     false % default result
@@ -133,7 +132,7 @@
 } bind def
 
 % str [a b] delta -> str
-% Helper proc for implementing uppercase and lowercase for ISOLatin1.
+% Helper proc for implementing uppercase and lowercase.
 % Return a str with the same length, but re-map (linearly) character codes from range [a b] to range [a+delta b+delta].
 /str-swap-char-code-range {
   [/str /range /delta] {
@@ -159,22 +158,22 @@
 
 % str -> str
 % Return a lower-case string. 
-% WARNING: THIS APPLIES TO ISOLatin1 ONLY.
 /str-lower-case {
   [/str] {
-    /result str    [65   90] 32 str-swap-char-code-range def  % A..Z maps to a..z  101..132 octal
-    /result result [192 221] 32 str-swap-char-code-range def  % accented chars     300..335 octal
+    /result str    [65   90] 32 str-swap-char-code-range def  % A..Z maps to a..z  
+    /result result [192 214] 32 str-swap-char-code-range def  % accented chars (interrupted by x sign)
+    /result result [216 222] 32 str-swap-char-code-range def  % accented chars
     result
   } def-tmp
 } bind def
 
 % str -> str
 % Return an upper-case string. 
-% WARNING: THIS APPLIES TO ISOLatin1 ONLY.
 /str-upper-case {
   [/str] {
-    /result str    [ 97 122] -32 str-swap-char-code-range def  % a..z maps to A..Z  141..172 octal
-    /result result [224 253] -32 str-swap-char-code-range def  % accented chars     340..375 octal
+    /result str    [ 97 122] -32 str-swap-char-code-range def  % a..z maps to A..Z  
+    /result result [224 246] -32 str-swap-char-code-range def  % accented chars (interrupted by x sign) 
+    /result result [248 254] -32 str-swap-char-code-range def  % accented chars  
     result
   } def-tmp
 } bind def
@@ -423,4 +422,12 @@
     curr { found-word } if
     words
   } def-tmp
+} bind def
+
+% str
+% This proc exists only because it's easy to forget that stringwidth 
+% returns both dx and dy.
+% See also text-align.ps.
+/str-width {
+  stringwidth pop
 } bind def
