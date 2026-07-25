@@ -21,7 +21,8 @@ import quote.parser.Quote;
 import quote.parser.QuotePostScript;
 
 /**
-  Parse all quotations and generate a text file with all quotes, one per line. 
+  Parse all quotations and generate a text file with all quotes, one per line, and sorted alphabetically.
+  Also generate a sorted index. 
   
   The order of the quotes: 
     the author's last name, then the title (if present), then the quote (as it appears in the source text file).

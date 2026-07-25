@@ -8,9 +8,7 @@ import static java.util.Comparator.comparing;
 import static java.util.Comparator.nullsLast;
 import static java.util.Comparator.naturalOrder;
 
-/** 
- Model object. Simple struct.
-*/
+/** Model object. Sortable struct.*/
 public final class Quote implements Comparable<Quote>{
   
   public Quote(String author, String title, String text){

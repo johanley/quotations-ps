@@ -4,25 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- Transform raw input files into a flat form. 
- The flat form has 3 parts: quote, author, and title.
+ Transform raw input files into a flat form.
+  
+ <P>The flat form has 3 parts: quote, author, and title.
  The title is optional. 
  The author can take a magic value, representing an unknown author; in that case, the title must be present.
  
- The idea here is that the raw input form is structured, to eliminate repetition 
+ <P>The idea here is that the raw input form is structured, to eliminate repetition 
  of the author's name and the title. Here, we want to actually generate a format in 
  which the repetition is present, in which the full quotation always has the 3 parts.
  
- There are also special symbols in the input: 
+ <p>There are also special symbols in the input: 
  pre(...) - preserve white space; this is intended for poetry, where the newline is critical, and can't be ignored
- em(...) - emphasis/italics; this can't be present in poetry snippets.
+ em(...) - emphasis/italics; this can't be present in poetry snippets (small defect).
  
- New lines in the raw input are always removed! 
+ <P>New lines in the raw input are always removed.
  
-  The output is ordered by: 
+  <P>The output is ordered by: 
       - author's last name, title, order of appearance of the quote in the file
   
-  First name/last name:
+  <P>First name/last name:
   In the source file, the name is : 'Smith, John'.
   In the output, the name is changed to 'John Smith'.
 */
@@ -53,6 +54,12 @@ public final class ParseQuotations {
     
     return result;
   }
+  
+  /** 
+   Let output keep items always on a single line, by using a magic placeholder for new lines.
+   This placeholder is temporary; it's replaced in the final output. 
+  */
+  static final String MAGIC_NL = "^NL^";
 
   // PRIVATE 
   
@@ -61,10 +68,8 @@ public final class ParseQuotations {
   private static final String SPACE = " ";
   private static final String COMMENT = "#";
   
-  /** Let output keep items always on a single line, by using a magic placeholder for new lines. */
-  private static final String MAGIC_NL = "^NL^";
   
-  /** Syntax for preserving whitespace. */
+  /** Syntax for preserving whitespace. This can be used for poetry, or for conversation. */
   private static final String PRE = "pre(";
   private static final String PRE_END = ")";
   

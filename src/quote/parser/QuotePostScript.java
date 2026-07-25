@@ -30,10 +30,8 @@ public final class QuotePostScript {
   }
 
   private Quote quote;
-  /** Magic */
-  private static final String POETRY_NEWLINE = "^NL^";
   
-  /** Replace '(' and ')' with '\(' and '\)'. */
+  /** Replace '(' and ')' with PostScript-escaped versions '\(' and '\)'.   */
   private String escapeParens(String text) {
     return text.replace("(", "\\(").replace(")", "\\)");
   }
@@ -56,7 +54,7 @@ public final class QuotePostScript {
    Use \n, the PostScript literal for a new-line. 
   */
   private String newLines(String text) {
-    return text.replace(POETRY_NEWLINE, "\\n");
+    return text.replace(ParseQuotations.MAGIC_NL, "\\n");
   }
   
   /** Title of the work is missing for the quotation. */
@@ -65,7 +63,7 @@ public final class QuotePostScript {
   }
   
   private boolean isPoetry(String text) {
-    return text.contains(POETRY_NEWLINE);
+    return text.contains(ParseQuotations.MAGIC_NL);
   }
  
   /** String if poetry; array if prose. */
@@ -94,11 +92,12 @@ public final class QuotePostScript {
   }
 
   /** 
-   This is the tricky bit.
+   THIS IS THE TRICKY BIT. (THIS CODE IS DISPLEASING.)
+   
    The source data has the form  '......em(....)...em(...)...'.
    The italic parts are explicit, but the regular parts are implicit. 
    The ( ) signs have cross-talk with both normal parens and escaping for PostScript strings.
-   To remove the cross-talk, temporarily change em(...) to em[...] instead.
+   To remove the cross-talk, temporarily change em(...) to em[...] instead (which would have been a better choice to begin with).
    The algo then assumes the most common case, that em[...] parts are in the middle, not at the start or end.
    Then replace those parts with control codes for the most common case.
    Finally, special handling for the other cases, when em(...) is at the start or end of the text.
