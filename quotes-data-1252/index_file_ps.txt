@@ -41,11 +41,13 @@
 <</author (Boigne, La Comtesse de) /title (Mémoires)>>
 <</author (Bowden et. al.) /title (Faster Than Thought)>>
 <</author (Bradford, Ernle) /title (The Journeying Moon)>>
+<</author (Bramsted, Ernest) /title (Goebbels and National Socialist Propaganda)>>
 <</author (Bray, Tim) /title (Beautiful Code)>>
 <</author (Brodie, Richard) /title (Virus of the Mind)>>
 <</author (Brontë, Charlotte) /title (Jane Eyre)>>
 <</author (Brontë, Charlotte) /title (Villette)>>
 <</author (Brontë, Emily) /title (Julian M. and A.G. Rochelle)>>
+<</author (Bruckner, Pascal) /title (The Tyranny of Guilt)>>
 <</author (Bryson, Bill) /title (A Short History of Nearly Everything)>>
 <</author (Buffon, Comte de) /title ()>>
 <</author (C. Singer et. al.) /title (A History of Technology)>>
@@ -75,6 +77,7 @@
 <</author (Diamond, Jared) /title (The World Until Yesterday)>>
 <</author (Dijkstra, Edsger W.) /title (Goto Statement Considered Harmful)>>
 <</author (Dijkstra, Edsger W.) /title (The Humble Programmer)>>
+<</author (Dostoyevsky, Fyodor) /title (Devils)>>
 <</author (Dostoyevsky, Fyodor) /title (Notes From the Underground)>>
 <</author (Dostoyevsky, Fyodor) /title (White Knights)>>
 <</author (Drake, Stillman) /title (Galileo: Pioneer Scientist)>>
@@ -111,7 +114,6 @@
 <</author (France, Anatole) /title (Le crime de Sylvestre Bonnard)>>
 <</author (Frankfurt, Harry) /title (On Bullshit)>>
 <</author (Frazer, J. G.) /title (The Golden Bough)>>
-<</author (Friedman, Matti) /title (Spies of No Country)>>
 <</author (Fromentin, Eugène) /title (Dominique)>>
 <</author (Frye, Northrop) /title ()>>
 <</author (Galileo) /title ()>>
@@ -136,6 +138,7 @@
 <</author (Greenspan, Philip) /title ()>>
 <</author (Greer, Germaine) /title ()>>
 <</author (Grothendieck, Alexander) /title (Récoltes et semailles)>>
+<</author (Gunn, John) /title (Violence in Human Society)>>
 <</author (Harari, Yuval) /title (Homo Deus)>>
 <</author (Harari, Yuval) /title (Sapiens)>>
 <</author (Hardy, Thomas) /title (A Group of Noble Dames)>>
@@ -155,6 +158,7 @@
 <</author (Hemingway, Ernest) /title (The Sun Also Rises)>>
 <</author (Herodotus) /title ()>>
 <</author (Herstein, I. N.) /title (Abstract Algebra)>>
+<</author (Hibbert, Christopher) /title (The Roots of Evil)>>
 <</author (Hilbert, David) /title ()>>
 <</author (Hitler, Adolf) /title (Mein Kampf)>>
 <</author (Hoff-Somers, Christina) /title (The War Against Boys)>>
@@ -190,7 +194,6 @@
 <</author (Lea, Henry Charles) /title (A History of the Inquisition of the Middle Ages)>>
 <</author (Leibniz) /title ()>>
 <</author (Lewis, Bernard) /title (The Crisis of Islam)>>
-<</author (Lewis, Bernard) /title (What Went Wrong?)>>
 <</author (Longinus) /title (On the Sublime)>>
 <</author (Lovecraft, H. P.) /title (The Picture in the House)>>
 <</author (Lovelock, James) /title (Gaia - A New Look at Life on Earth)>>
@@ -201,6 +204,7 @@
 <</author (Malinowski, B.) /title (Argonauts of the Western Pacific)>>
 <</author (Malinowski, B.) /title (Magic, Science, and Religion)>>
 <</author (Manguel, Alberto) /title (The Library at Night)>>
+<</author (Marlantes, Karl) /title (What It Is Like To Go To War)>>
 <</author (Martel, Yann) /title (Beatrice and Virgil)>>
 <</author (Martial) /title (Epigrams)>>
 <</author (Matyszak, Philip) /title (24 Hours in Ancient Athens)>>

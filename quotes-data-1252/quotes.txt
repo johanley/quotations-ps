@@ -1386,6 +1386,17 @@ Dostoyevsky, Fyodor {
    
    What is an insult but a sort of purification?
   }
+  Devils {
+    What is habit not capable of?
+    
+    pre(- Everyone deserves an umbrella.
+    - In one little phrase you’ve defined the minimum of human rights.)
+    
+    In the present instance, however, [the governor] didn’t fight, and although he didn’t refrain from using very strong language as he climbed out of his carriage, he
+    did so merely to retain his popularity.
+    
+    Oh, you abstract, useless windbag.
+  }
 }
 
 Crane, Stephen {
@@ -4480,11 +4491,6 @@ Balzac, Honoré de {
 
 Lewis, Bernard {
   The Crisis of Islam {
-    In Muslim tradition, the world is divided into two houses, the House of Islam, in which Muslim governments rule and Muslim law prevails, 
-    and the House of War, the rest of the world, still ruled by infidels.
-  
-    If a Muslim renounces Islam, even if a new convert converts to his previous faith, the penalty is death.
-  
     Yet the most powerful accusation of all is the degeneracy and debauchery of the American way of life, and the threat that it offers to Islam. This is what 
     is meant by the term the Great Satan, applied to the United States by Ayatollah Khomeini. Satan as depicted in the Qu’ran is neither an imperialist nor an 
     exploiter. He is a seducer, “the insidious tempter who whispers in the hearts of men.”
@@ -4493,21 +4499,12 @@ Lewis, Bernard {
   
     The Arab world translates about 330 books annually [2002], one fifth of the number that Greece translates. Spain translates almost 100,000 in one year.
   
-    The literal divinity and inerrancy of the Qu’ran is a basic dogma of Islam, and although some may doubt it, none challenge it.
-  
     On the Holocaust three positions are not infrequently found in the Arabic media: it never happened; it was greatly exaggerated; the Jews deserved it anyway.
-  
-    ...the word madras ... has come to denote a center for indoctrination in bigotry and violence.
-  }
-  What Went Wrong? {
-    ...the Renaissance, the Reformation, the technological revolution passed virtually unnoticed in the lands of Islam.
   }
 }
 
 Sachar, Howard {
  A History of Israel {
-   At eight o’clock on the morning of May 14, the British lowered the Union Jack on Jerusalem. By mid-afternoon full-scale fighting had erupted throughout the country.
-   
    In April and May [1948], entire Arab communities were fleeing in terror even before Jewish forces overran their homes. A Swiss observer, 
    Jacques de Reynier, described the panic among the inhabitants of Jaffa when the Jews attacked: “Immediately everyone was consumed with terror, and soon the 
    evacuation started. In the hospitals, the drivers of cars and ambulances took their vehicles, assembled their families, and fled in complete disregard of their 
@@ -4529,24 +4526,7 @@ Sachar, Howard {
    
    Indeed, as they turned to new modes of warfare, it became clear that they were obsessed above all with the advantages to be derived in casting a shadow in the world, from 
    drawing attention to Palestine Arab identity.
-   
-   In Syria, the circumstances of the country’s 3,500 remaining Jews were an unalleviated nightmare. In 1973 and 1974 there were episodes of Jewish girls raped and murdered 
-   at the hands of the Syrian police.
-   
-   On January 27, 1969, nine Jews were among fourteen prisoners hanged as “spies” in Baghdad’s Liberation Square; crowds estimated at 200,000 marched past the dangling corpses, 
-   as the onlookers were treated to a running loudspeaker commentary on Jewish “treason”.
  }
-}
-
-Friedman, Matti {
-  Spies of No Country {
-    Now, Gambiel wrote in one dispatch, “the newspapers describe the Jew in the most barbaric and cruel fashion, and also as weak and cowardly.” Many people, he reported, believed that 
-    Jews were “slaughtering children and abusing pregnant women and raping virgins.” The word “Jew” was starting to assume demonic undertones.
-  
-    The population grew by a percentage point every 10 days.
-  
-    Syrian papers reported a freeze on Jewish bank accounts and a government demand for a list of their assets.
-  }
 }
 
 Poliakov, Léon {
@@ -4824,11 +4804,6 @@ O’Neill, Brendan {
     There were two eruptions of barbarism in October 2023. The first was Hamas’s pogrom of 7 October, in which more than a thousand people were slaughtered and many others were 
     maimed, raped, and kidnapped. The second was the sympathy for the pogrom across much of the Western world.
   
-    We can no longer ignore the fact that even the worst act of violence against the Jews since the Holocaust was not enough to awaken the West to the threat posed by radical Islam - not 
-    only to the Jewish State, but also to the West itself.
-  
-    No, all that matters is the scapegoating of Israel for the supposed crimes of modernity. The transformation of Israel into the sin-eater of Western culture.
-  
     Decolonisation is decivilisation. It is a purge. It is the purging of our institutions of the ideas and ideals that shaped our societies. It is a secular jihad.
  }
 }
@@ -4845,8 +4820,6 @@ King, Ross {
 
 Westrich, Robert {
   A Lethal Obsession {
-    When it comes to Muslim Jew hatred, the demonization is almost em(universal.)
-    
     The countless anti-Semitic persecutors who plundered Jewish property and burned and massacred Jews over the centuries 
     always prepared the ground by first accusing their victims of the crimes they themselves intended to commit.
     
@@ -4977,4 +4950,65 @@ Damari, Emily {
   I have also learned to value everything I do in life. I open the fridge: I say thank you. I drink cold water: I say thank you.
   I am thankful for everything - big things and little things. Gratitude is very important. I am grateful that I have the 
   privilege of being thankful. I was thankful before, but now it’s on a different level. [Freed Israeli hostage.]
+}
+
+# START OF EDIT ON 2026-07-23
+# Plus Dostoyevsky, Devils
+
+Gunn, John {
+  Violence in Human Society {
+    When the Spanish discovered [the Aztecs] in the sixteenth century, they were sacrificing for religious reasons 
+    some 10,000 - 50,000 human victims each year.
+  } 
+}
+
+Hibbert, Christopher {
+  The Roots of Evil {
+    The French imagination was immediately captured [by the guillotine]. It was reproduced in miniature as a table decoration; its design 
+    was incorporated in earrings, brooches, snuff boxes, cups, and plates.
+    
+    For violence was still an accepted part of everyday life, and it was not to be expected in an age which set so little store by human dignity that it could be otherwise.
+    Men accustomed to paying twopence to go and laugh and jeer at the lunatics in Bedlam; to watching women knocking each other about with bare fists in the boxing ring; to 
+    throwing bricks at defenceless people in the stocks and pillory; to being given a holiday on the day of a hanging so that they could go to the fair at Tyburn and cheer as 
+    men and women slowly died at the end of the rope; to seeing their fellow human beings being whipped and burned and disemboweled and cut into four pieces; to passing the 
+    putrescent bodies of highwaymen suspended in iron cages near the scenes of their crimes - men accustomed to life in which these things were commonplace were not likely to 
+    come to the view that brutality was inexcusable.
+  }
+}
+
+Bramsted, Ernest {
+  Goebbels and National Socialist Propaganda {
+    From the start em(Der Angriff) was designed as an “either-or” paper with the challenging motto on the front page “For the Suppressed Against the Exploiters!”
+    
+    Berndt proclaimed the necessity for a universal indoctrination of the readers with anti-Semitism. In terms of every-day journalism this meant that no news item and no 
+    article should be allowed to appear without this slant.
+    
+    “A law against hating Jews is usually the beginning of the end for Jews.” [Goebbels’ diary]
+  }
+}
+
+Bruckner, Pascal {
+  The Tyranny of Guilt {
+    The whole paradox of a sobered-up Europe is that it is no less arrogant than imperial Europe because it continues to project its categories on the rest of the world and 
+    childishly boasts that it is the origin of all the ills that beset mankind.
+    
+    In the nineteenth century, Tocqueville had already observed that the government had taken the place of Providence. Must it also take the place of conscience?
+    
+    Auschwitz has become a monstrous object of covetous lust. Whence the frenzied effort to gain admission to this very closed club, and the desire to dislodge those who are 
+    already in it.
+  }
+}
+
+Marlantes, Karl {
+  What It Is Like To Go To War {
+    We don’t want to think that something as ugly and brutal as combat could be involved in any way with the spiritual.
+    However, would any practicing Christian say that Calvary Hill was not a sacred place?
+    
+    The least acknowledged aspect of war, today, is how exhilirating it is.
+    
+    The realm I enter now, the transcendent realm one reaches through violence, is one that society says it condemns but in fact celebrates everywhere, on film, on television, 
+    and in the news.
+    
+    It is primarily women who reinvigorate the warrior back into society, the energy of the queen, not the king.
+  }
 }
