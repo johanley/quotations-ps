@@ -94,6 +94,9 @@ public final class QuotePostScript {
   /** 
    THIS IS THE TRICKY BIT. (THIS CODE IS DISPLEASING.)
    
+   Transform the text into a PostScript-y form.
+   Translate em(...) into \I control codes.
+   
    The source data has the form  '......em(....)...em(...)...'.
    The italic parts are explicit, but the regular parts are implicit. 
    The ( ) signs have cross-talk with both normal parens and escaping for PostScript strings.
@@ -121,13 +124,14 @@ public final class QuotePostScript {
     matcher = pattern.matcher(res);
     res = matcher.replaceAll(") /I($1) /R(");
     
-    //4. 'clean up' the cases where em(..) may have been at the start or end
+    //4. 'clean up' the cases where em(..) may have been at the start or end 
     if (res.startsWith(") /I") ) {
       res = res.substring(2); // to start with '/I' instead
     }
     else {
       res = "/R(" + res;
     }
+    
     if (res.endsWith(") /R(")) {
       res = res.substring(0, res.length() - ") /R(".length() + 1);
     }
