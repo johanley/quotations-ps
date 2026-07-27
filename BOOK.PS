@@ -107,7 +107,7 @@ end
 
 
 % dict
-% The dict has author, title, and body.
+% The dict has author-last, author-first, title, and body.
 % The body is an array for prose, and a string (with \n's) for poetry.
 % (Defect: a poem is always rendered using a single font.)
 /show-quotation {
@@ -170,6 +170,21 @@ end
 } bind def
 
 
+% from author-last and author-first.
+/author-name {
+  author-last (ZzzUnknown) eq {
+    % special handling for anonymous authors (hacky!); this exists only because I want 
+    % them at the END of the quote list
+    () % just use an empty string
+  } {
+    author-first is-present? {
+      [author-first SPACE author-last] any-concat
+    } {
+      author-last
+    } ifelse
+  } ifelse 
+} bind def
+
 % Show the author and/or title.
 % Must fit on a single line.
 % The author and title can be an empty string, but not both at the same time.
@@ -179,15 +194,16 @@ end
   % measure the width first, in order to find the starting point for /show
   % be careful with the comma in between: three cases: a+comma+space+t, a, t
   /size 90 def
+  /authors-name author-name def
   (regular) size use-font
   /width-all 
     DASH str-width 
     small-caps-font
-    author str-upper-case str-width add
+    authors-name str-upper-case str-width add
     (italic) size use-font
     title str-width add 
   def
-  author is-present? title is-present? and {
+  authors-name is-present? title is-present? and {
     (regular) size use-font
     /width-all  width-all COMMA-SPACE str-width  add  def
   } if
@@ -195,10 +211,10 @@ end
   
   (regular) size use-font
   DASH show
-  author is-present? {
-    small-caps-font  author str-upper-case show
+  authors-name is-present? {
+    small-caps-font  authors-name str-upper-case show
   } if
-  author is-present? title is-present? and {
+  authors-name is-present? title is-present? and {
     (regular) size use-font  COMMA-SPACE show
   } if
   title is-present? {
@@ -258,6 +274,21 @@ end
 } bind def
 
 
+% from author-last and author-first.
+/author-name-for-index {
+  author-last (ZzzUnknown) eq {
+    % special handling for anonymous authors (hacky!); this exists only because I want 
+    % them at the END of the index
+    (Various) 
+  } {
+    author-first is-present? {
+      [author-last COMMA-SPACE author-first] any-concat
+    } {
+      author-last
+    } ifelse
+  } ifelse 
+} bind def
+
 % dict
 % The dict contains /author and (usually) /title.
 % Example output:
@@ -269,9 +300,10 @@ end
   2 dict begin
     { def } forall
     /size 90 def
+    /authors-name author-name-for-index def
     (regular) size use-font
     small-caps-font
-    author str-upper-case show
+    authors-name str-upper-case show
     title () ne {
       1 ex 0 rmoveto 
       (italic) size use-font

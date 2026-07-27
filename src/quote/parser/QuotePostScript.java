@@ -20,10 +20,18 @@ public final class QuotePostScript {
   */
   @Override public String toString() {
     StringBuilder res = new StringBuilder();
-    res.append("/author " );
-    res.append(psString(anonymousAuthor(quote.getAuthorFirstThenLast())));
+    res.append("/author-last " );
+    res.append(psString(quote.getAuthorLast()));
+    
+    res.append(" /author-first " );
+    res.append(psString(quote.getAuthorFirst()));
+    
+    //res.append(" /author " );
+    //res.append(psString(anonymousAuthor(quote.getAuthorFirstThenLast())));
+    
     res.append(" /title " );
     res.append(psString(nullTitle(quote.getTitle()))); //uses the 'NULL' magic value
+    
     res.append(" /body " );
     res.append(poetryOrProse(quote.text));
     return psDict(res.toString());
@@ -36,19 +44,6 @@ public final class QuotePostScript {
     return text.replace("(", "\\(").replace(")", "\\)");
   }
   
-  /** 
-   Replace a magic string for an unknown author with an empty string.
-   The magic string is used for sorting, to place anonymous items at the end.
-   ASSUMPTION: such sorting has already taken place in a list of Quote objects. 
-  */
-  private String anonymousAuthor(String author) {
-    String res = author;
-    if ("ZzzUnknown".equals(author)) {
-      res = "";
-    }
-    return res;
-  }
-
   /** 
    Needed for poetry, having explicit line breaks. 
    Use \n, the PostScript literal for a new-line. 

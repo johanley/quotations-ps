@@ -60,6 +60,31 @@ public final class Quote implements Comparable<Quote>{
     }
     return result;
   }
+  
+  
+  /** If there's no separator char (eg 'Aristotle'), then the whole name is taken to be the last name. */
+  public String getAuthorLast() {
+    String result = author;
+    if (result.contains(NAME_SEPARATOR)) {
+      String[] parts = author.split(Pattern.quote(NAME_SEPARATOR));
+      if (parts.length == 2) {
+        result = parts[0].trim();
+      }
+    }
+    return result;
+  }
+  
+  /** Empty string if there's no separator character. */
+  public String getAuthorFirst() {
+    String result = "";
+    if (author.contains(NAME_SEPARATOR)) {
+      String[] parts = author.split(Pattern.quote(NAME_SEPARATOR));
+      if (parts.length == 2) {
+        result = parts[1].trim();
+      }
+    }
+    return result;
+  }
 
   /**
    Sort by name, then title (if present).

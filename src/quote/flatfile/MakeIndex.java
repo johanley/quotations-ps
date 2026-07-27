@@ -28,7 +28,7 @@ public final class MakeIndex {
   /**
    Sort the source quotes alphabetically, and remove '#' comments.
    This a simple line-by-line 'lexicographic' sort of the line-strings.
-   WARNING: overwrites the input file.
+   Outputs a new file, with 'sorted' appended to the given input file name.
   */ 
   List<String> sortedQuotes(String input) throws IOException {
     log("Source file: " + input);
@@ -36,9 +36,10 @@ public final class MakeIndex {
     log("Num lines in source file: " + lines.size());
     lines.removeIf(line -> line.trim().startsWith(COMMENT));
     log("Num lines in source file, with comments removed: " + lines.size());
-    log("Sorting and overwriting source file.");
+    String sortedInput = input + ".sorted";
+    log("Sorting and writing to " + sortedInput);
     Collections.sort(lines);
-    write(lines, input);
+    write(lines, sortedInput);
     return lines;
   }
   
@@ -64,7 +65,8 @@ public final class MakeIndex {
   }
 
   private final static Charset ENCODING = Charset.forName("windows-1252");  
-  private final static String COMMENT = "#";  
+  private final static String COMMENT = "#";
+  
 
   private String removeBodyEntry(String dict) {
     int body = dict.indexOf("/body");

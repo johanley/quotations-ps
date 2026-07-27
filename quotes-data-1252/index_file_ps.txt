@@ -1,394 +1,394 @@
-<</author (Adams, Douglas) /title (Hitchhiker’s Guide to the Galaxy)>>
-<</author (Aeschylus) /title (Prometheus Bound)>>
-<</author (Aiken, Howard) /title ()>>
-<</author (Alexander, Christopher) /title (The Nature of Order, Book 1)>>
-<</author (Alexander, Christopher) /title (The Nature of Order, Book 2)>>
-<</author (Alexander, Christopher) /title (The Nature of Order, Book 3)>>
-<</author (Alexander, Christopher) /title (The Nature of Order, Book 4)>>
-<</author (Alexander, Christopher) /title (The Timeless Way of Building)>>
-<</author (Ali, Ayaan Hirsi) /title (Infidel)>>
-<</author (Ali, Ayaan Hirsi) /title (Prey)>>
-<</author (Amis, Kingsley) /title (Lucky Jim)>>
-<</author (Amis, Martin) /title (The Information)>>
-<</author (Amis, Martin) /title (Time’s Arrow)>>
-<</author (Aristotele) /title ()>>
-<</author (Auden, W. H.) /title (As I Walked Out One Evening)>>
-<</author (Augustin, Saint) /title ()>>
-<</author (Aurelio, Marco) /title ()>>
-<</author (Austen, Jane) /title (Mansfield Park)>>
-<</author (Austen, Jane) /title (Northanger Abbey)>>
-<</author (Austen, Jane) /title (Persuasion)>>
-<</author (Austen, Jane) /title (Pride and Prejudice)>>
-<</author (Austen, Jane) /title (Sense and Sensibility)>>
-<</author (Bacon, Francis) /title (Novum Organum)>>
-<</author (Balzac, Honoré de) /title (Cousin Bette)>>
-<</author (Baricco, Alessandro) /title (Océan Mer)>>
-<</author (Barrette, Cyrille) /title (Mystère sans magie)>>
-<</author (Basho) /title ()>>
-<</author (Baudelaire, Charles) /title (Le voyage)>>
-<</author (Baudelaire, Charles) /title (Petits poèmes en prose)>>
-<</author (Bauerlein, Mark) /title (The Dumbest Generation)>>
-<</author (Beauchemin, Yves) /title (The Alleycat)>>
-<</author (Bell, E. T.) /title (The Queen of the Sciences)>>
-<</author (Bennett, Arnold) /title (The Old Wives’ Tale)>>
-<</author (Bennett, Christopher) /title (Yugoslavia’s Bloody Collapse)>>
-<</author (Blair, Hugh) /title (Lectures on Rhetoric and Belles Lettres)>>
-<</author (Blake, William) /title (Introduction to Songs of Experience)>>
-<</author (Blake, William) /title (The Marriage of Heaven and Hell)>>
-<</author (Bly, Robert) /title (The Sibling Society)>>
-<</author (Blyth, Chas) /title ()>>
-<</author (Bohr, Niels) /title (Atomic Physics and Human Knowledge)>>
-<</author (Boigne, La Comtesse de) /title (Mémoires)>>
-<</author (Bowden et. al.) /title (Faster Than Thought)>>
-<</author (Bradford, Ernle) /title (The Journeying Moon)>>
-<</author (Bramsted, Ernest) /title (Goebbels and National Socialist Propaganda)>>
-<</author (Bray, Tim) /title (Beautiful Code)>>
-<</author (Brodie, Richard) /title (Virus of the Mind)>>
-<</author (Brontë, Charlotte) /title (Jane Eyre)>>
-<</author (Brontë, Charlotte) /title (Villette)>>
-<</author (Brontë, Emily) /title (Julian M. and A.G. Rochelle)>>
-<</author (Bruckner, Pascal) /title (The Tyranny of Guilt)>>
-<</author (Bryson, Bill) /title (A Short History of Nearly Everything)>>
-<</author (Buffon, Comte de) /title ()>>
-<</author (C. Singer et. al.) /title (A History of Technology)>>
-<</author (Campan, Mme) /title (Mémoires)>>
-<</author (Camus, Albert) /title (Jonas, or the Artist at Work)>>
-<</author (Capek, M.) /title (The New Aspects of Time)>>
-<</author (Capek, M.) /title (The Philosophical Impact of Contemporary Physics)>>
-<</author (Carr, Nicolas) /title (The Shallows)>>
-<</author (Carrier, Roch) /title (Fin)>>
-<</author (Chariton) /title (Callirhoe)>>
-<</author (Conrad, Joseph) /title (Nostromo)>>
-<</author (Conrad, Joseph) /title (The Shadow-Line)>>
-<</author (Copernicus) /title (De Revolutionibus)>>
-<</author (Coupland, Douglas) /title (Miss Wyoming)>>
-<</author (Crane, Stephen) /title (The Red Badge of Courage)>>
-<</author (Csikszentmihaly, Mihaly) /title (Flow)>>
-<</author (Cummings, E. E.) /title ()>>
-<</author (Dalrymple, Theodore) /title (Life at the Bottom)>>
-<</author (Dalrymple, Theodore) /title (Our Culture, What’s Left Of It)>>
-<</author (Damari, Emily) /title ()>>
-<</author (Dante) /title ()>>
-<</author (Darwin, Charles) /title (The Life and Letters of Charles Darwin)>>
-<</author (Darwin, Charles) /title (The Voyage of the Beagle)>>
-<</author (Dawkins, Richard) /title (The God Delusion)>>
-<</author (Dawkins, Richard) /title (The Selfish Gene)>>
-<</author (DeMarco, Tom) /title (Structured Analysis and System Specification)>>
-<</author (Diamond, Jared) /title (The World Until Yesterday)>>
-<</author (Dijkstra, Edsger W.) /title (Goto Statement Considered Harmful)>>
-<</author (Dijkstra, Edsger W.) /title (The Humble Programmer)>>
-<</author (Dostoyevsky, Fyodor) /title (Devils)>>
-<</author (Dostoyevsky, Fyodor) /title (Notes From the Underground)>>
-<</author (Dostoyevsky, Fyodor) /title (White Knights)>>
-<</author (Drake, Stillman) /title (Galileo: Pioneer Scientist)>>
-<</author (Dubois, W. E. B.) /title ()>>
-<</author (Dumas, Alexandre) /title (Les trois mousquetaires)>>
-<</author (Durant, Will) /title (The Life of Greece)>>
-<</author (Durant, Will and Ariel) /title (The Age of Napolean)>>
-<</author (Duteurtre, Benoît) /title (Le voyage en France)>>
-<</author (Dylan, Bob) /title (Shelter From The Storm)>>
-<</author (Dylan, Bob) /title (Visions of Johanna)>>
-<</author (Eckhart, Meister) /title ()>>
-<</author (Eliot, George) /title (Felix Holt, the Radical)>>
-<</author (Eliot, George) /title (Middlemarch)>>
-<</author (Eliot, George) /title (Mr. Gilfil’s Love-Story)>>
-<</author (Eliot, George) /title (Silas Marner)>>
-<</author (Eliot, George) /title (The Sad Fortunes of the Reverend Amos Barton)>>
-<</author (Epictetus) /title ()>>
-<</author (Euripide) /title ()>>
-<</author (Evans-Pritchard, E. E.) /title (Theories of Primitive Religion)>>
-<</author (Farquar, George) /title (Sir Harry Wildair)>>
-<</author (Fedro) /title ()>>
-<</author (Findlay, Timothy) /title ()>>
-<</author (Firth, Raymond) /title (Tikopia Ritual and Belief)>>
-<</author (Fitzgerald, F. Scott) /title (The Great Gatsby)>>
-<</author (Flacco, Quinto Orazio) /title ()>>
-<</author (Flammarion and Gore) /title (Popular Astronomy)>>
-<</author (Flaubert, Gustave) /title (Lettre à Guy de Maupassant)>>
-<</author (Flaubert, Gustave) /title (L’éducation sentimentale)>>
-<</author (Flaubert, Gustave) /title (Madame Bovary)>>
-<</author (Flaubert, Gustave) /title (Pensées)>>
-<</author (Foote, Samuel) /title (The Comic Theatre)>>
-<</author (Forster, E. M.) /title (Other Kingdom)>>
-<</author (Forster, E. M.) /title (The Curate’s Friend)>>
-<</author (France, Anatole) /title (Le crime de Sylvestre Bonnard)>>
-<</author (Frankfurt, Harry) /title (On Bullshit)>>
-<</author (Frazer, J. G.) /title (The Golden Bough)>>
-<</author (Fromentin, Eugène) /title (Dominique)>>
-<</author (Frye, Northrop) /title ()>>
-<</author (Galileo) /title ()>>
-<</author (Gardner, Ava) /title ()>>
-<</author (Garnier, François) /title (L’âne à la lyre)>>
-<</author (Gauss) /title (Letter to Sophie Germain \(1807\))>>
-<</author (Gibbon, Edward) /title (Decline and Fall of the Roman Empire)>>
-<</author (Gibbs, Josiah W.) /title ()>>
-<</author (Gide, André) /title (Les nourritures terrestres)>>
-<</author (Giradoux, Jean) /title (Ondine)>>
-<</author (Girard, Réné) /title (I See Satan Fall Like Lightning)>>
-<</author (Girard, Réné) /title (The Scapegoat)>>
-<</author (Godfrey-Smith, Peter) /title (Theory and Reality)>>
-<</author (Goethe) /title (Faust)>>
-<</author (Gogh, Vincent van) /title ()>>
-<</author (Goncharov, I. A.) /title (Oblomov)>>
-<</author (Goncourt, Edmond et Jules de) /title (Germinie Lacerteux)>>
-<</author (Goncourt, Edmond et Jules de) /title (Renée Mauperin)>>
-<</author (Gould, Glenn) /title ()>>
-<</author (Grattan-Guiness, Ivor) /title (The Norton History of the Mathematical Sciences)>>
-<</author (Gray, Muriel) /title ()>>
-<</author (Greenspan, Philip) /title ()>>
-<</author (Greer, Germaine) /title ()>>
-<</author (Grothendieck, Alexander) /title (Récoltes et semailles)>>
-<</author (Gunn, John) /title (Violence in Human Society)>>
-<</author (Harari, Yuval) /title (Homo Deus)>>
-<</author (Harari, Yuval) /title (Sapiens)>>
-<</author (Hardy, Thomas) /title (A Group of Noble Dames)>>
-<</author (Hardy, Thomas) /title (A Pair of Blue Eyes)>>
-<</author (Hardy, Thomas) /title (Far From the Madding Crowd)>>
-<</author (Hardy, Thomas) /title (Jude the Obscure)>>
-<</author (Hardy, Thomas) /title (Life’s Little Ironies)>>
-<</author (Hardy, Thomas) /title (The Return of the Native)>>
-<</author (Hardy, Thomas) /title (The Trumpet-Major)>>
-<</author (Hardy, Thomas) /title (The Woodlanders)>>
-<</author (Hardy, Thomas) /title (Under the Greenwood Tree)>>
-<</author (Hausset, Madame de) /title (Mémoires)>>
-<</author (Hazlitt, William) /title ()>>
-<</author (Hegel) /title ()>>
-<</author (Heisenberg, Elisabeth) /title (Inner Exile)>>
-<</author (Heisenberg, Werner) /title (Physics and Philosophy)>>
-<</author (Hemingway, Ernest) /title (The Sun Also Rises)>>
-<</author (Herodotus) /title ()>>
-<</author (Herstein, I. N.) /title (Abstract Algebra)>>
-<</author (Hibbert, Christopher) /title (The Roots of Evil)>>
-<</author (Hilbert, David) /title ()>>
-<</author (Hitler, Adolf) /title (Mein Kampf)>>
-<</author (Hoff-Somers, Christina) /title (The War Against Boys)>>
-<</author (Honoré, Carl) /title (In Praise of Slow)>>
-<</author (Horace) /title ()>>
-<</author (Host, Michel) /title (Valet de nuit)>>
-<</author (Hugo, Victor) /title (Les travailleurs de la mer)>>
-<</author (Hugo, Victor) /title (Quatre-vingt-treize)>>
-<</author (Huston, Nancy) /title ()>>
-<</author (Huxley, Aldous) /title (Brave New World)>>
-<</author (Infeld, Leopold) /title (Quest)>>
-<</author (Jacobs, Jane) /title (The Death and Life of Great American Cities)>>
-<</author (Joffo, Joseph) /title (Incertain sourire)>>
-<</author (Johnson, George) /title (A Shortcut Through Time)>>
-<</author (Joyce, James) /title (A Painful Case)>>
-<</author (Joyce, James) /title (After the Race)>>
-<</author (Joyce, James) /title (Araby)>>
-<</author (Joyce, James) /title (The Boarding House)>>
-<</author (Joyce, James) /title (Two Gallants)>>
-<</author (Joyce, James) /title (Ulysses)>>
-<</author (Jung, Carl) /title (Collected Works, v.10)>>
-<</author (Jung, Carl) /title (Psychology and Alchemy)>>
-<</author (Kamen, Henry) /title (The Spanish Inquisition)>>
-<</author (Kershner and Wilcox) /title (The Anatomy of Mathematics)>>
-<</author (King, Ross) /title (The Bookseller of Florence)>>
-<</author (Kipling, Rudyard) /title (Kim)>>
-<</author (Klemperer, Victor) /title (To The Bitter End)>>
-<</author (Kuhn, Thomas S.) /title (The Copernican Revolution)>>
-<</author (Kuhn, Thomas S.) /title (The Structure of Scientific Revolutions)>>
-<</author (Kundera, Milan) /title (L’identité)>>
-<</author (Lafferrière, Dany) /title (Pays sans chapeau)>>
-<</author (Laing, R. D.) /title (The Politics of Experience)>>
-<</author (Lea, Henry Charles) /title (A History of the Inquisition of the Middle Ages)>>
-<</author (Leibniz) /title ()>>
-<</author (Lewis, Bernard) /title (The Crisis of Islam)>>
-<</author (Longinus) /title (On the Sublime)>>
-<</author (Lovecraft, H. P.) /title (The Picture in the House)>>
-<</author (Lovelock, James) /title (Gaia - A New Look at Life on Earth)>>
-<</author (Lovelock, James) /title (The Revenge of Gaia)>>
-<</author (MacPhail, Andrew) /title (The Master’s Wife)>>
-<</author (Maistre, Xavier de) /title (A Journey Around My Room)>>
-<</author (Maistre, Xavier de) /title (Expédition nocturne autour de ma chambre)>>
-<</author (Malinowski, B.) /title (Argonauts of the Western Pacific)>>
-<</author (Malinowski, B.) /title (Magic, Science, and Religion)>>
-<</author (Manguel, Alberto) /title (The Library at Night)>>
-<</author (Marlantes, Karl) /title (What It Is Like To Go To War)>>
-<</author (Martel, Yann) /title (Beatrice and Virgil)>>
-<</author (Martial) /title (Epigrams)>>
-<</author (Matyszak, Philip) /title (24 Hours in Ancient Athens)>>
-<</author (Maughan, W. Somerset) /title (The Moon and Sixpence)>>
-<</author (Maughan, W. Somerset) /title (The World Over)>>
-<</author (Maupassant, Guy de) /title (Au printemps)>>
-<</author (Maupassant, Guy de) /title (Découverte)>>
-<</author (Maupassant, Guy de) /title (Fort comme la mort)>>
-<</author (Maupassant, Guy de) /title (La Sicile)>>
-<</author (Maupassant, Guy de) /title (La morte)>>
-<</author (Maupassant, Guy de) /title (Les tombales)>>
-<</author (Maupassant, Guy de) /title (L’ermite)>>
-<</author (Maupassant, Guy de) /title (L’inutile beauté)>>
-<</author (Maupassant, Guy de) /title (Ma femme)>>
-<</author (Maupassant, Guy de) /title (Monsieur Parent)>>
-<</author (Maupassant, Guy de) /title (Mont Oriol)>>
-<</author (Maupassant, Guy de) /title (Notre Coeur)>>
-<</author (Maupassant, Guy de) /title (Oeuvres posthumes)>>
-<</author (Maupassant, Guy de) /title (Qui sait?)>>
-<</author (Maupassant, Guy de) /title (Solitude)>>
-<</author (Maupassant, Guy de) /title (Sur l’eau)>>
-<</author (Maupassant, Guy de) /title (Une vie)>>
-<</author (Maupassant, Guy de) /title (Â Vendre)>>
-<</author (Maurier, George Du) /title (Trilby)>>
-<</author (Maurois, André) /title (Climats)>>
-<</author (McEwan, Ian) /title (The Child in Time)>>
-<</author (Meinke, F.) /title (The German Catastrophe)>>
-<</author (Melville, Herman) /title (Moby Dick)>>
-<</author (Mencken, H. L.) /title (The American Scene)>>
-<</author (Miller, Stephen) /title (Conversation - A History of a Declining Art)>>
-<</author (Mlodinow, Leonard) /title (The Drunkard’s Walk)>>
-<</author (Monod, Jacques) /title ()>>
-<</author (Montgomery, L. M.) /title (The Blue Castle)>>
-<</author (Moore, Charles) /title ()>>
-<</author (Moore, Christopher) /title (Sacré Bleu)>>
-<</author (Morellet, L’Abbé) /title (Mémoires)>>
-<</author (Morley, Christopher) /title (Parnassus on Wheels)>>
-<</author (Morressy, John) /title (A Tale of Three Wizards)>>
-<</author (Mother Theresa) /title ()>>
-<</author (Murphy, John) /title ()>>
-<</author (Murray, Douglas) /title (The Madness of Crowds)>>
-<</author (Murray, Douglas) /title (The Strange Death of Europe)>>
-<</author (Murray, Douglas) /title (The War on the West)>>
-<</author (Muske, Carol) /title ()>>
-<</author (Musset, Alfred de) /title (André del Sarto)>>
-<</author (Musset, Alfred de) /title (Fantasio)>>
-<</author (Musset, Alfred de) /title (Les caprices de Marianne)>>
-<</author (Nabokov, Vladimir) /title (Lolita)>>
-<</author (Nasone, Publio Ovidio) /title ()>>
-<</author (Nichols, Tom) /title (The Death of Expertise)>>
-<</author (Nietzsche, Friedrich) /title (Beyond Good and Evil)>>
-<</author (Nietzsche, Friedrich) /title (Thus Spoke Zarathustra)>>
-<</author (Nin, Anaïs) /title (Diary, v.3)>>
-<</author (Nin, Anaïs) /title (Diary, v.5)>>
-<</author (North, John) /title (Cosmos)>>
-<</author (Oresme) /title ()>>
-<</author (O’Brien, Edna) /title (James Joyce)>>
-<</author (O’Brien, Flann) /title (At Swim-Two-Birds)>>
-<</author (O’Neill, Brendan) /title (After the Pogrom)>>
-<</author (Paglia, Camille) /title ()>>
-<</author (Pais, Abraham) /title (Niels Bohr)>>
-<</author (Palin, Michael) /title (Himalaya)>>
-<</author (Papert, Seymour) /title (Mindstorms)>>
-<</author (Perelman, S. J.) /title (The Road to Miltdown)>>
-<</author (Petronius) /title (Satyricon)>>
-<</author (Philoponas the Byzantine) /title ()>>
-<</author (Pierce, Charles) /title ()>>
-<</author (Pindaro) /title ()>>
-<</author (Pirsig, R. M.) /title (Zen and the Art of Motorcycle Maintenance)>>
-<</author (Plumptre, Anne) /title ()>>
-<</author (Plutarco) /title ()>>
-<</author (Poe, Edgar Allan) /title ()>>
-<</author (Poliakov, Léon) /title (Harvest of Hate)>>
-<</author (Poliakov, Léon) /title (The History of Anti-Semitism)>>
-<</author (Poliakov, Léon) /title (The History of Anti-Semitism \(IV\))>>
-<</author (Postman, Neil) /title (Amusing Ourselves To Death)>>
-<</author (Postman, Neil) /title (Technopoly)>>
-<</author (Proust, Marcel) /title (Albertine disparue)>>
-<</author (Proust, Marcel) /title (Du côté du chez Swann)>>
-<</author (Proust, Marcel) /title (La prisonnière)>>
-<</author (Proust, Marcel) /title (Le côté de Guermantes)>>
-<</author (Proust, Marcel) /title (Le temps retrouvé)>>
-<</author (Proust, Marcel) /title (Sodome et Gomorrhe)>>
-<</author (Proust, Marcel) /title (Swann’s Way)>>
-<</author (Proust, Marcel) /title (The Guermantes Way)>>
-<</author (Proust, Marcel) /title (À l’ombre des jeunes filles en fleurs)>>
-<</author (Quincey, Thomas de) /title (Confessions of an English Opium-Eater)>>
-<</author (Quintilian) /title (Institutio Oratorio)>>
-<</author (Rees, Laurence) /title (Hitler and Stalin)>>
-<</author (Reeves, Hubert) /title (Patience dans l’azur)>>
-<</author (Renzetti, Elizabeth) /title ()>>
-<</author (Richler, Mordecai) /title (Barney’s Version)>>
-<</author (Rimbaud, Arthur) /title (Une saison en enfer)>>
-<</author (Rochejaquelein, Mme la Marquise de la) /title (Mémoires)>>
-<</author (Roland, Mme) /title (Mémoires)>>
-<</author (Roth, Philip) /title (Portnoy’s Complaint)>>
-<</author (Rothman, Noah) /title (The Rise of the New Puritans)>>
-<</author (Rowan-Robinson, M.) /title (Cosmology)>>
-<</author (Rowe, N.) /title (Tamerlane)>>
-<</author (Rumi) /title ()>>
-<</author (Sachar, Howard) /title (A History of Israel)>>
-<</author (Sagan, Carl) /title (Cosmos)>>
-<</author (Seneca, Lucio Anneo) /title ()>>
-<</author (Sennett, Richard) /title (The Fall of Public Man)>>
-<</author (Shakespeare, William) /title (Hamlet)>>
-<</author (Shakespeare, William) /title (Much Ado About Nothing)>>
-<</author (Shakespeare, William) /title (Romeo and Juliet)>>
-<</author (Shapin, Steven) /title (The Scientific Revolution)>>
-<</author (Shaw, George Bernard) /title (Caesar and Cleopatra)>>
-<</author (Shaw, George Bernard) /title (London Music)>>
-<</author (Shaw, George Bernard) /title (Man and Superman)>>
-<</author (Shaw, George Bernard) /title (Misalliance)>>
-<</author (Shaw, George Bernard) /title (The Apple Cart)>>
-<</author (Shaw, George Bernard) /title (The Doctor’s Dilemma)>>
-<</author (Shaw, George Bernard) /title (The Man of Destiny)>>
-<</author (Shaw, George Bernard) /title (The Theatre of the Future)>>
-<</author (Shaw, George Bernard) /title (Three Plays by Brieux)>>
-<</author (Sheridan, R. B.) /title ()>>
-<</author (Shirer, W. L.) /title (The Rise and Fall of the Third Reich)>>
-<</author (Sigourney, Lydia) /title (The Stars)>>
-<</author (Singer, C.) /title (A History of Scientific Ideas)>>
-<</author (Smith, Adam) /title ()>>
-<</author (Smolin, Lee) /title (The Trouble With Physics)>>
-<</author (Smollett, Tobias) /title (The Expedition of Humphry Clinker)>>
-<</author (Socrates) /title ()>>
-<</author (Sophocles) /title (King Oedipus)>>
-<</author (Sophocles) /title (Oedipus at Colonus)>>
-<</author (Souvestre, Emile) /title (An Attic Philosopher In Paris)>>
-<</author (Stael, Madame de) /title ()>>
-<</author (Stanford, W. B.) /title (The Sound of Greek)>>
-<</author (Steele and Addison) /title (The Spectator)>>
-<</author (Stendhal) /title (Le rouge et le noir)>>
-<</author (Sterne, Laurence) /title (A Sentimental Journey)>>
-<</author (Suetonius) /title (Lives of the Caesars)>>
-<</author (Taleb, Nassim) /title ()>>
-<</author (Tate, James) /title ()>>
-<</author (Theroux, Paul) /title (The Tao of Travel)>>
-<</author (Thoreau, H. D.) /title (Walden)>>
-<</author (Thorndike, L.) /title (History of Magic and Experimental Science)>>
-<</author (Thorndike, L.) /title (History of Magic and Experimental Science v.6)>>
-<</author (Thorndike, L.) /title (History of Magic and Experimental Science v.7)>>
-<</author (Thorndike, L.) /title (History of Magic and Experimental Science v.8)>>
-<</author (Tillich, Paul) /title ()>>
-<</author (Tolstoy, Leo) /title (Anna Karenina)>>
-<</author (Tolstoy, Leo) /title (Hadji Murad)>>
-<</author (Tolstoy, Leo) /title (La guerre et la paix)>>
-<</author (Tolstoy, Leo) /title (The Kreutzer Sonata)>>
-<</author (Tolstoy, Leo) /title (War and Peace)>>
-<</author (Toulmin and Goodfield) /title (The Architecture of Matter)>>
-<</author (Toulmin and Goodfield) /title (The Fabric of the Heavens)>>
-<</author (Trevor-Roper, H. R.) /title (The European Witch-Craze)>>
-<</author (Trollope, Anthony) /title (The Small House at Allington)>>
-<</author (Trungpa, Chögyam) /title (Cutting Through Spiritual Materialism)>>
-<</author (Vidal, Gore) /title (Myra Breckenridge)>>
-<</author (Vigny, Alfred de) /title (Dernière nuit de travail)>>
-<</author (Vigny, Alfred de) /title (Le journal d’un poète)>>
-<</author (Vigny, Alfred de) /title (Servitudes et grandeurs militaires)>>
-<</author (Villiers de L’Isle-Adam, A. de) /title (Deux augures)>>
-<</author (Villiers de L’Isle-Adam, A. de) /title (La convive des dernières fêtes)>>
-<</author (Villiers de L’Isle-Adam, A. de) /title (Le désir d’être un homme)>>
-<</author (Villiers de L’Isle-Adam, A. de) /title (L’affichage céleste)>>
-<</author (Villiers de L’Isle-Adam, A. de) /title (L’intersigne)>>
-<</author (Voltaire) /title ()>>
-<</author (Walker, C. B. F.) /title (Cuneiform)>>
-<</author (Wall, Geoffrey) /title (Flaubert: A Life)>>
-<</author (Weber) /title (Mémoires)>>
-<</author (Westfall, Richard) /title (Never at Rest)>>
-<</author (Westrich, Robert) /title (A Lethal Obsession)>>
-<</author (Whitehead, Alfred North) /title (Introduction to Mathematics)>>
-<</author (Whitman, Walt) /title (Song of Myself)>>
-<</author (Wilde, Oscar) /title ()>>
-<</author (Williams, Donna) /title (Nobody Nowhere)>>
-<</author (Wilson, R. M.) /title (Ripley Bogle)>>
-<</author (Wise, James Waterman) /title (Swastika: The Nazi Terror)>>
-<</author (Wodehouse, P. G.) /title (Carry On, Jeeves)>>
-<</author (Wodehouse, P. G.) /title (The Code of the Woosters)>>
-<</author (Wollstonecraft, Mary) /title (A Vindication of the Rights of Woman)>>
-<</author (Yourcenar, Marguerite) /title (How Wang Fo Was Saved)>>
-<</author (Zweig, Stefan) /title (Moonbeam Alley)>>
-<</author (Zweig, Stefan) /title (Transfiguration)>>
-<</author (Various) /title (Bhagavad Gita)>>
-<</author (Various) /title (Dhammapada)>>
-<</author (Various) /title (Gilgamesh)>>
-<</author (Various) /title (King James Bible)>>
-<</author (Various) /title (Mahabharata)>>
-<</author (Various) /title (Mémoires sur les prisons)>>
-<</author (Various) /title (Upanishads)>>
+<</author-last (Adams) /author-first (Douglas) /title (Hitchhiker’s Guide to the Galaxy)>>
+<</author-last (Aeschylus) /author-first () /title (Prometheus Bound)>>
+<</author-last (Aiken) /author-first (Howard) /title ()>>
+<</author-last (Alexander) /author-first (Christopher) /title (The Nature of Order, Book 1)>>
+<</author-last (Alexander) /author-first (Christopher) /title (The Nature of Order, Book 2)>>
+<</author-last (Alexander) /author-first (Christopher) /title (The Nature of Order, Book 3)>>
+<</author-last (Alexander) /author-first (Christopher) /title (The Nature of Order, Book 4)>>
+<</author-last (Alexander) /author-first (Christopher) /title (The Timeless Way of Building)>>
+<</author-last (Ali) /author-first (Ayaan Hirsi) /title (Infidel)>>
+<</author-last (Ali) /author-first (Ayaan Hirsi) /title (Prey)>>
+<</author-last (Amis) /author-first (Kingsley) /title (Lucky Jim)>>
+<</author-last (Amis) /author-first (Martin) /title (The Information)>>
+<</author-last (Amis) /author-first (Martin) /title (Time’s Arrow)>>
+<</author-last (Aristotele) /author-first () /title ()>>
+<</author-last (Auden) /author-first (W. H.) /title (As I Walked Out One Evening)>>
+<</author-last (Augustin) /author-first (Saint) /title ()>>
+<</author-last (Aurelio) /author-first (Marco) /title ()>>
+<</author-last (Austen) /author-first (Jane) /title (Mansfield Park)>>
+<</author-last (Austen) /author-first (Jane) /title (Northanger Abbey)>>
+<</author-last (Austen) /author-first (Jane) /title (Persuasion)>>
+<</author-last (Austen) /author-first (Jane) /title (Pride and Prejudice)>>
+<</author-last (Austen) /author-first (Jane) /title (Sense and Sensibility)>>
+<</author-last (Bacon) /author-first (Francis) /title (Novum Organum)>>
+<</author-last (Balzac) /author-first (Honoré de) /title (Cousin Bette)>>
+<</author-last (Baricco) /author-first (Alessandro) /title (Océan Mer)>>
+<</author-last (Barrette) /author-first (Cyrille) /title (Mystère sans magie)>>
+<</author-last (Basho) /author-first () /title ()>>
+<</author-last (Baudelaire) /author-first (Charles) /title (Le voyage)>>
+<</author-last (Baudelaire) /author-first (Charles) /title (Petits poèmes en prose)>>
+<</author-last (Bauerlein) /author-first (Mark) /title (The Dumbest Generation)>>
+<</author-last (Beauchemin) /author-first (Yves) /title (The Alleycat)>>
+<</author-last (Bell) /author-first (E. T.) /title (The Queen of the Sciences)>>
+<</author-last (Bennett) /author-first (Arnold) /title (The Old Wives’ Tale)>>
+<</author-last (Bennett) /author-first (Christopher) /title (Yugoslavia’s Bloody Collapse)>>
+<</author-last (Blair) /author-first (Hugh) /title (Lectures on Rhetoric and Belles Lettres)>>
+<</author-last (Blake) /author-first (William) /title (Introduction to Songs of Experience)>>
+<</author-last (Blake) /author-first (William) /title (The Marriage of Heaven and Hell)>>
+<</author-last (Bly) /author-first (Robert) /title (The Sibling Society)>>
+<</author-last (Blyth) /author-first (Chas) /title ()>>
+<</author-last (Bohr) /author-first (Niels) /title (Atomic Physics and Human Knowledge)>>
+<</author-last (Boigne) /author-first (La Comtesse de) /title (Mémoires)>>
+<</author-last (Bowden et. al.) /author-first () /title (Faster Than Thought)>>
+<</author-last (Bradford) /author-first (Ernle) /title (The Journeying Moon)>>
+<</author-last (Bramsted) /author-first (Ernest) /title (Goebbels and National Socialist Propaganda)>>
+<</author-last (Bray) /author-first (Tim) /title (Beautiful Code)>>
+<</author-last (Brodie) /author-first (Richard) /title (Virus of the Mind)>>
+<</author-last (Brontë) /author-first (Charlotte) /title (Jane Eyre)>>
+<</author-last (Brontë) /author-first (Charlotte) /title (Villette)>>
+<</author-last (Brontë) /author-first (Emily) /title (Julian M. and A.G. Rochelle)>>
+<</author-last (Bruckner) /author-first (Pascal) /title (The Tyranny of Guilt)>>
+<</author-last (Bryson) /author-first (Bill) /title (A Short History of Nearly Everything)>>
+<</author-last (Buffon) /author-first (Comte de) /title ()>>
+<</author-last (C. Singer et. al.) /author-first () /title (A History of Technology)>>
+<</author-last (Campan) /author-first (Mme) /title (Mémoires)>>
+<</author-last (Camus) /author-first (Albert) /title (Jonas, or the Artist at Work)>>
+<</author-last (Capek) /author-first (M.) /title (The New Aspects of Time)>>
+<</author-last (Capek) /author-first (M.) /title (The Philosophical Impact of Contemporary Physics)>>
+<</author-last (Carr) /author-first (Nicolas) /title (The Shallows)>>
+<</author-last (Carrier) /author-first (Roch) /title (Fin)>>
+<</author-last (Chariton) /author-first () /title (Callirhoe)>>
+<</author-last (Conrad) /author-first (Joseph) /title (Nostromo)>>
+<</author-last (Conrad) /author-first (Joseph) /title (The Shadow-Line)>>
+<</author-last (Copernicus) /author-first () /title (De Revolutionibus)>>
+<</author-last (Coupland) /author-first (Douglas) /title (Miss Wyoming)>>
+<</author-last (Crane) /author-first (Stephen) /title (The Red Badge of Courage)>>
+<</author-last (Csikszentmihaly) /author-first (Mihaly) /title (Flow)>>
+<</author-last (Cummings) /author-first (E. E.) /title ()>>
+<</author-last (Dalrymple) /author-first (Theodore) /title (Life at the Bottom)>>
+<</author-last (Dalrymple) /author-first (Theodore) /title (Our Culture, What’s Left Of It)>>
+<</author-last (Damari) /author-first (Emily) /title ()>>
+<</author-last (Dante) /author-first () /title ()>>
+<</author-last (Darwin) /author-first (Charles) /title (The Life and Letters of Charles Darwin)>>
+<</author-last (Darwin) /author-first (Charles) /title (The Voyage of the Beagle)>>
+<</author-last (Dawkins) /author-first (Richard) /title (The God Delusion)>>
+<</author-last (Dawkins) /author-first (Richard) /title (The Selfish Gene)>>
+<</author-last (DeMarco) /author-first (Tom) /title (Structured Analysis and System Specification)>>
+<</author-last (Diamond) /author-first (Jared) /title (The World Until Yesterday)>>
+<</author-last (Dijkstra) /author-first (Edsger W.) /title (Goto Statement Considered Harmful)>>
+<</author-last (Dijkstra) /author-first (Edsger W.) /title (The Humble Programmer)>>
+<</author-last (Dostoyevsky) /author-first (Fyodor) /title (Devils)>>
+<</author-last (Dostoyevsky) /author-first (Fyodor) /title (Notes From the Underground)>>
+<</author-last (Dostoyevsky) /author-first (Fyodor) /title (White Knights)>>
+<</author-last (Drake) /author-first (Stillman) /title (Galileo: Pioneer Scientist)>>
+<</author-last (Dubois) /author-first (W. E. B.) /title ()>>
+<</author-last (Dumas) /author-first (Alexandre) /title (Les trois mousquetaires)>>
+<</author-last (Durant) /author-first (Will) /title (The Life of Greece)>>
+<</author-last (Durant) /author-first (Will and Ariel) /title (The Age of Napolean)>>
+<</author-last (Duteurtre) /author-first (Benoît) /title (Le voyage en France)>>
+<</author-last (Dylan) /author-first (Bob) /title (Shelter From The Storm)>>
+<</author-last (Dylan) /author-first (Bob) /title (Visions of Johanna)>>
+<</author-last (Eckhart) /author-first (Meister) /title ()>>
+<</author-last (Eliot) /author-first (George) /title (Felix Holt, the Radical)>>
+<</author-last (Eliot) /author-first (George) /title (Middlemarch)>>
+<</author-last (Eliot) /author-first (George) /title (Mr. Gilfil’s Love-Story)>>
+<</author-last (Eliot) /author-first (George) /title (Silas Marner)>>
+<</author-last (Eliot) /author-first (George) /title (The Sad Fortunes of the Reverend Amos Barton)>>
+<</author-last (Epictetus) /author-first () /title ()>>
+<</author-last (Euripide) /author-first () /title ()>>
+<</author-last (Evans-Pritchard) /author-first (E. E.) /title (Theories of Primitive Religion)>>
+<</author-last (Farquar) /author-first (George) /title (Sir Harry Wildair)>>
+<</author-last (Fedro) /author-first () /title ()>>
+<</author-last (Findlay) /author-first (Timothy) /title ()>>
+<</author-last (Firth) /author-first (Raymond) /title (Tikopia Ritual and Belief)>>
+<</author-last (Fitzgerald) /author-first (F. Scott) /title (The Great Gatsby)>>
+<</author-last (Flacco) /author-first (Quinto Orazio) /title ()>>
+<</author-last (Flammarion and Gore) /author-first () /title (Popular Astronomy)>>
+<</author-last (Flaubert) /author-first (Gustave) /title (Lettre à Guy de Maupassant)>>
+<</author-last (Flaubert) /author-first (Gustave) /title (L’éducation sentimentale)>>
+<</author-last (Flaubert) /author-first (Gustave) /title (Madame Bovary)>>
+<</author-last (Flaubert) /author-first (Gustave) /title (Pensées)>>
+<</author-last (Foote) /author-first (Samuel) /title (The Comic Theatre)>>
+<</author-last (Forster) /author-first (E. M.) /title (Other Kingdom)>>
+<</author-last (Forster) /author-first (E. M.) /title (The Curate’s Friend)>>
+<</author-last (France) /author-first (Anatole) /title (Le crime de Sylvestre Bonnard)>>
+<</author-last (Frankfurt) /author-first (Harry) /title (On Bullshit)>>
+<</author-last (Frazer) /author-first (J. G.) /title (The Golden Bough)>>
+<</author-last (Fromentin) /author-first (Eugène) /title (Dominique)>>
+<</author-last (Frye) /author-first (Northrop) /title ()>>
+<</author-last (Galileo) /author-first () /title ()>>
+<</author-last (Gardner) /author-first (Ava) /title ()>>
+<</author-last (Garnier) /author-first (François) /title (L’âne à la lyre)>>
+<</author-last (Gauss) /author-first () /title (Letter to Sophie Germain \(1807\))>>
+<</author-last (Gibbon) /author-first (Edward) /title (Decline and Fall of the Roman Empire)>>
+<</author-last (Gibbs) /author-first (Josiah W.) /title ()>>
+<</author-last (Gide) /author-first (André) /title (Les nourritures terrestres)>>
+<</author-last (Giradoux) /author-first (Jean) /title (Ondine)>>
+<</author-last (Girard) /author-first (Réné) /title (I See Satan Fall Like Lightning)>>
+<</author-last (Girard) /author-first (Réné) /title (The Scapegoat)>>
+<</author-last (Godfrey-Smith) /author-first (Peter) /title (Theory and Reality)>>
+<</author-last (Goethe) /author-first () /title (Faust)>>
+<</author-last (Gogh) /author-first (Vincent van) /title ()>>
+<</author-last (Goncharov) /author-first (I. A.) /title (Oblomov)>>
+<</author-last (Goncourt) /author-first (Edmond et Jules de) /title (Germinie Lacerteux)>>
+<</author-last (Goncourt) /author-first (Edmond et Jules de) /title (Renée Mauperin)>>
+<</author-last (Gould) /author-first (Glenn) /title ()>>
+<</author-last (Grattan-Guiness) /author-first (Ivor) /title (The Norton History of the Mathematical Sciences)>>
+<</author-last (Gray) /author-first (Muriel) /title ()>>
+<</author-last (Greenspan) /author-first (Philip) /title ()>>
+<</author-last (Greer) /author-first (Germaine) /title ()>>
+<</author-last (Grothendieck) /author-first (Alexander) /title (Récoltes et semailles)>>
+<</author-last (Gunn) /author-first (John) /title (Violence in Human Society)>>
+<</author-last (Harari) /author-first (Yuval) /title (Homo Deus)>>
+<</author-last (Harari) /author-first (Yuval) /title (Sapiens)>>
+<</author-last (Hardy) /author-first (Thomas) /title (A Group of Noble Dames)>>
+<</author-last (Hardy) /author-first (Thomas) /title (A Pair of Blue Eyes)>>
+<</author-last (Hardy) /author-first (Thomas) /title (Far From the Madding Crowd)>>
+<</author-last (Hardy) /author-first (Thomas) /title (Jude the Obscure)>>
+<</author-last (Hardy) /author-first (Thomas) /title (Life’s Little Ironies)>>
+<</author-last (Hardy) /author-first (Thomas) /title (The Return of the Native)>>
+<</author-last (Hardy) /author-first (Thomas) /title (The Trumpet-Major)>>
+<</author-last (Hardy) /author-first (Thomas) /title (The Woodlanders)>>
+<</author-last (Hardy) /author-first (Thomas) /title (Under the Greenwood Tree)>>
+<</author-last (Hausset) /author-first (Madame de) /title (Mémoires)>>
+<</author-last (Hazlitt) /author-first (William) /title ()>>
+<</author-last (Hegel) /author-first () /title ()>>
+<</author-last (Heisenberg) /author-first (Elisabeth) /title (Inner Exile)>>
+<</author-last (Heisenberg) /author-first (Werner) /title (Physics and Philosophy)>>
+<</author-last (Hemingway) /author-first (Ernest) /title (The Sun Also Rises)>>
+<</author-last (Herodotus) /author-first () /title ()>>
+<</author-last (Herstein) /author-first (I. N.) /title (Abstract Algebra)>>
+<</author-last (Hibbert) /author-first (Christopher) /title (The Roots of Evil)>>
+<</author-last (Hilbert) /author-first (David) /title ()>>
+<</author-last (Hitler) /author-first (Adolf) /title (Mein Kampf)>>
+<</author-last (Hoff-Somers) /author-first (Christina) /title (The War Against Boys)>>
+<</author-last (Honoré) /author-first (Carl) /title (In Praise of Slow)>>
+<</author-last (Horace) /author-first () /title ()>>
+<</author-last (Host) /author-first (Michel) /title (Valet de nuit)>>
+<</author-last (Hugo) /author-first (Victor) /title (Les travailleurs de la mer)>>
+<</author-last (Hugo) /author-first (Victor) /title (Quatre-vingt-treize)>>
+<</author-last (Huston) /author-first (Nancy) /title ()>>
+<</author-last (Huxley) /author-first (Aldous) /title (Brave New World)>>
+<</author-last (Infeld) /author-first (Leopold) /title (Quest)>>
+<</author-last (Jacobs) /author-first (Jane) /title (The Death and Life of Great American Cities)>>
+<</author-last (Joffo) /author-first (Joseph) /title (Incertain sourire)>>
+<</author-last (Johnson) /author-first (George) /title (A Shortcut Through Time)>>
+<</author-last (Joyce) /author-first (James) /title (A Painful Case)>>
+<</author-last (Joyce) /author-first (James) /title (After the Race)>>
+<</author-last (Joyce) /author-first (James) /title (Araby)>>
+<</author-last (Joyce) /author-first (James) /title (The Boarding House)>>
+<</author-last (Joyce) /author-first (James) /title (Two Gallants)>>
+<</author-last (Joyce) /author-first (James) /title (Ulysses)>>
+<</author-last (Jung) /author-first (Carl) /title (Collected Works, v.10)>>
+<</author-last (Jung) /author-first (Carl) /title (Psychology and Alchemy)>>
+<</author-last (Kamen) /author-first (Henry) /title (The Spanish Inquisition)>>
+<</author-last (Kershner and Wilcox) /author-first () /title (The Anatomy of Mathematics)>>
+<</author-last (King) /author-first (Ross) /title (The Bookseller of Florence)>>
+<</author-last (Kipling) /author-first (Rudyard) /title (Kim)>>
+<</author-last (Klemperer) /author-first (Victor) /title (To The Bitter End)>>
+<</author-last (Kuhn) /author-first (Thomas S.) /title (The Copernican Revolution)>>
+<</author-last (Kuhn) /author-first (Thomas S.) /title (The Structure of Scientific Revolutions)>>
+<</author-last (Kundera) /author-first (Milan) /title (L’identité)>>
+<</author-last (Lafferrière) /author-first (Dany) /title (Pays sans chapeau)>>
+<</author-last (Laing) /author-first (R. D.) /title (The Politics of Experience)>>
+<</author-last (Lea) /author-first (Henry Charles) /title (A History of the Inquisition of the Middle Ages)>>
+<</author-last (Leibniz) /author-first () /title ()>>
+<</author-last (Lewis) /author-first (Bernard) /title (The Crisis of Islam)>>
+<</author-last (Longinus) /author-first () /title (On the Sublime)>>
+<</author-last (Lovecraft) /author-first (H. P.) /title (The Picture in the House)>>
+<</author-last (Lovelock) /author-first (James) /title (Gaia - A New Look at Life on Earth)>>
+<</author-last (Lovelock) /author-first (James) /title (The Revenge of Gaia)>>
+<</author-last (MacPhail) /author-first (Andrew) /title (The Master’s Wife)>>
+<</author-last (Maistre) /author-first (Xavier de) /title (A Journey Around My Room)>>
+<</author-last (Maistre) /author-first (Xavier de) /title (Expédition nocturne autour de ma chambre)>>
+<</author-last (Malinowski) /author-first (B.) /title (Argonauts of the Western Pacific)>>
+<</author-last (Malinowski) /author-first (B.) /title (Magic, Science, and Religion)>>
+<</author-last (Manguel) /author-first (Alberto) /title (The Library at Night)>>
+<</author-last (Marlantes) /author-first (Karl) /title (What It Is Like To Go To War)>>
+<</author-last (Martel) /author-first (Yann) /title (Beatrice and Virgil)>>
+<</author-last (Martial) /author-first () /title (Epigrams)>>
+<</author-last (Matyszak) /author-first (Philip) /title (24 Hours in Ancient Athens)>>
+<</author-last (Maughan) /author-first (W. Somerset) /title (The Moon and Sixpence)>>
+<</author-last (Maughan) /author-first (W. Somerset) /title (The World Over)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Au printemps)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Découverte)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Fort comme la mort)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (La Sicile)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (La morte)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Les tombales)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (L’ermite)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (L’inutile beauté)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Ma femme)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Monsieur Parent)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Mont Oriol)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Notre Coeur)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Oeuvres posthumes)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Qui sait?)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Solitude)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Sur l’eau)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Une vie)>>
+<</author-last (Maupassant) /author-first (Guy de) /title (Â Vendre)>>
+<</author-last (Maurier) /author-first (George Du) /title (Trilby)>>
+<</author-last (Maurois) /author-first (André) /title (Climats)>>
+<</author-last (McEwan) /author-first (Ian) /title (The Child in Time)>>
+<</author-last (Meinke) /author-first (F.) /title (The German Catastrophe)>>
+<</author-last (Melville) /author-first (Herman) /title (Moby Dick)>>
+<</author-last (Mencken) /author-first (H. L.) /title (The American Scene)>>
+<</author-last (Miller) /author-first (Stephen) /title (Conversation - A History of a Declining Art)>>
+<</author-last (Mlodinow) /author-first (Leonard) /title (The Drunkard’s Walk)>>
+<</author-last (Monod) /author-first (Jacques) /title ()>>
+<</author-last (Montgomery) /author-first (L. M.) /title (The Blue Castle)>>
+<</author-last (Moore) /author-first (Charles) /title ()>>
+<</author-last (Moore) /author-first (Christopher) /title (Sacré Bleu)>>
+<</author-last (Morellet) /author-first (L’Abbé) /title (Mémoires)>>
+<</author-last (Morley) /author-first (Christopher) /title (Parnassus on Wheels)>>
+<</author-last (Morressy) /author-first (John) /title (A Tale of Three Wizards)>>
+<</author-last (Mother Theresa) /author-first () /title ()>>
+<</author-last (Murphy) /author-first (John) /title ()>>
+<</author-last (Murray) /author-first (Douglas) /title (The Madness of Crowds)>>
+<</author-last (Murray) /author-first (Douglas) /title (The Strange Death of Europe)>>
+<</author-last (Murray) /author-first (Douglas) /title (The War on the West)>>
+<</author-last (Muske) /author-first (Carol) /title ()>>
+<</author-last (Musset) /author-first (Alfred de) /title (André del Sarto)>>
+<</author-last (Musset) /author-first (Alfred de) /title (Fantasio)>>
+<</author-last (Musset) /author-first (Alfred de) /title (Les caprices de Marianne)>>
+<</author-last (Nabokov) /author-first (Vladimir) /title (Lolita)>>
+<</author-last (Nasone) /author-first (Publio Ovidio) /title ()>>
+<</author-last (Nichols) /author-first (Tom) /title (The Death of Expertise)>>
+<</author-last (Nietzsche) /author-first (Friedrich) /title (Beyond Good and Evil)>>
+<</author-last (Nietzsche) /author-first (Friedrich) /title (Thus Spoke Zarathustra)>>
+<</author-last (Nin) /author-first (Anaïs) /title (Diary, v.3)>>
+<</author-last (Nin) /author-first (Anaïs) /title (Diary, v.5)>>
+<</author-last (North) /author-first (John) /title (Cosmos)>>
+<</author-last (Oresme) /author-first () /title ()>>
+<</author-last (O’Brien) /author-first (Edna) /title (James Joyce)>>
+<</author-last (O’Brien) /author-first (Flann) /title (At Swim-Two-Birds)>>
+<</author-last (O’Neill) /author-first (Brendan) /title (After the Pogrom)>>
+<</author-last (Paglia) /author-first (Camille) /title ()>>
+<</author-last (Pais) /author-first (Abraham) /title (Niels Bohr)>>
+<</author-last (Palin) /author-first (Michael) /title (Himalaya)>>
+<</author-last (Papert) /author-first (Seymour) /title (Mindstorms)>>
+<</author-last (Perelman) /author-first (S. J.) /title (The Road to Miltdown)>>
+<</author-last (Petronius) /author-first () /title (Satyricon)>>
+<</author-last (Philoponas the Byzantine) /author-first () /title ()>>
+<</author-last (Pierce) /author-first (Charles) /title ()>>
+<</author-last (Pindaro) /author-first () /title ()>>
+<</author-last (Pirsig) /author-first (R. M.) /title (Zen and the Art of Motorcycle Maintenance)>>
+<</author-last (Plumptre) /author-first (Anne) /title ()>>
+<</author-last (Plutarco) /author-first () /title ()>>
+<</author-last (Poe) /author-first (Edgar Allan) /title ()>>
+<</author-last (Poliakov) /author-first (Léon) /title (Harvest of Hate)>>
+<</author-last (Poliakov) /author-first (Léon) /title (The History of Anti-Semitism)>>
+<</author-last (Poliakov) /author-first (Léon) /title (The History of Anti-Semitism \(IV\))>>
+<</author-last (Postman) /author-first (Neil) /title (Amusing Ourselves To Death)>>
+<</author-last (Postman) /author-first (Neil) /title (Technopoly)>>
+<</author-last (Proust) /author-first (Marcel) /title (Albertine disparue)>>
+<</author-last (Proust) /author-first (Marcel) /title (Du côté du chez Swann)>>
+<</author-last (Proust) /author-first (Marcel) /title (La prisonnière)>>
+<</author-last (Proust) /author-first (Marcel) /title (Le côté de Guermantes)>>
+<</author-last (Proust) /author-first (Marcel) /title (Le temps retrouvé)>>
+<</author-last (Proust) /author-first (Marcel) /title (Sodome et Gomorrhe)>>
+<</author-last (Proust) /author-first (Marcel) /title (Swann’s Way)>>
+<</author-last (Proust) /author-first (Marcel) /title (The Guermantes Way)>>
+<</author-last (Proust) /author-first (Marcel) /title (À l’ombre des jeunes filles en fleurs)>>
+<</author-last (Quincey) /author-first (Thomas de) /title (Confessions of an English Opium-Eater)>>
+<</author-last (Quintilian) /author-first () /title (Institutio Oratorio)>>
+<</author-last (Rees) /author-first (Laurence) /title (Hitler and Stalin)>>
+<</author-last (Reeves) /author-first (Hubert) /title (Patience dans l’azur)>>
+<</author-last (Renzetti) /author-first (Elizabeth) /title ()>>
+<</author-last (Richler) /author-first (Mordecai) /title (Barney’s Version)>>
+<</author-last (Rimbaud) /author-first (Arthur) /title (Une saison en enfer)>>
+<</author-last (Rochejaquelein) /author-first (Mme la Marquise de la) /title (Mémoires)>>
+<</author-last (Roland) /author-first (Mme) /title (Mémoires)>>
+<</author-last (Roth) /author-first (Philip) /title (Portnoy’s Complaint)>>
+<</author-last (Rothman) /author-first (Noah) /title (The Rise of the New Puritans)>>
+<</author-last (Rowan-Robinson) /author-first (M.) /title (Cosmology)>>
+<</author-last (Rowe) /author-first (N.) /title (Tamerlane)>>
+<</author-last (Rumi) /author-first () /title ()>>
+<</author-last (Sachar) /author-first (Howard) /title (A History of Israel)>>
+<</author-last (Sagan) /author-first (Carl) /title (Cosmos)>>
+<</author-last (Seneca) /author-first (Lucio Anneo) /title ()>>
+<</author-last (Sennett) /author-first (Richard) /title (The Fall of Public Man)>>
+<</author-last (Shakespeare) /author-first (William) /title (Hamlet)>>
+<</author-last (Shakespeare) /author-first (William) /title (Much Ado About Nothing)>>
+<</author-last (Shakespeare) /author-first (William) /title (Romeo and Juliet)>>
+<</author-last (Shapin) /author-first (Steven) /title (The Scientific Revolution)>>
+<</author-last (Shaw) /author-first (George Bernard) /title (Caesar and Cleopatra)>>
+<</author-last (Shaw) /author-first (George Bernard) /title (London Music)>>
+<</author-last (Shaw) /author-first (George Bernard) /title (Man and Superman)>>
+<</author-last (Shaw) /author-first (George Bernard) /title (Misalliance)>>
+<</author-last (Shaw) /author-first (George Bernard) /title (The Apple Cart)>>
+<</author-last (Shaw) /author-first (George Bernard) /title (The Doctor’s Dilemma)>>
+<</author-last (Shaw) /author-first (George Bernard) /title (The Man of Destiny)>>
+<</author-last (Shaw) /author-first (George Bernard) /title (The Theatre of the Future)>>
+<</author-last (Shaw) /author-first (George Bernard) /title (Three Plays by Brieux)>>
+<</author-last (Sheridan) /author-first (R. B.) /title ()>>
+<</author-last (Shirer) /author-first (W. L.) /title (The Rise and Fall of the Third Reich)>>
+<</author-last (Sigourney) /author-first (Lydia) /title (The Stars)>>
+<</author-last (Singer) /author-first (C.) /title (A History of Scientific Ideas)>>
+<</author-last (Smith) /author-first (Adam) /title ()>>
+<</author-last (Smolin) /author-first (Lee) /title (The Trouble With Physics)>>
+<</author-last (Smollett) /author-first (Tobias) /title (The Expedition of Humphry Clinker)>>
+<</author-last (Socrates) /author-first () /title ()>>
+<</author-last (Sophocles) /author-first () /title (King Oedipus)>>
+<</author-last (Sophocles) /author-first () /title (Oedipus at Colonus)>>
+<</author-last (Souvestre) /author-first (Emile) /title (An Attic Philosopher In Paris)>>
+<</author-last (Stael) /author-first (Madame de) /title ()>>
+<</author-last (Stanford) /author-first (W. B.) /title (The Sound of Greek)>>
+<</author-last (Steele and Addison) /author-first () /title (The Spectator)>>
+<</author-last (Stendhal) /author-first () /title (Le rouge et le noir)>>
+<</author-last (Sterne) /author-first (Laurence) /title (A Sentimental Journey)>>
+<</author-last (Suetonius) /author-first () /title (Lives of the Caesars)>>
+<</author-last (Taleb) /author-first (Nassim) /title ()>>
+<</author-last (Tate) /author-first (James) /title ()>>
+<</author-last (Theroux) /author-first (Paul) /title (The Tao of Travel)>>
+<</author-last (Thoreau) /author-first (H. D.) /title (Walden)>>
+<</author-last (Thorndike) /author-first (L.) /title (History of Magic and Experimental Science)>>
+<</author-last (Thorndike) /author-first (L.) /title (History of Magic and Experimental Science v.6)>>
+<</author-last (Thorndike) /author-first (L.) /title (History of Magic and Experimental Science v.7)>>
+<</author-last (Thorndike) /author-first (L.) /title (History of Magic and Experimental Science v.8)>>
+<</author-last (Tillich) /author-first (Paul) /title ()>>
+<</author-last (Tolstoy) /author-first (Leo) /title (Anna Karenina)>>
+<</author-last (Tolstoy) /author-first (Leo) /title (Hadji Murad)>>
+<</author-last (Tolstoy) /author-first (Leo) /title (La guerre et la paix)>>
+<</author-last (Tolstoy) /author-first (Leo) /title (The Kreutzer Sonata)>>
+<</author-last (Tolstoy) /author-first (Leo) /title (War and Peace)>>
+<</author-last (Toulmin and Goodfield) /author-first () /title (The Architecture of Matter)>>
+<</author-last (Toulmin and Goodfield) /author-first () /title (The Fabric of the Heavens)>>
+<</author-last (Trevor-Roper) /author-first (H. R.) /title (The European Witch-Craze)>>
+<</author-last (Trollope) /author-first (Anthony) /title (The Small House at Allington)>>
+<</author-last (Trungpa) /author-first (Chögyam) /title (Cutting Through Spiritual Materialism)>>
+<</author-last (Vidal) /author-first (Gore) /title (Myra Breckenridge)>>
+<</author-last (Vigny) /author-first (Alfred de) /title (Dernière nuit de travail)>>
+<</author-last (Vigny) /author-first (Alfred de) /title (Le journal d’un poète)>>
+<</author-last (Vigny) /author-first (Alfred de) /title (Servitudes et grandeurs militaires)>>
+<</author-last (Villiers de L’Isle-Adam) /author-first (A. de) /title (Deux augures)>>
+<</author-last (Villiers de L’Isle-Adam) /author-first (A. de) /title (La convive des dernières fêtes)>>
+<</author-last (Villiers de L’Isle-Adam) /author-first (A. de) /title (Le désir d’être un homme)>>
+<</author-last (Villiers de L’Isle-Adam) /author-first (A. de) /title (L’affichage céleste)>>
+<</author-last (Villiers de L’Isle-Adam) /author-first (A. de) /title (L’intersigne)>>
+<</author-last (Voltaire) /author-first () /title ()>>
+<</author-last (Walker) /author-first (C. B. F.) /title (Cuneiform)>>
+<</author-last (Wall) /author-first (Geoffrey) /title (Flaubert: A Life)>>
+<</author-last (Weber) /author-first () /title (Mémoires)>>
+<</author-last (Westfall) /author-first (Richard) /title (Never at Rest)>>
+<</author-last (Westrich) /author-first (Robert) /title (A Lethal Obsession)>>
+<</author-last (Whitehead) /author-first (Alfred North) /title (Introduction to Mathematics)>>
+<</author-last (Whitman) /author-first (Walt) /title (Song of Myself)>>
+<</author-last (Wilde) /author-first (Oscar) /title ()>>
+<</author-last (Williams) /author-first (Donna) /title (Nobody Nowhere)>>
+<</author-last (Wilson) /author-first (R. M.) /title (Ripley Bogle)>>
+<</author-last (Wise) /author-first (James Waterman) /title (Swastika: The Nazi Terror)>>
+<</author-last (Wodehouse) /author-first (P. G.) /title (Carry On, Jeeves)>>
+<</author-last (Wodehouse) /author-first (P. G.) /title (The Code of the Woosters)>>
+<</author-last (Wollstonecraft) /author-first (Mary) /title (A Vindication of the Rights of Woman)>>
+<</author-last (Yourcenar) /author-first (Marguerite) /title (How Wang Fo Was Saved)>>
+<</author-last (Zweig) /author-first (Stefan) /title (Moonbeam Alley)>>
+<</author-last (Zweig) /author-first (Stefan) /title (Transfiguration)>>
+<</author-last (ZzzUnknown) /author-first () /title (Bhagavad Gita)>>
+<</author-last (ZzzUnknown) /author-first () /title (Dhammapada)>>
+<</author-last (ZzzUnknown) /author-first () /title (Gilgamesh)>>
+<</author-last (ZzzUnknown) /author-first () /title (King James Bible)>>
+<</author-last (ZzzUnknown) /author-first () /title (Mahabharata)>>
+<</author-last (ZzzUnknown) /author-first () /title (Mémoires sur les prisons)>>
+<</author-last (ZzzUnknown) /author-first () /title (Upanishads)>>
