@@ -13,12 +13,11 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-/** FAIL: the first-last name info is missing; can't do a proper sort. */
 public final class MakeIndex {
   
   public static void main(String[] args) throws IOException {
-    String input = "C:\\temp\\quotes_flat_file_ps.txt";
-    String output = "C:\\temp\\quotes-index.txt";
+    String input = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-1252\\quotes_flat_file_ps.txt";
+    String output = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-1252\\index_file_ps.txt";
     MakeIndex makeIndex = new MakeIndex();
     List<String> lines = makeIndex.sortedQuotes(input);
     makeIndex.makeIndex(lines, output);

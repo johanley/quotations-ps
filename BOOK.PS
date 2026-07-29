@@ -12,6 +12,7 @@
 (fonts.ps) using
 (strings.ps) using
 (text-align.ps) using
+(jagged-right.ps) using
 
 % int 
 % arg is the number of times /showpage has been called: 0, 1,...
@@ -22,7 +23,7 @@
   /page-num idx 3 sub def
   [(Starting new page: ) page-num]  any-concat here
   % WARNING: there are two hard-coded transition points for the page numbers
-  page-num 1 ge  page-num 180 le and {
+  page-num 1 ge  page-num 178 le and {
     % show page numbers and title
     % set the work-box; asymmetry in x, to avoid the spine 
     bleed  MARGIN-X  add  SPINE-AVOIDANCE page-num 2 mod 0 eq {neg} if add 
@@ -45,7 +46,7 @@
       page-num-str show-right-align
     } ifelse
     wd 50 pct  ht GAP add  moveto 
-    page-num 170 le {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
+    page-num 167 le {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
     (regular) 100 use-font
   } {
     % no page numbers, and the centering is a bit different
@@ -135,14 +136,15 @@ end
     type /nametype eq {
       cvx exec % control code
     } {
-      str-words {
-        /word defi
-        word str-width /word-wd defi
-        /new-x cp-x word-wd add def
-        /line-overflow new-x wd sub def
-        line-overflow  2 em  gt { NEW-LINE } if
-        word SPACE str-concat show
-      } forall
+      wd 2 em jagged-right-2 pop % discard stats
+      % str-words {
+        % /word defi
+        % word str-width /word-wd defi
+        % /new-x cp-x word-wd add def
+        % /line-overflow new-x wd sub def
+        % line-overflow  2 em  gt { NEW-LINE } if
+        % word SPACE str-concat show
+      % } forall
     } ifelse
   } forall 
   NEW-LINE
