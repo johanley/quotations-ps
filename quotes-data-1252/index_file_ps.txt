@@ -130,6 +130,7 @@
 <</author-last (Girard) /author-first (Réné) /title (The Scapegoat)>>
 <</author-last (Godfrey-Smith) /author-first (Peter) /title (Theory and Reality)>>
 <</author-last (Goebbels) /author-first (Joseph) /title ()>>
+<</author-last (Goebbels) /author-first (Joseph) /title (Diary)>>
 <</author-last (Goethe) /author-first () /title (Faust)>>
 <</author-last (Gogh) /author-first (Vincent van) /title ()>>
 <</author-last (Goncharov) /author-first (I. A.) /title (Oblomov)>>
@@ -267,6 +268,12 @@
 <</author-last (Nin) /author-first (Anaïs) /title (Diary, v.5)>>
 <</author-last (North) /author-first (John) /title (Cosmos)>>
 <</author-last (Oresme) /author-first () /title ()>>
+<</author-last (Orwell) /author-first (George) /title (Boys’ Weeklies)>>
+<</author-last (Orwell) /author-first (George) /title (Drama Reviews)>>
+<</author-last (Orwell) /author-first (George) /title (Inside The Whale)>>
+<</author-last (Orwell) /author-first (George) /title (No, Not One)>>
+<</author-last (Orwell) /author-first (George) /title (Politics and the English Language)>>
+<</author-last (Orwell) /author-first (George) /title (The Prevention of Literature)>>
 <</author-last (O’Brien) /author-first (Edna) /title (James Joyce)>>
 <</author-last (O’Brien) /author-first (Flann) /title (At Swim-Two-Birds)>>
 <</author-last (O’Neill) /author-first (Brendan) /title (After the Pogrom)>>

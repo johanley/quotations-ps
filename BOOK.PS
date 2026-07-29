@@ -23,7 +23,7 @@
   /page-num idx 3 sub def
   [(Starting new page: ) page-num]  any-concat here
   % WARNING: there are two hard-coded transition points for the page numbers
-  page-num 1 ge  page-num 178 le and {
+  page-num 1 ge  page-num 179 le and {
     % show page numbers and title
     % set the work-box; asymmetry in x, to avoid the spine 
     bleed  MARGIN-X  add  SPINE-AVOIDANCE page-num 2 mod 0 eq {neg} if add 
@@ -46,7 +46,7 @@
       page-num-str show-right-align
     } ifelse
     wd 50 pct  ht GAP add  moveto 
-    page-num 167 le {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
+    page-num 168 le {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
     (regular) 100 use-font
   } {
     % no page numbers, and the centering is a bit different
@@ -487,5 +487,8 @@ showpage
 % SOME PRINTING SERVICES REQUIRE THE NUMBER OF PAGES TO BE AN EVEN MULTIPLE OF 2 or 4.
 % (I could add code to do this automatically.)
 % Lulu.com requires: pages div by 4; end with 2 blank pages.
+showpage
+showpage
+showpage
 showpage
 showpage
