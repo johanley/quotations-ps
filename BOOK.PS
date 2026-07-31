@@ -14,13 +14,15 @@
 (text-align.ps) using
 (jagged-right.ps) using
 
+
+/page-num 0 def % overwritten with each page
+
 % int 
-% arg is the number of times /showpage has been called: 0, 1,...
-% See /BeginPage of setpagedevice below.
+% arg is the number of times /showpage has been called: 1, 2, ...
+% See below : /BeginPage of setpagedevice.
 /start-new-page {
-4 dict begin
-  /idx defi
-  /page-num idx 3 sub def
+3 sub /page-num defi
+2 dict begin
   [(Starting new page: ) page-num]  any-concat here
   % WARNING: there are two hard-coded transition points for the page numbers
   page-num 1 ge  page-num 179 le and {
@@ -80,7 +82,7 @@ end
   quotation-fits-on-page? not {
     NEW-PAGE
   } if
-  show-quotation
+  true show-quotation
   NEW-LINE % between rendered quotes
   NEW-LINE 
 } bind def
@@ -89,39 +91,42 @@ end
 % dict
 % The dict has author, title, and body (an array).
 /quotation-fits-on-page? {
+  % save-program-state here IF NEEDED
+  %/orig-page-num page-num def % not needed; apparently the nulldevice won't start a new page
   2 dict begin
     % the trick here is to use the NULL DEVICE, with a gsave-grestore.
     % no marks are made on the page using this technique
     gsave 
-      % save-program-state (in case show-quotation ever changes program-state data)
       nulldevice % this uses the default CTM
       cp-y /y0 defi
-      show-quotation
+      false show-quotation
       cp-y /y1 defi
       y1 y0 sub % dy (corresponding to the author/title line); negative!
-      % restore-program-state
     grestore
     cp-y % dy y 
     add 0 ge 
   end  
+  % restore-program-state here IF NEEDED
+  %/page-num orig-page-num def
 } bind def
 
 
-% dict
+% dict bool
 % The dict has author-last, author-first, title, and body.
+% The bool controls if the index is to be updated or not.
 % The body is an array for prose, and a string (with \n's) for poetry.
 % (Defect: a poem is always rendered using a single font.)
 /show-quotation {
-  dup add-to-index pop
-  3 dict begin
-    {def} forall
+  [/quote /update-index?] {
+    quote {def} forall
     body type /arraytype eq {
       show-body-prose
     } {
       show-body-poetry
     } ifelse
     show-author-title
-  end
+    update-index? {quote add-to-index pop} if
+  } def-tmp
 } bind def
 
 
@@ -277,7 +282,12 @@ end
 } bind def
 
 
-% [dicts]
+
+% The data structure that holds index information : [dict]
+/INDEX 700 array def % initially all nulls; buffer for index entries (dicts); has nulls at the end
+/INDEX-TITLE (INDEX) def
+
+% [dict]
 /show-index-lines {
   { 
     dup null eq {
@@ -287,46 +297,43 @@ end
   } forall
 } bind def
 
-
 % dict
-% The dict contains /author-last, /author-first, and (usually) /title.
+% The dict contains /author-last, /author-first, /title, and /page.
 % Example output:
-%   DYLAN, BOB.......Shelter From The Storm
-% The author is left-justified, the title is right-justified.
-% The title can be absent, but that only happens when the 
-% author has no other entries in the index.
+%   DYLAN, BOB Shelter From The Storm.......56 
 /show-index-line {
-  2 dict begin
-    { def } forall
+  7 dict begin
+    { def } forall % put the dict entries into currentdict
     /size 90 def
     /authors-name author-name-for-index def
     (regular) size use-font
     small-caps-font
-    authors-name str-upper-case show
-    title () ne {
-      1 ex 0 rmoveto 
+    authors-name is-present? {authors-name SPACE str-concat str-upper-case show} if
+    title is-present? {
       (italic) size use-font
-      /DOT (.) def
-      {
-        % emit dots, but stop when you near the title's x-position 
-        cp-x   wd title str-width sub 1 ex sub   ge { exit } if
-        2 ex 0 DOT ashow % stretch out the spacing with /ashow
-      } loop
-      wd  cp-y  moveto % the right side
-      title show-right-align
-    } if
+      title SPACE str-concat show
+    } if 
+    (regular) size use-font
+    1 ex 0 rmoveto % bit to the right
+    /DOT (.) def
+    {
+      % emit dots, but stop when you near the page-num's x-position 
+      cp-x   wd page str-width sub 1 ex sub   ge { exit } if
+      2 ex 0 DOT ashow % stretch out the spacing with /ashow
+    } loop
+    wd  cp-y  moveto % the right side
+    page show-right-align
     NEW-LINE
     cp-y 0 le { NEW-PAGE } if
   end
 } bind def
 
-
-% from author-last and author-first.
+% from /author-last and /author-first.
 /author-name-for-index {
   author-last (ZzzUnknown) eq {
     % special handling for anonymous authors (hacky!); this exists only because I want 
     % them at the END of the index
-    (Various) 
+    () 
   } {
     author-first is-present? {
       [author-last COMMA-SPACE author-first] any-concat
@@ -335,7 +342,6 @@ end
     } ifelse
   } ifelse 
 } bind def
-
 
 % quote (a dictionary) -> bool
 % Return true iff a new entry gets added to the INDEX array as a side effect.
@@ -349,7 +355,7 @@ end
       /add-next? next-avail 0 eq def
       add-next? not {
         /add-next?
-          INDEX  next-avail 1 sub  get  
+          INDEX  next-avail 1 sub  get  % compare the last index entry to the quote
           quote  
           compare-using  same-vals? not
         def
@@ -357,13 +363,13 @@ end
       add-next? {
         quote << >> copy /next-entry defi
         next-entry /body undef % not wanted for the index
+        next-entry /page page-num 4 string cvs put 
         INDEX next-avail next-entry put
       } if
       pop add-next? % left on stack
     } if
   } def-tmp
 } bind def
-
 
 % [] -> int bool
 % Return the index of the first null item in the array.
@@ -387,10 +393,9 @@ end
   } def-tmp
 } bind def
 
-
 % dict-a dict-b [keys] -> bool
 % Return true iff the values corresponding to the given keys are the same for dict-a and dict-b.
-% (This assumes the values are simple and non-composite objects.)
+% (This assumes the values are simple, non-composite objects.)
 /same-vals? {
   [/dict-a /dict-b /keys] {
     true % default result
@@ -403,6 +408,7 @@ end
     } forall
   } def-tmp
 } bind def
+
 
 
 % [[xy]]
@@ -487,10 +493,7 @@ end
   /DASH (~ ) def
   /COMMA-SPACE (, ) def
   /QUOTES-FILE (quotes-data-1252/quotes_flat_file_ps.txt) def
-  /INDEX-FILE (quotes-data-1252/index_file_ps.txt) def
   /MAX-QUOTE-LENGTH 5000 def 
-  /INDEX-TITLE (Authors and Titles) def
-  /INDEX 500 array def % all nulls; buffer for index entries (dicts)
 %%EndSetup 
 
   % small title 
