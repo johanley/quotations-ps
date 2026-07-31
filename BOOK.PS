@@ -18,7 +18,8 @@
 /page-num 0 def % overwritten with each page
 
 % int 
-% arg is the number of times /showpage has been called: 1, 2, ...
+% The implementation of BeginPage
+% arg is 0 the first time called; then its the number of times /showpage has been called: 1, 2, ...
 % See below : /BeginPage of setpagedevice.
 /start-new-page {
 3 sub /page-num defi
@@ -448,6 +449,11 @@ end
 /inch {72 mul} bind def
 /8th-inch {72 mul 8 div} bind def
 
+% after a showpage is called
+/num-physical-pages {
+  page-num 3 add
+} bind def
+
 %%BeginSetup    
    % 'US Trade' is 6" x 9". This is called the 'trim' size.
    %   'trim': the dimensions after trimming off the 'bleed'.
@@ -559,14 +565,17 @@ showpage
 
   INDEX show-index-lines
   
-showpage
+showpage % the last page of the index
 
-% WARNING: YOU MAY HAVE ADD EMPTY PAGES HERE MANUALLY. 
-% SOME PRINTING SERVICES REQUIRE THE NUMBER OF PAGES TO BE AN EVEN MULTIPLE OF 2 or 4.
-% (I could add code to do this automatically.)
-% Lulu.com requires: pages div by 4; end with 2 blank pages.
+% lulu.com requirement: must end with 2 blank pages
 showpage
 showpage
-showpage
-showpage
-showpage 
+% Lulu.com requirement: num-physical-pages to be divisible by 4
+{
+  num-physical-pages 4 mod 0 eq {exit} if
+  (Adding blank page) ==
+  showpage
+} loop
+
+(Num physical pages: ) ==
+num-physical-pages ==

@@ -32,9 +32,9 @@ Cons:
  
 Pros: 
 - it can be consumed by PostScript as is, with no parsing.
-- if I need to implement to kinds of formatting, it can be done directly with normal PostScript.
+- if I need to implement new kinds of formatting, it can be done directly with normal PostScript.
 - it allows for automated generation of an index.
-- the order of items here is the order of items in the output.
+- the order of items here in the input is the order of items in the output.
    
 
 # Generate The Output File
