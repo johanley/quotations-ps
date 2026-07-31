@@ -5,7 +5,7 @@ I have several thousand quotations collected in binders.
 The quotes saved in this repository are some of my favourites.
 
 
-# Input file: 
+# Input File
 The core data file is typed in manually: 
 
 `quotes-data-1252\quotes_flat_file_ps.txt`
@@ -27,7 +27,7 @@ Pros:
 - the order of items here is the order of items in the output.
    
 
-# Steps to create the output: BOOK.PDF
+# Output File: BOOK.PDF
 - update the `quotes_flat_file_ps.txt ` file. 
 - ensure the file is saved using the `windows-1252` encoding.
 - Ghostscript: run a Ghostscript command to generate a pdf. See BUILD.BAT for an example.
