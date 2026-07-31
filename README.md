@@ -5,20 +5,24 @@ I have several thousand quotations collected in binders.
 The quotes saved in this repository are some of my favourites.
 
 
-# Data file: quotes-data-1252\quotes_flat_file_ps.txt 
-This is the the core data file (type in manually).
+# Input file: 
+The core data file is typed in manually: 
+
+`quotes-data-1252\quotes_flat_file_ps.txt`
+
 Each line is a PostScript dictionary, containing the data related to a single quote.
 
 This file use the `windows-1252` encoding.
-This is a single-byte encoding (which are friendly to PostScript).
+This is a single-byte encoding. 
+Single-byte encodings are friendly to PostScript.
 
 Cons: 
-- it repeats the author's name and the title of the work for each quotation. 
-- you have to play by the rules of PostScript syntax.
+- repetition:  for each quotation, it repeats the author's name and the title of the work.
+- you have to follow the rules of PostScript syntax.
  
 Pros: 
 - it can be consumed by PostScript as is, with no parsing.
-- if I decided to extend to different kinds of formatting, that can be done directly with normal PostScript.
+- if I need to implement to kinds of formatting, it can be done directly with normal PostScript.
 - it allows for automated generation of an index.
 - the order of items here is the order of items in the output.
    
