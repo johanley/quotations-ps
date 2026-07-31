@@ -12,7 +12,7 @@ The core data file is typed in manually:
 
 Each line is a PostScript dictionary, containing the data related to a single quote.
 
-This file use the `windows-1252` encoding.
+This file uses the `windows-1252` encoding.
 This is a single-byte encoding. 
 Single-byte encodings are friendly to PostScript.
 
@@ -29,6 +29,7 @@ Pros:
 
 # Generate The Output File
 - update the `quotes_flat_file_ps.txt ` file. 
+- use the curly quotes available with the `windows-1252` encoding.
 - ensure the file is saved using the `windows-1252` encoding.
 - Ghostscript: run a Ghostscript command to generate a pdf. See BUILD.BAT for an example.
 
