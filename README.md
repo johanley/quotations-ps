@@ -11,7 +11,8 @@ The output PDF:
 - the text is laid out asymmetrically on even-odd pages, in order to place text away from the spine of the bound book.
 - my preferred font nowadays is Adobe Caslon Pro.
 - the line-breaking is jagged-right; I dislike the algorithms which change the width of space characters.
-- there's a drawing of Orion on the title page; this is implemented in PostScript code; it's not an image.
+- a drawing of the constellation Orion is on the title page; this is implemented in PostScript code; it's not an image.
+- an index is included at the end of the book.
 
 
 # Input File
