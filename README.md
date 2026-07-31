@@ -5,6 +5,7 @@ I have several thousand quotations collected in binders.
 The quotes saved in this repository are some of my favourites.
 
 I print the resulting PDF in hard-cover book form, using [lulu.com](https://www.lulu.com/).
+I get pleasing results using a 6-inch by 9-inch hard cover format, with linen wrap.
 
 The output PDF: 
 - the text is laid out asymmetrically on even-odd pages, in order to place text away from the spine of the bound book.
