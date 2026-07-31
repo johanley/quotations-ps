@@ -27,12 +27,14 @@ Pros:
 - the order of items here is the order of items in the output.
    
 
-# Output File: BOOK.PDF
+# Generate The Output File
 - update the `quotes_flat_file_ps.txt ` file. 
 - ensure the file is saved using the `windows-1252` encoding.
 - Ghostscript: run a Ghostscript command to generate a pdf. See BUILD.BAT for an example.
 
 `C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o BOOK.PDF BOOK.PS`
+
+The output file is `BOOK.PDF`.
 
 The cover is a separate PDF, generated like so:
 
