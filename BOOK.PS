@@ -112,6 +112,7 @@ end
 % The body is an array for prose, and a string (with \n's) for poetry.
 % (Defect: a poem is always rendered using a single font.)
 /show-quotation {
+  dup add-to-index pop
   3 dict begin
     {def} forall
     body type /arraytype eq {
@@ -276,23 +277,19 @@ end
 } bind def
 
 
-% from author-last and author-first.
-/author-name-for-index {
-  author-last (ZzzUnknown) eq {
-    % special handling for anonymous authors (hacky!); this exists only because I want 
-    % them at the END of the index
-    (Various) 
-  } {
-    author-first is-present? {
-      [author-last COMMA-SPACE author-first] any-concat
-    } {
-      author-last
-    } ifelse
-  } ifelse 
+% [dicts]
+/show-index-lines {
+  { 
+    dup null eq {
+      exit
+    } if
+    show-index-line
+  } forall
 } bind def
 
+
 % dict
-% The dict contains /author and (usually) /title.
+% The dict contains /author-last, /author-first, and (usually) /title.
 % Example output:
 %   DYLAN, BOB.......Shelter From The Storm
 % The author is left-justified, the title is right-justified.
@@ -324,9 +321,87 @@ end
 } bind def
 
 
-% str (filename)
-/process-index-file-one-line-at-a-time {
-  MAX-QUOTE-LENGTH {show-index-line} process-file-one-line-at-a-time
+% from author-last and author-first.
+/author-name-for-index {
+  author-last (ZzzUnknown) eq {
+    % special handling for anonymous authors (hacky!); this exists only because I want 
+    % them at the END of the index
+    (Various) 
+  } {
+    author-first is-present? {
+      [author-last COMMA-SPACE author-first] any-concat
+    } {
+      author-last
+    } ifelse
+  } ifelse 
+} bind def
+
+
+% quote (a dictionary) -> bool
+% Return true iff a new entry gets added to the INDEX array as a side effect.
+% Replaces the first 'null' item in INDEX with a dict for the index entry (derived from the quote-dict).
+/add-to-index {
+  [/quote] {
+    false % default on stack
+    INDEX next-avail-idx {
+      /next-avail defi
+      /compare-using [/author-last /author-first /title] def
+      /add-next? next-avail 0 eq def
+      add-next? not {
+        /add-next?
+          INDEX  next-avail 1 sub  get  
+          quote  
+          compare-using  same-vals? not
+        def
+      } if
+      add-next? {
+        quote << >> copy /next-entry defi
+        next-entry /body undef % not wanted for the index
+        INDEX next-avail next-entry put
+      } if
+      pop add-next? % left on stack
+    } if
+  } def-tmp
+} bind def
+
+
+% [] -> int bool
+% Return the index of the first null item in the array.
+% The boolean is true iff an answer has been found between 0 and (length-1) for the array.
+% The int is provided iff the bool is true.
+% The backing idea: sometimes an array can be used as a buffer, starting off as all-nulls, 
+% and then filled up with stuff. This proc tells you where to insert the next thing.
+/next-avail-idx {
+  [/a] {
+    false % default result: no null item is found in the array (or the array is empty)
+    a length 0 gt {
+      0  1  a length 1 sub {
+        /idx defi
+        a idx get null eq {
+          idx exch % idx false
+          not      % idx true
+          exit
+        } if
+      } for
+    } if
+  } def-tmp
+} bind def
+
+
+% dict-a dict-b [keys] -> bool
+% Return true iff the values corresponding to the given keys are the same for dict-a and dict-b.
+% (This assumes the values are simple and non-composite objects.)
+/same-vals? {
+  [/dict-a /dict-b /keys] {
+    true % default result
+    keys {
+      /key defi
+      dict-a key get   dict-b key get   ne {
+        not % true -> false
+        exit % no need to look further
+      } if
+    } forall
+  } def-tmp
 } bind def
 
 
@@ -415,6 +490,7 @@ end
   /INDEX-FILE (quotes-data-1252/index_file_ps.txt) def
   /MAX-QUOTE-LENGTH 5000 def 
   /INDEX-TITLE (Authors and Titles) def
+  /INDEX 500 array def % all nulls; buffer for index entries (dicts)
 %%EndSetup 
 
   % small title 
@@ -478,8 +554,7 @@ showpage
 
 showpage
 
-  INDEX-FILE
-  process-index-file-one-line-at-a-time 
+  INDEX show-index-lines
   
 showpage
 
@@ -491,4 +566,4 @@ showpage
 showpage
 showpage
 showpage
-showpage
+showpage 
