@@ -4,6 +4,8 @@ While reading a good book, I usually write down favourite passages.
 I have several thousand quotations collected in binders.
 The quotes saved in this repository are some of my favourites.
 
+I print the resulting PDF in hard-cover book form, using lulu.com.
+
 
 # Input File
 The core data file is typed in manually: 
