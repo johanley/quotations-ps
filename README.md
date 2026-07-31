@@ -6,6 +6,12 @@ The quotes saved in this repository are some of my favourites.
 
 I print the resulting PDF in hard-cover book form, using lulu.com.
 
+The output PDF: 
+- the text is laid out asymmetrically on even-odd pages, in order to place text away from the spine of the bound book.
+- my preferred font nowadays is Adobe Caslon Pro.
+- the line-breaking is jagged-right; I dislike the algorithms which change the width of space characters.
+- there's a drawing of Orion on the title page; this is implemented in PostScript code; it's not an image.
+
 
 # Input File
 The core data file is typed in manually: 
@@ -38,6 +44,8 @@ Pros:
 `C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o BOOK.PDF BOOK.PS`
 
 The output file is `BOOK.PDF`.
+
+Review the result, and apply tweaks to BOOK.PS if needed. 
 
 The cover is a separate PDF, generated like so:
 
