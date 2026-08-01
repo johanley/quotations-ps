@@ -1,10 +1,8 @@
 %!PS
 
-% The body of the book.
-% The cover is a separate PostScript file.
-%
-% Generate a PDF using Ghostscript:
-%   C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o BOOK.PDF BOOK.PS
+% The body of the book. The cover is a separate PostScript file.
+% Example Ghostscript command (see BUILD.BAT):
+%  C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o BOOK.PDF BOOK.PS
 
 (using.ps) run
 (base.ps) using
@@ -14,18 +12,22 @@
 (text-align.ps) using
 (jagged-right.ps) using
 
-
 /page-num 0 def % overwritten with each page
+
+% . -> int
+/num-physical-pages {
+  page-num 3 add
+} bind def
 
 % int 
 % The implementation of BeginPage
 % arg is 0 the first time called; then its the number of times /showpage has been called: 1, 2, ...
 % See below : /BeginPage of setpagedevice.
+% *** WARNING *** : there are two hard-coded transition points for the page numbers
 /start-new-page {
 3 sub /page-num defi
 2 dict begin
   [(Starting new page: ) page-num]  any-concat here
-  % WARNING: there are two hard-coded transition points for the page numbers
   page-num 1 ge  page-num 179 le and {
     % show page numbers and title
     % set the work-box; asymmetry in x, to avoid the spine 
@@ -63,7 +65,6 @@
 end  
 } bind def
 
-
 % cx cy str 
 % Show text centered horizontally at the currentpoint, using /ashow.
 /ashow-ctr-x {
@@ -72,7 +73,6 @@ end
   0 rmoveto % text
   ashow
 } bind def
-
 
 % dict
 % The dict has author, title, and body (an array).
@@ -87,7 +87,6 @@ end
   NEW-LINE % between rendered quotes
   NEW-LINE 
 } bind def
-
 
 % dict
 % The dict has author, title, and body (an array).
@@ -111,7 +110,6 @@ end
   %/page-num orig-page-num def
 } bind def
 
-
 % dict bool
 % The dict has author-last, author-first, title, and body.
 % The bool controls if the index is to be updated or not.
@@ -129,7 +127,6 @@ end
     update-index? {quote add-to-index pop} if
   } def-tmp
 } bind def
-
 
 % []
 % Cycle through an array containing strings and control-code names.
@@ -157,7 +154,6 @@ end
   NEW-LINE
 } bind def
 
-
 % Show lines of text having hard-coded line breaks, as in poetry.
 % The /body is a single string, with \n-style newlines (such that the whole poem is 1 line of source data).
 % No control codes are used in this style, and only the regular font is used.
@@ -171,13 +167,11 @@ end
   } forall % lines
 } bind def
 
-
 % str
 % Return true iff the trimmed string has a length > 0
 /is-present? {
   str-trim length 0 gt
 } bind def
-
 
 % from author-last and author-first.
 /author-name {
@@ -233,31 +227,25 @@ end
   % we need to interrogate the y-position at this point, for page breaks
 } bind def
 
-
 % Use the regular font.
 /R { (regular) 100 use-font } bind def
 
-
 % Use the italic font.
 /I { (italic) 100 use-font } bind def
-
 
 /NEW-LINE {
   0  cp-y leading sub   moveto
 } bind def
 
-
 /NEW-PAGE {
   showpage  % start-new-page will also be invoked (see above)
 } bind def
-
 
 % str 
 % pass the filename
 /process-quotes-file-one-line-at-a-time {
   MAX-QUOTE-LENGTH {show-quotation-on-1-page} process-file-one-line-at-a-time
 } bind def
-
 
 % str buffer-size {proc}
 % Pass the file name, buffer size, and how to process the PostScript snippet on each line.
@@ -281,8 +269,6 @@ end
     } ifelse
   } def-tmp
 } bind def
-
-
 
 % The data structure that holds index information : [dict]
 /INDEX 700 array def % initially all nulls; buffer for index entries (dicts); has nulls at the end
@@ -410,8 +396,6 @@ end
   } def-tmp
 } bind def
 
-
-
 % [[xy]]
 % The caller will need to set the origin and scale to suitable values, using trial and error.
 /draw-star-line {
@@ -426,7 +410,6 @@ end
     stroke
   end  
 } bind def
-
 
 % x y stellar-mag
 % two circles at the given location
@@ -445,14 +428,8 @@ end
   } def-tmp
 } bind def
 
-
 /inch {72 mul} bind def
 /8th-inch {72 mul 8 div} bind def
-
-% after a showpage is called
-/num-physical-pages {
-  page-num 3 add
-} bind def
 
 %%BeginSetup    
    % 'US Trade' is 6" x 9". This is called the 'trim' size.
@@ -479,19 +456,14 @@ end
   true setstrokeadjust  % minimizes off-by-one-pixel line issues
 
   %C:\Users\Owner\AppData\Local\Microsoft\Windows\Fonts
-  
   /MyRegular /ACaslonPro-Regular windowize
   /MyItalic /ACaslonPro-Italic windowize
-  
-  << 
-    (regular) /MyRegular
-    (italic) /MyItalic
-  >>
+  <<  (regular) /MyRegular (italic) /MyItalic >>
   11 % default font size 
   init-my-fonts
   % My initial model was the book "Jerusalem" by Simon Montefiore (Knopf, 2011)
-  /leading 1.2 11 mul def % this is a common leading, 120% of the type size
   
+  /leading 1.2 11 mul def % this is a common leading, 120% of the type size (InDesign's default)
   /TITLE (Quotations) def
   /AUTHOR (Collected by John O’Hanley) def
   /DATE (1988 - 2025) def
@@ -502,6 +474,7 @@ end
   /MAX-QUOTE-LENGTH 5000 def 
 %%EndSetup 
 
+/show-front-matter {
   % small title 
   (regular) 100 use-font  
   trim-width 48 pct 
@@ -519,11 +492,9 @@ end
   trim-height 10 pct moveto 
   (github.com/johanley/quotations-ps) show-ctr-x
 
-showpage
-
+  showpage
   % blank page 
-  
-showpage
+  showpage
 
   % large title and drawing
   (regular) 230 use-font  
@@ -552,30 +523,37 @@ showpage
   trim-width 50 pct trim-height 10 pct moveto 
   DATE show-ctr-x
 
-showpage
-
-  % blank page
-
-showpage
-
-  QUOTES-FILE
-  process-quotes-file-one-line-at-a-time 
-
-showpage
-
-  INDEX show-index-lines
-  
-showpage % the last page of the index
-
-% lulu.com requirement: must end with 2 blank pages
-showpage
-showpage
-% Lulu.com requirement: num-physical-pages to be divisible by 4
-{
-  num-physical-pages 4 mod 0 eq {exit} if
-  (Adding blank page) ==
   showpage
-} loop
+  % blank page
+  showpage
+} bind def
 
-(Num physical pages: ) ==
-num-physical-pages ==
+/show-main-body { 
+  QUOTES-FILE process-quotes-file-one-line-at-a-time 
+  showpage
+} bind def
+
+/show-index {
+  INDEX show-index-lines
+  showpage % the last page of the index
+} bind def
+
+/show-trailing-blank-pages {
+  % lulu.com requirement: must end with 2 blank pages
+  showpage
+  showpage
+  % Lulu.com requirement: num-physical-pages to be divisible by 4
+  {
+    num-physical-pages 4 mod 0 eq {exit} if
+    (Adding blank page) ==
+    showpage
+  } loop
+  (Num physical pages: ) ==
+  num-physical-pages ==
+} bind def
+
+% TOP LEVEL: RENDER THE SECTIONS IN SEQUENCE:
+show-front-matter 
+show-main-body
+show-index
+show-trailing-blank-pages
