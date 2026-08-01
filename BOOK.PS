@@ -18,14 +18,18 @@
 % increment the section number
 /end-of-section { /SECTION SECTION 1 add def } bind def
 
-% {} exec the proc, then increment the section number
-/do-section { exec end-of-section } bind def
+% {} 
+% exec the proc to render the section, then increment the section number
+/do-section { 
+  % showpage ?? not for the first section; maybe use a bool flag to control this
+  exec end-of-section 
+} bind def
 
 /page-num 0 def 
 
 % . -> int
 /num-physical-pages {
-  page-num 3 add % (because the front matter has no page num)
+  page-num 3 add % since the front matter has no page num
 } bind def
 
 % int 
@@ -149,14 +153,6 @@
       cvx exec % control code
     } {
       wd 2 em jagged-right-2 pop % discard stats
-      % str-words {
-        % /word defi
-        % word str-width /word-wd defi
-        % /new-x cp-x word-wd add def
-        % /line-overflow new-x wd sub def
-        % line-overflow  2 em  gt { NEW-LINE } if
-        % word SPACE str-concat show
-      % } forall
     } ifelse
   } forall 
   NEW-LINE
