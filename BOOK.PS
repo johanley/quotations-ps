@@ -12,57 +12,65 @@
 (text-align.ps) using
 (jagged-right.ps) using
 
-/page-num 0 def % overwritten with each page
+% sequential id for the top-level parts of the book (front, quotes, index, ...) ; (this might evolve into a dict)
+/SECTION 0 def 
+
+% increment the section number
+/end-of-section { /SECTION SECTION 1 add def } bind def
+
+% {} exec the proc, then increment the section number
+/do-section { exec end-of-section } bind def
+
+/page-num 0 def 
 
 % . -> int
 /num-physical-pages {
-  page-num 3 add
+  page-num 3 add % (because the front matter has no page num)
 } bind def
 
 % int 
 % The implementation of BeginPage
 % arg is 0 the first time called; then its the number of times /showpage has been called: 1, 2, ...
 % See below : /BeginPage of setpagedevice.
-% *** WARNING *** : there are two hard-coded transition points for the page numbers
 /start-new-page {
-3 sub /page-num defi
-2 dict begin
-  [(Starting new page: ) page-num]  any-concat here
-  page-num 1 ge  page-num 179 le and {
-    % show page numbers and title
-    % set the work-box; asymmetry in x, to avoid the spine 
-    bleed  MARGIN-X  add  SPINE-AVOIDANCE page-num 2 mod 0 eq {neg} if add 
-    bleed  MARGIN-Y  add
-    translate % to the bottom left of the work-box
-    
-    (regular) 90 use-font
-    /GAP ht 5 pct def
-    small-caps-font
-    /page-num-str page-num 4 string cvs def
-    page-num 2 mod 0 eq {
-      % left-hand page
-      0 ht moveto 
-      0 GAP rmoveto 
-      page-num-str show
+  3 sub /page-num defi
+  2 dict begin
+    [(Starting new page: ) page-num]  any-concat here
+    SECTION 1 ge  SECTION 2 le and {
+      % show page numbers and title
+      % set the work-box; asymmetry in x, to avoid the spine 
+      bleed  MARGIN-X  add  SPINE-AVOIDANCE page-num 2 mod 0 eq {neg} if add 
+      bleed  MARGIN-Y  add
+      translate % to the bottom left of the work-box
+      
+      (regular) 90 use-font
+      /GAP ht 5 pct def
+      small-caps-font
+      /page-num-str page-num 4 string cvs def
+      page-num 2 mod 0 eq {
+        % left-hand page
+        0 ht moveto 
+        0 GAP rmoveto 
+        page-num-str show
+      } {
+        % right-hand page
+        wd ht moveto 
+        0 GAP rmoveto 
+        page-num-str show-right-align
+      } ifelse
+      wd 50 pct  ht GAP add  moveto 
+      SECTION 1 eq {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
+      (regular) 100 use-font
     } {
-      % right-hand page
-      wd ht moveto 
-      0 GAP rmoveto 
-      page-num-str show-right-align
-    } ifelse
-    wd 50 pct  ht GAP add  moveto 
-    page-num 168 le {TITLE}{INDEX-TITLE}ifelse str-upper-case show-ctr-x
-    (regular) 100 use-font
-  } {
-    % no page numbers, and the centering is a bit different
-    % set the work-box using only the trimmed page, with no margins
-    bleed  bleed  translate % to the bottom left of the work-box
-  }
-  ifelse
-  
-  0 ht moveto % the top-left of the work-box, as a default currentposition
-  %0 0 wd ht rectstroke % to see the work-box
-end  
+      % no page numbers, and the centering is a bit different
+      % set the work-box using only the trimmed page, with no margins
+      bleed  bleed  translate % to the bottom left of the work-box
+    }
+    ifelse
+    
+    0 ht moveto % the top-left of the work-box, as a default currentposition
+    %0 0 wd ht rectstroke % to see the work-box
+  end  
 } bind def
 
 % cx cy str 
@@ -524,21 +532,20 @@ end
   DATE show-ctr-x
 
   showpage
-  % blank page
-  showpage
 } bind def
 
 /show-main-body { 
+  showpage % this really ends the previous section
   QUOTES-FILE process-quotes-file-one-line-at-a-time 
-  showpage
 } bind def
 
 /show-index {
+  showpage
   INDEX show-index-lines
-  showpage % the last page of the index
 } bind def
 
 /show-trailing-blank-pages {
+  showpage 
   % lulu.com requirement: must end with 2 blank pages
   showpage
   showpage
@@ -552,8 +559,8 @@ end
   num-physical-pages ==
 } bind def
 
-% TOP LEVEL: RENDER THE SECTIONS IN SEQUENCE:
-show-front-matter 
-show-main-body
-show-index
-show-trailing-blank-pages
+% TOP LEVEL: RENDER THE SECTIONS OF THE BOOK IN SEQUENCE:
+{show-front-matter} do-section 
+{show-main-body} do-section
+{show-index} do-section
+{show-trailing-blank-pages} do-section
