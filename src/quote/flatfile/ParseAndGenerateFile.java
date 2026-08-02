@@ -35,8 +35,8 @@ public final class ParseAndGenerateFile {
    The structured input file. windows-1252 encoding.
    See the comments in the file itself for a description of its syntax. 
    */
-  public static final String INPUT_FILE = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-1252\\quotes.txt";
-  public static final String OUTPUT_FILE_PS = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-1252\\quotes_flat_file_ps.txt";
+  public static final String INPUT_FILE = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-1252\\quotes-math.txt";
+  public static final String OUTPUT_FILE_PS = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-1252\\quotes_math_flat_file_ps.txt";
   public static final String OUTPUT_INDEX_FILE_PS = "C:\\johanley\\ProjectsPhoton\\quotations-ps\\quotes-data-1252\\index_file_ps.txt";
   final static Charset ENCODING = Charset.forName("windows-1252");  
   
@@ -52,8 +52,8 @@ public final class ParseAndGenerateFile {
     log("Outputting to " + OUTPUT_FILE_PS);
     outputToPostScriptFile(quotes, OUTPUT_FILE_PS);
     
-    log("Outputting to " + OUTPUT_INDEX_FILE_PS);
-    outputToPostScriptFile(indexFrom(quotes), OUTPUT_INDEX_FILE_PS);
+    //log("Outputting to " + OUTPUT_INDEX_FILE_PS);
+    //outputToPostScriptFile(indexFrom(quotes), OUTPUT_INDEX_FILE_PS);
     log("Done.");
   }
   

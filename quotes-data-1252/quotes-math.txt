@@ -1,0 +1,761 @@
+# Collected quotations, from my reading, from (about) 1985 onwards.
+# 
+# This is a structured file, amenable to programmatic manipulation.
+# The format is meant to be as easy to type in as possible, with little or no needless repetition.
+# There should be no tabs, and the encoding should be UTF-8.
+# 
+# WATCH OUT for weird apostrophes! ' Do a mass-replace.
+# 
+# WATCH OUT for em(...) and preceding and trailing characters that are NOT whitespace.
+# Because my parsing is mediocre, such characters need to be inside the parens.
+# 
+# WATCH OUT FOR different kinds of quotation marks, all valid in 8859-1:
+#   - octal 047 hex 27 decimal 0039 close single quote (easy on my keyboard)
+#   - octal 140 hex 60 decimal 0096 open single quote (Back-quote, or Alt+0096)
+#   - octal 042 hex 22 decimal 0034 double quote (easy on my keyboard)
+#
+# WATCH OUT for the subtle distinction between two characters, both valid in 8859-1:
+#   - minus  octal /055 hex 2D decimal 0045 (easy on my keyboard, in multiple ways)
+#   ­ hyphen octal /255 hex AD decimal 0173 (Alt+0173); this one is smaller, and more pleasing
+# 
+# The hierarchy/structure is 
+#  author > title > quote
+# The author and quote are always present; the title level may be absent, in the case of 
+# quotes that aren't referenced to a specific work. 
+#
+# The order of authors is arbitrary. 
+#  
+# DATA TRICK: In the case of works such as the Bible, the author takes the special value 'ZzzUnknown'; this 
+# has a SIDE EFFECT on the sorting, placing all such works at the very end.
+#
+# Occasional special symbols:
+#  pre(...) - preserve white space (poetry)
+#  em(...) - emphasis/italics   
+
+Jung, Carl {
+ Psychology and Alchemy {
+   Experience, not books, is what leads to understanding.
+ }
+ 
+Whitehead, Alfred North {
+  Introduction to Mathematics {
+    Civilization advances by extending the number of important operations which we can perform without thinking about them.
+  }
+}
+
+Bell, E. T. {
+  The Queen of the Sciences {
+    Any normal boy or girl of sixteen could master the calculus in half the time often devoted to stumbling through 
+    Book One of Caesar's em(Gallic War.)
+    
+    The assumptions from which mathematics starts are simple; the rest is not.
+    
+    Mathematics, according to David Hilbert, is a game played according to certain simple rules with meaningless marks on paper.
+    
+    Common sense and all appearances notwithstanding, there are precisely as many real numbers as there are complex numbers.
+    
+    As it is of some importance to understand exactly what Weierstrauss proved, I state it more fully. By retaining em(all) the 
+    postulates of a field, it is impossible to construct a class of things which satisfies all postulates and which is not 
+    either the class of all complex numbers or one of the latter's subclasses.
+    
+    How could the whole race have missed this till Descartes saw it? [Analytic geometry.]
+    
+    All of the astounding inventiveness and infinite variety of geometry during that amazingly prolific half century [1872­1922] is 
+    seen as one orderly, simple whole from the commanding summit which Klein recognized as the proper point of view to sweep in the 
+    whole of the past of geometry and to foresee much of its future. Here is the famous sentence: "Given a manifold and a group 
+    of transformations of the same, to develop the theory of invariants relating to that group."
+  } 
+}
+
+Grattan­Guiness, Ivor {
+  The Norton History of the Mathematical Sciences {
+    Mathematics is rich, even dense, with interconnections, but it exhibits no unity.
+    
+    In addition, the teaching of theories from axioms, or some close imitation of them such as the basic laws of algebra, 
+    is usually an educational disaster; for whatever the gains in rigour, they are achieved at the expense of a heavy loss of 
+    heuristic understanding and intuitive reasoning ­ the very things that lie at the heart of real educational theory.
+    
+    ...set theory and topology were extraordinarily late arrivals on the mathematical scene.
+    
+    Neither Newton nor Leibniz married, nor did they seem to be "interested". 
+  }
+}
+
+Herstein, I. N. {
+  Abstract Algebra {
+    One of the truly universal concepts that runs through almost every phase of mathematics is that of a em(function,) a 
+    em(mapping) from one set to another. One could safely say that there is no part of mathematics where the notion does not arise 
+    or play a central role.
+  }
+}
+
+Papert, Seymour {
+  Mindstorms {
+    Anything is easy if you can assimilate it to your collection of models. If you can't, anything can be painfully difficult.
+    
+    ...using the computer as an "object to think with".
+    
+    Stated most succinctly, my conjecture is that the computer can concretize (and personalize) the formal.
+    
+    But making good choices is not always easy, in part because past choices can often haunt us. I have called this 
+    phenomenon the QWERTY phenomenon.
+    
+    I see "school math" as a social construction, a kind of QWERTY.
+    
+    One might even say that computer science is wrongly so called. Most of it is not the science of computers, but the science 
+    of descriptions and descriptive languages.
+    
+    First, relate what is new and to be learned to something you already know. Second, take what is new and make it your own: make
+    something new with it, play with it, build with it.
+  }
+}
+
+Bacon, Francis {
+  Novum Organum {
+    Truth emerges more readily from error than from confusion.
+  }
+}
+Kuhn, Thomas S. {
+  The Structure of Scientific Revolutions {
+    To be accepted as a paradigm, a thing must seem better than its competitors, but it need not, and in fact never does, 
+    explain all the facts with which it can be confronted.
+  
+    The temptation to write history backward is both omnipresent and perennial.
+  }
+  The Copernican Revolution {
+    There is no way of proving that a conceptual scheme is final.
+    
+    Men who believed that their terrestrial home was only a planet circulating blindly about one of an infinity of stars 
+    evaluated their place in the cosmic scheme quite differently than had their predecessors who saw the earth as the unique 
+    and focal center of God's creation.
+    
+    The initial battle between Copernicus and the astronomers of antiquity was fought over technical minutiae.
+    
+    Copernicus himself believed in neither [infinite space nor the possibility of a vacuum]. As we shall see, he tried to preserve most of the 
+    central features of Aristotelian and Ptolemaic cosmology.
+    
+    Copernicus belonged to the minority group of Renaissance astronomers who did not cast horoscopes.
+    
+    em(De Revolutionibus) is a relatively staid, sober, and unrevolutionary work.
+    
+    Copernicus' system is neither simpler nor more accurate than Ptolemy's.
+    
+    The significance of em(De Revolutionibus) lies, then, less than in what it says itself than in what it caused others to say.
+    The book gave rise to a revolution that it had scarcely enunciated.
+    
+    The Copernican Revolution, as we know it, is scarcely to be found in the em(De Revolutionibus) and that is the second essential 
+    incongruity of the text. 
+    
+    During the century and a half following Galileo's death in 1642, a belief in the earth­centered universe was gradually 
+    transformed from an essential sign of sanity to an index, first, of inflexible conservatism, then of excessive parochialism, and 
+    finally of complete fanaticism.
+  }
+}
+
+Pais, Abraham {
+  Niels Bohr {
+    In the very first sentence ever written on quantum mechanics, the abstract of Heisenberg's July 1925 paper, it was stated that "quantum mechanics should be 
+	  founded exclusively upon relationships between quantities that are in principle observable."
+	
+	  At the end of [Heiseberg's] first lecture [at age 24] one student reportedly said that one wouldn't have believed he was so clever since he looked like 
+	  a bright carpenter's apprentice just returned from technical school.
+	
+	  Planck most probably first wrote down his law on the evening of Sunday 7 October 1900, as the result of new experimental information he received that day.
+  }
+}
+
+Bohr, Niels {
+  Atomic Physics and Human Knowledge {
+    Thus, the description of quantum phenomena requires a distinction in principle between the objects under investigation and the measuring apparatus by 
+  	means of which the experimental conditions are defined.
+	
+	  The very fact that repetition of the same experiment, in general yields different recordings pertaining to the object, immediately implies that a 
+	  comprehensive account of experience in this field must be expressed by statistical laws.
+  }
+}
+
+Copernicus {
+ De Revolutionibus {
+   ...the order and magnitude of the stars and all of their orbits and the heaven itself are so connected that in no part can anything
+   be transposed without confusion to the rest and to the whole universe. 
+ }
+}
+
+Capek, M. {
+  The Philosophical Impact of Contemporary Physics {
+    The intensity of every astonishment gradually wears off; the human mind, by the sheer effect of repetition and habit, gradually
+    becomes accustomed to even the strangest and least familiar ideas.
+    
+    It frequently happens that within one and the same mind the true grasp of the mathematical side of the theory coexists with 
+    serious misapprehensions of its physical and especially its philosophical meaning.
+    
+    This plainly shows that the term "curvature" is essentially metaphorical, for it is based on an analogy with curvature of 
+    two­dimensional surfaces.
+    
+    ...the law of gravitation is a generalized law of inertia.
+    
+    What is left of the classical definition of space as "simultaneous juxtaposition of points?" Nothing but a word with 
+    misleading connotations.
+    
+    Yet the idea of a timeless container, in which all matter is located and in which all motion takes place, has such deep roots
+    in the very structure of human imagination that it is almost impossible to get rid of it.
+  }
+  The New Aspects of Time {
+    Yet, the very persistence of such misinterpretations [of SR] must have some deep, underlying cause which a historian of ideas can easily identify: the 
+  	perennial tradition of both Western and Eastern thought which regards time as merely apparent and not genuinely real.
+  }
+}
+
+
+Drake, Stillman {
+ Galileo: Pioneer Scientist {
+   P.A.M. Dirac is said to have usually opened his course in quantum mechanics with the remark: "The existence of an external world is assumed. 
+   That is all the metaphysics you will need for this course."
+ }
+}
+
+Flammarion and Gore {
+  Popular Astronomy {
+    Writers who know nothing of the true poetry of modern science have supposed that the perception of the sublime is born 
+    of ignorance, and that to admire, it is necessary not to know. This is assuredly a strange error.
+  }
+}
+
+Gauss {
+ Letter to Sophie Germain (1807) {
+   The enchanting charms of this sublime science reveal themselves only to those who have the courage to go deeply into it.
+   But when a woman, who because of her sex and our prejudices encounters infinitely more obstacles than a man in 
+   familiarizing herself with complicated problems, succeeds nevertheless in surmounting these obstacles and 
+   penetrating the most obscure parts of them, without doubt she must have the noblest courage, quite extraordinary 
+   talents and superior genius. 
+ }
+}
+
+Gibbs, Josiah W. {
+  One of the principal objects of theoretical research is to find the point of view from which the subject 
+  appears in the greatest simplicity.
+}
+
+Godfrey­Smith, Peter {
+  Theory and Reality {
+    Although mathematics is clearly of huge importance in the development of physics, one of the greatest achievements in all of 
+    science ­ Darwin's achievement in em(On the Origin of Species) ­ makes no real use of mathematics.
+    
+    For Popper, an inspiring example of genuine science was the work of Einstein. Examples of pseudo­science were Freudian 
+    psychology and Marxist views about society and history.
+    
+    And crucially, for Popper it is never possible to confirm or establish a theory by showing its agreement with observations.
+    em(Confirmation is a myth.) The only thing that an observational test can do is to show that a theory is false.
+    
+    The humanities had gone to hell, and now they were trying to wreck science as well, via endless relativist bleating that 
+    science is "just another approach to knowledge with no special status."
+  }
+}
+
+Oresme {
+  ...when God created [the heavens], He impressed them with a certain quality and force of motion, just as He impressed terrestrial things 
+  with weight; it is just the same as a man building a clock and leaving it to run itself. [Written ca. 1360]
+}
+
+Grothendieck, Alexander {
+  Récoltes et semailles {
+   It is in this gesture of "going beyond", to be something in oneself rather than the pawn of a consensus,
+   the refusal to stay within a rigid circle that others have drawn around one ­ it is in this solitary act 
+   that one finds true creativity. All other things follow as a matter of course. 
+  }
+}
+
+Heisenberg, Werner {
+  Physics and Philosophy {
+    ..what we observe in nature is not nature in itself but nature exposed to our method of questioning.
+	
+  	The idea that electromagnetic waves could be a reality in themselves, independent of any bodies, did at that time not occur to the physicists.
+	
+	  The electrodynamics of moving bodies can be derived at once from the principle of relativity.
+  }
+}
+
+Hilbert, David {
+  I do not see that the sex of a candidate is an argument against her [Emmy Noether's] admission as em(Privatdocent.) After all, 
+  we are a university, not a bathing establishment.
+}
+
+Johnson, George {
+ A Shortcut Through Time {
+   One pattern of 0s and 1s is converted into another, and that is what computation is.
+ }
+}
+
+Kershner and Wilcox {
+  The Anatomy of Mathematics {
+    The practical use of mathematics has an importance which it would be foolish to deny.
+	  Without mathematics such amenities of modern civilization such as elevators, automatic cigarette vending machines and atomic bombs could not have been developed.
+	
+	  The need to recognize the existence of an undefined basis [assumptions] cannot be overemphasized.
+	
+	  It is regrettable that mathematical words should have other meanings as well, since a nonmathematical meaning tends to influence understanding of the mathematical meaning. 
+	  Thus, em(set, function, relation,) and em(operation) have mathematical meanings that are entirely, or almost entirely, divorced from their everyday meanings.
+	  The reader should not expect em(real numbers) to be any more real, or any less imaginary, than em(imaginary) numbers. There is nothing even remotely irrational about 
+	  em(irrational numbers.) These are all equally straightforward mathematical entities which happen to be unfortunately named.
+	
+	  By a number, then, until further notice, we shall mean one of a particular collection of grunts (differing with the language) associated with the ritual of counting.
+  }
+}
+
+Kuhn, Thomas S. {
+  The Structure of Scientific Revolutions {
+    To be accepted as a paradigm, a thing must seem better than its competitors, but it need not, and in fact never does, 
+    explain all the facts with which it can be confronted.
+  
+    The temptation to write history backward is both omnipresent and perennial.
+  }
+  The Copernican Revolution {
+    There is no way of proving that a conceptual scheme is final.
+    
+    Men who believed that their terrestrial home was only a planet circulating blindly about one of an infinity of stars 
+    evaluated their place in the cosmic scheme quite differently than had their predecessors who saw the earth as the unique 
+    and focal center of God's creation.
+    
+    The initial battle between Copernicus and the astronomers of antiquity was fought over technical minutiae.
+    
+    Copernicus himself believed in neither [infinite space nor the possibility of a vacuum]. As we shall see, he tried to preserve most of the 
+    central features of Aristotelian and Ptolemaic cosmology.
+    
+    Copernicus belonged to the minority group of Renaissance astronomers who did not cast horoscopes.
+    
+    em(De Revolutionibus) is a relatively staid, sober, and unrevolutionary work.
+    
+    Copernicus' system is neither simpler nor more accurate than Ptolemy's.
+    
+    The significance of em(De Revolutionibus) lies, then, less than in what it says itself than in what it caused others to say.
+    The book gave rise to a revolution that it had scarcely enunciated.
+    
+    The Copernican Revolution, as we know it, is scarcely to be found in the em(De Revolutionibus) and that is the second essential 
+    incongruity of the text. 
+    
+    During the century and a half following Galileo's death in 1642, a belief in the earth­centered universe was gradually 
+    transformed from an essential sign of sanity to an index, first, of inflexible conservatism, then of excessive parochialism, and 
+    finally of complete fanaticism.
+  }
+}
+
+Leibniz {
+ Ordinary languages, though mostly helpful for the inferences of thought, are yet subject to countless ambiguities and 
+ cannot do the task of a calculus, which is to expose mistakes in inference. This remarkable advantage is afforded 
+ up to date only by the symbols of arithmeticians and algebraists, for whom inference consists only in the use 
+ of characters, and a mistake in thought and in the calculus is identical.
+}
+
+Mlodinow, Leonard {
+  The Drunkard's Walk {
+    When chance is involved, people's thought processes are often seriously flawed.
+    
+    We habitually underestimate the effect of randomness.
+    
+    Complete chaos is ironically a kind of perfection.
+    
+    Avoiding the illusion of meaning in random patterns is a difficult task.
+    
+    ...we should learn to spend as much time looking for evidence that we are wrong as we spend searching for 
+    reasons we are correct.
+  }
+}
+
+North, John {
+  Cosmos {
+    Galileo was not one of the great mathematical astronomers. He remained loyal to the circles used by Copernicus in planetary theory,
+    and even in his em(Dialogue Concerning the Two Chief World Systems) he made no reference to the elliptical orbits introduced by 
+    Kepler, although he certainly knew of Kepler's work.
+  }
+}
+
+Philoponas the Byzantine {
+  For if you let two weights fall from the same height, one of them being many times heavier than the other, you will see that the 
+  times required for the motion are not in proportion dependent on the ratio of their weights, but that the actual difference 
+  in time is very small. [6th cent.]
+}
+
+Pierce, Charles {
+  ...the woof and warp of all thought and research is symbols, and the life of thought and science is the life inherent in symbols; 
+  so it is wrong to say that a good language is important to good thought, merely; for it is the essence of it.
+}
+
+Rowan­Robinson, M. {
+  Cosmology {
+    The statement that the universe has to have had this history in order for galaxies, stars, and ourselves to exist is verging on the 
+    tautological and hardly merits the title em(anthropic principle) which some authors give it.
+  }
+}
+
+Sagan, Carl {
+  Cosmos {
+    Our achievements rest on the accomplishments of 40,000 generations of our human predecessors, all but a tiny 
+    fraction of which are nameless and forgotten.
+    
+    ...these are some of the things that hydrogen atoms do, given fifteen billion years of cosmic evolution.
+  }
+}
+
+Shapin, Steven {
+  The Scientific Revolution {  
+    The framework that modern natural philosophers preferred to Aristotelian teleology was one that explicitly 
+    modelled nature on the characteristics of a em(machine.)
+    
+    The machine metaphor might, then, be a vehicle for "taking the wonder out" of our understanding of nature or,
+    as the sociologist Max Weber put it in the early twentieth century, for the "disenchantment of the world".
+  }
+}
+
+Singer, C. {
+  A History of Scientific Ideas {
+    It therefore behooves the historian of science to be very charitable, very forbearing, very humble, in his judgements and presentations 
+    of those who have gone before him. He needs to remember that he is dealing with the work of erring and imperfect human beings.
+    
+    In the Middle Ages languages were learned by speaking and not from grammars.
+    
+    It appeared about 1240 and was still being reprinted in the seventeenth century. It is one of the puzzles of history that this 
+    great improvement [Hindu­Arabic numerals], represented by the "Arabic" as against the Latin system, took three centuries to gain
+    general acceptance.
+    
+    The humanists discovered the literary works of antiquity. In them they became absorbed to the exclusion of all else. Their 
+    eagerness passed into a literary vogue, and cast the blight of a purely literary education on the modern world.
+  }
+}
+
+Smolin, Lee {
+  The Trouble With Physics {
+    The most cherished goal in physics, as in bad romance novels, is unification.
+    
+    To be fair, we have made two experimental discoveries in the past few decades: that neutrinos have mass and that 
+    the universe is dominated by a mysterious dark energy that seems to be accelerating its expansion.
+    
+    On the other hand, if string theorists are wrong, they can't be just a little wrong. If the new dimensions 
+    and symmetries do not exist, then we will count string theorists among science's greatest failures, like 
+    those who continued to work on Ptolemaic epicycles while Kepler and Galileo forged ahead. Theirs will be 
+    a cautionary tale of how not to do science, how not to let theoretical conjecture get so far beyond the 
+    limits of what can rationally be argued that one starts engaging in fantasy.
+    
+    Some people need to think through everything very carefully, and this takes time, as they get easily confused.
+    It's not hard to feel superior to such people, until you remember that Einstein was one of them.
+    
+    What is remarkable to me is the number of distinguished scientists who seem unable to accept the 
+    possibility either that string theory or the hypothesis of a random multiverse is wrong. 
+    
+    ...it is not good for any field if any one person's views are taken too authoritatively. There is no scientist, 
+    not even Newton or Einstein, who was not wrong on a substantial number of issues they had strong views about.
+    
+    If your ideas are right and you fight for them, you'll accomplish something. No one but you can develop your ideas, 
+    and no one but you will fight for them.
+    
+    But what is equally important, and sobering, is how often we fool ourselves. And we fool ourselves not only 
+    individually but en masse. The tendency of a group of human beings to quickly come to believe something that its 
+    individual members will later see as obviously false is truly amazing.
+    
+    Feyerabend insisted that scientists should never agree, unless they are forced to.
+    
+    If a highly disciplined subject like physics is vulnerable to the symptoms of groupthink, what may be happening 
+    in other, less rigorous areas?
+    
+    [String theorists] seem to feel that appeal to consensus within their community is equivalent to rational argument.
+    
+    Good ideas are not taken seriously enough when they come from people of low status in the academic world; conversely,
+    the ideas of high­status people are often taken too seriously.
+  }
+}
+
+Toulmin and Goodfield {
+  The Architecture of Matter {
+    The change­over from a developmental to a static conception of matter was as profound as the change from a geocentric to a 
+    heliocentric astronomy, and its effects were as far­reaching.
+  }
+  The Fabric of the Heavens {
+    Yet ideas cannot be burned at the stake as heretics can.
+    
+    For Galileo still thought of "inertial motion" as naturally circular, whether in the case of a ship moving over the Earth's surface,
+    or in that of a satellite circling around the planet Jupiter.
+    
+    It says much for Newton's mathematical facility that he engaged in the whole enterprise as though it were an intellectual 
+    pastime, while believing all the time that the questions of true importance lay in other, religious directions.
+    
+    Leibniz would have said that the term "field" was only a way of making Newton's miracles computable.
+  }
+}
+
+Westfall, Richard {
+  Never at Rest {
+    Indeed, it was Descartes and not Galileo who stated the principle of inertia in the form we accept today, insisting on the 
+    rectilinear character of inertial motion.
+    
+    For them, Aristotelian philosophy was dead beyond resurrection. In its place stood a new philosophy for which the machine,
+    not the organism, was the dominant analogy.
+    
+    ...when Pierre Fermat derived the law [of refraction] from the principle of least time, mechanical philosophers refused to have 
+    truck with what they considered occult notions.
+    
+    Nevertheless, I have undertaken to write a biography of Newton, and my personal preferences cannot make more than a million 
+    words he wrote in the study of alchemy disappear.
+    
+    By 1661, the official curriculum of Cambridge, prescribed by statute nearly a century before, was in an advanced state of decomposition.
+    
+    What he thought on, he thought on continually, which is to say exclusively, or nearly exclusively. What seized his attention in 
+    1664, to the virtual exclusion of everything else, was mathematics.
+    
+    Cambridge was fast approaching the status of an intellectual wasteland.
+  }
+}
+
+Manheim, Jerome H. {
+  The Genesis of Point Set Topology {
+    Above all,  the ambiguities underlying the explanations of the calculus had to be eliminated. This book chronicles the 
+    work of these men and their heirs and, in so doing, traces the way from the calculus to point set topology.
+    
+    The vague and inconsistent notions of limit which accompanied the expositions of Newton and Leibniz created difficulties which 
+    they and their followers were unable to resolve. For the next two centuries the attention of the leading mathematicians was 
+    directed towards this problem of nearnes; its ultimate satisfactory solution provided both a basis and a motivation for the 
+    development of point set topology.
+    
+    The success of mathematicians in geometrically conceptualizng finite processes naturally suggested an extension of this 
+    technique to include infinite processes. The recurrent failure of this sort of conceptualization had many consequences.
+    
+    "In a word then, there are mathematicians who, in their kingdom of abstraction, assume indivisible substances which are without parts, 
+    without length, and without width, but not, however, the physicists for whom, working in the field of matter no such thing is permitted."
+    [Gasendi, 1658]
+    
+    The difficulty with the differentiation process is that there is no smooth conceptual transition from the geometrical representation 
+    of the difference quotient to that of the derivative.
+    
+    ...in the pre-Weierstrassian period, the concepts of the infinitesimal were necessarily geometric.
+    
+    The importance of convergence criteria in infinite series investigations was slow to be recognized.
+    
+    The philosophical position maintained by Augustin-Louis Cauchy enabled him to produce the first successes in this direction [limits].
+    "But it would be a serious error to think that one can only find certainty in geometrical considerations or in the 
+    testimony of the senses." [1821]
+    
+    Instead of banishing intuition from mathematics for all time, [Cauchy] had succeeded only in driving it to a 
+    deeper level of consciousness.
+    
+    The analysis of the vibrating string gave a first extension to the notion of function and inaugurated researches 
+    concerned with sets of points.
+    
+    The view that geometric form transcends analytical expression was necessarily replaced by the belief that 
+    analytic expression can represent every curve that can be drawn.
+    
+    With Riemann's example of an integrable function that possesses an infinite number of discontinuities between any two limits 
+    the function concept had achieved a generality in excess of that enjoyed by graphs or traced curves. The full impact of this 
+    generality was not, however, recognized until an even more startling example due to Weierstrass was presented some years later.
+    
+    The concept that the senses are adequate determinants of mathematical truth was slow to be replaced. Yet the total 
+    rejection of this sensory role was prerequisite to the development of modern analysis.
+    
+    The idea that a function can be based upon the more primitive notion of set had its inception in Dirichlet's work [~1830].
+    
+    The disquieting thesis that pictorial representation did not have a greater generality than analytic construction was neither 
+    rapidly nor happily accepted when presented by Fourier. The suggestion that the inclusion actually went the other way so 
+    disturbed the equilibrium of the structure of mathematics (and mathematicians) that more than four decades elapsed from 
+    discovery (Bolzano em(circa) 1830) to print (du Bois-Reymond's exposition of Weierstrauss' function, 1874).
+    The same sense of security which caused the early analysts to refer the limit concept to motion operated almost two 
+    centuries later in the reluctance to abandon geometric referents.
+    
+    Overcoming the reliance on sensory perception was a necessary step in the evolution of topology.
+    
+    Indeed, arithmetization demonstrated the thesis that mathematicas has an existence independent of the perceptual world and that, 
+    insofar as mathematics, em(qua) mathematics, is concerned, its intersection with reality in totally irrelevant. This concept, a 
+    major characteristic of modern mathematics, was indispensable to the development of the notion of a topological space.
+    
+    Set theory was slow to mature for two reasons. In the first place, as has been seen, considerations of sets of points were 
+    originally subsidiary to some other investigation. Another reason for the delayed appearance of a theory of sets relates to the 
+    nature of the set concept itself. Many of the notions employed in mathematics have a basis in intuition, area and dimension being 
+    examples. Such examples appear to have a visual referent; a certain status is thereby given these intuitive notions. The 
+    associated numbers evoke a certain image of the concept, e.g. an area of five square units, a dimension of two. The set 
+    concept is different. A finite point set is rather uninteresting. If the word em(finite) is replaced by em(infinite,) then 
+    sensory contact is impossible.
+    
+    Hausdorff selected the neighbourhood concept as fundamental [instead of distance or limit].
+    
+    Attempts to establish a general proof of absolute consistency (proof theory) have been abandoned as a result of a theorem 
+    by Gödel who showed that there are, in any sufficiently strong system, undecidable problems, one of which is that of the 
+    consistency of the system [1931].
+    
+    "What may be called the Euclid-Klein concept of geometry, that is the study of equivalence under a given group of transformations, was 
+    replaced by the idea that a space has an intrinsic structure, consisting of a set of relations which may be, but in general are not, 
+    defined in terms of a transformation group." [Whitehead]
+    
+    Paradoxes of the infinite, discussed by the Greeks, became urgent problems with the codification of calculus.
+    
+    The movement towards abstraction and generalization in mathematics is a measure of progress towards the notion of a topological space.
+    
+    But the historical development of mathematics appears to be characterized by a reaching ot towards both more complex and 
+    more elemental notions from starting points that are determined by man's contacts with the physical world.
+    
+    Cantor saw that a theory of sets had implications for all branches of mathematics and, as had been anticipated by Dirichlet, that 
+    the set concept was more fundamental than that of function.
+    
+    In his 1906 thesis [Frechet] considered first an arbitrary set of elements em(E) and an operation which maps em(E) into some 
+    numerically determined value.
+    
+    The appearance in 1914 of Hausdorff's em(Grundzüge der Mengenlehre) marks the appearance of point set topology as a separate discipline.
+    A em(space) became merely a set of points and a set of relations involving these points, anda geometry was simply the theorems 
+    concerning the space. Hausdorff began his development of topology with a small non-categorical set of neighborhood axioms. 
+    After deriving many of the properties of the general space thus defined he progressively introduce new axioms, ultimately deducing 
+    metric spaces and finally, particular Euclidean spaces.
+  } 
+} 
+
+Adler, Alfred {
+  Mathematics and Creativity {
+    [Goedel's Theorem] proves that there exists meaningful mathematical statements that are neither provable nor disprovable, now 
+    or ever ­ neither provable nor disprovable, that is, not simply because human thought or knowledge is insufficiently advanced but 
+    because the very nature of logic renders them incapable of resolution, no matter how long the human race survives or how wise 
+    it becomes. The theorem itself was proved some decades ago, and recently the first example of an undecidable mathematical 
+    statement was found. Called the Continuum Hypothesis, it is the assertion that in a set-theoretic sense there exists no sets with 
+    more elements than the integers but fewer than the set of all real numbers. So there it stands ­ an assertion that to the end of 
+    time cannot be proved and yet cannot be disproved. The philosophical implications are devastating.
+  }
+} 
+
+Kline, Morris  {
+  The Loss of Certainty {
+    In fact mathematics had developed illogically. Its illogical development contained not only false proofs, slips in reasoning, 
+    and inadvertent mistakes which with more care could have been avoided. Such blunders there were aplenty. The illogical development 
+    also involved inadequate understanding of concepts, a failure to recognize all the principles of logic required, and an 
+    inadequate rigor of proof; that is, intuition, physical arguments, and appeal to geometrical diagrams had taken the place of 
+    logical arguments.
+    
+    Gödel's theorems produced a debacle. It is now apparent that the concept of a universally accepted, infallible body of 
+    reasoning ­ the majestic mathematics of 1800 and the pride of man ­ is a grand illusion.
+  } 
+} 
+
+Wigner, Eugene P. {
+  The Unreasonable Effectiveness of Mathematics in the Natural Sciences {
+    The first point is that the enormous usefulness of mathematics in the natrual sciences is something bordering on the 
+    mysterious and that there is no rational explanation for it.
+    
+    Furthermore, whereas it is unquestionably true that the concepts of elementary mathematics and particularly elementary 
+    geometry were formulated to describe entities which are directly suggested by the actual world, the same does not seem to be 
+    true of the more advanced concepts, in particular the concepts which play such an important role in physics.
+    
+    Without invariance principles physics would not be possible.
+    
+    The preceding discussion is inteded to remind, first, that it is not at all natural that "laws of nature" exist, much less that 
+    man is able to discover them.
+    
+    ...the construction of machines, the functioning of which he can foresee, constitutes the most spectactular accomplishment of 
+    the physicist.
+    
+    The statement that the laws of nature are written in the language of mathematics was properly made three hundred years ago; it is 
+    now more true than ever before.
+    
+    However, it is important to point out that the mathematical formulation of the physicist's often crude experience leads in an 
+    uncanny number of cases to an amazingly accurate description of a large class of phenomena.
+    
+    The miracle occurred only when matrix mechanics, or a mathematically equivalent theory, was applied to problems for which 
+    Heisenberg's calculating rules were meaningless. Surely in this case we "got something out" of the equations that we did 
+    not put in.
+    
+    The event of coincidence, that is in ultimate analysis of collision, is the primitive event in the theory of relativity and defines 
+    a point in space-time, or at least would define a point if the colliding particles were infinitely small.
+    
+    Fundamentally, we do not know why our theories work so well.
+    
+    The miralce of the appropriateness of the language of mathematics for the formulation of the laws of physics is a wonderful 
+    gift which we neither understand nor deserve.
+  }
+}
+
+Barrow, John D. {
+  What is Mathematics? {
+    Contemporary science is going to be proven wrong, but mathematics is not.
+    
+    The British style eschews general formalism for the sake of elegance alone, is biased towards application, and motivated by the 
+    desire to solve practical problems. The French, by contrast, are attracted by formalism and abstraction, as epitomized by the 
+    encyclopedic project of the Bourbaki group.
+    
+    Why is it that abstract mathematical concepts, devised and explored in the distant past with no apparent application, so often 
+    turn out to be key elements in the description of some new area of discovery in physics?
+    
+  }
+}
+
+Hardy, G. H. {
+  em(Reduction ad absurdum,) which Euclid loved so much, is one of a mathematician's finest weapons. It is a far finer gambit than 
+  any chess gambit; a chess player may offer the sacrifice of a pawn or even a piece, but a mathematician offers the game.
+}
+
+Bardi, J. S. {
+  The Great Math War {
+    Formalism was pioneered by the German mathematician David Hilbert, who developed a grand scheme to turn math into a sort of game 
+    where mathematical objects are the playing pieces and axioms are the formal rules of play that determine outcomes.
+    
+    [Brouwer] absolutely refused to admit that anything in mathematics was true or even existed unless it could be explicitly constructed 
+    mentally. 
+    
+    Other philosophers all came to the same conclusion as Galileo and Aristotle, holding fast to the ancient creed 
+    em(infinitum actu non datur) (the actual infinite doesn't exist).
+    
+    ... and there Russell meets the Italian mathematician Giuseppe Peano, who has developed a logical language the same way 
+    Frege had but with better and more accessible symbols.
+    
+    The whole reason Frege developed his em(Begriffsschrift) (concept of notation) was that he didn't trust ordinary language.
+    
+    The paradoxes of set theory were the main motivation for wanting to shore up the foundations of math in the first place.
+    
+    But it wasn't until the late nineteenth and early twentieth centuries that em(Tertium non datur) began to take on even more 
+    significance because mathematicians foundthey could use it along with set theory to treat infinite entities using finitary means.
+    With the law of the excluded middle, you don't need to construct an infinite set in order to work with it.
+    
+    As but one small measure of this glass-ceiling injustice, on June 4, 1919, when she gave her inaugural talk as a teacher (still 
+    unpaid at that point), she stood up and described what is now known as Noether's theorem, a follow-up work from her contributions to 
+    Hilbert's and Einstein's race for general relativity. Noether's theorem unites symmetry in nature with universal conservation laws, 
+    and some consider it a cornerstone not just of general relativity but also of a vast part of modern physics, including particle 
+    physics. Some consider it the backbone of upon which all modern physics is built. 
+    
+    Goedel says it's possible to create a true formula that claims of itself that it cannot be proven ­ something like em(This statement cannot be proven.)
+    Such a statement can be proven only if it is, in fact, itself a lie.
+    
+    Goedel develops a second incompleteness theorem, which says that if a system is inconsistent, it cannot be proven consistent 
+    using its own inconsistent means.
+    
+    # See Goedel's Proof, by Nagel and Newman
+    
+    [Otto Neugebauer] famously declares he's not Jewish by saying, "I did not have the em(honor) of having a Jewish grandmother."
+  }
+}
+
+Lasley, J. W. {
+  The Revolt Against Aristotle {
+    The infinite, whether the infinitely large or the infinitely small, seems to carry disaster in its wake.
+  }
+}
+
+Kroneker, Leopold {
+  God created the integers. All else is the work of man.
+}
+
+Simpson, Steve {
+  Partial Realizations of Hilbert's Program {
+    According to Hilbert, the most vulnerable point in the fortress of mathematics was the infinite.
+  }
+}
+
+Cantor, Georg {
+  Doctoral Thesis {
+    The art of asking questions is more valuable than solving problems.
+  }
+}
+
+Wildberger, N. {
+  Divine Proportions {
+    Quadrance and spread are quadratic quantities, while distance and angle are almost, but not quite, linear ones.
+    The quadratic view is more general and powerful. At some level, this is known by many mathematicians.
+    When this insight is put firmly into practice, as it is here, a new foundation for mathematics and mathematics education 
+    arises which simplifies Euclidean and non-Euclidean geometries, changes our understanding of algebraic geometry, 
+    and often simplifies difficult practical problems.
+    
+    In fact rational trigonometry is so elementary that almost all calculations may be done by hand.
+    Tables or calculators are not necessary, although the latter certainly speed up computations. 
+    It is a shame that this theory was not discovered earlier, since accurate tables were for many centuries not 
+    widely available.
+  }
+}
