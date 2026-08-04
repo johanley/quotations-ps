@@ -10,9 +10,9 @@ I get pleasing results using a 6-inch by 9-inch hard cover format, with linen wr
 The output PDF: 
 - the text is laid out asymmetrically on even-odd pages, in order to place text away from the spine of the bound book.
 - the font I'm using is *Adobe Caslon Pro*.
-- the line-breaking is jagged-right; I dislike the algorithms which change the width of space characters.
-- a drawing of the constellation Orion is on the title page; this is implemented in PostScript code; it's not an image.
-- an index is included at the end of the book.
+- the line-breaking is jagged-right. I dislike algorithms which change the width of space characters.
+- a drawing of the constellation Orion is on the title page; this is implemented in PostScript code; it is not an image.
+- an index is included at the end of the book. (It is automatically generated.)
 
 
 # Input File
@@ -39,15 +39,13 @@ Pros:
 
 # Generate The Output File
 - update the `quotes_flat_file_ps.txt ` file. 
-- use the curly quotes available with the `windows-1252` encoding.
+- use the curly quotes and ellipsis characters available with the `windows-1252` encoding.
 - ensure the file is saved using the `windows-1252` encoding.
 - Ghostscript: run a Ghostscript command to generate a pdf. See BUILD.BAT for an example.
 
 `C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o BOOK.PDF BOOK.PS`
 
 The output file is `BOOK.PDF`.
-
-Review the result, and apply tweaks to BOOK.PS if needed. 
 
 The cover is a separate PDF, generated like so:
 
