@@ -23,8 +23,7 @@ The core data file is typed in manually:
 Each line is a PostScript dictionary, containing the data related to a single quote.
 
 This file uses the `windows-1252` encoding.
-This is a single-byte encoding. 
-Single-byte encodings are friendly to PostScript.
+This is a single-byte encoding, which is friendly to PostScript.
 
 Cons: 
 - repetition:  for each quotation, it repeats the author's name and the title of the work.
@@ -53,10 +52,9 @@ The cover is a separate PDF, generated like so:
 `C:\ghostscript\gs10.04.0\bin\gswin64c.exe -dNOSAFER -sDEVICE=pdfwrite -o BOOK-COVER.PDF BOOK-COVER.PS`
 
 # PostScript 
-The PostScript programming language is used to here to make a pleasing PDF output, suitable for printing.
-(I'm using lulu.com for printing the book.)
 The top-level PostScript file is `BOOK.PS`. 
-It uses the other PostScript files in this project, which form a simple library of commonly used things in PostScript programs.
+It uses the other PostScript files in this project (*base.ps*, *strings.ps* and so on).
+Those other files form a simple library for common PostScript tasks.
 
 Years ago, I used the *iText* Java library for creating PDF files programmatically.
 I now much prefer using the PostScript language for such tasks. 
