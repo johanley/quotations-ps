@@ -40,6 +40,7 @@ Pros:
 # Generate The Output File
 - update the `quotes_flat_file_ps.txt ` file. 
 - use the curly quotes and ellipsis characters available with the `windows-1252` encoding.
+- (I'm not using the *em dash*. It joins text together with no space between; that has cross-talk with my line-breaking algorithm.)
 - ensure the file is saved using the `windows-1252` encoding.
 - Ghostscript: run a Ghostscript command to generate a pdf. See BUILD.BAT for an example.
 
