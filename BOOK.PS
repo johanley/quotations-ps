@@ -41,23 +41,22 @@
   2 dict begin
     [(Starting new page: ) page-num]  any-concat here
     SECTION 1 ge  SECTION 2 le and {
-      % show page numbers and title
+      /is-left-hand? page-num 2 mod 0 eq def
       % set the work-box; asymmetry in x, to avoid the spine 
-      bleed  MARGIN-X  add  SPINE-AVOIDANCE page-num 2 mod 0 eq {neg} if add 
+      bleed  MARGIN-X  add   SPINE-AVOIDANCE is-left-hand? {neg} {1 8th-inch sub} ifelse  add 
       bleed  MARGIN-Y  add
       translate % to the bottom left of the work-box
       
+      % show page numbers and title
       (regular) 90 use-font
       /GAP ht 5 pct def
       small-caps-font
       /page-num-str page-num 4 string cvs def
-      page-num 2 mod 0 eq {
-        % left-hand page
+      is-left-hand? {
         0 ht moveto 
         0 GAP rmoveto 
         page-num-str show
       } {
-        % right-hand page
         wd ht moveto 
         0 GAP rmoveto 
         page-num-str show-right-align
@@ -447,7 +446,7 @@
   /page-height  trim-height bleed 2 mul add  def 
   /ASPECT-RATIO trim-height trim-width div def % > 1.0 in this project
   /MARGIN-X 7 8th-inch def 
-  /MARGIN-Y 6 8th-inch def 
+  /MARGIN-Y 7 8th-inch def 
   % wd and ht are for the work-box for the main content (pages with page numbers).
   /wd trim-width MARGIN-X 2 mul sub def   
   /ht trim-height MARGIN-Y 2 mul sub def   
@@ -463,11 +462,10 @@
   /MyRegular /ACaslonPro-Regular windowize
   /MyItalic /ACaslonPro-Italic windowize
   <<  (regular) /MyRegular (italic) /MyItalic >>
-  11 % default font size 
-  init-my-fonts
+  /DEFAULT-FONT-SIZE 11.5 def % 11 is the smallest I would print
+  DEFAULT-FONT-SIZE init-my-fonts
   % My initial model was the book "Jerusalem" by Simon Montefiore (Knopf, 2011)
-  
-  /leading 1.2 11 mul def % this is a common leading, 120% of the type size (InDesign's default)
+  /leading 1.2 DEFAULT-FONT-SIZE mul def % a common setting, 120% of the font size (InDesign's default)
   /TITLE (Quotations) def
   /AUTHOR (Collected by John O’Hanley) def
   /DATE (1988 - 2025) def
@@ -481,7 +479,7 @@
 /show-front-matter {
   % small title 
   (regular) 100 use-font  
-  trim-width 48 pct 
+  trim-width 45 pct 
   trim-height 85 pct moveto 
   3 0 TITLE str-upper-case ashow-ctr-x
 
@@ -489,7 +487,7 @@
   (regular) 100 use-font
   trim-width 50 pct 
   trim-height 15 pct moveto 
-  (Adobe Caslon Pro 11 \(leading 13.2\)) show-ctr-x
+  [(Adobe Caslon Pro ) DEFAULT-FONT-SIZE ( \(leading 120%\))] any-concat show-ctr-x
 
   (italic) 100 use-font
   trim-width 50 pct 
