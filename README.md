@@ -5,7 +5,9 @@ I have several thousand quotations collected in binders.
 The quotes saved in this repository are some of my favourites.
 
 I print the resulting PDF in hard-cover book form, using [lulu.com](https://www.lulu.com/).
-I get pleasing results using a 6-inch by 9-inch hard cover format, with linen wrap.
+I get decent results using a 6-inch by 9-inch hard cover format, with linen wrap and cream paper.
+(Unfortunately, the quality varies according to which printer is used by lulu.com. 
+I've seen cream paper that is too white, and a slight skewing of the text on the page.)
 
 The output PDF: 
 - the text is laid out asymmetrically on even-odd pages, in order to place text away from the spine of the bound book.
@@ -13,6 +15,7 @@ The output PDF:
 - the line-breaking is jagged-right. I dislike algorithms which change the width of space characters.
 - a drawing of the constellation Orion is on the title page; this is implemented in PostScript code; it is not an image.
 - an index is included at the end of the book. (It is automatically generated.)
+- a small mark is made in the bottom left corner of the final pages to help you evaluate how well the paper was centered in the printer.
 
 
 # Input File
