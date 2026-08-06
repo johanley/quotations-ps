@@ -68,9 +68,12 @@
       % no page numbers, and the centering is a bit different
       % set the work-box using only the trimmed page, with no margins
       bleed  bleed  translate % to the bottom left of the work-box
+      SECTION 3 eq {
+        0 0 moveto  10 0 rlineto  stroke % small mark to see if the page is centered correctly in the printer
+        0 0 moveto  0 10 rlineto  stroke
+      } if
     }
     ifelse
-    
     0 ht moveto % the top-left of the work-box, as a default currentposition
     %0 0 wd ht rectstroke % to see the work-box
   end  
