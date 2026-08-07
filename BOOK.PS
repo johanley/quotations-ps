@@ -494,9 +494,12 @@
   (github.com/johanley/quotations-ps) show-ctr-x
 
   % large rectangle, to verify how well the paper is centered in the printer
-  bleed dup 
-  trim-width bleed 2 mul sub 
-  trim-height bleed 2 mul sub rectstroke 
+  gsave
+    0.5 setlinewidth
+    bleed dup 
+    trim-width bleed 2 mul sub 
+    trim-height bleed 2 mul sub rectstroke 
+  grestore
 
   showpage
   % blank page 
