@@ -68,10 +68,6 @@
       % no page numbers, and the centering is a bit different
       % set the work-box using only the trimmed page, with no margins
       bleed  bleed  translate % to the bottom left of the work-box
-      SECTION 3 eq {
-        0 0 moveto  10 0 rlineto  stroke % small mark to see if the page is centered correctly in the printer
-        0 0 moveto  0 10 rlineto  stroke
-      } if
     }
     ifelse
     0 ht moveto % the top-left of the work-box, as a default currentposition
@@ -496,6 +492,11 @@
   trim-width 50 pct 
   trim-height 10 pct moveto 
   (github.com/johanley/quotations-ps) show-ctr-x
+
+  % large rectangle, to verify how well the paper is centered in the printer
+  bleed dup 
+  trim-width bleed 2 mul sub 
+  trim-height bleed 2 mul sub rectstroke 
 
   showpage
   % blank page 
