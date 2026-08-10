@@ -995,7 +995,6 @@
 <</author-last (Quintilian) /author-first () /title (Institutio Oratorio) /body [/R(Style has three kinds of excellence: correctness, lucidity, and elegance.)]>>
 <</author-last (Rees) /author-first (Laurence) /title (Hitler and Stalin) /body [/R(He estimated that around 30 percent of his comrades committed the offense [of rape, in the march of the Soviet Army into Germany].)]>>
 <</author-last (Rees) /author-first (Laurence) /title (Hitler and Stalin) /body [/R(No one can ever know exactly how many women were raped by the Soviet conquerors. It’s possible, however, that nearly two million women and girls in Germany alone endured this horror during the war and its immediate aftermath.)]>>
-<</author-last (Rees) /author-first (Laurence) /title (Hitler and Stalin) /body [/R(One estimate is that 50,000 women were raped in the capital, and more across the rest of the country. [Budapest, taken by the Soviets])]>>
 <</author-last (Rees) /author-first (Laurence) /title (Hitler and Stalin) /body [/R(“I think that real life is hunger, and the rest is a mirage,” wrote the Leningrad scholar Dmitry Likhachev. “In the time of famine people revealed themselves, stripped themselves, freed themselves of all trumpery. Some turned out to be marvelous, incomparable heroes, others - scoundrels, villains, murderers, cannibals. There were no half measures.”)]>>
 <</author-last (Rees) /author-first (Laurence) /title (Hitler and Stalin) /body [/R(“Ninety-nine percent of the German people have turned off thinking for themselves,” wrote civil servant Friedrich Kellner, a critic of the regime, in his diary in July 1940.)]>>
 <</author-last (Rees) /author-first (Laurence) /title (Hitler and Stalin) /body [/R(“The hurricane of war has torn off these rags: now everyone has become what he was in fact, and not what he wanted to seem. Many have turned out to be pitiful cowards and scoundrels.” [Diary of Elena Kochina, October 1941])]>>
@@ -1055,7 +1054,7 @@
 <</author-last (Shakespeare) /author-first (William) /title (King Lear) /body [/R(A plague upon your epileptic visage.)]>>
 <</author-last (Shakespeare) /author-first (William) /title (King Lear) /body [/R(An admirable evasion of whoremaster man, to lay his goatish disposition to the charge of a star!)]>>
 <</author-last (Shakespeare) /author-first (William) /title (Macbeth) /body (Canst thou not minister to a mind diseas’d\nPluck from the memory a rooted sorrow,\nRaze out the written troubles of the brain,\nAnd with some sweet oblivious antidote\nCleanse the stuff’d bosom of that perilous stuff\nWhich weighs upon the heart?)>>
-<</author-last (Shakespeare) /author-first (William) /title (Macbeth) /body [/R(… Come, thick night, and pall thee in the dunnest smoke of hell …)]>>
+<</author-last (Shakespeare) /author-first (William) /title (Macbeth) /body [/R(Come, thick night, and pall thee in the dunnest smoke of hell.)]>>
 <</author-last (Shakespeare) /author-first (William) /title (Much Ado About Nothing) /body [/R(Hath no man’s dagger here a point for me?)]>>
 <</author-last (Shakespeare) /author-first (William) /title (Much Ado About Nothing) /body [/R(I must discontinue your company.)]>>
 <</author-last (Shakespeare) /author-first (William) /title (Much Ado About Nothing) /body [/R(O God, that I were a man! I would eat his heart in the market-place.)]>>

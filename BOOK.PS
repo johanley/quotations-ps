@@ -463,11 +463,10 @@
   <<  (regular) /MyRegular (italic) /MyItalic >>
   /DEFAULT-FONT-SIZE 12 def % personally, 11 is the smallest I would print
   DEFAULT-FONT-SIZE init-my-fonts
-  % My initial model was the book "Jerusalem" by Simon Montefiore (Knopf, 2011)
-  /leading 1.2 DEFAULT-FONT-SIZE mul def % a common setting, 120% of the font size (InDesign's default)
+  /leading 1.2 DEFAULT-FONT-SIZE mul def % a common setting, 120% of the font size (the default in Adobe's InDesign)
   /TITLE (Quotations) def
   /AUTHOR (Collected by John O’Hanley) def
-  /DATE (1988 - 2025) def
+  /DATE (1988 - 2026) def
   /SPACE ( ) def
   /DASH (~ ) def
   /COMMA-SPACE (, ) def
@@ -478,7 +477,7 @@
 /show-front-matter {
   % small title 
   (regular) 100 use-font  
-  trim-width 45 pct 
+  trim-width 46 pct 
   trim-height 85 pct moveto 
   3 0 TITLE str-upper-case ashow-ctr-x
 

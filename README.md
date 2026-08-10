@@ -15,7 +15,7 @@ The output PDF:
 - the line-breaking is jagged-right. I dislike algorithms which change the width of space characters.
 - a drawing of the constellation Orion is on the title page; this is implemented in PostScript code; it is not an image.
 - an index is included at the end of the book. (It is automatically generated.)
-- a small mark is made in the bottom left corner of the final pages to help you evaluate how well the paper was centered in the printer.
+- the first page has a big rectangular border. It's meant to show whether or not the paper was centered precisley when printed.
 
 
 # Input File
