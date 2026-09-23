@@ -384,6 +384,8 @@
 <</author-last (Foote) /author-first (Samuel) /title (The Comic Theatre) /body [/R(What surprise! - what joy! - what confusion! - Support me, Subtle! I am unable to bear this conflict of tumultuous passions!)]>>
 <</author-last (Forster) /author-first (E. M.) /title (Other Kingdom) /body [/R(Other Kingdom copse is just like any other beech copse, and I am therefore spared the fatigue of describing it.)]>>
 <</author-last (Forster) /author-first (E. M.) /title (The Curate’s Friend) /body [/R(That evening, for the first time, I heard the chalk downs singing to each other across the valleys, as they often do when the air is quiet and they have had a comfortable day.)]>>
+<</author-last (Forster) /author-first (E. M.) /title (The Machine Stops) /body [/R(I have had the most terrible journey and greatly retarded the development of my soul.)]>>
+<</author-last (Forster) /author-first (E. M.) /title (The Machine Stops) /body [/R(As for Vashti, her life went peacefully forward until the final disaster.)]>>
 <</author-last (France) /author-first (Anatole) /title (Le crime de Sylvestre Bonnard) /body (Amis, mangeons et buvons joyeusement\nTant qu’il y a de l’huile dans la lampe:\nQui sait si dans l’autre monde nous nous reverrons?\nQui sait si dans l’autre monde il y a une taverne?)>>
 <</author-last (France) /author-first (Anatole) /title (Le crime de Sylvestre Bonnard) /body [/R(Mais Thérèse est sourde comme un sac de charbon et lente comme la justice.)]>>
 <</author-last (France) /author-first (Anatole) /title (Le crime de Sylvestre Bonnard) /body [/R(Nos passions, c’est nous.)]>>
