@@ -6,16 +6,17 @@ The quotes saved in this repository are some of my favourites.
 
 I print the resulting PDF in hard-cover book form, using [lulu.com](https://www.lulu.com/).
 I get decent results using a 6-inch by 9-inch hard cover format, with linen wrap and cream paper.
-(Unfortunately, the quality varies according to which printer is used by lulu.com. 
-I've seen cream paper that is too white, and a slight skewing of the text on the page.)
+Unfortunately, the quality varies according to which printer is used by lulu.com. 
+I've seen cream paper that is too white, a slight skewing of the text on the page, and lower quality appearance of the printed letters.
 
 The output PDF: 
 - the text is laid out asymmetrically on even-odd pages, in order to place text away from the spine of the bound book.
 - the font I'm using is *Adobe Caslon Pro*.
+- the first printed page has a big rectangular border. It's meant to show whether or not the paper was centered precisley when printed.
+- a drawing of the constellation Orion is on the title page; this is implemented in PostScript code; it is not an image. 
+  This project uses a small amount of Java code to generate a PostScript data structure to hold the data for the constellation.
 - the line-breaking is jagged-right. I dislike algorithms which change the width of space characters.
-- a drawing of the constellation Orion is on the title page; this is implemented in PostScript code; it is not an image.
-- an index is included at the end of the book. (It is automatically generated.)
-- the first page has a big rectangular border. It's meant to show whether or not the paper was centered precisley when printed.
+- an index is included at the end of the book. It is automatically generated.
 
 
 # Input File
@@ -42,7 +43,7 @@ Pros:
 # Generate The Output File
 - update the `quotes_flat_file_ps.txt ` file. 
 - use the curly quotes and ellipsis characters available with the `windows-1252` encoding.
-- (I'm not using the *em dash*. It joins text together with no space between; that has cross-talk with my line-breaking algorithm.)
+- I'm not using the *em dash*. It joins text together with no space between; that has cross-talk with my line-breaking algorithm.
 - ensure the file is saved using the `windows-1252` encoding.
 - Ghostscript: run a Ghostscript command to generate a pdf. See BUILD.BAT for an example.
 
