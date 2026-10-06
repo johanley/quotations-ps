@@ -12,7 +12,7 @@ I've seen cream paper that is too white, a slight skewing of the text on the pag
 The output PDF: 
 - the text is laid out asymmetrically on even-odd pages, in order to place text away from the spine of the bound book.
 - the font I'm using is *Adobe Caslon Pro*.
-- the first printed page has a big rectangular border. It's meant to show whether or not the paper was centered preciseley when printed.
+- the first printed page has a big rectangular border. It's meant to show whether or not the paper was centered precisely when printed.
 - a drawing of the constellation Orion is on the title page; this is implemented in PostScript code; it is not an image. 
   This project uses a small amount of Java code to generate the PostScript data structure that carries the data for the constellation drawing.
 - the line-breaking is jagged-right. I dislike algorithms which change the width of space characters.
