@@ -28,6 +28,7 @@ Each line is a PostScript dictionary, containing the data related to a single qu
 
 This file uses the `windows-1252` encoding.
 This is a single-byte encoding, which is friendly to PostScript.
+If you need to convert source data from some other encoding, my [encoding-utils](https://github.com/johanley/encoding-utils) repository might be helpful.
 
 Cons: 
 - repetition:  for each quotation, it repeats the author's name and the title of the work.
